@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="'Yu Gothic','Hiragino Sans',sans-serif">
+<defs>
+  <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0068B7"/><stop offset="100%" stop-color="#003d6b"/></linearGradient>
+  <linearGradient id="accent1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00a0e9"/><stop offset="100%" stop-color="#0068B7"/></linearGradient>
+</defs>
+<rect width="1920" height="1080" fill="url(#bg1)"/>
+<!-- Decorative lines -->
+<line x1="160" y1="0" x2="160" y2="1080" stroke="#fff" stroke-opacity=".06" stroke-width="1"/>
+<line x1="1760" y1="0" x2="1760" y2="1080" stroke="#fff" stroke-opacity=".06" stroke-width="1"/>
+<rect x="0" y="520" width="1920" height="2" fill="#fff" opacity=".08"/>
+<!-- Accent bar -->
+<rect x="160" y="340" width="80" height="4" rx="2" fill="#00a0e9"/>
+<!-- Title -->
+<text x="160" y="420" fill="#fff" font-size="58" font-weight="700" letter-spacing=".04em">YUMEHO マーケティング戦略</text>
+<text x="160" y="490" fill="#fff" font-size="32" font-weight="400" opacity=".85">求人市場からの新規顧客獲得アプローチ</text>
+<!-- Subtitle line -->
+<rect x="160" y="530" width="600" height="1" fill="#fff" opacity=".2"/>
+<!-- Description -->
+<text x="160" y="600" fill="#fff" font-size="22" opacity=".7">「求人を出している施設」= YUMEHO を最も必要としている施設</text>
+<text x="160" y="640" fill="#fff" font-size="22" opacity=".7">人手不足の課題を設備投資で解決する提案</text>
+<!-- Bottom info -->
+<rect x="0" y="980" width="1920" height="100" fill="#002a4a"/>
+<text x="160" y="1040" fill="#fff" font-size="18" opacity=".6">CONFIDENTIAL</text>
+<text x="960" y="1040" fill="#fff" font-size="18" opacity=".6" text-anchor="middle">2026年4月</text>
+<text x="1760" y="1040" fill="#fff" font-size="18" opacity=".6" text-anchor="end">Rinascente / YUMEHO</text>
+<!-- YUMEHO logo text -->
+<text x="1760" y="420" fill="#fff" font-size="120" font-weight="700" text-anchor="end" opacity=".08" letter-spacing=".08em">YUMEHO</text>
+</svg>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1440 810" width="1440" height="810">
+  <defs>
+    <style>
+      text{font-family:HiraKakuProN-W3-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN',sans-serif}
+    </style>
+  </defs>
+
+  <rect width="1440" height="810" fill="#fff"/>
+  <rect width="1440" height="4" fill="#0068b7"/>
+
+  <!-- Header -->
+  <text x="720" y="56" text-anchor="middle" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:.2em">AFTER LAUNCH — ROADMAP &amp; KPI</text>
+  <text x="720" y="96" text-anchor="middle" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:32px;letter-spacing:.08em">公開後のロードマップと期待効果</text>
+  <text x="720" y="122" text-anchor="middle" fill="#888" style="font-size:13px">サイト公開はゴールではなくスタート。公開後に何をし、何が変わるのかを示します。</text>
+
+  <!-- ===== Timeline ===== -->
+
+  <!-- Phase 0 -->
+  <rect x="46" y="152" width="154" height="300" rx="14" ry="14" fill="#0068b7"/>
+  <text x="123" y="182" text-anchor="middle" fill="rgba(255,255,255,.3)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">MONTH 0</text>
+  <text x="123" y="210" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px">公開</text>
+  <line x1="66" y1="224" x2="180" y2="224" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+  <text x="66" y="248" fill="rgba(255,255,255,.6)" style="font-size:10.5px">3サイト + 会員機能</text>
+  <text x="66" y="266" fill="rgba(255,255,255,.6)" style="font-size:10.5px">CMS運用開始</text>
+  <text x="66" y="284" fill="rgba(255,255,255,.6)" style="font-size:10.5px">Google Search Console</text>
+  <text x="66" y="302" fill="rgba(255,255,255,.6)" style="font-size:10.5px">アクセス解析設置</text>
+  <rect x="66" y="326" width="114" height="20" rx="4" ry="4" fill="rgba(255,255,255,.12)"/>
+  <text x="123" y="340" text-anchor="middle" fill="rgba(255,255,255,.5)" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:9px">制作費 60万円</text>
+  <rect x="66" y="352" width="114" height="20" rx="4" ry="4" fill="rgba(255,255,255,.12)"/>
+  <text x="123" y="366" text-anchor="middle" fill="rgba(255,255,255,.5)" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:9px">3週間で納品</text>
+  <text x="123" y="402" text-anchor="middle" fill="rgba(255,255,255,.3)" style="font-size:9px">SNSアカウント開設</text>
+  <text x="123" y="418" text-anchor="middle" fill="rgba(255,255,255,.3)" style="font-size:9px">名刺・メール署名にURL</text>
+  <text x="123" y="434" text-anchor="middle" fill="rgba(255,255,255,.3)" style="font-size:9px">既存顧客へ案内</text>
+
+  <!-- Arrow -->
+  <text x="210" y="300" fill="#ccc" style="font-size:18px">→</text>
+
+  <!-- Phase 1: 1-3 months -->
+  <rect x="230" y="152" width="280" height="300" rx="14" ry="14" fill="#f6f8fb" stroke="#b0d4ee" stroke-width="1"/>
+  <text x="370" y="182" text-anchor="middle" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">MONTH 1-3</text>
+  <text x="370" y="210" text-anchor="middle" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px">認知・基盤づくり</text>
+  <line x1="250" y1="224" x2="490" y2="224" stroke="#e0e0e0" stroke-width="1"/>
+
+  <text x="250" y="248" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:10.5px">やること</text>
+  <text x="250" y="266" fill="#555" style="font-size:10.5px">SNS投稿開始（施設紹介・製品情報）</text>
+  <text x="250" y="284" fill="#555" style="font-size:10.5px">既存顧客・取引先への案内</text>
+  <text x="250" y="302" fill="#555" style="font-size:10.5px">Googleビジネスプロフィール登録</text>
+  <text x="250" y="320" fill="#555" style="font-size:10.5px">アクセスデータ蓄積・傾向把握</text>
+
+  <text x="250" y="350" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:10.5px">期待効果</text>
+  <rect x="250" y="360" width="240" height="40" rx="6" ry="6" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="270" y="378" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px">月間 50〜300 PV</text>
+  <text x="270" y="394" fill="#888" style="font-size:9px">直接流入・SNS経由が中心</text>
+
+  <text x="250" y="426" fill="#888" style="font-size:9.5px">Googleが新規ドメインを評価する</text>
+  <text x="250" y="440" fill="#888" style="font-size:9.5px">準備期間（検索表示はまだ限定的）</text>
+
+  <!-- Arrow -->
+  <text x="520" y="300" fill="#ccc" style="font-size:18px">→</text>
+
+  <!-- Phase 2: 3-6 months -->
+  <rect x="540" y="152" width="280" height="300" rx="14" ry="14" fill="#f6f8fb" stroke="#b0d4ee" stroke-width="1"/>
+  <text x="680" y="182" text-anchor="middle" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">MONTH 3-6</text>
+  <text x="680" y="210" text-anchor="middle" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px">集客強化</text>
+  <line x1="560" y1="224" x2="800" y2="224" stroke="#e0e0e0" stroke-width="1"/>
+
+  <text x="560" y="248" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:10.5px">やること</text>
+  <text x="560" y="266" fill="#555" style="font-size:10.5px">Google検索広告の開始（月3〜5万円〜）</text>
+  <text x="560" y="284" fill="#555" style="font-size:10.5px">導入事例の追加・更新</text>
+  <text x="560" y="302" fill="#555" style="font-size:10.5px">SNS運用の本格化</text>
+  <text x="560" y="320" fill="#555" style="font-size:10.5px">アクセスデータに基づくページ改善</text>
+
+  <text x="560" y="350" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:10.5px">期待効果（広告運用開始後）</text>
+  <rect x="560" y="360" width="240" height="40" rx="6" ry="6" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="580" y="378" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px">月間 500〜1,500 PV</text>
+  <text x="580" y="394" fill="#888" style="font-size:9px">広告 + 検索流入の合算</text>
+
+  <rect x="560" y="410" width="240" height="36" rx="6" ry="6" fill="#fff" stroke="#0068b7" stroke-width=".75"/>
+  <text x="580" y="428" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px">月1〜3件 問い合わせ発生</text>
+  <text x="580" y="442" fill="#888" style="font-size:8px">シミュレーション機能が行動ハードルを下げる</text>
+
+  <!-- Arrow -->
+  <text x="830" y="300" fill="#ccc" style="font-size:18px">→</text>
+
+  <!-- Phase 3: 6-12 months -->
+  <rect x="850" y="152" width="280" height="300" rx="14" ry="14" fill="#f6f8fb" stroke="#b0d4ee" stroke-width="1"/>
+  <text x="990" y="182" text-anchor="middle" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">MONTH 6-12</text>
+  <text x="990" y="210" text-anchor="middle" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px">成果拡大</text>
+  <line x1="870" y1="224" x2="1110" y2="224" stroke="#e0e0e0" stroke-width="1"/>
+
+  <text x="870" y="248" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:10.5px">やること</text>
+  <text x="870" y="266" fill="#555" style="font-size:10.5px">SEOコンテンツ追加検討</text>
+  <text x="870" y="284" fill="#555" style="font-size:10.5px">オプション追加判断（決済・コミュニティ）</text>
+  <text x="870" y="302" fill="#555" style="font-size:10.5px">展示会・学会連動のLP制作</text>
+  <text x="870" y="320" fill="#555" style="font-size:10.5px">会員向けコンテンツ拡充</text>
+
+  <text x="870" y="350" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:10.5px">期待効果</text>
+  <rect x="870" y="360" width="240" height="40" rx="6" ry="6" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="890" y="378" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px">月間 1,000〜3,000 PV</text>
+  <text x="890" y="394" fill="#888" style="font-size:9px">検索上位表示が安定し始める</text>
+
+  <rect x="870" y="410" width="240" height="36" rx="6" ry="6" fill="#fff" stroke="#0068b7" stroke-width=".75"/>
+  <text x="890" y="428" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px">月3〜5件 問い合わせ</text>
+  <text x="890" y="442" fill="#888" style="font-size:8px">サイトが「営業ツール」として機能し始める</text>
+
+  <!-- Arrow -->
+  <text x="1140" y="300" fill="#ccc" style="font-size:18px">→</text>
+
+  <!-- Phase 4 -->
+  <rect x="1160" y="152" width="240" height="300" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="1280" y="182" text-anchor="middle" fill="rgba(255,255,255,.3)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">1 YEAR+</text>
+  <text x="1280" y="210" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px">継続改善</text>
+  <line x1="1180" y1="224" x2="1380" y2="224" stroke="rgba(255,255,255,.15)" stroke-width="1"/>
+  <text x="1180" y="248" fill="rgba(255,255,255,.6)" style="font-size:10.5px">データに基づく改善</text>
+  <text x="1180" y="266" fill="rgba(255,255,255,.6)" style="font-size:10.5px">新製品追加時のサイト拡張</text>
+  <text x="1180" y="284" fill="rgba(255,255,255,.6)" style="font-size:10.5px">広告最適化・費用対効果改善</text>
+  <text x="1180" y="316" fill="rgba(255,255,255,.35)" style="font-size:10px">サイトが事業の</text>
+  <text x="1180" y="334" fill="rgba(255,255,255,.35)" style="font-size:10px">成長エンジンへ</text>
+
+  <rect x="1180" y="362" width="200" height="70" rx="8" ry="8" fill="rgba(255,255,255,.1)"/>
+  <text x="1280" y="390" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px">サイトが24時間働く</text>
+  <text x="1280" y="412" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px">営業マンになる</text>
+
+  <!-- ===== KPI: Before/After ===== -->
+  <text x="60" y="494" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">60万円の投資で変わること</text>
+
+  <!-- Card 1 -->
+  <rect x="46" y="514" width="330" height="120" rx="12" ry="12" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".75"/>
+  <text x="66" y="540" fill="#aaa" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">BEFORE</text>
+  <text x="140" y="540" fill="#aaa" style="font-size:11px">製品情報がない。検索しても出てこない。</text>
+  <line x1="66" y1="552" x2="356" y2="552" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="66" y="572" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">AFTER</text>
+  <text x="66" y="596" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px">24時間、全国から閲覧可能に</text>
+  <text x="66" y="616" fill="#888" style="font-size:10px">検索・SNS・広告からの流入が発生</text>
+
+  <!-- Card 2 -->
+  <rect x="392" y="514" width="330" height="120" rx="12" ry="12" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".75"/>
+  <text x="412" y="540" fill="#aaa" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">BEFORE</text>
+  <text x="486" y="540" fill="#aaa" style="font-size:11px">営業が説明しないと伝わらない。</text>
+  <line x1="412" y1="552" x2="702" y2="552" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="412" y="572" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">AFTER</text>
+  <text x="412" y="596" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px">動画+比較表で事前に理解済み</text>
+  <text x="412" y="616" fill="#888" style="font-size:10px">営業の前に「欲しい」の状態をつくる</text>
+
+  <!-- Card 3 -->
+  <rect x="738" y="514" width="330" height="120" rx="12" ry="12" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".75"/>
+  <text x="758" y="540" fill="#aaa" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">BEFORE</text>
+  <text x="832" y="540" fill="#aaa" style="font-size:11px">費用がわからず問い合わせしにくい。</text>
+  <line x1="758" y1="552" x2="1048" y2="552" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="758" y="572" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">AFTER</text>
+  <text x="758" y="596" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px">シミュレーションで即試算</text>
+  <text x="758" y="616" fill="#888" style="font-size:10px">予算感がわかった上で問い合わせ → 成約率UP</text>
+
+  <!-- Card 4 -->
+  <rect x="1084" y="514" width="316" height="120" rx="12" ry="12" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".75"/>
+  <text x="1104" y="540" fill="#aaa" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">BEFORE</text>
+  <text x="1178" y="540" fill="#aaa" style="font-size:11px">購入後の接点がない。</text>
+  <line x1="1104" y1="552" x2="1380" y2="552" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="1104" y="572" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:9px;letter-spacing:.1em">AFTER</text>
+  <text x="1104" y="596" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px">会員ページで継続サポート</text>
+  <text x="1104" y="616" fill="#888" style="font-size:10px">動画・履歴で「買って終わり」にしない</text>
+
+  <!-- ===== Note ===== -->
+  <rect x="46" y="660" width="1354" height="40" rx="8" ry="8" fill="#f8f9fa"/>
+  <text x="66" y="685" fill="#999" style="font-size:10.5px">※ PV・問い合わせ件数は同業種のニッチB2Bサイトの実績に基づく目安です。Google広告（月額3〜5万円〜）の運用開始を前提に試算しています。</text>
+  <text x="1100" y="685" fill="#999" style="font-size:10.5px">広告運用のご相談も対応可能です。</text>
+
+  <!-- Bottom bar -->
+  <rect x="46" y="714" width="1354" height="44" rx="10" ry="10" fill="#0068b7"/>
+  <text x="720" y="742" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">公開後の運用・広告・改善まで、すべてワンストップでサポートします</text>
+
+  <!-- Footer -->
+  <rect y="768" width="1440" height="42" fill="#0068b7"/>
+  <text x="720" y="794" text-anchor="middle" fill="rgba(255,255,255,.4)" style="font-size:10px">Confidential — Prepared for 医療法人真誠会</text>
+</svg>

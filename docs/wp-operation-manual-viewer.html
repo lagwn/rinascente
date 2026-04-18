@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WordPress 更新マニュアル</title>
+<style>
+:root {
+  --primary: #0068B7;
+  --primary-dark: #003d6b;
+  --primary-light: #EBF8FF;
+  --red: #C53030;
+  --red-bg: #FFF5F5;
+  --red-border: #FC8181;
+  --orange: #DD6B20;
+  --green: #276749;
+  --green-bg: #F0FFF4;
+  --text: #1a202c;
+  --text-sub: #4a5568;
+  --text-muted: #718096;
+  --bg: #f7fafc;
+  --white: #fff;
+  --border: #e2e8f0;
+  --surface: #f7fafc;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Yu Gothic','Hiragino Sans',sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+/* Print */
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+@media print {
+  .page {
+    width: auto !important;
+    min-height: auto !important;
+    break-after: page;
+    box-shadow: none !important;
+    margin: 0 0 10mm !important;
+    border-radius: 0 !important;
+  }
+  .no-print { display: none !important; }
+  body { background: #fff; }
+  .content { padding: 26px 30px 30px !important; }
+  .cover { padding: 72px 30px 44px !important; }
+  .cover-footer,
+  .section-header { padding-left: 30px !important; padding-right: 30px !important; }
+  .two-col,
+  .side-layout { grid-template-columns: 1fr !important; }
+  thead th { white-space: normal !important; }
+}
+
+/* Page container */
+.page {
+  width: min(1200px, calc(100vw - 32px)); min-height: 800px; margin: 40px auto; padding: 0;
+  background: var(--white); border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0,0,0,.06); overflow: hidden;
+}
+
+/* Cover */
+.cover {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff; padding: 120px 80px 80px;
+}
+.cover h1 { font-size: 44px; font-weight: 700; letter-spacing: .03em; margin-bottom: 12px; }
+.cover .subtitle { font-size: 22px; opacity: .85; margin-bottom: 40px; }
+.cover .desc { font-size: 15px; opacity: .65; line-height: 2; }
+.cover-bar { width: 60px; height: 3px; background: #00a0e9; margin-bottom: 24px; border-radius: 2px; }
+.cover-footer { background: #002a4a; padding: 20px 80px; display: flex; justify-content: space-between; font-size: 13px; opacity: .5; }
+
+/* Section header */
+.section-header {
+  background: var(--primary); color: #fff; padding: 14px 80px;
+  display: flex; gap: 20px; align-items: center;
+}
+.section-header .num { font-size: 13px; font-weight: 600; letter-spacing: .12em; opacity: .8; }
+.section-header .title { font-size: 18px; font-weight: 700; }
+
+/* Content area */
+.content { padding: 40px 80px 50px; }
+.content h2 { font-size: 24px; font-weight: 700; color: var(--primary); margin-bottom: 20px; border-bottom: 2px solid var(--border); padding-bottom: 8px; }
+.content h3 { font-size: 19px; font-weight: 700; color: var(--primary); margin: 30px 0 14px; }
+.content h4 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; }
+.content p { font-size: 14px; color: var(--text-sub); margin-bottom: 10px; }
+
+/* Alert box */
+.alert {
+  border-radius: 10px; padding: 24px 28px; margin-bottom: 24px;
+}
+.alert-danger { background: var(--red-bg); border: 1px solid var(--red-border); }
+.alert-info { background: var(--primary-light); border: 1px solid #90CDF4; }
+.alert h3 { color: var(--red) !important; margin: 0 0 16px !important; }
+.alert-info h3 { color: var(--primary) !important; }
+
+/* Numbered items */
+.rule-item { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 14px; }
+.rule-num {
+  width: 32px; height: 32px; border-radius: 50%; background: var(--red);
+  color: #fff; font-size: 15px; font-weight: 700; display: flex; align-items: center;
+  justify-content: center; flex-shrink: 0;
+}
+.rule-text { font-size: 14px; font-weight: 600; padding-top: 5px; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin: 14px 0 24px; font-size: 13px; }
+thead th {
+  background: var(--primary); color: #fff; padding: 10px 14px;
+  text-align: left; font-weight: 600; white-space: nowrap;
+}
+tbody td { padding: 9px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th, td { word-break: break-word; }
+tbody tr:nth-child(even) { background: var(--surface); }
+tbody tr.highlight-red { background: var(--red-bg); }
+tbody tr.highlight-red td { color: var(--red); font-weight: 600; }
+tbody tr.highlight-blue { background: var(--primary-light); }
+tbody tr.highlight-blue td { color: var(--primary); }
+
+/* Screenshot */
+.screenshot {
+  border: 1px solid var(--border); border-radius: 8px; overflow: hidden;
+  margin: 14px 0 8px; background: var(--white);
+}
+.screenshot img { width: 100%; display: block; }
+.screenshot-caption { font-size: 12px; color: var(--text-muted); text-align: center; padding: 8px; background: var(--surface); }
+
+/* Two column layout */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 14px 0; }
+.two-col .screenshot { margin: 0; }
+
+/* Side layout: screenshot + info */
+.side-layout { display: grid; grid-template-columns: 55% 1fr; gap: 24px; margin: 14px 0; align-items: start; }
+.side-layout .screenshot { margin: 0; }
+
+/* Info box */
+.info-box {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 18px 20px;
+}
+.info-box h4 { margin-top: 0; }
+.info-box table { margin-bottom: 0; }
+
+/* Warn box */
+.warn-box {
+  background: var(--red-bg); border: 1px solid var(--red-border);
+  border-radius: 8px; padding: 14px 20px; margin: 14px 0;
+}
+.warn-box p { color: var(--red); font-weight: 600; font-size: 13px; margin: 0; }
+
+/* Steps */
+ol.steps { padding-left: 20px; margin: 10px 0 20px; }
+ol.steps li { font-size: 14px; color: var(--text-sub); margin-bottom: 6px; }
+
+/* TOC */
+.toc { columns: 2; column-gap: 40px; margin: 20px 0; }
+.toc a { display: block; font-size: 14px; color: var(--primary); text-decoration: none; padding: 4px 0; }
+.toc a:hover { text-decoration: underline; }
+
+/* Nav bar */
+.nav-bar {
+  position: sticky; top: 0; z-index: 100; background: var(--primary-dark);
+  padding: 8px 40px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
+}
+.nav-bar a { color: #fff; font-size: 12px; text-decoration: none; opacity: .7; padding: 4px 10px; border-radius: 4px; white-space: nowrap; }
+.nav-bar a:hover { opacity: 1; background: rgba(255,255,255,.1); }
+.nav-bar .brand { font-weight: 700; opacity: 1; font-size: 13px; margin-right: 12px; }
+
+@media (max-width: 1024px) {
+  .page {
+    width: min(100%, calc(100vw - 20px));
+    min-height: 0;
+    margin: 20px auto;
+  }
+  .cover {
+    padding: 64px 20px 36px;
+  }
+  .cover h1 {
+    font-size: 30px;
+    line-height: 1.45;
+  }
+  .cover .subtitle {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .cover .desc {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .cover-footer {
+    padding: 14px 20px;
+    gap: 8px 16px;
+    flex-wrap: wrap;
+  }
+  .section-header,
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .content {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+  .two-col,
+  .side-layout {
+    grid-template-columns: 1fr;
+  }
+  table {
+    table-layout: fixed;
+    font-size: 12px;
+  }
+  thead th {
+    white-space: normal;
+  }
+  .nav-bar {
+    padding: 8px 14px;
+    gap: 8px;
+  }
+  .nav-bar a {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Sticky nav -->
+<div class="nav-bar no-print">
+  <span class="brand" style="color:#fff;">更新マニュアル</span>
+  <a href="#sec1">1.早見表</a>
+  <a href="#sec2">2.ログイン</a>
+  <a href="#sec3">3.YUMEHOダッシュボード</a>
+  <a href="#sec4">4.導入事例</a>
+  <a href="#sec5">5.FAQ</a>
+  <a href="#sec6">6.導入拠点</a>
+  <a href="#sec7">7.価格/固定/設定</a>
+  <a href="#sec8">8.Rinascente</a>
+  <a href="#sec9">9.会員サイト運用</a>
+  <a href="#sec10">10.固定ページ/設定</a>
+  <a href="#faq">FAQ</a>
+</div>
+
+<!-- ═══════════ COVER ═══════════ -->
+<div class="page">
+  <div class="cover">
+    <div class="cover-bar"></div>
+    <h1>WordPress 更新マニュアル</h1>
+    <div class="subtitle">Rinascente / YUMEHO</div>
+    <div class="desc">
+      対象: サイト運用担当者 / 更新担当者<br>
+      対象サイト: Rinascente コーポレートサイト / YUMEHO 製品サイト<br>
+      スクリーンショット: 管理画面で撮影
+    </div>
+  </div>
+  <div class="cover-footer">
+    <span>CONFIDENTIAL — 2026年4月</span>
+    <span>Rinascente / YUMEHO</span>
+  </div>
+
+  <div class="content">
+    <div class="alert alert-danger">
+      <h3>最初に確認してください（3つの重要ルール）</h3>
+      <div class="rule-item">
+        <div class="rule-num">1</div>
+        <div class="rule-text">YUMEHO の<strong>会社概要</strong>は、YUMEHO 側ではなく <strong>Rinascente の「会社概要」</strong>で更新します。</div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-num">2</div>
+        <div class="rule-text">YUMEHO の<strong>価格・見積・シミュレーション</strong>の元データは、Rinascente の<strong>「製品マスター」</strong>で更新します。</div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-num">3</div>
+        <div class="rule-text">YUMEHO の<strong>会員向け動画・資料・サポート情報</strong>は、現在 <strong>Rinascente の「会員サイト運用」</strong>で一元管理します。</div>
+      </div>
+      <p style="margin-top:16px;font-size:13px;color:var(--red);">迷ったら → セクション1「更新場所の早見表」に戻ってください。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 1: 早見表 ═══════════ -->
+<div class="page" id="sec1">
+  <div class="section-header"><span class="num">SECTION 1</span><span class="title">更新場所の早見表</span></div>
+  <div class="content">
+    <h3>1.1 YUMEHO の主な更新箇所</h3>
+    <table>
+      <thead><tr><th>更新したい内容</th><th>管理画面の場所</th><th>反映先</th><th>反映</th><th>補足</th></tr></thead>
+      <tbody>
+        <tr><td>導入事例</td><td>導入事例</td><td>事例一覧 / 詳細 / トップ</td><td>即時</td><td>一番よく使う画面</td></tr>
+        <tr><td>FAQ本文</td><td>FAQ</td><td>FAQページ / トップFAQ</td><td>即時</td><td>質問1件 = 1投稿</td></tr>
+        <tr><td>FAQページ導入文</td><td>固定ページ &gt; FAQ</td><td>FAQページ上部</td><td>即時</td><td>FAQ投稿とは別</td></tr>
+        <tr><td>導入拠点</td><td>導入拠点</td><td>全国マップ / 導入件数</td><td>即時</td><td>住所から座標を自動生成</td></tr>
+        <tr><td>価格の確認</td><td>サイト更新 &gt; 価格参照（Rinascente編集）</td><td>参照のみ</td><td>参照のみ</td><td>実際の編集は Rinascente 側</td></tr>
+        <tr class="highlight-red"><td>価格・見積の元データ</td><td>Rinascente &gt; 製品マスター</td><td>価格 / 見積 / シミュレーション</td><td>最大15分</td><td>YUMEHO側では編集しない</td></tr>
+        <tr class="highlight-red"><td>会社概要の会社情報</td><td>Rinascente &gt; 会社概要</td><td>YUMEHO 会社概要ページ</td><td>即時</td><td>固定ページ本文ではない</td></tr>
+        <tr><td>プライバシーポリシー</td><td>固定ページ</td><td>該当ページ</td><td>即時</td><td>本文編集がそのまま反映</td></tr>
+        <tr><td>利用規約</td><td>固定ページ</td><td>該当ページ</td><td>即時</td><td>本文編集がそのまま反映</td></tr>
+        <tr><td>特定商取引法に基づく表記</td><td>固定ページ &gt; 特定商取引法に基づく表記</td><td>該当ページ</td><td>即時</td><td>本文編集がそのまま反映</td></tr>
+        <tr><td>画像・PDF</td><td>メディア</td><td>各投稿で使用</td><td>即時</td><td>共通のアップロード画面</td></tr>
+      </tbody>
+    </table>
+
+    <h3>1.2 Rinascente の主な更新箇所</h3>
+    <table>
+      <thead><tr><th>更新したい内容</th><th>管理画面の場所</th><th>反映先</th><th>反映</th><th>補足</th></tr></thead>
+      <tbody>
+        <tr><td>ニュース</td><td>ニュース</td><td>Press / ニュース詳細 / トップ</td><td>即時</td><td>Featured は1件のみ強調</td></tr>
+        <tr><td>コラム</td><td>コラム</td><td>コラム一覧 / 詳細</td><td>即時</td><td>YUMEHO連携設定あり</td></tr>
+        <tr class="highlight-blue"><td>YUMEHOにも出すコラム</td><td>コラム の連携設定</td><td>YUMEHO コラム一覧 / 詳細</td><td>最大15分</td><td>REST連携 + キャッシュ</td></tr>
+        <tr><td>会社情報 / サポート窓口</td><td>会社概要</td><td>Rinascente + YUMEHO</td><td>即時</td><td>両サイト共通の元データ</td></tr>
+        <tr><td>製品マスター</td><td>会員サイト運用 &gt; 製品マスター</td><td>YUMEHO 価格 / 見積</td><td>最大15分</td><td>価格の元管理画面</td></tr>
+        <tr><td>会員限定動画 / 資料 / サポート</td><td>会員サイト運用</td><td>会員ページ</td><td>即時</td><td>YouTube / PDF 等</td></tr>
+        <tr><td>プライバシーポリシー / 利用規約</td><td>固定ページ</td><td>該当ページ</td><td>即時</td><td>本文編集がそのまま反映</td></tr>
+      </tbody>
+    </table>
+
+    <h3>1.3 CMSで更新できない項目</h3>
+    <table>
+      <thead><tr><th>項目</th><th>対応方法</th></tr></thead>
+      <tbody>
+        <tr><td>YUMEHO 製品紹介 / 導入の流れ / 補助金ガイド / お問い合わせの構造変更</td><td>開発者へ依頼</td></tr>
+        <tr><td>Rinascente Corporate Identity / お問い合わせの構造変更</td><td>開発者へ依頼</td></tr>
+        <tr><td>Rinascente 導入事例ページ</td><td>現在の管理画面更新対象外。開発者へ依頼</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 2: ログイン ═══════════ -->
+<div class="page" id="sec2">
+  <div class="section-header"><span class="num">SECTION 2</span><span class="title">ログイン方法</span></div>
+  <div class="content">
+    <div class="side-layout">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/01-login.png" alt="ログイン画面">
+        <div class="screenshot-caption">ログイン画面</div>
+      </div>
+      <div>
+        <ol class="steps">
+          <li>dev環境では、まず各サイトの <code>/wp-admin/</code> を開きます。</li>
+          <li>公開までは dev環境にベーシック認証がかかっているため、ブラウザの認証ダイアログが出たら共有の ID / PW を入力します。</li>
+          <li>ユーザー名とパスワードを入力します。</li>
+          <li>「ログイン」を押します。</li>
+          <li>本番環境で2段階認証が有効な場合は、認証コード入力まで進みます。</li>
+        </ol>
+        <div class="info-box">
+          <h4>URL の考え方</h4>
+          <table>
+            <thead><tr><th>環境</th><th>Rinascente</th><th>YUMEHO</th><th>補足</th></tr></thead>
+            <tbody>
+              <tr><td>dev環境（確認用）</td><td>https://corp-dev.rinascenteyumeho.jp/wp-admin/</td><td>https://dev.rinascenteyumeho.jp/wp-admin/</td><td>公開まではベーシック認証あり</td></tr>
+              <tr><td>本番環境ではこちら</td><td>https://onerinascente.co.jp/wp-admin/</td><td>https://rinascenteyumeho.jp/wp-admin/</td><td>公開後に使用</td></tr>
+            </tbody>
+          </table>
+          <p style="margin:8px 0 0;">dev環境は公開までベーシック認証で保護されています。WordPress のログイン画面が出る前に、共有のベーシック認証 ID / PW の入力が必要です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 3: YUMEHO ダッシュボード ═══════════ -->
+<div class="page" id="sec3">
+  <div class="section-header"><span class="num">SECTION 3</span><span class="title">YUMEHO — サイト更新ダッシュボード</span></div>
+  <div class="content">
+    <p>この画面は YUMEHO の更新導線をまとめた入口です。迷ったらまずここを開いてください。</p>
+    <div class="side-layout">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/02-yumeho-dashboard.png" alt="YUMEHO ダッシュボード">
+        <div class="screenshot-caption">YUMEHO サイト更新ダッシュボード</div>
+      </div>
+      <div class="info-box">
+        <h4>ダッシュボードの使い分け</h4>
+        <table>
+          <thead><tr><th>導線</th><th>使うとき</th></tr></thead>
+          <tbody>
+            <tr><td>導入事例</td><td>施設の事例を追加・修正</td></tr>
+            <tr><td>FAQ</td><td>よくある質問を追加・修正</td></tr>
+            <tr><td>導入拠点</td><td>地図や導入件数の元データを更新</td></tr>
+            <tr><td>固定ページ</td><td>法務ページ・FAQ導入文を変更</td></tr>
+            <tr><td>テーマ設定</td><td>GA4・Slack等のサイト全体設定</td></tr>
+            <tr class="highlight-red"><td>価格参照</td><td>確認のみ。編集はRinascente側</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 4: 導入事例 ═══════════ -->
+<div class="page" id="sec4">
+  <div class="section-header"><span class="num">SECTION 4</span><span class="title">YUMEHO — 導入事例の更新</span></div>
+  <div class="content">
+    <h3>4.1 一覧画面</h3>
+    <div class="screenshot">
+      <img src="wp-operation-manual-assets/03-yumeho-case-list.png" alt="導入事例一覧">
+      <div class="screenshot-caption">YUMEHO 導入事例 一覧画面</div>
+    </div>
+    <ol class="steps">
+      <li>左メニューの「導入事例」を開きます。</li>
+      <li>既存記事を修正する場合はタイトルをクリック。新規追加は「新規追加」ボタン。</li>
+      <li>一覧では サムネイル・タイトル・概要・フラグ（おすすめ/非表示）を確認します。</li>
+    </ol>
+
+    <h3>4.2 編集画面</h3>
+    <div class="screenshot">
+      <img src="wp-operation-manual-assets/04-yumeho-case-edit.png" alt="導入事例編集">
+      <div class="screenshot-caption">YUMEHO 導入事例 編集画面（統一入力フォーム）</div>
+    </div>
+
+    <h4>入力項目の意味</h4>
+    <table>
+      <thead><tr><th>セクション</th><th>項目</th><th>使い方</th></tr></thead>
+      <tbody>
+        <tr><td>① 基本情報</td><td>施設名 / 導入年月 / 所在地 / 対象製品 / 施設種別</td><td>一覧・詳細の主表示に使う基本情報</td></tr>
+        <tr><td>② メイン画像</td><td>画像を選択 / 画像の表示方法</td><td>一覧サムネイルと詳細の代表画像</td></tr>
+        <tr><td>③ 課題・決め手・変化</td><td>課題 / 決め手 / 変化</td><td>公開ページの本文にそのまま反映</td></tr>
+        <tr><td>④ 数値で見る変化</td><td>ラベル / 値（3件まで）</td><td>成果を数字で訴求</td></tr>
+        <tr><td>⑤ 経緯・お客様の声</td><td>経緯 / お客様の声 / 発言者</td><td>詳細ページの補足情報</td></tr>
+        <tr><td>⑥ 表示設定</td><td>おすすめ事例 / 一覧非表示</td><td>トップ優先表示 or 一覧から除外</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert alert-info">
+      <h3 style="color:var(--primary)!important;">更新時の判断基準</h3>
+      <p>最低限 <strong>施設名・対象製品・施設種別・導入年月・メイン画像・課題・決め手・変化</strong> を埋めてください。<br>画像だけ差し替えたい場合も、本文を消さずに②メイン画像だけ更新して問題ありません。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 5: FAQ ═══════════ -->
+<div class="page" id="sec5">
+  <div class="section-header"><span class="num">SECTION 5</span><span class="title">YUMEHO — FAQ の更新</span></div>
+  <div class="content">
+    <div class="two-col">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/05-yumeho-faq-list.png" alt="FAQ一覧">
+        <div class="screenshot-caption">FAQ 一覧画面</div>
+      </div>
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/06-yumeho-faq-edit.png" alt="FAQ編集">
+        <div class="screenshot-caption">FAQ 編集画面</div>
+      </div>
+    </div>
+    <ol class="steps">
+      <li>タイトル欄に<strong>質問</strong>を入力（1投稿 = 1質問）。</li>
+      <li>本文エリアに<strong>回答</strong>を入力します。</li>
+      <li>上部のカードで「FAQカテゴリ」を選びます。</li>
+      <li>「並び順」を設定します（小さい数字ほど上に表示。10, 20, 30...がおすすめ）。</li>
+      <li>「公開」または「更新」を押します。</li>
+    </ol>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 6: 導入拠点 ═══════════ -->
+<div class="page" id="sec6">
+  <div class="section-header"><span class="num">SECTION 6</span><span class="title">YUMEHO — 導入拠点の更新</span></div>
+  <div class="content">
+    <div class="two-col">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/07-yumeho-installation-list.png" alt="導入拠点一覧">
+        <div class="screenshot-caption">導入拠点 一覧画面</div>
+      </div>
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/08-yumeho-installation-edit.png" alt="導入拠点編集">
+        <div class="screenshot-caption">導入拠点 編集画面</div>
+      </div>
+    </div>
+    <h4>入力ルール</h4>
+    <table>
+      <thead><tr><th>項目</th><th>必須</th><th>説明</th></tr></thead>
+      <tbody>
+        <tr><td>施設名</td><td>必須</td><td>投稿タイトルに入力</td></tr>
+        <tr><td>対象製品</td><td>必須</td><td>地図の製品別集計に使う</td></tr>
+        <tr><td>都道府県</td><td>必須</td><td>位置計算の基準</td></tr>
+        <tr><td>住所</td><td>必須</td><td>位置計算の基準</td></tr>
+        <tr><td>並び順</td><td>必須</td><td>一覧表示順</td></tr>
+        <tr><td>地図に表示する / 件数に含める</td><td>任意</td><td>オフで非表示 or カウント対象外</td></tr>
+        <tr><td>緯度 / 経度</td><td>任意</td><td>自動位置がずれたときだけ使う</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 7: 価格参照 / メディア / 固定ページ ═══════════ -->
+<div class="page" id="sec7">
+  <div class="section-header"><span class="num">SECTION 7</span><span class="title">YUMEHO — 価格参照 / メディア / 固定ページ / 設定</span></div>
+  <div class="content">
+    <h3>7.1 価格参照画面（確認のみ）</h3>
+    <div class="side-layout">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/09-yumeho-pricing-reference.png" alt="価格参照">
+        <div class="screenshot-caption">価格参照画面（確認専用）</div>
+      </div>
+      <div>
+        <div class="warn-box">
+          <p>この画面は確認用です。YUMEHO 側で価格を直接編集する画面ではありません。</p>
+          <p style="margin-top:6px;">実際の編集先: Rinascente &gt; 会員サイト運用 &gt; 製品マスター</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>7.2 メディアライブラリ</h3>
+    <div class="side-layout">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/10-yumeho-media-library.png" alt="メディアライブラリ">
+        <div class="screenshot-caption">メディアライブラリ</div>
+      </div>
+      <div class="info-box">
+        <h4>推奨画像サイズ</h4>
+        <p>導入事例・ニュース代表画像: 横長・明るめ</p>
+        <p>PDF資料: ファイル名を分かりやすくする</p>
+        <p>画像は EWWW Image Optimizer で自動圧縮されます</p>
+      </div>
+    </div>
+
+    <h3>7.3 固定ページ</h3>
+    <div class="two-col">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/11-yumeho-fixed-pages.png" alt="固定ページ一覧">
+        <div class="screenshot-caption">固定ページ一覧</div>
+      </div>
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/12-yumeho-legal-page-edit.png" alt="法務ページ編集">
+        <div class="screenshot-caption">法務ページ編集画面</div>
+      </div>
+    </div>
+    <table>
+      <thead><tr><th>固定ページ</th><th>本文編集が反映されるか</th><th>更新方法</th></tr></thead>
+      <tbody>
+        <tr><td>FAQ</td><td>一部反映</td><td>ページ上部導入文は本文、質問一覧は「FAQ」投稿で更新</td></tr>
+        <tr><td>プライバシーポリシー</td><td>反映される</td><td>本文を編集</td></tr>
+        <tr><td>利用規約</td><td>反映される</td><td>本文を編集</td></tr>
+        <tr><td>特定商取引法に基づく表記</td><td>反映される</td><td>本文を編集</td></tr>
+        <tr><td>会社概要</td><td>基本反映しない</td><td>Rinascente &gt; 会社概要 を更新</td></tr>
+        <tr><td>トップページ / 製品紹介 / 導入の流れ / 価格・見積 / 補助金ガイド / お問い合わせ</td><td>基本反映しない</td><td>テンプレートまたは別機能を更新</td></tr>
+      </tbody>
+    </table>
+    <div class="warn-box">
+      <p>固定ページ本文を編集しても反映されないページがあります。法務ページ（プライバシーポリシー・利用規約・特商法）以外は、セクション1の早見表を確認してください。</p>
+    </div>
+
+    <h3>7.4 テーマ設定（YUMEHO）</h3>
+    <p>YUMEHO 側の「テーマ設定」は <strong>外観 &gt; カスタマイズ</strong> から開きます。操作画面の構成は Rinascente 側と同じで、YUMEHO では次の項目を管理します。</p>
+    <table>
+      <thead><tr><th>セクション</th><th>設定項目</th></tr></thead>
+      <tbody>
+        <tr><td>アナリティクス設定</td><td>GA4 Measurement ID / GTM Container ID / Slack Webhook URL</td></tr>
+        <tr><td>アナリティクス設定 または 導入拠点マップ設定</td><td>Google Maps API Key</td></tr>
+        <tr><td>関連サイト URL</td><td>コーポレートサイト URL / Basic認証 ID・PW</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 8: Rinascente ═══════════ -->
+<div class="page" id="sec8">
+  <div class="section-header"><span class="num">SECTION 8</span><span class="title">Rinascente — ダッシュボード / ニュース / コラム / 会社概要</span></div>
+  <div class="content">
+    <h3>8.1 サイト更新ダッシュボード</h3>
+    <div class="screenshot">
+      <img src="wp-operation-manual-assets/13-rinascente-dashboard.png" alt="Rinascente ダッシュボード">
+      <div class="screenshot-caption">Rinascente サイト更新ダッシュボード</div>
+    </div>
+
+    <h3>8.2 ニュースの更新</h3>
+    <div class="two-col">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/14-rinascente-news-list.png" alt="ニュース一覧">
+        <div class="screenshot-caption">ニュース一覧</div>
+      </div>
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/15-rinascente-news-edit.png" alt="ニュース編集">
+        <div class="screenshot-caption">ニュース編集画面</div>
+      </div>
+    </div>
+    <ol class="steps">
+      <li>タイトル・本文・一覧説明文・代表画像・カテゴリーを入力して公開します。</li>
+      <li>「Press の Featured に表示する」をONにすると、Press ページの先頭に大きく表示されます（1件のみ）。</li>
+    </ol>
+
+    <h3>8.3 コラムの更新</h3>
+    <div class="two-col">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/16-rinascente-column-list.png" alt="コラム一覧">
+        <div class="screenshot-caption">コラム一覧（YUMEHO連動ステータス表示）</div>
+      </div>
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/17-rinascente-column-edit.png" alt="コラム編集">
+        <div class="screenshot-caption">コラム編集画面（YUMEHO連携設定）</div>
+      </div>
+    </div>
+    <div class="alert alert-info">
+      <h3 style="color:var(--primary)!important;">YUMEHO 連携のポイント</h3>
+      <p>「YUMEHO サイトでも公開する」をONにすると、同じ本文が YUMEHO サイトにも表示されます。<br>反映は最大15分。YUMEHO側には canonical タグが設定され、重複コンテンツにはなりません。</p>
+    </div>
+
+    <h3>8.4 会社概要の更新</h3>
+    <div class="screenshot">
+      <img src="wp-operation-manual-assets/18-rinascente-company-profile.png" alt="会社概要">
+      <div class="screenshot-caption">会社概要 編集画面（Rinascente + YUMEHO 共通の元データ）</div>
+    </div>
+    <div class="warn-box">
+      <p>ここで更新した会社情報は、Rinascente と YUMEHO の両サイトに反映されます。</p>
+      <p>YUMEHO 側の固定ページ本文を編集しても会社情報は変わりません。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 9: 会員サイト運用 ═══════════ -->
+<div class="page" id="sec9">
+  <div class="section-header"><span class="num">SECTION 9</span><span class="title">Rinascente — 会員サイト運用</span></div>
+  <div class="content">
+    <h3>9.1 会員サイト運用ダッシュボード</h3>
+    <div class="screenshot">
+      <img src="wp-operation-manual-assets/19-rinascente-member-dashboard.png" alt="会員ダッシュボード">
+      <div class="screenshot-caption">会員サイト運用ダッシュボード</div>
+    </div>
+
+    <h3>9.2 製品マスター（価格の元データ）</h3>
+    <div class="screenshot">
+      <img src="wp-operation-manual-assets/20-rinascente-product-master-edit.png" alt="製品マスター">
+      <div class="screenshot-caption">製品マスター編集画面（YUMEHO 価格・見積・シミュレーションの元データ）</div>
+    </div>
+    <p>最低限「どのサイトの商品か」「区分」「お客様向け商品名」「短い呼び名」「価格（税別）」を入力します。<br>ここの変更は YUMEHO の価格表・見積・シミュレーションに自動反映されます（最大15分）。</p>
+
+    <h3>9.3 契約・購入履歴</h3>
+    <div class="screenshot">
+      <img src="wp-operation-manual-assets/21-rinascente-contract-edit.png" alt="契約編集">
+      <div class="screenshot-caption">契約・購入履歴 編集画面</div>
+    </div>
+
+    <h3>9.4 会員限定動画</h3>
+    <div class="side-layout">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/22-rinascente-member-video-edit.png" alt="動画編集">
+        <div class="screenshot-caption">会員限定動画 編集画面</div>
+      </div>
+      <div class="info-box">
+        <h4>動画登録のルール</h4>
+        <table>
+          <thead><tr><th>項目</th><th>ルール</th></tr></thead>
+          <tbody>
+            <tr><td>YouTube入力</td><td>共有URLを貼っても可。保存時に動画IDへ整形</td></tr>
+            <tr><td>表示順</td><td>小さい数字ほど上に表示</td></tr>
+            <tr><td>対象製品</td><td>空欄なら共通表示</td></tr>
+            <tr><td>公開期間</td><td>開始日/終了日で期間限定公開が可能</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h3>9.5 会員限定資料</h3>
+    <div class="side-layout">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/23-rinascente-member-document-edit.png" alt="資料編集">
+        <div class="screenshot-caption">会員限定資料 編集画面</div>
+      </div>
+      <div class="info-box">
+        <h4>資料登録のルール</h4>
+        <p>現在は右下の矢印で切り替えず、資料名と資料設定を1画面で上から入力します。</p>
+        <p>`資料ファイル` で PDF / Word を選ぶと、資料名が空欄なら自動補完されます。</p>
+        <p>`表示設定` では `カテゴリ` `対象製品` `更新日` を入れ、`公開イメージ` で見え方を確認します。</p>
+        <p>補助金関連だけ `制度名` と `認定ステータス` を追加し、必要なときだけ `公開期間` を設定します。</p>
+      </div>
+    </div>
+
+    <h3>9.6 サポート情報</h3>
+    <div class="side-layout">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/24-rinascente-member-notice-edit.png" alt="サポート情報">
+        <div class="screenshot-caption">サポート情報 編集画面</div>
+      </div>
+      <div class="info-box">
+        <h4>表示タイプの選び方</h4>
+        <p>「重要」「保守・運用」「お知らせ」「一般」から選択。</p>
+        <p>表示タイプにより会員ページでの見え方が変わります。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 10: 固定ページ / カスタマイザー ═══════════ -->
+<div class="page" id="sec10">
+  <div class="section-header"><span class="num">SECTION 10</span><span class="title">Rinascente — 固定ページ / テーマ設定</span></div>
+  <div class="content">
+    <h3>10.1 固定ページ</h3>
+    <div class="two-col">
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/25-rinascente-fixed-pages.png" alt="固定ページ">
+        <div class="screenshot-caption">Rinascente 固定ページ一覧</div>
+      </div>
+      <div class="screenshot">
+        <img src="wp-operation-manual-assets/26-rinascente-legal-page-edit.png" alt="法務ページ">
+        <div class="screenshot-caption">法務ページ編集画面</div>
+      </div>
+    </div>
+    <table>
+      <thead><tr><th>固定ページ</th><th>本文編集が反映されるか</th><th>更新方法</th></tr></thead>
+      <tbody>
+        <tr><td>プライバシーポリシー / 利用規約</td><td>反映される</td><td>本文を編集</td></tr>
+        <tr><td>Press</td><td>反映しない</td><td>「ニュース」投稿で更新</td></tr>
+        <tr><td>Corporate Identity</td><td>一部のみ</td><td>「会社概要」更新 + テンプレート</td></tr>
+        <tr><td>トップページ / お問い合わせ</td><td>基本反映しない</td><td>テンプレートまたは別機能</td></tr>
+      </tbody>
+    </table>
+
+    <h3>10.2 テーマカスタマイザー</h3>
+    <div class="screenshot">
+      <img src="wp-operation-manual-assets/27-rinascente-customizer.png" alt="カスタマイザー">
+      <div class="screenshot-caption">テーマカスタマイザー（GA4・Slack・関連サイトURL 等のサイト全体設定）</div>
+    </div>
+    <p>「外観 &gt; カスタマイズ」から開きます。この画面はサイト全体に影響するため、変更目的がはっきりしているときだけ更新します。</p>
+    <table>
+      <thead><tr><th>セクション</th><th>設定項目</th></tr></thead>
+      <tbody>
+        <tr><td>アナリティクス設定</td><td>GA4 測定ID / GTM コンテナID / Slack Webhook URL</td></tr>
+        <tr><td>関連サイト URL</td><td>YUMEHO サイト URL / Basic認証 ID・PW</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════ FAQ ═══════════ -->
+<div class="page" id="faq">
+  <div class="section-header"><span class="num">FAQ</span><span class="title">よくある迷いどころ</span></div>
+  <div class="content">
+    <div class="alert alert-danger" style="margin-bottom:16px;">
+      <h4 style="color:var(--red);margin:0 0 4px;">Q: YUMEHO の会社概要を直したい</h4>
+      <p style="color:var(--text-sub);margin:0;">A: YUMEHO &gt; 固定ページではなく、<strong>Rinascente &gt; 会社概要</strong> を更新します。</p>
+    </div>
+    <div class="alert alert-danger" style="margin-bottom:16px;">
+      <h4 style="color:var(--red);margin:0 0 4px;">Q: YUMEHO の価格を変えたい</h4>
+      <p style="color:var(--text-sub);margin:0;">A: YUMEHO &gt; 価格参照は確認画面です。<strong>Rinascente &gt; 会員サイト運用 &gt; 製品マスター</strong> を更新します。</p>
+    </div>
+    <div class="alert alert-info" style="margin-bottom:16px;">
+      <h4 style="color:var(--primary);margin:0 0 4px;">Q: FAQページに見出し文を追加したい</h4>
+      <p style="color:var(--text-sub);margin:0;">A: FAQ質問一覧は「FAQ」投稿で更新。ページ上部の導入文は <strong>固定ページ &gt; FAQ</strong> で更新します。</p>
+    </div>
+    <div class="alert alert-info" style="margin-bottom:16px;">
+      <h4 style="color:var(--primary);margin:0 0 4px;">Q: 固定ページを編集したのに公開画面が変わらない</h4>
+      <p style="color:var(--text-sub);margin:0;">A: そのページはテンプレート固定の可能性が高いです。<strong>セクション1の早見表</strong>を確認してください。</p>
+    </div>
+    <div class="alert alert-info" style="margin-bottom:16px;">
+      <h4 style="color:var(--primary);margin:0 0 4px;">Q: 会員向けコンテンツを YUMEHO 側で探してしまう</h4>
+      <p style="color:var(--text-sub);margin:0;">A: 現在は <strong>Rinascente 側</strong> の「会員サイト運用」で更新します。</p>
+    </div>
+
+    <h3>開発者への依頼が必要なケース</h3>
+    <ol class="steps">
+      <li>ページのレイアウト自体を変えたい</li>
+      <li>CTA ボタンやブロック構成を追加したい</li>
+      <li>フォーム仕様を変えたい</li>
+      <li>テキストではなく、ページの表示ロジックを変えたい</li>
+      <li>固定ページ本文が反映されないテンプレートページを変更したい</li>
+    </ol>
+
+    <div class="alert alert-danger" style="margin-top:30px;">
+      <p style="font-size:15px;font-weight:700;color:var(--red);margin:0;">更新先が分からなくなった場合 →「固定ページ本文を直す前に、セクション1の早見表を見る」を基本ルールにしてください。</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

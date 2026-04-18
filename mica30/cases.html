@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    <title>導入事例 | MICA30</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uor0jvw.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=20260409sp">
+    <link rel="stylesheet" href="assets/css/site-switcher.css">
+    <style>
+        /* Stats Bar */
+        .stats-bar {
+            background: linear-gradient(135deg, #003d4d 0%, #005f73 100%);
+            padding: 40px 0;
+        }
+        .stats-bar__inner {
+            display: flex;
+            justify-content: center;
+            gap: 64px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .stats-bar__item {
+            text-align: center;
+        }
+        .stats-bar__number {
+            font-family: var(--font-logo);
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        .stats-bar__label {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.65);
+            letter-spacing: 0.06em;
+            margin-top: 4px;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 56px;
+        }
+        .tab-btn {
+            padding: 10px 28px;
+            border: 1px solid rgba(0,0,0,0.12);
+            background: #fff;
+            cursor: pointer;
+            border-radius: 0;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--text-color);
+            transition: background 0.2s, color 0.2s;
+        }
+        .tab-btn.active {
+            background: #005f73;
+            color: #fff;
+            border-color: #005f73;
+        }
+        .tab-btn:hover:not(.active) {
+            background: rgba(0,95,115,0.05);
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* Case card */
+        .case-card {
+            display: grid;
+            grid-template-columns: 5fr 6fr;
+            gap: 0;
+            align-items: stretch;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            margin-bottom: 48px;
+        }
+        .case-card:last-child { margin-bottom: 0; }
+
+        .case-img-wrap {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(0,95,115,0.06) 0%, rgba(0,95,115,0.02) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 420px;
+        }
+        .case-img-wrap__icon {
+            text-align: center;
+        }
+        .case-img-wrap__icon svg {
+            opacity: 0.18;
+        }
+        .case-img-wrap__label {
+            display: block;
+            margin-top: 16px;
+            font-family: var(--font-logo);
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            color: #005f73;
+            opacity: 0.7;
+        }
+
+        .case-body {
+            padding: 40px 44px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .case-tag {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #005f73;
+            background: rgba(0,95,115,0.07);
+            border-radius: 3px;
+            padding: 4px 12px;
+            margin-bottom: 14px;
+            align-self: flex-start;
+        }
+
+        .case-headline {
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
+            font-weight: 700;
+            color: var(--text-color);
+            line-height: 1.5;
+            margin-bottom: 6px;
+            letter-spacing: -0.01em;
+        }
+
+        .case-facility {
+            font-size: 0.82rem;
+            color: rgba(0,0,0,0.78);
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .case-meta {
+            color: rgba(0,0,0,0.7);
+            margin-bottom: 24px;
+            font-size: 0.72rem;
+            letter-spacing: 0.06em;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .case-section-title {
+            font-weight: 700;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            color: #005f73;
+            margin-top: 16px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            border-left: 2px solid #005f73;
+        }
+        .case-section-title:first-of-type { margin-top: 0; }
+
+        .case-body p {
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: rgba(0,0,0,0.85);
+            margin-bottom: 0;
+        }
+
+        .case-pullquote {
+            margin: 20px 0 0;
+            padding: 16px 20px;
+            background: rgba(0,95,115,0.04);
+            border-left: 3px solid #005f73;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.88rem;
+            font-weight: 500;
+            color: #005f73;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 860px) {
+            .stats-bar__inner {
+                flex-direction: column;
+                gap: 24px;
+                padding: 0 20px;
+            }
+            .case-card {
+                grid-template-columns: 1fr;
+            }
+            .case-img-wrap { min-height: 200px; }
+            .case-body { padding: 28px 24px; }
+            .tabs { flex-wrap: wrap; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Marquee -->
+    <div class="top-marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>MICA30 INJECTOR</span>
+            <span>CONTRAST AGENT</span>
+            <span>ANGIOGRAPHY SUPPORT</span>
+            <span>MEDICAL GRADE</span>
+            <span>PRECISION INJECTION</span>
+            <span>BUBBLE DETECTION</span>
+            <span>MICA30 INJECTOR</span>
+            <span>CONTRAST AGENT</span>
+            <span>ANGIOGRAPHY SUPPORT</span>
+            <span>MEDICAL GRADE</span>
+            <span>PRECISION INJECTION</span>
+            <span>BUBBLE DETECTION</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="header-brand">
+                <a href="index.html" class="logo" aria-label="MICA30 ホームへ">MICA30</a>
+                <div class="site-switcher">
+                    <a href="../rinascente/index.html" class="ss-link ss-corp">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                        Corporate
+                    </a>
+                    <span class="ss-divider"></span>
+                    <a href="../yumeho/index.html" class="ss-link ss-product">YUMEHO</a>
+                    <a href="index.html" class="ss-link ss-product active">MICA30</a>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">トップ</a></li>
+                    <li><a href="product.html" class="nav-link">製品詳細</a></li>
+                    <li><a href="voices.html" class="nav-link">ご利用施設の声</a></li>
+                    <li><a href="cases.html" class="nav-link active">導入事例</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="price.html" class="nav-link">価格・導入</a></li>
+                    <li><a href="flow.html" class="nav-link">導入の流れ</a></li>
+                    <li><a href="company.html" class="nav-link">会社概要</a></li>
+                    <li style="margin-left:12px;"><a href="contact.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem; white-space: nowrap;">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- SP ドロワーメニュー -->
+    <div class="sp-drawer" id="spDrawer" aria-hidden="true">
+        <nav class="sp-drawer__nav">
+            <a href="index.html" class="sp-drawer__link">トップ</a>
+            <a href="product.html" class="sp-drawer__link">製品詳細</a>
+            <a href="voices.html" class="sp-drawer__link">ご利用施設の声</a>
+            <a href="cases.html" class="sp-drawer__link">導入事例</a>
+            <a href="faq.html" class="sp-drawer__link">FAQ</a>
+            <a href="price.html" class="sp-drawer__link">価格・導入</a>
+            <a href="flow.html" class="sp-drawer__link">導入の流れ</a>
+            <a href="company.html" class="sp-drawer__link">会社概要</a>
+        </nav>
+        <div class="sp-drawer__sites">
+            <a href="../rinascente/index.html" class="sp-drawer__site">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                Corporate
+            </a>
+            <a href="../yumeho/index.html" class="sp-drawer__site">YUMEHO</a>
+            <a href="index.html" class="sp-drawer__site sp-drawer__site--active">MICA30</a>
+        </div>
+        <div class="sp-drawer__footer">
+            <a href="contact.html" class="btn btn-primary sp-drawer__cta">お問い合わせ</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero bg-light">
+        <div class="container text-center">
+            <p class="hero-en">CASES</p>
+            <h1 class="hero-title">導入事例</h1>
+            <p class="hero-subtitle">MICA30を導入いただいた施設での課題解決と運用成果をご紹介します。</p>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stats-bar__inner">
+            <div class="stats-bar__item">
+                <div class="stats-bar__number">8施設</div>
+                <div class="stats-bar__label">導入実績</div>
+            </div>
+            <div class="stats-bar__item">
+                <div class="stats-bar__number">98%</div>
+                <div class="stats-bar__label">満足度</div>
+            </div>
+            <div class="stats-bar__item">
+                <div class="stats-bar__number">5都府県</div>
+                <div class="stats-bar__label">設置エリア</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container" style="max-width: 960px; margin: 0 auto;">
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="general">総合病院</button>
+                <button class="tab-btn" data-tab="cardio">循環器専門病院</button>
+                <button class="tab-btn" data-tab="clinic">クリニック</button>
+            </div>
+
+            <!-- Content: 総合病院 -->
+            <div id="general" class="tab-content active">
+                <article class="case-card animate-on-scroll">
+                    <div class="case-img-wrap">
+                        <div class="case-img-wrap__icon">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#005f73" stroke-width="1"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-4h6v4"/><path d="M9 9h1"/><path d="M14 9h1"/><path d="M9 13h1"/><path d="M14 13h1"/></svg>
+                            <span class="case-img-wrap__label">CASE 01</span>
+                        </div>
+                    </div>
+                    <div class="case-body">
+                        <span class="case-tag">MICA30</span>
+                        <h2 class="case-headline">0.05mL単位の精密制御が、日々の検査品質を変えた。</h2>
+                        <div class="case-facility">A総合病院 放射線科 様</div>
+                        <div class="case-meta">2024年6月導入 ─ 鳥取県</div>
+                        <div class="case-section-title">課題</div>
+                        <p>従来の注入装置では造影剤の微量調整が難しく、患者ごとの最適な注入量設定に限界があった。検査中のリアルタイムなパラメータ確認も困難で、技師の経験に依存する運用が続いていた。</p>
+                        <div class="case-section-title">決め手</div>
+                        <p>0.05mL単位の精密制御とベッドサイドディスプレイによるリアルタイム視認性。医療機器認証取得済みという信頼性も評価。</p>
+                        <div class="case-section-title">変化</div>
+                        <p>検査ごとの造影剤使用量を最適化でき、画像診断の品質が安定。技師全員の習熟も早く、属人的な運用から脱却できた。</p>
+                        <div class="case-pullquote">「精密さと視認性の両立が、検査の質を底上げしてくれました」── 診療放射線技師</div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Content: 循環器専門病院 -->
+            <div id="cardio" class="tab-content">
+                <article class="case-card animate-on-scroll">
+                    <div class="case-img-wrap">
+                        <div class="case-img-wrap__icon">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#005f73" stroke-width="1"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                            <span class="case-img-wrap__label">CASE 02</span>
+                        </div>
+                    </div>
+                    <div class="case-body">
+                        <span class="case-tag">MICA30</span>
+                        <h2 class="case-headline">バリアブルモードが、複雑なインターベンションを支える。</h2>
+                        <div class="case-facility">B循環器専門病院 様</div>
+                        <div class="case-meta">2024年10月導入 ─ 島根県</div>
+                        <div class="case-section-title">課題</div>
+                        <p>冠動脈造影やPCI中のリアルタイムな注入速度調整が必要だが、既存装置ではプリセット変更に手間がかかり、術者のリズムに合わせた注入が困難だった。</p>
+                        <div class="case-section-title">決め手</div>
+                        <p>バリアブルモードでの注入速度リアルタイム変更機能と、2系統気泡センサーによる多重安全設計。</p>
+                        <div class="case-section-title">変化</div>
+                        <p>術中の注入速度変更がシームレスになり、術者の手技に合わせた最適な造影が可能に。2系統気泡センサーの安全アラートで、スタッフ全員が安心して手技に集中できるようになった。</p>
+                        <div class="case-pullquote">「安全への信頼感が、手技への集中力を高めてくれます」── 循環器内科 部長</div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Content: クリニック -->
+            <div id="clinic" class="tab-content">
+                <article class="case-card animate-on-scroll">
+                    <div class="case-img-wrap">
+                        <div class="case-img-wrap__icon">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#005f73" stroke-width="1"><path d="M3 21h18"/><path d="M9 8h1"/><path d="M9 12h1"/><path d="M9 16h1"/><path d="M14 8h1"/><path d="M14 12h1"/><path d="M14 16h1"/><rect x="5" y="3" width="14" height="18" rx="1"/></svg>
+                            <span class="case-img-wrap__label">CASE 03</span>
+                        </div>
+                    </div>
+                    <div class="case-body">
+                        <span class="case-tag">MICA30</span>
+                        <h2 class="case-headline">コンパクト設計と手厚いサポートで、少人数でも安心運用。</h2>
+                        <div class="case-facility">Cクリニック 様</div>
+                        <div class="case-meta">2025年2月導入 ─ 岡山県</div>
+                        <div class="case-section-title">課題</div>
+                        <p>少人数体制のクリニックで、大型の注入装置は設置スペースと操作教育の両面で負担が大きかった。メーカーサポートの対応速度にも不安があった。</p>
+                        <div class="case-section-title">決め手</div>
+                        <p>コンパクトな筐体設計と、導入時の丁寧な研修プログラム。メーカーの迅速なサポート体制も決定打。</p>
+                        <div class="case-section-title">変化</div>
+                        <p>限られたスペースにスムーズに設置。スタッフ全員が短期間で操作を習得し、日常業務への影響を最小限に抑えて稼働開始できた。</p>
+                        <div class="case-pullquote">「導入のしやすさとサポートの厚さが、小規模クリニックには心強い」── 臨床工学技士</div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section bg-light">
+        <div class="container text-center">
+            <p style="margin-bottom: 20px; font-size: 0.95rem; color: rgba(0,0,0,0.85); line-height: 1.8;">MICA30の導入をご検討中の方は、お気軽にお問い合わせください。</p>
+            <a href="contact.html" class="btn btn-primary btn-lg">お問い合わせ・資料請求</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">ホーム</a>
+                <a href="product.html">製品詳細</a>
+                <a href="voices.html">ご利用施設の声</a>
+                <a href="cases.html">導入事例</a>
+                <a href="faq.html">よくある質問</a>
+                <a href="price.html">価格・導入</a>
+                <a href="flow.html">導入の流れ</a>
+                <a href="company.html">会社概要</a>
+                <a href="contact.html">お問い合わせ</a>
+                <a href="../yumeho/index.html">YUMEHO サイト</a>
+                <a href="../rinascente/index.html">コーポレートサイト</a>
+            </div>
+                <a href="contact.html" class="footer-cta-sp">
+                    <span class="floating-cta__pulse"></span>
+                    お問い合わせ
+                </a>
+            <p class="copyright">&copy; 2026 株式会社 Rinascente All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Tab switching
+        document.querySelectorAll('.tab-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+                document.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

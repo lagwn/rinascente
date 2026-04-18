@@ -1,0 +1,2 @@
+yumeho/index.html:589:                            <span>全国<span id="heroInstallSiteCount">0</span>施設で導入実績</span>
+yumeho/index.html:978:            var heroSiteCountEl = document.getElementById('heroInstallSiteCount');

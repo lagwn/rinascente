@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1440 8100" width="1440" height="8100">
+  <defs>
+    <style>
+      text { font-family: HiraKakuProN-W3-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN', sans-serif; }
+
+      /* Slide backgrounds */
+      .slide-white { fill: #fff; }
+      .slide-light { fill: #f6f8fb; }
+    </style>
+
+    <!-- Reusable arrow marker -->
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#0068b7"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#ccc"/>
+    </marker>
+  </defs>
+
+
+  <!-- ================================================================ -->
+  <!-- SLIDE 0 : COVER                                                  -->
+  <!-- ================================================================ -->
+  <rect y="0" width="1440" height="810" fill="#0068b7"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1200" cy="150" r="300" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="1300" cy="350" r="200" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="200" cy="600" r="250" fill="rgba(255,255,255,0.03)"/>
+
+  <!-- Main title -->
+  <text x="720" y="260" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:52px;letter-spacing:0.2em;">ウェブサイト制作のご提案</text>
+  <line x1="420" y1="286" x2="1020" y2="286" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="720" y="326" text-anchor="middle" fill="rgba(255,255,255,0.7)" style="font-size:18px;letter-spacing:0.1em;">Rinascentes / YUMEHO / MICA30 の3サイトを一貫した設計でご提供します</text>
+
+  <!-- 3 visual cards -->
+  <rect x="200" y="400" width="300" height="200" rx="16" ry="16" fill="rgba(255,255,255,0.1)"/>
+  <!-- Building icon -->
+  <rect x="320" y="440" width="60" height="60" rx="4" ry="4" fill="none" stroke="#fff" stroke-width="2"/>
+  <rect x="332" y="452" width="10" height="10" rx="1" ry="1" fill="rgba(255,255,255,0.5)"/>
+  <rect x="358" y="452" width="10" height="10" rx="1" ry="1" fill="rgba(255,255,255,0.5)"/>
+  <rect x="332" y="472" width="10" height="10" rx="1" ry="1" fill="rgba(255,255,255,0.5)"/>
+  <rect x="358" y="472" width="10" height="10" rx="1" ry="1" fill="rgba(255,255,255,0.5)"/>
+  <rect x="342" y="486" width="16" height="14" rx="1" ry="1" fill="rgba(255,255,255,0.7)"/>
+  <text x="350" y="536" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:22px;">3</text>
+  <text x="350" y="558" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">つのサイト</text>
+  <text x="350" y="582" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:11px;">会社 + 製品2つ</text>
+
+  <rect x="570" y="400" width="300" height="200" rx="16" ry="16" fill="rgba(255,255,255,0.1)"/>
+  <!-- Pages icon -->
+  <rect x="692" y="444" width="40" height="52" rx="3" ry="3" fill="none" stroke="#fff" stroke-width="2"/>
+  <rect x="700" y="436" width="40" height="52" rx="3" ry="3" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+  <line x1="702" y1="458" x2="722" y2="458" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+  <line x1="702" y1="468" x2="728" y2="468" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+  <line x1="702" y1="478" x2="718" y2="478" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+  <text x="720" y="536" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:22px;">32</text>
+  <text x="720" y="558" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">ページ</text>
+  <text x="720" y="582" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:11px;">+ 会員エリア5P</text>
+
+  <rect x="940" y="400" width="300" height="200" rx="16" ry="16" fill="rgba(255,255,255,0.1)"/>
+  <!-- Calendar icon -->
+  <rect x="1060" y="444" width="52" height="48" rx="4" ry="4" fill="none" stroke="#fff" stroke-width="2"/>
+  <line x1="1060" y1="458" x2="1112" y2="458" stroke="#fff" stroke-width="2"/>
+  <rect x="1070" y="466" width="8" height="8" rx="1" ry="1" fill="rgba(255,255,255,0.4)"/>
+  <rect x="1082" y="466" width="8" height="8" rx="1" ry="1" fill="rgba(255,255,255,0.4)"/>
+  <rect x="1094" y="466" width="8" height="8" rx="1" ry="1" fill="rgba(255,255,255,0.4)"/>
+  <rect x="1070" y="478" width="8" height="8" rx="1" ry="1" fill="rgba(255,255,255,0.7)"/>
+  <rect x="1082" y="478" width="8" height="8" rx="1" ry="1" fill="rgba(255,255,255,0.7)"/>
+  <rect x="1094" y="478" width="8" height="8" rx="1" ry="1" fill="rgba(255,255,255,0.7)"/>
+  <text x="1090" y="536" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:22px;">3</text>
+  <text x="1090" y="558" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">週間で公開</text>
+  <text x="1090" y="582" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:11px;">既存プロトタイプ活用</text>
+
+  <!-- Bottom -->
+  <text x="720" y="700" text-anchor="middle" fill="rgba(255,255,255,0.4)" style="font-size:14px;">医療法人真誠会 様</text>
+  <text x="720" y="730" text-anchor="middle" fill="rgba(255,255,255,0.3)" style="font-family:Helvetica,sans-serif;font-size:12px;">2026.04</text>
+
+
+  <!-- ================================================================ -->
+  <!-- SLIDE 1 : WHAT WE MAKE — SIMPLE OVERVIEW                        -->
+  <!-- ================================================================ -->
+  <rect y="810" width="1440" height="810" fill="#fff"/>
+
+  <!-- Slide header -->
+  <rect x="80" y="870" width="6" height="36" rx="3" ry="3" fill="#0068b7"/>
+  <text x="100" y="900" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:0.15em;">01  OVERVIEW</text>
+  <text x="80" y="950" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:32px;letter-spacing:0.05em;">つくるもの、ひと目で</text>
+  <text x="80" y="982" fill="#888" style="font-size:14px;">3つのサイトで「会社の信頼」と「製品の魅力」をそれぞれ伝えます</text>
+
+  <!-- Visual: 3 buildings metaphor -->
+  <!-- Rinascentes = main building -->
+  <rect x="320" y="1060" width="280" height="200" rx="12" ry="12" fill="#1a1510"/>
+  <rect x="336" y="1090" width="22" height="22" rx="2" ry="2" fill="rgba(212,175,55,0.3)"/>
+  <rect x="366" y="1090" width="22" height="22" rx="2" ry="2" fill="rgba(212,175,55,0.3)"/>
+  <rect x="396" y="1090" width="22" height="22" rx="2" ry="2" fill="rgba(212,175,55,0.3)"/>
+  <rect x="336" y="1120" width="22" height="22" rx="2" ry="2" fill="rgba(212,175,55,0.3)"/>
+  <rect x="366" y="1120" width="22" height="22" rx="2" ry="2" fill="rgba(212,175,55,0.3)"/>
+  <rect x="396" y="1120" width="22" height="22" rx="2" ry="2" fill="rgba(212,175,55,0.3)"/>
+  <rect x="356" y="1150" width="30" height="30" rx="2" ry="2" fill="rgba(212,175,55,0.5)"/>
+  <text x="460" y="1110" fill="#d4af37" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:12px;letter-spacing:0.1em;">RINASCENTES</text>
+  <text x="460" y="1134" fill="rgba(255,255,255,0.9)" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:16px;">会社のサイト</text>
+  <text x="460" y="1158" fill="rgba(255,255,255,0.5)" style="font-size:11px;">「この会社は信頼できる」と思ってもらう</text>
+  <text x="460" y="1180" fill="rgba(255,255,255,0.5)" style="font-size:11px;">会社紹介・経営チーム・沿革・ニュース</text>
+  <text x="460" y="1202" fill="rgba(255,255,255,0.35)" style="font-size:10px;">11 ページ</text>
+
+  <!-- Arrow down from Rinascentes -->
+  <line x1="420" y1="1260" x2="420" y2="1290" stroke="#b0d4ee" stroke-width="2"/>
+  <line x1="420" y1="1290" x2="580" y2="1290" stroke="#b0d4ee" stroke-width="2"/>
+  <line x1="820" y1="1260" x2="820" y2="1290" stroke="#b0d4ee" stroke-width="2"/>
+  <line x1="820" y1="1290" x2="580" y2="1290" stroke="#b0d4ee" stroke-width="2"/>
+  <text x="620" y="1286" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:10px;">製品サイトへ送客</text>
+
+  <!-- YUMEHO -->
+  <rect x="180" y="1310" width="360" height="160" rx="12" ry="12" fill="#0068b7"/>
+  <!-- Walking person icon -->
+  <circle cx="220" cy="1360" r="10" fill="rgba(255,255,255,0.3)"/>
+  <line x1="220" y1="1372" x2="220" y2="1400" stroke="rgba(255,255,255,0.3)" stroke-width="2.5"/>
+  <line x1="220" y1="1382" x2="208" y2="1394" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <line x1="220" y1="1382" x2="232" y2="1394" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <line x1="220" y1="1400" x2="208" y2="1418" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <line x1="220" y1="1400" x2="232" y2="1418" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+
+  <text x="260" y="1370" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:0.1em;">YUMEHO</text>
+  <text x="260" y="1396" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:16px;">歩行リハビリの製品サイト</text>
+  <text x="260" y="1420" fill="rgba(255,255,255,0.6)" style="font-size:11px;">「この製品が最適だ」と納得してもらう</text>
+  <text x="260" y="1442" fill="rgba(255,255,255,0.6)" style="font-size:11px;">製品紹介・技術比較・導入事例・見積シミュレーション</text>
+  <text x="260" y="1460" fill="rgba(255,255,255,0.35)" style="font-size:10px;">12 ページ</text>
+
+  <!-- MICA30 -->
+  <rect x="700" y="1310" width="360" height="160" rx="12" ry="12" fill="#005f73"/>
+  <!-- Syringe/injection icon simplified -->
+  <rect x="738" y="1358" width="40" height="16" rx="3" ry="3" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <line x1="778" y1="1366" x2="792" y2="1366" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <rect x="748" y="1362" width="6" height="8" rx="1" ry="1" fill="rgba(255,255,255,0.2)"/>
+  <rect x="758" y="1362" width="6" height="8" rx="1" ry="1" fill="rgba(255,255,255,0.2)"/>
+
+  <text x="738" y="1400" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:0.1em;">MICA30</text>
+  <text x="738" y="1426" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:16px;">造影剤注入装置の製品サイト</text>
+  <text x="738" y="1448" fill="rgba(255,255,255,0.6)" style="font-size:11px;">「この装置を導入したい」と思ってもらう</text>
+  <text x="738" y="1460" fill="rgba(255,255,255,0.35)" style="font-size:10px;">9 ページ</text>
+
+  <!-- Explanation callout -->
+  <rect x="200" y="1510" width="840" height="56" rx="28" ry="28" fill="#f0f7ff" stroke="#b0d4ee" stroke-width="1"/>
+  <text x="620" y="1536" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">会社のサイトで信頼を伝え → 製品サイトで詳しく説明 → お問い合わせにつなげる</text>
+  <text x="620" y="1554" text-anchor="middle" fill="#888" style="font-size:10px;">3サイト間はヘッダーのボタンからワンクリックで行き来できます</text>
+
+
+  <!-- ================================================================ -->
+  <!-- SLIDE 2 : HOW VISITORS USE THE SITE                             -->
+  <!-- ================================================================ -->
+  <rect y="1620" width="1440" height="810" fill="#f6f8fb"/>
+
+  <rect x="80" y="1680" width="6" height="36" rx="3" ry="3" fill="#0068b7"/>
+  <text x="100" y="1710" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:0.15em;">02  USER JOURNEY</text>
+  <text x="80" y="1760" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:32px;letter-spacing:0.05em;">お客様がサイトを見る流れ</text>
+  <text x="80" y="1792" fill="#888" style="font-size:14px;">初めての方がサイトを訪れてからお問い合わせするまでの流れです</text>
+
+  <!-- Step 1 -->
+  <circle cx="200" cy="1880" r="32" fill="#0068b7"/>
+  <text x="200" y="1888" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:20px;">1</text>
+  <text x="260" y="1874" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px;">検索や紹介でサイトに来る</text>
+  <text x="260" y="1898" fill="#888" style="font-size:12px;">「歩行リハビリ 装置」などで検索 → YUMEHO のページが表示される</text>
+
+  <line x1="200" y1="1916" x2="200" y2="1950" stroke="#b0d4ee" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Step 2 -->
+  <circle cx="200" cy="1984" r="32" fill="#0068b7"/>
+  <text x="200" y="1992" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:20px;">2</text>
+  <text x="260" y="1978" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px;">製品の特徴を知る</text>
+  <text x="260" y="2002" fill="#888" style="font-size:12px;">動画を見る → 他製品との違い（比較表）を確認 → 導入実績を見て安心する</text>
+
+  <line x1="200" y1="2020" x2="200" y2="2054" stroke="#b0d4ee" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Step 3 -->
+  <circle cx="200" cy="2088" r="32" fill="#0068b7"/>
+  <text x="200" y="2096" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:20px;">3</text>
+  <text x="260" y="2082" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px;">会社を確認する</text>
+  <text x="260" y="2106" fill="#888" style="font-size:12px;">Rinascentes のサイトで経営陣やニュースを見て → 「ちゃんとした会社だ」と確認する</text>
+
+  <line x1="200" y1="2124" x2="200" y2="2158" stroke="#b0d4ee" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Step 4 -->
+  <circle cx="200" cy="2192" r="32" fill="#0068b7"/>
+  <text x="200" y="2200" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:20px;">4</text>
+  <text x="260" y="2186" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px;">費用を確認する</text>
+  <text x="260" y="2210" fill="#888" style="font-size:12px;">導入シミュレーションで条件を入力 → 概算費用がその場でわかる → 補助金情報も確認</text>
+
+  <line x1="200" y1="2228" x2="200" y2="2262" stroke="#b0d4ee" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Step 5 -->
+  <circle cx="200" cy="2296" r="32" fill="#0068b7"/>
+  <text x="200" y="2304" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:20px;">5</text>
+  <text x="260" y="2290" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px;">お問い合わせ・資料請求する</text>
+  <text x="260" y="2314" fill="#888" style="font-size:12px;">フォームから資料請求やお問い合わせ → 商談へ</text>
+
+  <!-- Right side: visual summary -->
+  <rect x="860" y="1850" width="480" height="280" rx="16" ry="16" fill="#fff" stroke="#e0e0e0" stroke-width="0.5"/>
+  <text x="1100" y="1886" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">サイトでできる4つのこと</text>
+
+  <rect x="890" y="1910" width="200" height="46" rx="8" ry="8" fill="#f0f7ff"/>
+  <text x="990" y="1938" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">資料請求する</text>
+
+  <rect x="1110" y="1910" width="200" height="46" rx="8" ry="8" fill="#f0f7ff"/>
+  <text x="1210" y="1938" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">お問い合わせする</text>
+
+  <rect x="890" y="1970" width="200" height="46" rx="8" ry="8" fill="#f0f7ff"/>
+  <text x="990" y="1998" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">見積を相談する</text>
+
+  <rect x="1110" y="1970" width="200" height="46" rx="8" ry="8" fill="#f0f7ff"/>
+  <text x="1210" y="1998" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">会員ページを使う</text>
+
+  <text x="1100" y="2060" text-anchor="middle" fill="#aaa" style="font-size:11px;">どのページを見ていても、</text>
+  <text x="1100" y="2078" text-anchor="middle" fill="#aaa" style="font-size:11px;">画面の上と下にお問い合わせボタンが</text>
+  <text x="1100" y="2096" text-anchor="middle" fill="#aaa" style="font-size:11px;">常に表示されています。</text>
+
+  <!-- After purchase flow -->
+  <rect x="860" y="2166" width="480" height="100" rx="16" ry="16" fill="#2d6a4f"/>
+  <text x="1100" y="2200" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">ご購入後は「会員ページ」で</text>
+  <text x="1100" y="2228" text-anchor="middle" fill="rgba(255,255,255,0.7)" style="font-size:12px;">使い方の動画を見たり、購入履歴を確認できます</text>
+  <text x="1100" y="2250" text-anchor="middle" fill="rgba(255,255,255,0.4)" style="font-size:10px;">（YUMEHO・MICA30 共通のアカウントで利用可能）</text>
+
+
+  <!-- ================================================================ -->
+  <!-- SLIDE 3 : RINASCENTES DETAIL                                     -->
+  <!-- ================================================================ -->
+  <rect y="2430" width="1440" height="810" fill="#fff"/>
+
+  <rect x="80" y="2490" width="6" height="36" rx="3" ry="3" fill="#1a1510"/>
+  <text x="100" y="2520" fill="#1a1510" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:0.15em;">03  RINASCENTES</text>
+  <text x="80" y="2570" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:32px;letter-spacing:0.05em;">会社のサイト</text>
+  <text x="80" y="2602" fill="#888" style="font-size:14px;">「この会社なら安心できる」と感じてもらうためのサイトです（11ページ）</text>
+
+  <!-- 4 role cards with icons -->
+  <!-- Card 1: Brand -->
+  <rect x="80" y="2650" width="300" height="220" rx="12" ry="12" fill="#1a1510"/>
+  <circle cx="140" cy="2710" r="28" fill="rgba(212,175,55,0.2)"/>
+  <text x="140" y="2718" text-anchor="middle" fill="#d4af37" style="font-size:24px;">R</text>
+  <text x="190" y="2706" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:15px;">ブランドメッセージ</text>
+  <text x="190" y="2726" fill="rgba(255,255,255,0.5)" style="font-size:10px;">トップページ</text>
+  <line x1="100" y1="2748" x2="360" y2="2748" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+  <text x="100" y="2776" fill="rgba(255,255,255,0.7)" style="font-size:12px;">会社の理念やミッションを伝え、</text>
+  <text x="100" y="2796" fill="rgba(255,255,255,0.7)" style="font-size:12px;">「なぜこの会社が存在するのか」を</text>
+  <text x="100" y="2816" fill="rgba(255,255,255,0.7)" style="font-size:12px;">わかりやすく表現します。</text>
+  <text x="100" y="2852" fill="rgba(255,255,255,0.3)" style="font-size:9px;">index.html</text>
+
+  <!-- Card 2: Team -->
+  <rect x="410" y="2650" width="300" height="220" rx="12" ry="12" fill="#1a1510"/>
+  <circle cx="470" cy="2710" r="28" fill="rgba(212,175,55,0.2)"/>
+  <!-- People icon -->
+  <circle cx="464" cy="2702" r="6" fill="rgba(212,175,55,0.5)"/>
+  <circle cx="478" cy="2702" r="6" fill="rgba(212,175,55,0.5)"/>
+  <path d="M454,2722 Q464,2714 474,2722" fill="none" stroke="rgba(212,175,55,0.5)" stroke-width="1.5"/>
+  <path d="M468,2722 Q478,2714 488,2722" fill="none" stroke="rgba(212,175,55,0.5)" stroke-width="1.5"/>
+  <text x="520" y="2706" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:15px;">経営チーム・沿革</text>
+  <text x="520" y="2726" fill="rgba(255,255,255,0.5)" style="font-size:10px;">2ページ</text>
+  <line x1="430" y1="2748" x2="690" y2="2748" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+  <text x="430" y="2776" fill="rgba(255,255,255,0.7)" style="font-size:12px;">代表や経営メンバーの紹介と、</text>
+  <text x="430" y="2796" fill="rgba(255,255,255,0.7)" style="font-size:12px;">会社のこれまでの歩みを掲載。</text>
+  <text x="430" y="2816" fill="rgba(255,255,255,0.7)" style="font-size:12px;">「人」が見えると信頼が生まれます。</text>
+  <text x="430" y="2852" fill="rgba(255,255,255,0.3)" style="font-size:9px;">team.html / history.html</text>
+
+  <!-- Card 3: News -->
+  <rect x="740" y="2650" width="300" height="220" rx="12" ry="12" fill="#1a1510"/>
+  <circle cx="800" cy="2710" r="28" fill="rgba(212,175,55,0.2)"/>
+  <!-- News icon -->
+  <rect x="788" y="2698" width="24" height="18" rx="2" ry="2" fill="none" stroke="rgba(212,175,55,0.5)" stroke-width="1.5"/>
+  <line x1="792" y1="2704" x2="808" y2="2704" stroke="rgba(212,175,55,0.5)" stroke-width="1"/>
+  <line x1="792" y1="2710" x2="804" y2="2710" stroke="rgba(212,175,55,0.5)" stroke-width="1"/>
+  <text x="850" y="2706" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:15px;">ニュース</text>
+  <text x="850" y="2726" fill="rgba(255,255,255,0.5)" style="font-size:10px;">5ページ（一覧 + 記事4本）</text>
+  <line x1="760" y1="2748" x2="1020" y2="2748" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+  <text x="760" y="2776" fill="rgba(255,255,255,0.7)" style="font-size:12px;">プレスリリースや新着情報で</text>
+  <text x="760" y="2796" fill="rgba(255,255,255,0.7)" style="font-size:12px;">事業が活発に動いていることを</text>
+  <text x="760" y="2816" fill="rgba(255,255,255,0.7)" style="font-size:12px;">発信します。CMSで更新可能。</text>
+  <text x="760" y="2852" fill="rgba(255,255,255,0.3)" style="font-size:9px;">news.html / news-*.html</text>
+
+  <!-- Card 4: Hub -->
+  <rect x="1070" y="2650" width="300" height="220" rx="12" ry="12" fill="#1a1510"/>
+  <circle cx="1130" cy="2710" r="28" fill="rgba(212,175,55,0.2)"/>
+  <!-- Link/switch icon -->
+  <rect x="1118" y="2700" width="10" height="16" rx="5" ry="5" fill="none" stroke="rgba(212,175,55,0.5)" stroke-width="1.5"/>
+  <rect x="1132" y="2700" width="10" height="16" rx="5" ry="5" fill="none" stroke="rgba(212,175,55,0.5)" stroke-width="1.5"/>
+  <line x1="1128" y1="2708" x2="1132" y2="2708" stroke="rgba(212,175,55,0.5)" stroke-width="1.5"/>
+  <text x="1180" y="2706" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:15px;">製品サイトへの入口</text>
+  <text x="1180" y="2726" fill="rgba(255,255,255,0.5)" style="font-size:10px;">導線設計</text>
+  <line x1="1090" y1="2748" x2="1350" y2="2748" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+  <text x="1090" y="2776" fill="rgba(255,255,255,0.7)" style="font-size:12px;">導入事例の紹介やヘッダーの</text>
+  <text x="1090" y="2796" fill="rgba(255,255,255,0.7)" style="font-size:12px;">切り替えボタンで、製品サイトへ</text>
+  <text x="1090" y="2816" fill="rgba(255,255,255,0.7)" style="font-size:12px;">自然に誘導します。</text>
+  <text x="1090" y="2852" fill="rgba(255,255,255,0.3)" style="font-size:9px;">サイトスイッチャー</text>
+
+  <!-- Member note -->
+  <rect x="80" y="2900" width="1290" height="60" rx="12" ry="12" fill="#f0f7ff" stroke="#b0d4ee" stroke-width="0.75"/>
+  <text x="120" y="2930" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px;">+ 会員ページ（5P）</text>
+  <text x="290" y="2930" fill="#666" style="font-size:12px;">ログイン / パスワード再設定 / 会員トップ / 動画閲覧 / 購入履歴 — YUMEHO・MICA30 共通で利用</text>
+  <text x="1020" y="2946" fill="#aaa" style="font-size:9px;">Rinascentes 管理下に配置</text>
+
+
+  <!-- ================================================================ -->
+  <!-- SLIDE 4 : YUMEHO DETAIL                                         -->
+  <!-- ================================================================ -->
+  <rect y="3240" width="1440" height="940" fill="#f6f8fb"/>
+
+  <rect x="80" y="3300" width="6" height="36" rx="3" ry="3" fill="#0068b7"/>
+  <text x="100" y="3330" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:0.15em;">04  YUMEHO</text>
+  <text x="80" y="3380" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:32px;letter-spacing:0.05em;">YUMEHO 製品サイト</text>
+  <text x="80" y="3412" fill="#888" style="font-size:14px;">歩行リハビリテーションシステム — 12ページで「この製品がいちばん良い」と納得してもらいます</text>
+
+  <!-- Visual: page flow as a "scroll" story -->
+  <text x="80" y="3460" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:15px;">トップページを見る流れ（上から下へスクロール）</text>
+
+  <!-- Flow as connected cards -->
+  <rect x="80" y="3484" width="230" height="90" rx="10" ry="10" fill="#0068b7"/>
+  <text x="195" y="3516" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:24px;">1</text>
+  <text x="195" y="3540" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px;">まず興味を引く</text>
+  <text x="195" y="3558" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:9px;">大きな写真 + 動画</text>
+  <line x1="314" y1="3529" x2="350" y2="3529" stroke="#b0d4ee" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <rect x="356" y="3484" width="230" height="90" rx="10" ry="10" fill="#0068b7" opacity="0.85"/>
+  <text x="471" y="3516" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:24px;">2</text>
+  <text x="471" y="3540" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px;">選ばれる理由を伝える</text>
+  <text x="471" y="3558" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:9px;">安全性・運用性・継続性</text>
+  <line x1="590" y1="3529" x2="626" y2="3529" stroke="#b0d4ee" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <rect x="632" y="3484" width="230" height="90" rx="10" ry="10" fill="#0068b7" opacity="0.7"/>
+  <text x="747" y="3516" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:24px;">3</text>
+  <text x="747" y="3540" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px;">技術で裏付ける</text>
+  <text x="747" y="3558" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:9px;">他社製品との比較表</text>
+  <line x1="866" y1="3529" x2="902" y2="3529" stroke="#b0d4ee" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <rect x="908" y="3484" width="230" height="90" rx="10" ry="10" fill="#0068b7" opacity="0.55"/>
+  <text x="1023" y="3516" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:24px;">4</text>
+  <text x="1023" y="3540" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px;">実績で安心させる</text>
+  <text x="1023" y="3558" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:9px;">12施設の導入マップ + 声</text>
+  <line x1="1142" y1="3529" x2="1178" y2="3529" stroke="#b0d4ee" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <rect x="1184" y="3484" width="180" height="90" rx="10" ry="10" fill="#0068b7"/>
+  <text x="1274" y="3520" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:24px;">5</text>
+  <text x="1274" y="3544" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px;">行動してもらう</text>
+  <text x="1274" y="3562" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:9px;">お問い合わせ</text>
+
+  <!-- Key features - visual cards -->
+  <text x="80" y="3630" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:15px;">ここが強み</text>
+
+  <!-- Feature 1 -->
+  <rect x="80" y="3654" width="420" height="140" rx="12" ry="12" fill="#fff" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="100" y="3678" width="48" height="48" rx="8" ry="8" fill="#f0f7ff"/>
+  <text x="124" y="3710" text-anchor="middle" fill="#0068b7" style="font-size:22px;">VS</text>
+  <text x="168" y="3698" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">他社製品との比較表</text>
+  <text x="168" y="3720" fill="#888" style="font-size:11px;">天井走行式デュアルレールが他の方式より</text>
+  <text x="168" y="3736" fill="#888" style="font-size:11px;">優れている点を6項目で比較。</text>
+  <text x="168" y="3752" fill="#888" style="font-size:11px;">動画のキャプチャ画像3枚で視覚的にも訴求。</text>
+  <text x="100" y="3778" fill="#bbb" style="font-size:9px;">Technology セクション</text>
+
+  <!-- Feature 2 -->
+  <rect x="520" y="3654" width="420" height="140" rx="12" ry="12" fill="#fff" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="540" y="3678" width="48" height="48" rx="8" ry="8" fill="#f0f7ff"/>
+  <text x="564" y="3710" text-anchor="middle" fill="#0068b7" style="font-size:20px;">¥</text>
+  <text x="608" y="3698" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">導入シミュレーション</text>
+  <text x="608" y="3720" fill="#888" style="font-size:11px;">施設タイプやレール長を選ぶだけで</text>
+  <text x="608" y="3736" fill="#888" style="font-size:11px;">概算費用がその場でわかります。</text>
+  <text x="608" y="3752" fill="#888" style="font-size:11px;">ハーネス追加数にも対応。</text>
+  <text x="540" y="3778" fill="#bbb" style="font-size:9px;">simulation.html</text>
+
+  <!-- Feature 3 -->
+  <rect x="960" y="3654" width="420" height="140" rx="12" ry="12" fill="#fff" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="980" y="3678" width="48" height="48" rx="8" ry="8" fill="#f0f7ff"/>
+  <!-- Map pin icon -->
+  <circle cx="1004" cy="3696" r="6" fill="none" stroke="#0068b7" stroke-width="1.5"/>
+  <circle cx="1004" cy="3696" r="2" fill="#0068b7"/>
+  <path d="M1004,3704 L1004,3714" stroke="#0068b7" stroke-width="1.5"/>
+  <text x="1048" y="3698" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">全国導入マップ</text>
+  <text x="1048" y="3720" fill="#888" style="font-size:11px;">12施設・6都府県の導入実績を地図上に表示。</text>
+  <text x="1048" y="3736" fill="#888" style="font-size:11px;">3施設の導入事例を詳しく紹介し、</text>
+  <text x="1048" y="3752" fill="#888" style="font-size:11px;">導入後の具体的なイメージを伝えます。</text>
+  <text x="980" y="3778" fill="#bbb" style="font-size:9px;">cases.html — CASE A / B / C</text>
+
+  <!-- Page list -->
+  <rect x="80" y="3830" width="1290" height="50" rx="10" ry="10" fill="#e8f0fe" stroke="#b0d4ee" stroke-width="0.5"/>
+  <text x="120" y="3854" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px;">全12ページ：</text>
+  <text x="220" y="3854" fill="#555" style="font-size:11px;">トップ / 製品紹介 / 導入シミュレーション / 導入事例 / 導入フロー / 価格・見積 / 補助金ガイド / FAQ / 会社概要 / お問い合わせ / 決済完了 / 決済キャンセル</text>
+  <text x="1220" y="3870" fill="#aaa" style="font-size:8px;">※ 決済はオプション</text>
+
+
+  <!-- ================================================================ -->
+  <!-- SLIDE 5 : MICA30 DETAIL                                         -->
+  <!-- ================================================================ -->
+  <rect y="4180" width="1440" height="810" fill="#fff"/>
+
+  <rect x="80" y="4240" width="6" height="36" rx="3" ry="3" fill="#005f73"/>
+  <text x="100" y="4270" fill="#005f73" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:0.15em;">05  MICA30</text>
+  <text x="80" y="4320" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:32px;letter-spacing:0.05em;">MICA30 製品サイト</text>
+  <text x="80" y="4352" fill="#888" style="font-size:14px;">造影剤自動注入装置 — 9ページで放射線技師の方に「この装置がベストだ」と伝えます</text>
+
+  <!-- Flow -->
+  <text x="80" y="4400" fill="#005f73" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:15px;">トップページを見る流れ</text>
+
+  <rect x="80" y="4424" width="230" height="90" rx="10" ry="10" fill="#005f73"/>
+  <text x="195" y="4456" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:24px;">1</text>
+  <text x="195" y="4480" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px;">まず課題を投げかける</text>
+  <text x="195" y="4498" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:9px;">「その0.05mLが…」</text>
+  <line x1="314" y1="4469" x2="350" y2="4469" stroke="#b0d4ee" stroke-width="2"/>
+
+  <rect x="356" y="4424" width="230" height="90" rx="10" ry="10" fill="#005f73" opacity="0.85"/>
+  <text x="471" y="4456" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:24px;">2</text>
+  <text x="471" y="4480" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px;">数字で実績を見せる</text>
+  <text x="471" y="4498" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:9px;">8施設 / 8年開発 / 2024認証</text>
+  <line x1="590" y1="4469" x2="626" y2="4469" stroke="#b0d4ee" stroke-width="2"/>
+
+  <rect x="632" y="4424" width="230" height="90" rx="10" ry="10" fill="#005f73" opacity="0.7"/>
+  <text x="747" y="4456" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:24px;">3</text>
+  <text x="747" y="4480" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px;">製品の強みを伝える</text>
+  <text x="747" y="4498" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:9px;">精密注入・安全設計・視認性</text>
+  <line x1="866" y1="4469" x2="902" y2="4469" stroke="#b0d4ee" stroke-width="2"/>
+
+  <rect x="908" y="4424" width="230" height="90" rx="10" ry="10" fill="#005f73" opacity="0.55"/>
+  <text x="1023" y="4456" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:24px;">4</text>
+  <text x="1023" y="4480" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px;">声とFAQで安心</text>
+  <text x="1023" y="4498" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-size:9px;">利用施設の声 + FAQ6問</text>
+  <line x1="1142" y1="4469" x2="1178" y2="4469" stroke="#b0d4ee" stroke-width="2"/>
+
+  <rect x="1184" y="4424" width="180" height="90" rx="10" ry="10" fill="#005f73"/>
+  <text x="1274" y="4460" text-anchor="middle" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:24px;">5</text>
+  <text x="1274" y="4484" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px;">お問い合わせへ</text>
+
+  <!-- Key features -->
+  <text x="80" y="4570" fill="#005f73" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:15px;">ここが強み</text>
+
+  <rect x="80" y="4594" width="420" height="120" rx="12" ry="12" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="100" y="4618" width="48" height="48" rx="8" ry="8" fill="#e8f4f6"/>
+  <text x="124" y="4650" text-anchor="middle" fill="#005f73" style="font-size:20px;">!</text>
+  <text x="168" y="4638" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">課題提起セクション</text>
+  <text x="168" y="4660" fill="#888" style="font-size:11px;">「その0.05mLが、患者の未来を変える。」</text>
+  <text x="168" y="4676" fill="#888" style="font-size:11px;">まず課題に共感してもらうことで製品の必要性を伝えます。</text>
+  <text x="100" y="4700" fill="#bbb" style="font-size:9px;">Hero 直下のセクション</text>
+
+  <rect x="520" y="4594" width="420" height="120" rx="12" ry="12" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="540" y="4618" width="48" height="48" rx="8" ry="8" fill="#e8f4f6"/>
+  <text x="564" y="4648" text-anchor="middle" fill="#005f73" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:16px;">4</text>
+  <text x="608" y="4638" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">カウンターストリップ</text>
+  <text x="608" y="4660" fill="#888" style="font-size:11px;">2024年認証 / 0.05mL精度 / 8施設 / 8年開発</text>
+  <text x="608" y="4676" fill="#888" style="font-size:11px;">4つの数字が横に並び、一目で信頼と実績がわかります。</text>
+
+  <rect x="960" y="4594" width="420" height="120" rx="12" ry="12" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="980" y="4618" width="48" height="48" rx="8" ry="8" fill="#e8f4f6"/>
+  <text x="1004" y="4648" text-anchor="middle" fill="#005f73" style="font-size:20px;">3</text>
+  <text x="1048" y="4638" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">3つの理由</text>
+  <text x="1048" y="4660" fill="#888" style="font-size:11px;">精密注入・安全設計・視認性の3軸で</text>
+  <text x="1048" y="4676" fill="#888" style="font-size:11px;">「なぜこの装置を選ぶべきか」を整理して提示します。</text>
+
+  <!-- Page list -->
+  <rect x="80" y="4750" width="1290" height="50" rx="10" ry="10" fill="#e8f4f6" stroke="#b0d4ee" stroke-width="0.5"/>
+  <text x="120" y="4774" fill="#005f73" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px;">全9ページ：</text>
+  <text x="206" y="4774" fill="#555" style="font-size:11px;">トップ / 製品詳細 / ご利用施設の声 / 導入事例 / FAQ / 価格・導入 / 導入の流れ / 会社概要 / お問い合わせ</text>
+
+
+  <!-- ================================================================ -->
+  <!-- SLIDE 6 : MEMBER + CMS                                          -->
+  <!-- ================================================================ -->
+  <rect y="4990" width="1440" height="810" fill="#f6f8fb"/>
+
+  <rect x="80" y="5050" width="6" height="36" rx="3" ry="3" fill="#2d6a4f"/>
+  <text x="100" y="5080" fill="#2d6a4f" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:0.15em;">06  AFTER PURCHASE</text>
+  <text x="80" y="5130" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:32px;letter-spacing:0.05em;">ご購入後のサポート</text>
+  <text x="80" y="5162" fill="#888" style="font-size:14px;">会員ページと管理画面で、購入後もお客様とのつながりを続けます</text>
+
+  <!-- Member area - large visual -->
+  <rect x="80" y="5200" width="620" height="360" rx="16" ry="16" fill="#2d6a4f"/>
+  <text x="120" y="5244" fill="rgba(255,255,255,0.4)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:10px;letter-spacing:0.15em;">MEMBER AREA</text>
+  <text x="120" y="5276" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:20px;">会員ページ</text>
+  <text x="120" y="5300" fill="rgba(255,255,255,0.5)" style="font-size:12px;">YUMEHO・MICA30 共通のアカウントでログイン</text>
+
+  <line x1="120" y1="5320" x2="660" y2="5320" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+
+  <!-- Member feature 1 -->
+  <rect x="120" y="5340" width="52" height="52" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="146" y="5372" text-anchor="middle" fill="rgba(255,255,255,0.6)" style="font-size:22px;">▶</text>
+  <text x="192" y="5362" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">使い方の動画を見られる</text>
+  <text x="192" y="5382" fill="rgba(255,255,255,0.5)" style="font-size:11px;">設置方法や操作方法の動画をいつでも確認できます</text>
+
+  <!-- Member feature 2 -->
+  <rect x="120" y="5410" width="52" height="52" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="146" y="5444" text-anchor="middle" fill="rgba(255,255,255,0.6)" style="font-size:18px;">📋</text>
+  <text x="192" y="5432" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">購入履歴を確認できる</text>
+  <text x="192" y="5452" fill="rgba(255,255,255,0.5)" style="font-size:11px;">いつ何を購入したか、いつでも確認できます</text>
+
+  <!-- Member feature 3 -->
+  <rect x="120" y="5480" width="52" height="52" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="146" y="5512" text-anchor="middle" fill="rgba(255,255,255,0.6)" style="font-size:20px;">🔑</text>
+  <text x="192" y="5502" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">パスワードの再設定</text>
+  <text x="192" y="5522" fill="rgba(255,255,255,0.5)" style="font-size:11px;">パスワードを忘れてもメールで再設定できます</text>
+
+  <!-- CMS area -->
+  <rect x="740" y="5200" width="620" height="360" rx="16" ry="16" fill="#7b2d8b"/>
+  <text x="780" y="5244" fill="rgba(255,255,255,0.4)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:10px;letter-spacing:0.15em;">CMS / ADMIN</text>
+  <text x="780" y="5276" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:20px;">管理画面</text>
+  <text x="780" y="5300" fill="rgba(255,255,255,0.5)" style="font-size:12px;">制作会社に頼まずに自分たちで更新できる仕組み</text>
+
+  <line x1="780" y1="5320" x2="1320" y2="5320" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+
+  <!-- CMS feature 1 -->
+  <rect x="780" y="5340" width="52" height="52" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="806" y="5372" text-anchor="middle" fill="rgba(255,255,255,0.6)" style="font-size:18px;">📰</text>
+  <text x="852" y="5362" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">ニュース・お知らせの更新</text>
+  <text x="852" y="5382" fill="rgba(255,255,255,0.5)" style="font-size:11px;">新着情報をいつでも追加・編集できます</text>
+
+  <!-- CMS feature 2 -->
+  <rect x="780" y="5410" width="52" height="52" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="806" y="5444" text-anchor="middle" fill="rgba(255,255,255,0.6)" style="font-size:18px;">❓</text>
+  <text x="852" y="5432" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">よくある質問（FAQ）の更新</text>
+  <text x="852" y="5452" fill="rgba(255,255,255,0.5)" style="font-size:11px;">質問と回答を追加・修正できます</text>
+
+  <!-- CMS feature 3 -->
+  <rect x="780" y="5480" width="52" height="52" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="806" y="5514" text-anchor="middle" fill="rgba(255,255,255,0.6)" style="font-size:18px;">🎬</text>
+  <text x="852" y="5502" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">動画・購入履歴の登録</text>
+  <text x="852" y="5522" fill="rgba(255,255,255,0.5)" style="font-size:11px;">会員向けコンテンツを自分たちで管理できます</text>
+
+  <!-- Options note -->
+  <rect x="80" y="5590" width="1290" height="70" rx="12" ry="12" fill="#fff" stroke="#d0d0d0" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="120" y="5620" fill="#999" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">将来の追加オプション（公開後に検討できます）</text>
+  <text x="120" y="5644" fill="#bbb" style="font-size:11px;">OP1：ユーザー同士の交流掲示板（コミュニティ機能）  ¥100,000　 OP2：サイトからそのまま購入できる決済機能　¥100,000</text>
+
+
+  <!-- ================================================================ -->
+  <!-- SLIDE 7 : DESIGN QUALITY                                         -->
+  <!-- ================================================================ -->
+  <rect y="5800" width="1440" height="810" fill="#fff"/>
+
+  <rect x="80" y="5860" width="6" height="36" rx="3" ry="3" fill="#0068b7"/>
+  <text x="100" y="5890" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:0.15em;">07  DESIGN QUALITY</text>
+  <text x="80" y="5940" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:32px;letter-spacing:0.05em;">見た目と使いやすさ</text>
+  <text x="80" y="5972" fill="#888" style="font-size:14px;">プロの品質で「信頼できる会社だ」という印象を与えます</text>
+
+  <!-- 6 quality cards -->
+  <rect x="80" y="6020" width="400" height="140" rx="12" ry="12" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="100" y="6044" width="48" height="48" rx="24" ry="24" fill="#f0f7ff"/>
+  <text x="124" y="6076" text-anchor="middle" fill="#0068b7" style="font-size:20px;">📱</text>
+  <text x="168" y="6066" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">パソコンでもスマホでも見やすい</text>
+  <text x="168" y="6090" fill="#888" style="font-size:11px;">画面サイズに合わせて自動的にレイアウトが変わる</text>
+  <text x="168" y="6106" fill="#888" style="font-size:11px;">「レスポンシブデザイン」で制作します。</text>
+  <text x="168" y="6130" fill="#888" style="font-size:11px;">スマートフォンでも快適に閲覧・操作できます。</text>
+
+  <rect x="520" y="6020" width="400" height="140" rx="12" ry="12" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="540" y="6044" width="48" height="48" rx="24" ry="24" fill="#f0f7ff"/>
+  <text x="564" y="6076" text-anchor="middle" fill="#0068b7" style="font-size:20px;">✨</text>
+  <text x="608" y="6066" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">動きのある上質なデザイン</text>
+  <text x="608" y="6090" fill="#888" style="font-size:11px;">スクロールに合わせた演出や、ボタンの反応など</text>
+  <text x="608" y="6106" fill="#888" style="font-size:11px;">細部にこだわったインタラクションで</text>
+  <text x="608" y="6130" fill="#888" style="font-size:11px;">ブランドの品質を表現します。</text>
+
+  <rect x="960" y="6020" width="400" height="140" rx="12" ry="12" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="980" y="6044" width="48" height="48" rx="24" ry="24" fill="#f0f7ff"/>
+  <text x="1004" y="6076" text-anchor="middle" fill="#0068b7" style="font-size:20px;">🎨</text>
+  <text x="1048" y="6066" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">3サイトで統一されたデザイン</text>
+  <text x="1048" y="6090" fill="#888" style="font-size:11px;">共通のデザインルールとパーツを使いながら、</text>
+  <text x="1048" y="6106" fill="#888" style="font-size:11px;">製品ごとに色やイメージで個性を出します。</text>
+  <text x="1048" y="6130" fill="#888" style="font-size:11px;">一貫したブランド体験を提供します。</text>
+
+  <rect x="80" y="6190" width="400" height="140" rx="12" ry="12" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="100" y="6214" width="48" height="48" rx="24" ry="24" fill="#f0f7ff"/>
+  <text x="124" y="6246" text-anchor="middle" fill="#0068b7" style="font-size:20px;">🔄</text>
+  <text x="168" y="6236" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">サイト間をかんたんに移動</text>
+  <text x="168" y="6260" fill="#888" style="font-size:11px;">ヘッダー（画面上部）のボタンで</text>
+  <text x="168" y="6276" fill="#888" style="font-size:11px;">Rinascentes / YUMEHO / MICA30 を</text>
+  <text x="168" y="6300" fill="#888" style="font-size:11px;">ワンクリックで切り替えられます。</text>
+
+  <rect x="520" y="6190" width="400" height="140" rx="12" ry="12" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="540" y="6214" width="48" height="48" rx="24" ry="24" fill="#f0f7ff"/>
+  <text x="564" y="6246" text-anchor="middle" fill="#0068b7" style="font-size:20px;">📞</text>
+  <text x="608" y="6236" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">いつでもお問い合わせできる</text>
+  <text x="608" y="6260" fill="#888" style="font-size:11px;">画面下に常に表示されるボタンで、</text>
+  <text x="608" y="6276" fill="#888" style="font-size:11px;">どのページからでもすぐにお問い合わせ</text>
+  <text x="608" y="6300" fill="#888" style="font-size:11px;">フォームにアクセスできます。</text>
+
+  <rect x="960" y="6190" width="400" height="140" rx="12" ry="12" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="980" y="6214" width="48" height="48" rx="24" ry="24" fill="#f0f7ff"/>
+  <text x="1004" y="6246" text-anchor="middle" fill="#0068b7" style="font-size:20px;">⚡</text>
+  <text x="1048" y="6236" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">既存プロトタイプを活用</text>
+  <text x="1048" y="6260" fill="#888" style="font-size:11px;">すでに動いているプロトタイプをベースに</text>
+  <text x="1048" y="6276" fill="#888" style="font-size:11px;">ブラッシュアップするため、</text>
+  <text x="1048" y="6300" fill="#888" style="font-size:11px;">短期間でも高品質な仕上がりを実現します。</text>
+
+
+  <!-- ================================================================ -->
+  <!-- SLIDE 8 : SCHEDULE + BUDGET                                      -->
+  <!-- ================================================================ -->
+  <rect y="6610" width="1440" height="810" fill="#f6f8fb"/>
+
+  <rect x="80" y="6670" width="6" height="36" rx="3" ry="3" fill="#0068b7"/>
+  <text x="100" y="6700" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:0.15em;">08  SCHEDULE AND BUDGET</text>
+  <text x="80" y="6750" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:32px;letter-spacing:0.05em;">スケジュールと費用</text>
+  <text x="80" y="6782" fill="#888" style="font-size:14px;">3週間で公開。まずは本体でスタートし、必要に応じてオプションを追加できます</text>
+
+  <!-- Visual timeline -->
+  <!-- Week 1 -->
+  <rect x="80" y="6830" width="400" height="200" rx="16" ry="16" fill="#0068b7"/>
+  <rect x="100" y="6860" width="52" height="52" rx="26" ry="26" fill="rgba(255,255,255,0.15)"/>
+  <text x="126" y="6894" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:28px;">1</text>
+  <text x="168" y="6880" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:10px;letter-spacing:0.1em;">WEEK</text>
+  <text x="168" y="6900" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px;">打ち合わせ・設計</text>
+  <line x1="100" y1="6924" x2="460" y2="6924" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+  <text x="100" y="6950" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ ご要望のヒアリング</text>
+  <text x="100" y="6970" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ サイト構成の最終確認</text>
+  <text x="100" y="6990" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ デザインの方向性を決定</text>
+  <text x="100" y="7010" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ 会員機能・管理画面の仕様整理</text>
+
+  <!-- Arrow -->
+  <polygon points="484,6930 504,6920 504,6940" fill="#0068b7"/>
+
+  <!-- Week 2 -->
+  <rect x="520" y="6830" width="400" height="200" rx="16" ry="16" fill="#0068b7" opacity="0.85"/>
+  <rect x="540" y="6860" width="52" height="52" rx="26" ry="26" fill="rgba(255,255,255,0.15)"/>
+  <text x="566" y="6894" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:28px;">2</text>
+  <text x="608" y="6880" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:10px;letter-spacing:0.1em;">WEEK</text>
+  <text x="608" y="6900" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px;">制作・実装</text>
+  <line x1="540" y1="6924" x2="900" y2="6924" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+  <text x="540" y="6950" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ 3サイト 32ページの制作</text>
+  <text x="540" y="6970" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ 管理画面の構築</text>
+  <text x="540" y="6990" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ 会員ページの構築</text>
+  <text x="540" y="7010" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ 動画・購入履歴まわりの確認</text>
+
+  <!-- Arrow -->
+  <polygon points="924,6930 944,6920 944,6940" fill="#0068b7"/>
+
+  <!-- Week 3 -->
+  <rect x="960" y="6830" width="400" height="200" rx="16" ry="16" fill="#0068b7" opacity="0.7"/>
+  <rect x="980" y="6860" width="52" height="52" rx="26" ry="26" fill="rgba(255,255,255,0.15)"/>
+  <text x="1006" y="6894" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:28px;">3</text>
+  <text x="1048" y="6880" fill="rgba(255,255,255,0.5)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:10px;letter-spacing:0.1em;">WEEK</text>
+  <text x="1048" y="6900" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px;">テスト・公開</text>
+  <line x1="980" y1="6924" x2="1340" y2="6924" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+  <text x="980" y="6950" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ 全ページの表示確認</text>
+  <text x="980" y="6970" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ フォーム・ログインの動作確認</text>
+  <text x="980" y="6990" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ 修正対応</text>
+  <text x="980" y="7010" fill="rgba(255,255,255,0.7)" style="font-size:12px;">✓ 公開</text>
+
+  <!-- Budget section -->
+  <text x="80" y="7090" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:15px;">費用</text>
+
+  <!-- Main budget -->
+  <rect x="80" y="7110" width="780" height="120" rx="16" ry="16" fill="#fff" stroke="#0068b7" stroke-width="1.5"/>
+  <text x="120" y="7152" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:16px;">本体</text>
+  <text x="200" y="7160" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:44px;">¥ 600,000</text>
+  <text x="520" y="7148" fill="#aaa" style="font-size:12px;">（税別）</text>
+  <text x="120" y="7188" fill="#888" style="font-size:12px;">公開サイト 32ページ + 会員ページ 5ページ + CMS / 管理画面 + 共通会員機能</text>
+  <text x="120" y="7210" fill="#aaa" style="font-size:10px;">3週間で公開 — 既存プロトタイプを活用して効率的に制作します</text>
+
+  <!-- Option budget -->
+  <rect x="900" y="7110" width="460" height="120" rx="16" ry="16" fill="#fff" stroke="#d0d0d0" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="940" y="7150" fill="#999" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px;">オプション</text>
+  <text x="1050" y="7155" fill="#bbb" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:32px;">¥ 200,000</text>
+  <text x="940" y="7184" fill="#bbb" style="font-size:11px;">コミュニティ機能　¥100,000</text>
+  <text x="940" y="7200" fill="#bbb" style="font-size:11px;">オンライン決済　　¥100,000</text>
+  <text x="940" y="7218" fill="#ccc" style="font-size:9px;">公開後に必要に応じて追加できます</text>
+
+
+  <!-- ================================================================ -->
+  <!-- SLIDE 9 : MERIT SUMMARY                                          -->
+  <!-- ================================================================ -->
+  <rect y="7420" width="1440" height="680" fill="#0068b7"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1300" cy="7550" r="200" fill="rgba(255,255,255,0.03)"/>
+  <circle cx="200" cy="7800" r="250" fill="rgba(255,255,255,0.03)"/>
+
+  <text x="720" y="7510" text-anchor="middle" fill="rgba(255,255,255,0.4)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:10px;letter-spacing:0.2em;">09  SUMMARY</text>
+  <text x="720" y="7560" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:32px;letter-spacing:0.1em;">この構成にするメリット</text>
+
+  <!-- 6 merit items -->
+  <rect x="120" y="7610" width="380" height="60" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="140" y="7638" fill="rgba(255,255,255,0.4)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:18px;">01</text>
+  <text x="180" y="7638" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">会社と製品の役割が明確になる</text>
+  <text x="180" y="7656" fill="rgba(255,255,255,0.5)" style="font-size:10px;">訪問者が迷わず目的の情報にたどり着ける</text>
+
+  <rect x="530" y="7610" width="380" height="60" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="550" y="7638" fill="rgba(255,255,255,0.4)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:18px;">02</text>
+  <text x="590" y="7638" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">製品ごとに最適な訴求ができる</text>
+  <text x="590" y="7656" fill="rgba(255,255,255,0.5)" style="font-size:10px;">ターゲット（PT/OT・施設長・放射線技師）に合わせた設計</text>
+
+  <rect x="940" y="7610" width="380" height="60" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="960" y="7638" fill="rgba(255,255,255,0.4)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:18px;">03</text>
+  <text x="1000" y="7638" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">共通化でコストを抑えられる</text>
+  <text x="1000" y="7656" fill="rgba(255,255,255,0.5)" style="font-size:10px;">デザインルールとパーツの共通化で制作効率UP</text>
+
+  <rect x="120" y="7690" width="380" height="60" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="140" y="7718" fill="rgba(255,255,255,0.4)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:18px;">04</text>
+  <text x="180" y="7718" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">自分たちで更新できる</text>
+  <text x="180" y="7736" fill="rgba(255,255,255,0.5)" style="font-size:10px;">管理画面があるので、ニュースやFAQは制作会社に頼まず更新可能</text>
+
+  <rect x="530" y="7690" width="380" height="60" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="550" y="7718" fill="rgba(255,255,255,0.4)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:18px;">05</text>
+  <text x="590" y="7718" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">購入後のつながりが続く</text>
+  <text x="590" y="7736" fill="rgba(255,255,255,0.5)" style="font-size:10px;">会員ページで動画や購入履歴を提供し、継続的な関係を構築</text>
+
+  <rect x="940" y="7690" width="380" height="60" rx="10" ry="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="960" y="7718" fill="rgba(255,255,255,0.4)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:18px;">06</text>
+  <text x="1000" y="7718" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px;">段階的に成長できる</text>
+  <text x="1000" y="7736" fill="rgba(255,255,255,0.5)" style="font-size:10px;">まずは本体で始めて、決済やコミュニティは後から追加可能</text>
+
+  <!-- Final message -->
+  <rect x="320" y="7800" width="800" height="70" rx="35" ry="35" fill="rgba(255,255,255,0.12)"/>
+  <text x="720" y="7836" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:16px;">本体 ¥600,000（税別）・3週間で、信頼と商談を生むサイトをお届けします</text>
+
+  <!-- Footer -->
+  <rect y="7890" width="1440" height="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="720" y="7930" text-anchor="middle" fill="rgba(255,255,255,0.3)" style="font-family:Helvetica,sans-serif;font-size:10px;">Confidential — Prepared for 医療法人真誠会</text>
+
+
+  <!-- ================================================================ -->
+  <!-- END SPACER -->
+  <!-- ================================================================ -->
+  <rect y="8050" width="1440" height="50" fill="#0068b7"/>
+</svg>

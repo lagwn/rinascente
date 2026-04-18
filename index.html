@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社コスミックエムイー | 医療機器・リハビリ支援システム</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=DM+Sans:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=DM+Sans:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap");
+
+        :root {
+            --primary: #1a1a2e;
+            --accent-blue: #0068b7;
+            --accent-teal: #005f73;
+            --highlight: #ffeb3b;
+            --bg: #fafafa;
+            --surface: #ffffff;
+            --line: #000000;
+            --text: #1a1a2e;
+            --radius-sm: 6px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 34px;
+            --font-base: "DM Sans", "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", sans-serif;
+            --font-logo: "Baloo 2", "DM Sans", sans-serif;
+            --container: 1240px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { min-height: 100%; }
+
+        body {
+            font-family: var(--font-base);
+            color: var(--text);
+            line-height: 1.6;
+            background: linear-gradient(180deg, #f8f8f0 0%, #f3f3e8 100%);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.06;
+            background-image:
+                radial-gradient(circle at 24% 18%, #1a1a2e 0.45px, transparent 0.75px),
+                radial-gradient(circle at 62% 56%, #1a1a2e 0.45px, transparent 0.75px);
+            background-size: 22px 22px, 26px 26px;
+            z-index: -1;
+        }
+
+        a { text-decoration: none; color: inherit; transition: opacity 0.25s; }
+        a:hover { opacity: 0.85; }
+        img { max-width: 100%; height: auto; display: block; }
+        ul { list-style: none; }
+        p { margin-bottom: 14px; }
+
+        .container {
+            width: min(var(--container), 100% - 56px);
+            margin: 0 auto;
+        }
+
+        /* Marquee */
+        .top-marquee {
+            overflow: hidden;
+            border-bottom: 1px solid var(--line);
+            border-top: 1px solid var(--line);
+            background: var(--primary);
+        }
+        .marquee-track {
+            display: inline-flex;
+            gap: 42px;
+            min-width: max-content;
+            padding: 10px 0;
+            animation: marqueeSlide 38s linear infinite;
+            font-size: 0.78rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--highlight);
+        }
+        .marquee-track span { position: relative; padding-right: 38px; }
+        .marquee-track span::after {
+            content: "✶"; position: absolute; right: 10px; top: 50%;
+            transform: translateY(-50%); color: #fff; font-size: 0.7rem;
+        }
+        @keyframes marqueeSlide { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* Header */
+        .header {
+            position: sticky; top: 0; z-index: 100;
+            border-bottom: 1px solid var(--line);
+            background: color-mix(in srgb, var(--bg) 92%, white 8%);
+            backdrop-filter: blur(10px);
+        }
+        .header-inner {
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .corp-logo {
+            font-family: var(--font-logo);
+            font-size: clamp(1.4rem, 2.2vw, 2rem);
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+            letter-spacing: -0.01em;
+        }
+        .corp-logo span {
+            display: block;
+            font-size: 0.55em;
+            font-family: var(--font-base);
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            color: var(--accent-blue);
+            margin-top: 2px;
+        }
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-link {
+            display: inline-block;
+            border: 1px solid transparent;
+            border-radius: 999px;
+            padding: 6px 14px;
+            font-size: 0.83rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            white-space: nowrap;
+        }
+        .nav-link:hover, .nav-link.active {
+            border-color: var(--line);
+            background: color-mix(in srgb, var(--highlight) 42%, white 58%);
+        }
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            gap: 8px; min-height: 44px; padding: 10px 22px;
+            border-radius: 999px; border: 1px solid var(--line);
+            font-weight: 700; font-size: 0.88rem; letter-spacing: 0.05em;
+            cursor: pointer; transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .btn:hover { transform: translate(-3px, -3px); box-shadow: 3px 3px 0 var(--line); }
+        .btn:active { transform: translate(0,0); box-shadow: none; }
+        .btn-primary { background: var(--primary); color: #fff; }
+        .btn-outline { background: var(--surface); color: var(--primary); }
+
+        /* Hero */
+        .hero {
+            padding: clamp(60px, 8vw, 110px) 0;
+        }
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .hero-eyebrow {
+            display: inline-block;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 4px 14px;
+            font-size: 0.73rem;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            font-weight: 700;
+            background: var(--highlight);
+            margin-bottom: 16px;
+        }
+        .hero-title {
+            font-family: var(--font-base);
+            font-size: clamp(2rem, 3.5vw, 3.2rem);
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+            margin-bottom: 20px;
+        }
+        .hero-subtitle {
+            font-size: 1rem;
+            color: color-mix(in srgb, var(--primary) 75%, white 25%);
+            max-width: 52ch;
+            margin-bottom: 28px;
+        }
+        .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+        .hero-visual {
+            border: 1px solid var(--line);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            background: var(--surface);
+            padding: 32px;
+            box-shadow: 8px 8px 0 rgba(0,0,0,0.08);
+        }
+        .hero-product-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .hero-product-card {
+            border: 1px solid var(--line);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            background: var(--bg);
+            transition: all 0.25s;
+        }
+        .hero-product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 4px 4px 0 var(--line);
+        }
+        .hp-badge {
+            display: inline-block;
+            border-radius: var(--radius-sm);
+            padding: 3px 8px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            margin-bottom: 10px;
+        }
+        .hp-badge-blue { background: var(--accent-blue); color: #fff; }
+        .hp-badge-teal { background: var(--accent-teal); color: #fff; }
+        .hp-name {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+        .hp-desc {
+            font-size: 0.82rem;
+            color: color-mix(in srgb, var(--primary) 65%, white 35%);
+            margin-bottom: 12px;
+        }
+        .hp-link {
+            font-size: 0.82rem;
+            font-weight: 700;
+            border-bottom: 1px solid currentColor;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .hp-link-blue { color: var(--accent-blue); }
+        .hp-link-teal { color: var(--accent-teal); }
+        .hp-link::after { content: "→"; }
+
+        /* Sections */
+        .section { padding: clamp(64px, 8vw, 96px) 0; }
+        .section-kicker {
+            display: inline-block;
+            border: 1px solid var(--line); border-radius: 999px;
+            padding: 4px 14px; margin-bottom: 10px;
+            font-size: 0.76rem; letter-spacing: 0.12em;
+            text-transform: uppercase; background: var(--highlight); font-weight: 700;
+        }
+        .section-title {
+            font-size: clamp(1.7rem, 2.4vw, 2.4rem);
+            font-weight: 700; color: var(--primary);
+            margin-bottom: 6px; line-height: 1.3;
+        }
+        .section-title::after {
+            content: ""; display: block; width: 72px; height: 2px;
+            margin-top: 10px; background: var(--line); border-radius: 999px;
+        }
+
+        /* Products section */
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 40px;
+        }
+        .product-card {
+            border: 1px solid var(--line);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            background: var(--surface);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .product-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 8px 8px 0 rgba(0,0,0,0.12);
+        }
+        .product-card-header {
+            padding: 36px 32px 28px;
+            border-bottom: 1px solid var(--line);
+        }
+        .pc-badge {
+            display: inline-block;
+            border-radius: var(--radius-sm);
+            padding: 4px 10px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+        .pc-badge-blue { background: var(--accent-blue); color: #fff; }
+        .pc-badge-teal { background: var(--accent-teal); color: #fff; }
+        .pc-name {
+            font-size: clamp(1.8rem, 3vw, 2.8rem);
+            font-family: var(--font-logo);
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .pc-name-blue { color: var(--accent-blue); }
+        .pc-name-teal { color: var(--accent-teal); }
+        .pc-tagline {
+            font-size: 0.92rem;
+            color: color-mix(in srgb, var(--primary) 70%, white 30%);
+            margin-bottom: 0;
+        }
+        .product-card-body {
+            padding: 28px 32px 32px;
+        }
+        .pc-features {
+            display: grid;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .pc-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.88rem;
+        }
+        .pc-feature::before {
+            content: "";
+            flex-shrink: 0;
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            margin-top: 6px;
+        }
+        .pc-feature-blue::before { background: var(--accent-blue); }
+        .pc-feature-teal::before { background: var(--accent-teal); }
+        .pc-cta {
+            display: inline-flex; align-items: center; gap: 10px;
+            min-height: 48px; padding: 12px 24px;
+            border-radius: 999px; border: 1px solid var(--line);
+            font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em;
+            transition: all 0.2s;
+            width: 100%; justify-content: center;
+        }
+        .pc-cta:hover { transform: translate(-3px, -3px); box-shadow: 3px 3px 0 var(--line); }
+        .pc-cta-blue { background: var(--accent-blue); color: #fff; }
+        .pc-cta-teal { background: var(--accent-teal); color: #fff; }
+
+        /* Company section */
+        .company-section {
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+        .company-inner {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .company-text h2 { font-size: clamp(1.5rem, 2.2vw, 2rem); color: var(--primary); margin-bottom: 14px; }
+        .company-text p { color: color-mix(in srgb, var(--primary) 72%, white 28%); font-size: 0.95rem; }
+        .company-info {
+            border: 1px solid var(--line);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+        .info-row {
+            display: flex;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        .info-row:last-child { border-bottom: none; }
+        .info-label {
+            flex-shrink: 0;
+            width: 130px;
+            padding: 14px 16px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            background: color-mix(in srgb, var(--highlight) 30%, white 70%);
+            border-right: 1px solid rgba(0,0,0,0.08);
+        }
+        .info-value {
+            padding: 14px 16px;
+            font-size: 0.88rem;
+        }
+
+        /* CTA */
+        .cta-section {
+            padding: clamp(56px, 6vw, 80px) 0;
+        }
+        .cta-panel {
+            border: 1px solid var(--line);
+            border-radius: var(--radius-xl);
+            padding: clamp(28px, 4vw, 48px);
+            background: linear-gradient(145deg, color-mix(in srgb, var(--highlight) 38%, white 62%), rgba(255,255,255,0.5));
+            text-align: center;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.07);
+        }
+        .cta-panel h2 { font-size: clamp(1.4rem, 2.2vw, 2rem); color: var(--primary); margin-bottom: 12px; }
+        .cta-panel p { max-width: 58ch; margin-inline: auto; color: color-mix(in srgb, var(--primary) 72%, white 28%); }
+        .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+
+        /* Footer */
+        .footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.88);
+            padding: 56px 0;
+            border-top: 1px solid rgba(255,255,200,0.2);
+        }
+        .footer-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 32px;
+            margin-bottom: 36px;
+        }
+        .footer-brand .logo-text {
+            font-family: var(--font-logo);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--highlight);
+            margin-bottom: 8px;
+        }
+        .footer-brand p { font-size: 0.83rem; opacity: 0.8; }
+        .footer-col h4 {
+            font-size: 0.78rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .footer-col ul { display: grid; gap: 7px; }
+        .footer-col a { font-size: 0.86rem; opacity: 0.82; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 2px; }
+        .footer-col a:hover { opacity: 1; }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.12);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.78rem;
+            opacity: 0.65;
+        }
+
+        /* Animate */
+        .animate-on-scroll {
+            opacity: 0; transform: translateY(28px);
+            transition: opacity 0.75s ease-out, transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+
+        /* Mobile */
+        .mobile-menu-btn {
+            display: none; flex-direction: column; gap: 5px;
+            padding: 10px; border: 1px solid var(--line);
+            border-radius: var(--radius-sm); background: var(--surface); cursor: pointer;
+        }
+        .bar { width: 22px; height: 2px; background: var(--line); }
+
+        @media (max-width: 900px) {
+            .hero-inner, .product-grid, .company-inner { grid-template-columns: 1fr; }
+            .hero-product-cards { grid-template-columns: 1fr 1fr; }
+            .footer-inner { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 640px) {
+            .container { width: min(var(--container), 100% - 28px); }
+            .hero-product-cards { grid-template-columns: 1fr; }
+            .footer-inner { grid-template-columns: 1fr; }
+            .cta-btns .btn { width: 100%; }
+            .nav-menu { display: none; flex-direction: column; gap: 8px; align-items: stretch; }
+            .nav-menu.open { display: flex; padding: 14px; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface); position: absolute; top: 100%; left: 0; right: 0; z-index: 200; }
+            .mobile-menu-btn { display: flex; }
+            .header { position: sticky; }
+            .header-inner { position: relative; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>COSMIC ME</span>
+            <span>MEDICAL DEVICES</span>
+            <span>YUMEHO</span>
+            <span>MICA30 INJECTOR</span>
+            <span>REHABILITATION SYSTEMS</span>
+            <span>CONTRAST AGENT INJECTOR</span>
+            <span>COSMIC ME</span>
+            <span>MEDICAL DEVICES</span>
+            <span>YUMEHO</span>
+            <span>MICA30 INJECTOR</span>
+            <span>REHABILITATION SYSTEMS</span>
+            <span>CONTRAST AGENT INJECTOR</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="corp-logo" aria-label="企業トップへ">
+                COSMIC ME
+                <span>株式会社コスミックエムイー</span>
+            </a>
+            <div class="mobile-menu-btn" role="button" tabindex="0" aria-label="メニュー">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">トップ</a></li>
+                    <li><a href="#products" class="nav-link">製品</a></li>
+                    <li><a href="#company" class="nav-link">会社情報</a></li>
+                    <li><a href="yumeho/contact.html" class="btn btn-outline" style="padding: 8px 18px; font-size: 0.83rem;">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-text animate-on-scroll">
+                        <p class="hero-eyebrow">Medical Innovation</p>
+                        <h1 class="hero-title">医療の現場を、<br>もっと安全に。<br>もっと確かに。</h1>
+                        <p class="hero-subtitle">
+                            株式会社コスミックエムイーは、歩行リハビリ支援から造影剤注入まで、医療現場の課題解決に取り組む医療機器メーカーです。
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#products" class="btn btn-primary">製品ラインナップを見る</a>
+                            <a href="#company" class="btn btn-outline">会社情報</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual animate-on-scroll delay-200">
+                        <p style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;color:rgba(26,26,46,0.5);margin-bottom:14px;">Our Products</p>
+                        <div class="hero-product-cards">
+                            <a href="yumeho/index.html" class="hero-product-card">
+                                <span class="hp-badge hp-badge-blue">Rehab</span>
+                                <div class="hp-name">YUMEHO</div>
+                                <div class="hp-desc">歩行リハビリ<br>支援システム</div>
+                                <span class="hp-link hp-link-blue">詳細を見る</span>
+                            </a>
+                            <a href="mica30/index.html" class="hero-product-card">
+                                <span class="hp-badge hp-badge-teal">Imaging</span>
+                                <div class="hp-name">MICA30</div>
+                                <div class="hp-desc">造影剤<br>注入装置</div>
+                                <span class="hp-link hp-link-teal">詳細を見る</span>
+                            </a>
+                        </div>
+                        <p style="font-size:0.75rem;text-align:center;margin-top:16px;margin-bottom:0;opacity:0.55;">医療機器認証取得済製品</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="section" id="products" style="border-top:1px solid rgba(0,0,0,0.08);">
+            <div class="container">
+                <p class="section-kicker">Products</p>
+                <h2 class="section-title">製品ラインナップ</h2>
+                <p style="margin-top:8px;max-width:62ch;color:color-mix(in srgb, #1a1a2e 70%, white 30%);font-size:0.95rem;">
+                    医療現場の多様なニーズに応える2製品。安全性と使いやすさを追求した設計で、現場スタッフと患者様をサポートします。
+                </p>
+
+                <div class="product-grid">
+                    <!-- YUMEHO -->
+                    <article class="product-card animate-on-scroll">
+                        <div class="product-card-header">
+                            <span class="pc-badge pc-badge-blue">Rehabilitation</span>
+                            <div class="pc-name pc-name-blue">YUMEHO</div>
+                            <p class="pc-tagline">転倒の不安を取り除き、「自分の足で歩く」を支える歩行リハビリ支援システム</p>
+                        </div>
+                        <div class="product-card-body">
+                            <ul class="pc-features">
+                                <li class="pc-feature pc-feature-blue">デュアルレール＋G-Suitによる転倒防止設計</li>
+                                <li class="pc-feature pc-feature-blue">見守り1名体制での安全な歩行訓練</li>
+                                <li class="pc-feature pc-feature-blue">両手フリーのプレイ型リハビリを実現</li>
+                                <li class="pc-feature pc-feature-blue">天井型・スタンド型から施設に合わせて選択</li>
+                            </ul>
+                            <a href="yumeho/index.html" class="pc-cta pc-cta-blue">YUMEHOサイトへ →</a>
+                        </div>
+                    </article>
+
+                    <!-- MICA30 -->
+                    <article class="product-card animate-on-scroll delay-100">
+                        <div class="product-card-header">
+                            <span class="pc-badge pc-badge-teal">Medical Imaging</span>
+                            <div class="pc-name pc-name-teal">MICA30</div>
+                            <p class="pc-tagline">血管造影のための診断用造影剤を精密に注入する多相電動式造影剤注入装置</p>
+                        </div>
+                        <div class="product-card-body">
+                            <ul class="pc-features">
+                                <li class="pc-feature pc-feature-teal">注入量 0.05mL〜30mL、3モード対応</li>
+                                <li class="pc-feature pc-feature-teal">気泡検知センサーで高い安全性を確保</li>
+                                <li class="pc-feature pc-feature-teal">ベッドサイドディスプレイで設定値を明確表示</li>
+                                <li class="pc-feature pc-feature-teal">医療機器認証取得（認証番号：304ADBZX00064000）</li>
+                            </ul>
+                            <a href="mica30/index.html" class="pc-cta pc-cta-teal">MICA30サイトへ →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company -->
+        <section class="section company-section" id="company">
+            <div class="container">
+                <div class="company-inner">
+                    <div class="company-text animate-on-scroll">
+                        <p class="section-kicker">Company</p>
+                        <h2 class="section-title">会社概要</h2>
+                        <p>株式会社コスミックエムイーは、医療機器の開発・製造・販売を通じて、医療現場の安全性向上と医療スタッフの負担軽減に取り組んでいます。</p>
+                        <p>リハビリ支援から造影剤注入まで、幅広い医療ニーズに対応した製品群で、病院・施設・クリニックを支えます。</p>
+                        <a href="yumeho/contact.html" class="btn btn-primary" style="margin-top:8px;">お問い合わせ</a>
+                    </div>
+                    <div class="company-info animate-on-scroll delay-200">
+                        <div class="info-row">
+                            <div class="info-label">会社名</div>
+                            <div class="info-value">株式会社コスミックエムイー</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">所在地</div>
+                            <div class="info-value">埼玉県川口市芝下二丁目31番3号</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">電話番号</div>
+                            <div class="info-value">048-268-9811</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">事業内容</div>
+                            <div class="info-value">医療機器の開発・製造・販売</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">製品</div>
+                            <div class="info-value">YUMEHO（歩行リハビリ支援）、MICA30（造影剤注入装置）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-panel animate-on-scroll">
+                    <p class="section-kicker">Contact</p>
+                    <h2>製品に関するご相談・資料請求</h2>
+                    <p>各製品の詳細資料や導入事例、デモのご依頼など、お気軽にお問い合わせください。</p>
+                    <div class="cta-btns">
+                        <a href="yumeho/contact.html" class="btn btn-primary">YUMEHO 資料請求</a>
+                        <a href="mica30/contact.html" class="btn" style="background:var(--accent-teal);color:#fff;border-color:var(--line);">MICA30 お問い合わせ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="logo-text">COSMIC ME</div>
+                    <p>株式会社コスミックエムイー<br>埼玉県川口市芝下二丁目31番3号<br>TEL: 048-268-9811</p>
+                </div>
+                <div class="footer-col">
+                    <h4>YUMEHO</h4>
+                    <ul>
+                        <li><a href="yumeho/index.html">トップ</a></li>
+                        <li><a href="yumeho/product.html">製品紹介</a></li>
+                        <li><a href="yumeho/cases.html">導入事例</a></li>
+                        <li><a href="yumeho/price.html">価格・見積</a></li>
+                        <li><a href="yumeho/contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>MICA30</h4>
+                    <ul>
+                        <li><a href="mica30/index.html">トップ</a></li>
+                        <li><a href="mica30/product.html">製品詳細</a></li>
+                        <li><a href="mica30/faq.html">よくある質問</a></li>
+                        <li><a href="mica30/contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 株式会社コスミックエムイー All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // Mobile menu
+        const btn = document.querySelector('.mobile-menu-btn');
+        const menu = document.querySelector('.nav-menu');
+        if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('open'));
+    </script>
+</body>
+</html>

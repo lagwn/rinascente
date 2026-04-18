@@ -1,0 +1,74 @@
+/* ============================================
+   Site Switcher — shared across all sites
+   ============================================ */
+
+.header-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.site-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ss-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 3px 9px;
+  border-radius: 3px;
+  transition: all 0.18s;
+  opacity: 1;
+}
+
+.ss-corp {
+  color: var(--ss-fg, rgba(0,0,0,0.4));
+  border: 1px solid var(--ss-border, rgba(0,0,0,0.12));
+  background: transparent;
+}
+.ss-corp:hover {
+  color: var(--ss-fg-hover, rgba(0,0,0,0.7));
+  border-color: var(--ss-border-hover, rgba(0,0,0,0.3));
+}
+.ss-corp.active {
+  color: var(--ss-active, rgba(0,0,0,0.8));
+  background: var(--ss-active-bg, rgba(0,0,0,0.06));
+  border-color: var(--ss-active-border, rgba(0,0,0,0.2));
+}
+
+.ss-divider {
+  display: block;
+  width: 1px;
+  height: 12px;
+  background: var(--ss-border, rgba(0,0,0,0.15));
+  margin: 0 3px;
+  flex-shrink: 0;
+}
+
+.ss-product {
+  color: var(--ss-fg, rgba(0,0,0,0.35));
+  border: 1px solid transparent;
+  background: transparent;
+  text-transform: uppercase;
+}
+.ss-product:hover {
+  color: var(--ss-accent, #0068b7);
+  border-color: var(--ss-accent-border, rgba(0,104,183,0.25));
+  opacity: 1;
+}
+.ss-product.active {
+  color: var(--ss-accent, #0068b7);
+  background: var(--ss-accent-bg, rgba(0,104,183,0.08));
+  border-color: var(--ss-accent-border, rgba(0,104,183,0.25));
+}
+
+@media (max-width: 860px) {
+  .site-switcher { display: none; }
+}

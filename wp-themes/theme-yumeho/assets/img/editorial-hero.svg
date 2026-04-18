@@ -1,0 +1,51 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Blob (Warm Off-White/Yellowish) -->
+  <path d="M700 250C700 380 580 480 400 480C220 480 100 380 100 250C100 120 220 20 400 20C580 20 700 120 700 250Z" fill="#fff9c4"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="150" cy="100" r="20" fill="#ff6b6b" stroke="black" stroke-width="4"/>
+  <circle cx="650" cy="100" r="15" fill="#4ecdc4" stroke="black" stroke-width="4"/>
+  <path d="M600 400C620 380 650 420 670 400" stroke="#ffeb3b" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Rail System -->
+  <path d="M200 50Q400 50 600 50" stroke="black" stroke-width="12" stroke-linecap="round"/>
+  <line x1="250" y1="50" x2="250" y2="150" stroke="black" stroke-width="6"/> <!-- Harness Rope -->
+  <line x1="550" y1="50" x2="550" y2="90" stroke="black" stroke-width="6"/> <!-- Support -->
+  
+  <!-- Character 1: Patient (The Walker) -->
+  <g transform="translate(200, 150)">
+    <!-- Body -->
+    <rect x="20" y="40" width="60" height="90" rx="30" fill="#c7f464" stroke="black" stroke-width="6"/>
+    <!-- Head -->
+    <circle cx="50" cy="20" r="25" fill="#ffeb3b" stroke="black" stroke-width="6"/>
+    <!-- Face -->
+    <circle cx="60" cy="20" r="3" fill="black"/>
+    <path d="M55 30Q60 35 65 30" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Legs -->
+    <path d="M35 130L35 180" stroke="black" stroke-width="8" stroke-linecap="round"/>
+    <path d="M65 130L85 170" stroke="black" stroke-width="8" stroke-linecap="round"/> <!-- Walking step -->
+    <!-- Arms holding harness -->
+    <path d="M20 70L-10 50" stroke="black" stroke-width="6" stroke-linecap="round"/>
+    <path d="M80 70L100 50" stroke="black" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Character 2: Therapist (Supporting) -->
+  <g transform="translate(450, 160)">
+    <!-- Body -->
+    <rect x="20" y="40" width="60" height="80" rx="30" fill="#4ecdc4" stroke="black" stroke-width="6"/>
+    <!-- Head -->
+    <circle cx="50" cy="20" r="25" fill="#ff6b6b" stroke="black" stroke-width="6"/>
+    <!-- Face -->
+    <circle cx="40" cy="20" r="3" fill="black"/>
+    <path d="M35 30Q40 35 45 30" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <!-- Legs -->
+    <path d="M35 120L35 170" stroke="black" stroke-width="8" stroke-linecap="round"/>
+    <path d="M65 120L65 170" stroke="black" stroke-width="8" stroke-linecap="round"/>
+    <!-- Arm indicating forward -->
+    <path d="M80 70L120 60" stroke="black" stroke-width="6" stroke-linecap="round"/>
+    <path d="M110 50L130 60L110 70" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/> <!-- Arrow hand hint -->
+  </g>
+
+  <!-- Floor/Ground Blob -->
+  <path d="M100 450Q400 480 700 450" fill="#9d8df1" opacity="0.5"/>
+</svg>

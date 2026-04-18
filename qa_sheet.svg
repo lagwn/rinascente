@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1440 3200" width="1440" height="3200">
+  <defs>
+    <style>
+      text{font-family:HiraKakuProN-W3-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN',sans-serif}
+    </style>
+  </defs>
+
+  <!-- ============================================================ -->
+  <!-- PAGE 1: Q&A — COST / VALUE                                    -->
+  <!-- ============================================================ -->
+  <rect width="1440" height="1600" fill="#fff"/>
+  <rect width="1440" height="4" fill="#0068b7"/>
+
+  <text x="720" y="60" text-anchor="middle" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:.2em">EXPECTED Q&amp;A</text>
+  <text x="720" y="104" text-anchor="middle" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:34px;letter-spacing:.08em">想定される質問と回答</text>
+  <text x="720" y="134" text-anchor="middle" fill="#999" style="font-size:13px">プレゼン中・プレゼン後に想定される質問に対し、根拠をもって回答します</text>
+
+  <!-- ===== Q1 ===== -->
+  <rect x="80" y="172" width="1280" height="220" rx="16" ry="16" fill="#f6f8fb" stroke="#e0e0e0" stroke-width=".75"/>
+  <rect x="100" y="192" width="28" height="28" rx="14" ry="14" fill="#0068b7"/>
+  <text x="114" y="212" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">Q</text>
+  <text x="144" y="212" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:17px">60万円は高くないですか？</text>
+  <text x="500" y="212" fill="#aaa" style="font-size:11px">— 費用に関する質問</text>
+
+  <rect x="100" y="236" width="28" height="28" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="114" y="256" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">A</text>
+  <text x="144" y="256" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">相場の半額以下です。この金額にはすべてが含まれています。</text>
+
+  <text x="144" y="290" fill="#555" style="font-size:12px">一般的に、3サイト32ページ + 会員機能 + 管理画面の制作を依頼すると、最低でも120〜200万円が相場です。</text>
+  <text x="144" y="310" fill="#555" style="font-size:12px">今回は既存プロトタイプ（すでに動いているサイト）をベースにブラッシュアップするため、</text>
+  <text x="144" y="330" fill="#555" style="font-size:12px">ゼロから作る工数が大幅に削減され、60万円で実現できます。</text>
+  <text x="144" y="358" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">含まれるもの：公開ページ32P + 会員認証5P + CMS管理画面 + テスト・公開調整 — 追加費用なし</text>
+  <text x="144" y="378" fill="#888" style="font-size:11px">※ 公開後のニュースやFAQ更新は管理画面で御社ご自身で対応可能。更新のたびに制作費はかかりません。</text>
+
+  <!-- ===== Q2 ===== -->
+  <rect x="80" y="412" width="1280" height="220" rx="16" ry="16" fill="#f6f8fb" stroke="#e0e0e0" stroke-width=".75"/>
+  <rect x="100" y="432" width="28" height="28" rx="14" ry="14" fill="#0068b7"/>
+  <text x="114" y="452" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">Q</text>
+  <text x="144" y="452" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:17px">他社と比較検討したいのですが</text>
+  <text x="540" y="452" fill="#aaa" style="font-size:11px">— 競合比較に関する質問</text>
+
+  <rect x="100" y="476" width="28" height="28" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="114" y="496" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">A</text>
+  <text x="144" y="496" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">もちろんです。ただし、他社との決定的な違いが3つあります。</text>
+
+  <rect x="144" y="520" width="380" height="44" rx="8" ry="8" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="164" y="548" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">1. すでに動くプロトタイプがある</text>
+
+  <rect x="540" y="520" width="380" height="44" rx="8" ry="8" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="560" y="548" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">2. 公的機関コンサルとしての実績</text>
+
+  <rect x="936" y="520" width="380" height="44" rx="8" ry="8" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="956" y="548" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">3. 公開後の運用までワンストップ</text>
+
+  <text x="144" y="590" fill="#555" style="font-size:12px">他社は「提案書」からのスタートです。完成イメージは想像するしかありません。</text>
+  <text x="144" y="610" fill="#555" style="font-size:12px">私のご提案は、今日お見せしたサイトがそのまま完成形のベースになります。認識のズレが起きません。</text>
+
+  <!-- ===== Q3 ===== -->
+  <rect x="80" y="652" width="1280" height="240" rx="16" ry="16" fill="#f6f8fb" stroke="#e0e0e0" stroke-width=".75"/>
+  <rect x="100" y="672" width="28" height="28" rx="14" ry="14" fill="#0068b7"/>
+  <text x="114" y="692" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">Q</text>
+  <text x="144" y="692" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:17px">個人事業主で大丈夫ですか？途中で連絡がつかなくなったりしませんか？</text>
+
+  <rect x="100" y="716" width="28" height="28" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="114" y="736" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">A</text>
+  <text x="144" y="736" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">4層の安全対策を構築しており、対応が止まることはありません。</text>
+
+  <text x="144" y="770" fill="#555" style="font-size:12px">第1層：サーバー障害 → Xserver が24時間体制で監視・対応（SLA 99.99%保証）</text>
+  <text x="144" y="792" fill="#555" style="font-size:12px">第2層：コンテンツ更新 → CMS で御社ご自身がリアルタイムに対応可能</text>
+  <text x="144" y="814" fill="#555" style="font-size:12px">第3層：セキュリティ異常 → WordPress セキュリティプラグインが検知し Slack で即時通知</text>
+  <text x="144" y="836" fill="#555" style="font-size:12px">第4層：万が一の緊急時 → 確保済みの外注パートナーが代理対応</text>
+
+  <text x="144" y="868" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">そして私の本業は鳥取県よろず支援拠点の専門コーディネーター（6年継続中）です。公的な立場の人間が消えることはありません。</text>
+
+  <!-- ===== Q4 ===== -->
+  <rect x="80" y="912" width="1280" height="200" rx="16" ry="16" fill="#f6f8fb" stroke="#e0e0e0" stroke-width=".75"/>
+  <rect x="100" y="932" width="28" height="28" rx="14" ry="14" fill="#0068b7"/>
+  <text x="114" y="952" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">Q</text>
+  <text x="144" y="952" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:17px">医療認証のサーバーを使うべきではないですか？</text>
+
+  <rect x="100" y="976" width="28" height="28" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="114" y="996" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">A</text>
+  <text x="144" y="996" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">本サイトでは不要です。理由は明確です。</text>
+
+  <text x="144" y="1028" fill="#555" style="font-size:12px">医療認証サーバーが必要なのは、電子カルテ・患者の診療データ・検査結果を扱うシステムです。</text>
+  <text x="144" y="1048" fill="#555" style="font-size:12px">本サイトは「製品紹介」「企業情報」「お問い合わせ」が目的であり、患者情報は一切扱いません。</text>
+  <text x="144" y="1068" fill="#555" style="font-size:12px">テルモ・オリンパス等の大手医療機器メーカーも、製品紹介サイトは一般的なサーバーで運用しています。</text>
+  <text x="144" y="1096" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">ただし、将来ご要望があれば医療認証取得済みの Amazon AWS への移行も可能です（年間コストは3〜5倍）。</text>
+
+  <!-- ===== Q5 ===== -->
+  <rect x="80" y="1132" width="1280" height="200" rx="16" ry="16" fill="#f6f8fb" stroke="#e0e0e0" stroke-width=".75"/>
+  <rect x="100" y="1152" width="28" height="28" rx="14" ry="14" fill="#0068b7"/>
+  <text x="114" y="1172" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">Q</text>
+  <text x="144" y="1172" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:17px">なぜ3つのサイトに分けるのですか？1つにまとめた方がよいのでは？</text>
+
+  <rect x="100" y="1196" width="28" height="28" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="114" y="1216" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">A</text>
+  <text x="144" y="1216" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">閲覧者の目的がまったく違うからです。</text>
+
+  <text x="144" y="1248" fill="#555" style="font-size:12px">「この会社は信頼できるか？」を知りたい人と、「YUMEHO の技術仕様を比較したい」人では、求める情報が異なります。</text>
+  <text x="144" y="1268" fill="#555" style="font-size:12px">1つに詰め込むと、どちらも中途半端になり、離脱率が上がります。</text>
+  <text x="144" y="1288" fill="#555" style="font-size:12px">役割を分けることで、各ページが「そのターゲットに最適化」され、問い合わせ率が大きく向上します。</text>
+  <text x="144" y="1316" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">なお、3サイトはサイトスイッチャーで1クリック移動。バラバラではなく、ひとつのエコシステムとして機能します。</text>
+
+  <!-- ===== Q6 ===== -->
+  <rect x="80" y="1352" width="1280" height="210" rx="16" ry="16" fill="#f6f8fb" stroke="#e0e0e0" stroke-width=".75"/>
+  <rect x="100" y="1372" width="28" height="28" rx="14" ry="14" fill="#0068b7"/>
+  <text x="114" y="1392" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">Q</text>
+  <text x="144" y="1392" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:17px">公開後の更新に毎回費用がかかりますか？</text>
+
+  <rect x="100" y="1416" width="28" height="28" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="114" y="1436" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">A</text>
+  <text x="144" y="1436" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">基本的な更新は、管理画面で御社ご自身が無料で行えます。</text>
+
+  <text x="144" y="1468" fill="#555" style="font-size:12px">WordPress ベースの管理画面を導入するため、以下の更新はご自身で対応可能です：</text>
+  <text x="144" y="1492" fill="#555" style="font-size:12px">  ・ニュース / お知らせの投稿　　・FAQ の追加・編集　　・会員向け動画の登録　　・購入履歴の更新</text>
+  <text x="144" y="1518" fill="#555" style="font-size:12px">ページ構成の大幅な変更や新機能追加が必要な場合は別途ご相談となりますが、</text>
+  <text x="144" y="1538" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">よろず支援拠点経由であれば、相談対応は無料で行えます。</text>
+
+
+  <!-- ============================================================ -->
+  <!-- PAGE 2: Q&A — TECHNICAL / FUTURE                              -->
+  <!-- ============================================================ -->
+  <rect y="1600" width="1440" height="1600" fill="#f6f8fb"/>
+
+  <!-- ===== Q7 ===== -->
+  <rect x="80" y="1632" width="1280" height="200" rx="16" ry="16" fill="#fff" stroke="#e0e0e0" stroke-width=".75"/>
+  <rect x="100" y="1652" width="28" height="28" rx="14" ry="14" fill="#0068b7"/>
+  <text x="114" y="1672" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">Q</text>
+  <text x="144" y="1672" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:17px">デザインの変更はどこまでできますか？</text>
+
+  <rect x="100" y="1696" width="28" height="28" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="114" y="1716" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">A</text>
+  <text x="144" y="1716" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">プロトタイプベースのブラッシュアップが前提です。</text>
+
+  <text x="144" y="1748" fill="#555" style="font-size:12px">色・フォント・写真の差し替え、文言の調整、セクションの順序変更などは制作費の範囲内で対応します。</text>
+  <text x="144" y="1768" fill="#555" style="font-size:12px">ページ構成やレイアウトの全面的なリニューアルは追加費用となります。</text>
+  <text x="144" y="1796" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">現状のプロトタイプはプロ品質で、スクロールアニメーション・動画演出・シミュレーション機能まで実装済みです。</text>
+  <text x="144" y="1816" fill="#888" style="font-size:11px">※ 大幅な変更が必要かどうかは、プロトタイプをご確認いただいた上でご判断ください。</text>
+
+  <!-- ===== Q8 ===== -->
+  <rect x="80" y="1852" width="1280" height="220" rx="16" ry="16" fill="#fff" stroke="#e0e0e0" stroke-width=".75"/>
+  <rect x="100" y="1872" width="28" height="28" rx="14" ry="14" fill="#0068b7"/>
+  <text x="114" y="1892" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">Q</text>
+  <text x="144" y="1892" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:17px">3週間で本当に完成しますか？</text>
+
+  <rect x="100" y="1916" width="28" height="28" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="114" y="1936" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">A</text>
+  <text x="144" y="1936" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">はい。すでにプロトタイプが動いているため、ゼロからの制作ではありません。</text>
+
+  <text x="144" y="1968" fill="#555" style="font-size:12px">1週目：要件確定・デザイン方針決定（原稿・素材のご支給をお願いします）</text>
+  <text x="144" y="1988" fill="#555" style="font-size:12px">2週目：3サイト制作 + 管理画面 + 会員機能の実装</text>
+  <text x="144" y="2008" fill="#555" style="font-size:12px">3週目：テスト・修正・公開</text>
+  <text x="144" y="2038" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">成立条件：原稿・写真素材のご支給 + 各週での迅速な確認・フィードバック</text>
+  <text x="144" y="2058" fill="#888" style="font-size:11px">※ 確認の遅延が発生した場合は、その分スケジュールが延長となります。</text>
+
+  <!-- ===== Q9 ===== -->
+  <rect x="80" y="2092" width="1280" height="200" rx="16" ry="16" fill="#fff" stroke="#e0e0e0" stroke-width=".75"/>
+  <rect x="100" y="2112" width="28" height="28" rx="14" ry="14" fill="#0068b7"/>
+  <text x="114" y="2132" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">Q</text>
+  <text x="144" y="2132" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:17px">オンライン決済やコミュニティ機能は後から追加できますか？</text>
+
+  <rect x="100" y="2156" width="28" height="28" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="114" y="2176" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">A</text>
+  <text x="144" y="2176" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">はい。段階追加を前提に設計しています。</text>
+
+  <text x="144" y="2208" fill="#555" style="font-size:12px">コミュニティ機能（ユーザー同士の交流掲示板）とオンライン決済機能は、それぞれオプションで追加可能です。</text>
+  <text x="144" y="2228" fill="#555" style="font-size:12px">まずは本体で公開し、実際のアクセス状況やお客様の反応を見てから追加する方が、</text>
+  <text x="144" y="2248" fill="#555" style="font-size:12px">予算と開発リスクをコントロールしやすく、コンサルティングの経験上も強くお勧めします。</text>
+  <text x="144" y="2276" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">YUMEHO のシミュレーション画面には、すでに決済フロー（完了/キャンセル画面）の基盤が実装済みです。</text>
+
+  <!-- ===== Q10 ===== -->
+  <rect x="80" y="2312" width="1280" height="200" rx="16" ry="16" fill="#fff" stroke="#e0e0e0" stroke-width=".75"/>
+  <rect x="100" y="2332" width="28" height="28" rx="14" ry="14" fill="#0068b7"/>
+  <text x="114" y="2352" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">Q</text>
+  <text x="144" y="2352" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:17px">サイト公開後の集客はどうすればいいですか？</text>
+
+  <rect x="100" y="2376" width="28" height="28" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="114" y="2396" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">A</text>
+  <text x="144" y="2396" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">SNS運用・Google広告・アクセス解析まで、私がワンストップで対応できます。</text>
+
+  <text x="144" y="2428" fill="#555" style="font-size:12px">サイトは「作ったら終わり」ではありません。公開後の運用こそが本番です。</text>
+  <text x="144" y="2448" fill="#555" style="font-size:12px">私は鳥取県よろず支援拠点で6年間、まさにこの「公開後の運用支援」を本業としてきました。</text>
+  <text x="144" y="2468" fill="#555" style="font-size:12px">制作会社に頼むと、SNSは別会社、広告はまた別会社…と窓口がバラバラになりがちですが、</text>
+  <text x="144" y="2496" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">私なら制作から運用・広告・改善まで、窓口ひとつですべてつながります。</text>
+
+  <!-- ===== Q11 ===== -->
+  <rect x="80" y="2532" width="1280" height="200" rx="16" ry="16" fill="#fff" stroke="#e0e0e0" stroke-width=".75"/>
+  <rect x="100" y="2552" width="28" height="28" rx="14" ry="14" fill="#0068b7"/>
+  <text x="114" y="2572" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">Q</text>
+  <text x="144" y="2572" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:17px">ドメインは .com と .co.jp どちらがいいですか？</text>
+
+  <rect x="100" y="2596" width="28" height="28" rx="14" ry="14" fill="#2d6a4f"/>
+  <text x="114" y="2616" text-anchor="middle" fill="#fff" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:13px">A</text>
+  <text x="144" y="2616" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">コーポレートサイトは .co.jp、製品サイトは .com の組み合わせをお勧めします。</text>
+
+  <text x="144" y="2648" fill="#555" style="font-size:12px">.co.jp は日本で登記された法人のみが取得でき、1法人1ドメインの制限があるため、なりすましが困難です。</text>
+  <text x="144" y="2668" fill="#555" style="font-size:12px">医療機器メーカーとしての信頼性を最大化するために、コーポレートサイトには .co.jp を推奨します。</text>
+  <text x="144" y="2688" fill="#555" style="font-size:12px">YUMEHO / MICA30 は製品名がそのままドメインになる .com が適切です。</text>
+  <text x="144" y="2716" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">3ドメインすべて含めた年間運用費は ¥48,000（サーバー ¥36,000 + ドメイン3件 ¥12,000）です。</text>
+
+  <!-- Summary bar -->
+  <rect x="80" y="2780" width="1280" height="120" rx="16" ry="16" fill="#0068b7"/>
+  <text x="720" y="2820" text-anchor="middle" fill="rgba(255,255,255,.4)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:10px;letter-spacing:.15em">KEY MESSAGE</text>
+  <text x="720" y="2856" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:18px">どの質問にも「根拠」と「代替案」を持って回答できる体制を整えています</text>
+  <text x="720" y="2882" text-anchor="middle" fill="rgba(255,255,255,.5)" style="font-size:12px">不安を解消するのは「大丈夫です」という言葉ではなく、具体的な仕組みと実績です</text>
+
+  <!-- Footer -->
+  <rect y="2940" width="1440" height="42" fill="#0068b7"/>
+  <text x="720" y="2966" text-anchor="middle" fill="rgba(255,255,255,.4)" style="font-size:10px">Confidential — Prepared for 医療法人真誠会</text>
+</svg>

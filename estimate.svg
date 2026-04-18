@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 595.28 640" width="595.28" height="640">
+  <defs>
+    <style>
+      .th { font-family: HiraKakuProN-W6-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN', sans-serif; font-size: 7.5px; fill: #fff; }
+      .td { font-family: HiraKakuProN-W3-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN', sans-serif; font-size: 7.5px; fill: #333; }
+      .td-bold { font-family: HiraKakuProN-W6-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN', sans-serif; font-size: 7.5px; fill: #1a1a1a; }
+      .td-amount { font-family: HelveticaNeue-Medium, 'Helvetica Neue', sans-serif; font-weight: 500; font-size: 7.5px; fill: #333; }
+      .td-amount-bold { font-family: HelveticaNeue-Bold, 'Helvetica Neue', sans-serif; font-weight: 700; font-size: 8.5px; fill: #1a1a1a; }
+      .section-title { font-family: HiraKakuProN-W6-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN', sans-serif; font-size: 9px; fill: #0068b7; }
+      .note { font-family: HiraKakuProN-W3-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN', sans-serif; font-size: 6.5px; fill: #666; }
+      .line-thin { stroke: #d0d0d0; stroke-width: 0.5; }
+      .bg-header { fill: #0068b7; }
+      .bg-option-header { fill: #2a7ab5; }
+      .footer { font-family: Helvetica, sans-serif; font-size: 6px; fill: #aaa; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="595.28" height="640" fill="#fff"/>
+
+  <!-- ===== MAIN ESTIMATE TABLE ===== -->
+  <text class="section-title" x="40" y="52">■ 本体見積り内訳</text>
+
+  <!-- Table header -->
+  <rect class="bg-header" x="40" y="58" width="28" height="18" rx="2" ry="0"/>
+  <rect class="bg-header" x="68" y="58" width="130" height="18"/>
+  <rect class="bg-header" x="198" y="58" width="270" height="18"/>
+  <rect class="bg-header" x="468" y="58" width="87.28" height="18" rx="0" ry="2"/>
+  <text class="th" x="54" y="70" text-anchor="middle">No.</text>
+  <text class="th" x="133" y="70" text-anchor="middle">項目</text>
+  <text class="th" x="333" y="70" text-anchor="middle">内容</text>
+  <text class="th" x="511.64" y="70" text-anchor="middle">金額（税別）</text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="76" width="515.28" height="22" fill="#fff"/>
+  <line class="line-thin" x1="40" y1="98" x2="555.28" y2="98"/>
+  <line class="line-thin" x1="68" y1="76" x2="68" y2="98"/>
+  <line class="line-thin" x1="198" y1="76" x2="198" y2="98"/>
+  <line class="line-thin" x1="468" y1="76" x2="468" y2="98"/>
+  <text class="td" x="54" y="90" text-anchor="middle">1</text>
+  <text class="td" x="76" y="90">企画・要件整理</text>
+  <text class="td" x="206" y="90">ヒアリング、要件整理、全体方針の確定</text>
+  <text class="td-amount" x="547.28" y="90" text-anchor="end">¥ 40,000</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="98" width="515.28" height="22" fill="#fafafa"/>
+  <line class="line-thin" x1="40" y1="120" x2="555.28" y2="120"/>
+  <line class="line-thin" x1="68" y1="98" x2="68" y2="120"/>
+  <line class="line-thin" x1="198" y1="98" x2="198" y2="120"/>
+  <line class="line-thin" x1="468" y1="98" x2="468" y2="120"/>
+  <text class="td" x="54" y="112" text-anchor="middle">2</text>
+  <text class="td" x="76" y="112">情報設計・画面整理</text>
+  <text class="td" x="206" y="112">サイトマップ整理、機能整理、導線整理</text>
+  <text class="td-amount" x="547.28" y="112" text-anchor="end">¥ 50,000</text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="120" width="515.28" height="22" fill="#fff"/>
+  <line class="line-thin" x1="40" y1="142" x2="555.28" y2="142"/>
+  <line class="line-thin" x1="68" y1="120" x2="68" y2="142"/>
+  <line class="line-thin" x1="198" y1="120" x2="198" y2="142"/>
+  <line class="line-thin" x1="468" y1="120" x2="468" y2="142"/>
+  <text class="td" x="54" y="134" text-anchor="middle">3</text>
+  <text class="td" x="76" y="134">デザイン調整・共通UI設計</text>
+  <text class="td" x="206" y="134">既存プロトタイプのブラッシュアップ、共通ルール整理</text>
+  <text class="td-amount" x="547.28" y="134" text-anchor="end">¥ 60,000</text>
+
+  <!-- Row 4 -->
+  <rect x="40" y="142" width="515.28" height="22" fill="#fafafa"/>
+  <line class="line-thin" x1="40" y1="164" x2="555.28" y2="164"/>
+  <line class="line-thin" x1="68" y1="142" x2="68" y2="164"/>
+  <line class="line-thin" x1="198" y1="142" x2="198" y2="164"/>
+  <line class="line-thin" x1="468" y1="142" x2="468" y2="164"/>
+  <text class="td" x="54" y="156" text-anchor="middle">4</text>
+  <text class="td" x="76" y="156">公開サイト制作</text>
+  <text class="td" x="206" y="156">Rinascentes + YUMEHO + MICA30 の公開ページ制作（32P）</text>
+  <text class="td-amount" x="547.28" y="156" text-anchor="end">¥ 260,000</text>
+
+  <!-- Row 5 -->
+  <rect x="40" y="164" width="515.28" height="22" fill="#fff"/>
+  <line class="line-thin" x1="40" y1="186" x2="555.28" y2="186"/>
+  <line class="line-thin" x1="68" y1="164" x2="68" y2="186"/>
+  <line class="line-thin" x1="198" y1="164" x2="198" y2="186"/>
+  <line class="line-thin" x1="468" y1="164" x2="468" y2="186"/>
+  <text class="td" x="54" y="178" text-anchor="middle">5</text>
+  <text class="td" x="76" y="178">CMS / 管理画面導入</text>
+  <text class="td" x="206" y="178">FAQ、一部掲載情報、動画、購入履歴の更新導線整備</text>
+  <text class="td-amount" x="547.28" y="178" text-anchor="end">¥ 90,000</text>
+
+  <!-- Row 6 -->
+  <rect x="40" y="186" width="515.28" height="30" fill="#fafafa"/>
+  <line class="line-thin" x1="40" y1="216" x2="555.28" y2="216"/>
+  <line class="line-thin" x1="68" y1="186" x2="68" y2="216"/>
+  <line class="line-thin" x1="198" y1="186" x2="198" y2="216"/>
+  <line class="line-thin" x1="468" y1="186" x2="468" y2="216"/>
+  <text class="td" x="54" y="203" text-anchor="middle">6</text>
+  <text class="td" x="76" y="200">共通会員機能実装</text>
+  <text class="td" x="206" y="197">ログイン、再設定、会員トップ、動画閲覧、</text>
+  <text class="td" x="206" y="209">購入履歴閲覧（Rinascentes管理下）</text>
+  <text class="td-amount" x="547.28" y="203" text-anchor="end">¥ 80,000</text>
+
+  <!-- Row 7 -->
+  <rect x="40" y="216" width="515.28" height="22" fill="#fff"/>
+  <line x1="40" y1="238" x2="555.28" y2="238" stroke="#999" stroke-width="0.75"/>
+  <line class="line-thin" x1="68" y1="216" x2="68" y2="238"/>
+  <line class="line-thin" x1="198" y1="216" x2="198" y2="238"/>
+  <line class="line-thin" x1="468" y1="216" x2="468" y2="238"/>
+  <text class="td" x="54" y="230" text-anchor="middle">7</text>
+  <text class="td" x="76" y="230">テスト・公開調整</text>
+  <text class="td" x="206" y="230">表示確認、導線確認、公開前最終調整</text>
+  <text class="td-amount" x="547.28" y="230" text-anchor="end">¥ 20,000</text>
+
+  <!-- Total row -->
+  <rect x="40" y="238" width="515.28" height="24" fill="#f0f7ff"/>
+  <rect x="40" y="238" width="515.28" height="24" fill="none" stroke="#0068b7" stroke-width="0.75"/>
+  <text class="td-bold" x="260" y="254" text-anchor="end">本体合計（税別）</text>
+  <text class="td-amount-bold" x="547.28" y="254" text-anchor="end">¥ 600,000</text>
+  <line x1="468" y1="238" x2="468" y2="262" stroke="#0068b7" stroke-width="0.75"/>
+
+  <!-- Table outer border -->
+  <rect x="40" y="58" width="515.28" height="204" rx="2" ry="2" fill="none" stroke="#999" stroke-width="0.75"/>
+
+  <!-- ===== OPTION ESTIMATE TABLE ===== -->
+  <text class="section-title" x="40" y="284">■ オプション見積り（別途）</text>
+
+  <!-- Option table header -->
+  <rect class="bg-option-header" x="40" y="290" width="28" height="18" rx="2" ry="0"/>
+  <rect class="bg-option-header" x="68" y="290" width="130" height="18"/>
+  <rect class="bg-option-header" x="198" y="290" width="270" height="18"/>
+  <rect class="bg-option-header" x="468" y="290" width="87.28" height="18" rx="0" ry="2"/>
+  <text class="th" x="54" y="302" text-anchor="middle">No.</text>
+  <text class="th" x="133" y="302" text-anchor="middle">項目</text>
+  <text class="th" x="333" y="302" text-anchor="middle">内容</text>
+  <text class="th" x="511.64" y="302" text-anchor="middle">金額（税別）</text>
+
+  <!-- Option Row 1 -->
+  <rect x="40" y="308" width="515.28" height="30" fill="#fff"/>
+  <line class="line-thin" x1="40" y1="338" x2="555.28" y2="338"/>
+  <line class="line-thin" x1="68" y1="308" x2="68" y2="338"/>
+  <line class="line-thin" x1="198" y1="308" x2="198" y2="338"/>
+  <line class="line-thin" x1="468" y1="308" x2="468" y2="338"/>
+  <text class="td" x="54" y="326" text-anchor="middle">OP1</text>
+  <text class="td" x="76" y="322">コミュニティ機能</text>
+  <text class="td" x="76" y="334">（ファンミーティング的要素）</text>
+  <text class="td" x="206" y="319">スレッド一覧・詳細・投稿・返信、簡易管理機能</text>
+  <text class="td" x="206" y="331">（ユーザー同士の情報交換・活用事例共有）</text>
+  <text class="td-amount" x="547.28" y="326" text-anchor="end">¥ 100,000</text>
+
+  <!-- Option Row 2 -->
+  <rect x="40" y="338" width="515.28" height="30" fill="#fafafa"/>
+  <line x1="40" y1="368" x2="555.28" y2="368" stroke="#999" stroke-width="0.75"/>
+  <line class="line-thin" x1="68" y1="338" x2="68" y2="368"/>
+  <line class="line-thin" x1="198" y1="338" x2="198" y2="368"/>
+  <line class="line-thin" x1="468" y1="338" x2="468" y2="368"/>
+  <text class="td" x="54" y="356" text-anchor="middle">OP2</text>
+  <text class="td" x="76" y="352">オンライン決済機能</text>
+  <text class="td" x="76" y="364">（YUMEHO / MICA30）</text>
+  <text class="td" x="206" y="349">YUMEHO・MICA30からの決済、完了/キャンセル画面、</text>
+  <text class="td" x="206" y="361">申込情報と決済情報の紐付け、購入履歴への反映設計</text>
+  <text class="td-amount" x="547.28" y="356" text-anchor="end">¥ 100,000</text>
+
+  <!-- Option Total row -->
+  <rect x="40" y="368" width="515.28" height="24" fill="#f0f7ff"/>
+  <rect x="40" y="368" width="515.28" height="24" fill="none" stroke="#2a7ab5" stroke-width="0.75"/>
+  <text class="td-bold" x="260" y="384" text-anchor="end">オプション合計（税別）</text>
+  <text class="td-amount-bold" x="547.28" y="384" text-anchor="end">¥ 200,000</text>
+  <line x1="468" y1="368" x2="468" y2="392" stroke="#2a7ab5" stroke-width="0.75"/>
+
+  <!-- Option table outer border -->
+  <rect x="40" y="290" width="515.28" height="102" rx="2" ry="2" fill="none" stroke="#999" stroke-width="0.75"/>
+
+  <!-- ===== RUNNING COST TABLE ===== -->
+  <text class="section-title" x="40" y="418">■ ランニングコスト（年間 / 税別）</text>
+
+  <!-- Running cost header -->
+  <rect fill="#e67e22" x="40" y="424" width="28" height="18" rx="2" ry="0"/>
+  <rect fill="#e67e22" x="68" y="424" width="130" height="18"/>
+  <rect fill="#e67e22" x="198" y="424" width="270" height="18"/>
+  <rect fill="#e67e22" x="468" y="424" width="87.28" height="18" rx="0" ry="2"/>
+  <text class="th" x="54" y="436" text-anchor="middle">No.</text>
+  <text class="th" x="133" y="436" text-anchor="middle">項目</text>
+  <text class="th" x="333" y="436" text-anchor="middle">内容</text>
+  <text class="th" x="511.64" y="436" text-anchor="middle">金額（税別/年）</text>
+
+  <!-- RC Row 1 -->
+  <rect x="40" y="442" width="515.28" height="30" fill="#fff"/>
+  <line class="line-thin" x1="40" y1="472" x2="555.28" y2="472"/>
+  <line class="line-thin" x1="68" y1="442" x2="68" y2="472"/>
+  <line class="line-thin" x1="198" y1="442" x2="198" y2="472"/>
+  <line class="line-thin" x1="468" y1="442" x2="468" y2="472"/>
+  <text class="td" x="54" y="460" text-anchor="middle">RC1</text>
+  <text class="td" x="76" y="456">サーバー運用・管理</text>
+  <text class="td" x="76" y="468" style="font-size:6px;fill:#999;">※Xserver スタンダードプラン</text>
+  <text class="td" x="206" y="453">ホスティング費用 + 初期設定・DNS構築 + 保守・監視管理</text>
+  <text class="td" x="206" y="465">SSL・WAF・自動バックアップ込み / 3サイトマルチドメイン運用</text>
+  <text class="td-amount" x="547.28" y="460" text-anchor="end">¥ 36,000</text>
+
+  <!-- RC Row 2 -->
+  <rect x="40" y="472" width="515.28" height="30" fill="#fafafa"/>
+  <line class="line-thin" x1="40" y1="502" x2="555.28" y2="502"/>
+  <line class="line-thin" x1="68" y1="472" x2="68" y2="502"/>
+  <line class="line-thin" x1="198" y1="472" x2="198" y2="502"/>
+  <line class="line-thin" x1="468" y1="472" x2="468" y2="502"/>
+  <text class="td" x="54" y="490" text-anchor="middle">RC2</text>
+  <text class="td" x="76" y="486">ドメイン（3件）</text>
+  <text class="td" x="76" y="498" style="font-size:6px;fill:#999;">※マルチドメイン運用</text>
+  <text class="td" x="206" y="483">rinascentes.co.jp / yumeho.jp / mica30.jp（想定）</text>
+  <text class="td" x="206" y="495">co.jp ≈ ¥5,000 + .jp × 2 ≈ ¥3,500 × 2</text>
+  <text class="td-amount" x="547.28" y="490" text-anchor="end">¥ 12,000</text>
+
+  <!-- RC Total row (Xserver) -->
+  <rect x="40" y="502" width="515.28" height="24" fill="#fef5ec"/>
+  <rect x="40" y="502" width="515.28" height="24" fill="none" stroke="#e67e22" stroke-width="0.75"/>
+  <text class="td-bold" x="260" y="518" text-anchor="end">Xserver 年間合計（税別）</text>
+  <text class="td-amount-bold" x="547.28" y="518" text-anchor="end">¥ 48,000</text>
+  <line x1="468" y1="502" x2="468" y2="526" stroke="#e67e22" stroke-width="0.75"/>
+
+  <!-- Running cost table outer border -->
+  <rect x="40" y="424" width="515.28" height="102" rx="2" ry="2" fill="none" stroke="#999" stroke-width="0.75"/>
+
+  <!-- AWS reference note -->
+  <rect x="40" y="536" width="515.28" height="32" rx="4" ry="4" fill="#f8f8f8" stroke="#ddd" stroke-width="0.5"/>
+  <text class="td" x="48" y="549" style="font-size:6.5px;fill:#e67e22;font-weight:bold;">参考</text>
+  <text class="td" x="68" y="549" style="font-size:6.5px;">AWS の場合：年間 ¥100,000〜¥300,000 程度（従量課金 / 構成により変動）</text>
+  <text class="td" x="68" y="561" style="font-size:6.5px;">本サイト規模では Xserver が費用対効果に優れます。医療認証サーバーが必要な場合は別途ご相談ください。</text>
+
+  <!-- Note reference -->
+  <text class="note" x="40" y="588">※ スケジュール・前提条件・備考は別紙「estimate_notes.svg」をご参照ください。</text>
+  <text class="note" x="40" y="598">※ ランニングコストは契約プラン・ドメイン種別により変動する場合があります。</text>
+
+  <!-- Bottom line -->
+  <rect x="40" y="612" width="515.28" height="1" fill="#0068b7"/>
+
+  <!-- Footer -->
+  <text class="footer" x="297.64" y="628" text-anchor="middle">EST-2026-0403-01 — This document is confidential.</text>
+</svg>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YUMEHO 見込み施設抽出ツール</title>
+<style>
+:root {
+  --primary: #0068B7;
+  --primary-light: #E8F4FD;
+  --gold: #B7791F;
+  --gold-bg: #FFF2CC;
+  --green: #276749;
+  --green-bg: #C6F6D5;
+  --gray: #718096;
+  --gray-bg: #F5F5F5;
+  --border: #E2E8F0;
+  --text: #1a202c;
+  --text-sub: #4a5568;
+  --bg: #f7fafc;
+  --white: #fff;
+  --shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.04);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Yu Gothic','Hiragino Sans',sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
+
+.app-header {
+  background: linear-gradient(135deg, var(--primary) 0%, #004a8f 100%);
+  color:#fff; padding:32px 24px; text-align:center;
+}
+.app-header h1 { font-size:1.6rem; font-weight:700; letter-spacing:.04em; }
+.app-header p { font-size:.9rem; opacity:.8; margin-top:6px; }
+
+.container { max-width:1100px; margin:0 auto; padding:24px 16px; }
+
+/* Tabs */
+.tabs { display:flex; gap:4px; margin-bottom:24px; border-bottom:2px solid var(--border); }
+.tab {
+  padding:12px 24px; font-size:.9rem; font-weight:600; cursor:pointer;
+  border:none; background:none; color:var(--text-sub);
+  border-bottom:3px solid transparent; transition:.2s;
+}
+.tab:hover { color:var(--primary); }
+.tab.active { color:var(--primary); border-bottom-color:var(--primary); }
+.tab-content { display:none; }
+.tab-content.active { display:block; }
+
+/* Cards */
+.card {
+  background:var(--white); border-radius:12px; padding:24px;
+  box-shadow:var(--shadow); margin-bottom:20px;
+}
+.card h3 { font-size:1.05rem; color:var(--primary); margin-bottom:12px; }
+
+/* Forms */
+label { display:block; font-size:.85rem; font-weight:600; color:var(--text-sub); margin-bottom:4px; }
+select, input[type="file"] {
+  width:100%; padding:10px 12px; border:1px solid var(--border);
+  border-radius:8px; font-size:.9rem; margin-bottom:12px; background:var(--white);
+}
+.checkbox-grid { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+.checkbox-grid label {
+  display:flex; align-items:center; gap:4px; font-weight:400;
+  padding:6px 12px; background:var(--gray-bg); border-radius:6px; cursor:pointer;
+  font-size:.82rem; transition:.2s;
+}
+.checkbox-grid label:has(input:checked) { background:var(--primary-light); color:var(--primary); font-weight:600; }
+.checkbox-grid input[type="checkbox"] { accent-color:var(--primary); }
+
+.btn {
+  display:inline-flex; align-items:center; gap:6px;
+  padding:12px 28px; border:none; border-radius:8px;
+  font-size:.9rem; font-weight:600; cursor:pointer; transition:.2s;
+}
+.btn-primary { background:var(--primary); color:#fff; }
+.btn-primary:hover { background:#004a8f; }
+.btn-primary:disabled { background:#a0aec0; cursor:not-allowed; }
+.btn-secondary { background:var(--gray-bg); color:var(--text); border:1px solid var(--border); }
+.btn-secondary:hover { background:#e2e8f0; }
+.btn-download { background:#276749; color:#fff; }
+.btn-download:hover { background:#1a4731; }
+
+/* Summary */
+.summary-grid { display:flex; gap:16px; flex-wrap:wrap; margin:20px 0; }
+.summary-card {
+  flex:1; min-width:100px; text-align:center; padding:20px 16px;
+  border-radius:10px; border:1px solid var(--border);
+}
+.summary-card .num { font-size:2rem; font-weight:700; }
+.summary-card .label { font-size:.78rem; color:var(--text-sub); margin-top:2px; }
+
+/* Table */
+.table-wrap { overflow-x:auto; margin-top:16px; }
+table { width:100%; border-collapse:collapse; font-size:.85rem; }
+th {
+  padding:12px 14px; text-align:left; background:var(--primary);
+  color:#fff; font-weight:600; white-space:nowrap; position:sticky; top:0;
+}
+td { padding:10px 14px; border-bottom:1px solid var(--border); }
+tr.priority-a { background:var(--gold-bg); }
+tr.priority-b { background:var(--primary-light); }
+tr.priority-c { background:var(--gray-bg); }
+tr:hover { filter:brightness(.97); }
+
+.priority-badge {
+  display:inline-block; padding:2px 10px; border-radius:4px;
+  font-weight:700; font-size:.78rem; letter-spacing:.04em;
+}
+.priority-badge.a { background:#B7791F; color:#fff; }
+.priority-badge.b { background:var(--primary); color:#fff; }
+.priority-badge.c { background:#a0aec0; color:#fff; }
+.priority-badge.d { background:#e2e8f0; color:#718096; }
+
+.score-bar {
+  display:inline-block; height:6px; border-radius:3px;
+  background:var(--primary); margin-right:6px; vertical-align:middle;
+}
+
+/* Progress */
+.progress-wrap { display:none; margin:16px 0; }
+.progress-bar {
+  height:8px; background:var(--gray-bg); border-radius:4px; overflow:hidden;
+}
+.progress-fill { height:100%; background:var(--primary); border-radius:4px; transition:width .3s; width:0; }
+.progress-text { font-size:.82rem; color:var(--text-sub); margin-top:6px; }
+
+/* Empty state */
+.empty-state { text-align:center; padding:60px 20px; color:var(--text-sub); }
+.empty-state svg { width:64px; height:64px; margin-bottom:16px; opacity:.3; }
+
+/* Responsive */
+@media (max-width:640px) {
+  .app-header h1 { font-size:1.2rem; }
+  .tabs { overflow-x:auto; }
+  .tab { padding:10px 14px; font-size:.82rem; white-space:nowrap; }
+  .summary-card { min-width:70px; padding:14px 8px; }
+  .summary-card .num { font-size:1.5rem; }
+  th, td { padding:8px 10px; font-size:.78rem; }
+}
+
+/* Info box */
+.info-box {
+  background:var(--primary-light); border:1px solid #b8ddf3;
+  border-radius:8px; padding:16px 20px; margin-bottom:20px;
+  font-size:.85rem; line-height:1.8;
+}
+.info-box strong { color:var(--primary); }
+
+/* Template section */
+.template-table { margin-top:12px; }
+.template-table th { background:var(--gray-bg); color:var(--text); font-size:.8rem; padding:8px 12px; }
+.template-table td { font-size:.8rem; padding:8px 12px; }
+
+.hidden { display:none; }
+</style>
+</head>
+<body>
+
+<div class="app-header">
+  <h1>YUMEHO 見込み施設抽出ツール</h1>
+  <p>求人データから導入ターゲット施設を自動スコアリング</p>
+</div>
+
+<div class="container">
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" data-tab="input">1. データ入力</button>
+    <button class="tab" data-tab="results">2. スコアリング結果</button>
+    <button class="tab" data-tab="guide">使い方</button>
+  </div>
+
+  <!-- Tab: Input -->
+  <div id="tab-input" class="tab-content active">
+
+    <div class="card">
+      <h3>CSV ファイルをアップロード</h3>
+      <p style="font-size:.85rem;color:var(--text-sub);margin-bottom:16px;">
+        ハローワーク等から収集した求人データの CSV をアップロードしてください。<br>
+        列名が「施設名」「職種」「所在地」「仕事の内容」を含む CSV に対応しています。
+      </p>
+      <input type="file" id="csvFile" accept=".csv,.tsv,.txt">
+      <div id="fileInfo" class="hidden" style="font-size:.85rem;color:var(--primary);margin-bottom:12px;"></div>
+    </div>
+
+    <div class="card">
+      <h3>または手動で入力</h3>
+      <p style="font-size:.85rem;color:var(--text-sub);margin-bottom:16px;">
+        CSV がなくても、下のテキストエリアに求人情報を貼り付けてスコアリングできます。<br>
+        1行に1施設。形式: <code>施設名, 職種, 所在地, 求人内容</code>
+      </p>
+      <textarea id="manualInput" rows="8" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;font-family:inherit;line-height:1.7;" placeholder="医療法人○○会 リハビリ病院, 理学療法士, 東京都世田谷区, 回復期リハビリ病棟での歩行訓練。急募。2名募集。&#10;社会福祉法人 さくら会, 介護職員, 神奈川県横浜市, デイサービス。歩行介助・移乗介助。3名募集。未経験可。&#10;介護老人保健施設 グリーンヒルズ, 作業療法士, 埼玉県さいたま市, 老健での機能訓練。歩行訓練。欠員補充。"></textarea>
+    </div>
+
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <button class="btn btn-primary" id="btnAnalyze" onclick="runAnalysis()">
+        スコアリング実行
+      </button>
+      <button class="btn btn-secondary" onclick="loadDemo()">
+        デモデータで試す
+      </button>
+      <button class="btn btn-secondary" onclick="downloadTemplate()">
+        テンプレート CSV をダウンロード
+      </button>
+    </div>
+
+    <div class="progress-wrap" id="progressWrap">
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="progress-text" id="progressText">処理中...</div>
+    </div>
+  </div>
+
+  <!-- Tab: Results -->
+  <div id="tab-results" class="tab-content">
+    <div id="resultsEmpty" class="empty-state">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M9 17H5a2 2 0 00-2 2 2 2 0 002 2h14a2 2 0 002-2 2 2 0 00-2-2h-4M12 3v12m0 0l-4-4m4 4l4-4"/>
+      </svg>
+      <p>まだデータがありません。<br>「1. データ入力」タブで CSV をアップロードしてください。</p>
+    </div>
+
+    <div id="resultsContent" class="hidden">
+      <div class="summary-grid" id="summaryGrid"></div>
+
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:16px;">
+        <select id="filterPriority" onchange="renderTable()" style="width:auto;margin-bottom:0;">
+          <option value="all">全て表示</option>
+          <option value="A">A（最優先）のみ</option>
+          <option value="B">B（有望）以上</option>
+          <option value="C">C（標準）以上</option>
+        </select>
+        <input type="text" id="filterText" placeholder="施設名・所在地で絞り込み..." oninput="renderTable()"
+               style="flex:1;min-width:200px;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;margin-bottom:0;">
+        <button class="btn btn-download" onclick="downloadExcel()">
+          Excel ダウンロード
+        </button>
+        <button class="btn btn-secondary" onclick="downloadCSV()">
+          CSV ダウンロード
+        </button>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <div id="tableFooter" style="font-size:.82rem;color:var(--text-sub);margin-top:12px;"></div>
+    </div>
+  </div>
+
+  <!-- Tab: Guide -->
+  <div id="tab-guide" class="tab-content">
+    <div class="card">
+      <h3>スコアリング基準</h3>
+      <table class="template-table" style="width:100%;">
+        <thead><tr><th>条件</th><th>加点</th></tr></thead>
+        <tbody>
+          <tr><td>施設種別（回復期リハビリ病院、老健、デイケア等）</td><td>+20</td></tr>
+          <tr><td>職種: PT / OT</td><td>+15</td></tr>
+          <tr><td>職種: 介護職</td><td>+10</td></tr>
+          <tr><td>職種: リハビリ関連</td><td>+12</td></tr>
+          <tr><td>「歩行リハビリ」「歩行訓練」「歩行介助」直接言及</td><td>+25</td></tr>
+          <tr><td>「転倒」関連の言及</td><td>+15</td></tr>
+          <tr><td>「急募」</td><td>+15</td></tr>
+          <tr><td>複数名募集（2名〜）</td><td>+10〜50</td></tr>
+          <tr><td>シグナル（人手不足、欠員補充、未経験可、ブランク可 等）</td><td>各+5</td></tr>
+          <tr><td>同一施設が複数職種で求人</td><td>+10〜20</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>優先度ランク</h3>
+      <table class="template-table" style="width:100%;">
+        <thead><tr><th>ランク</th><th>スコア</th><th>アクション</th></tr></thead>
+        <tbody>
+          <tr><td><span class="priority-badge a">A</span></td><td>60点以上</td><td>即アプローチ（DM + 電話フォロー）</td></tr>
+          <tr><td><span class="priority-badge b">B</span></td><td>35点以上</td><td>優先的にアプローチ</td></tr>
+          <tr><td><span class="priority-badge c">C</span></td><td>15点以上</td><td>リスト保持・ウォッチ</td></tr>
+          <tr><td><span class="priority-badge d">D</span></td><td>15点未満</td><td>見送り</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>CSV フォーマット</h3>
+      <p style="font-size:.85rem;color:var(--text-sub);margin-bottom:12px;">以下の列名に対応しています（列名が異なっても類似名で自動マッチ）。</p>
+      <table class="template-table" style="width:100%;">
+        <thead><tr><th>列名</th><th>内容</th><th>必須</th></tr></thead>
+        <tbody>
+          <tr><td>施設名 / 事業所名 / company_name</td><td>施設・法人名</td><td>○</td></tr>
+          <tr><td>職種 / 募集職種 / job_title</td><td>募集職種名</td><td>○</td></tr>
+          <tr><td>所在地 / 就業場所 / location</td><td>勤務地</td><td>△</td></tr>
+          <tr><td>仕事の内容 / 概要 / description</td><td>求人の詳細</td><td>△</td></tr>
+          <tr><td>求人番号 / job_number</td><td>ハローワーク求人番号</td><td>-</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>ワークフロー</h3>
+      <ol style="font-size:.9rem;line-height:2.2;padding-left:20px;">
+        <li>ハローワーク等で「理学療法士 回復期」「介護職員 リハビリ」等を検索</li>
+        <li>検索結果をコピー or CSVエクスポート</li>
+        <li>このツールにアップロード → 自動スコアリング</li>
+        <li>A/Bランクの施設を Excel でダウンロード</li>
+        <li>DM テンプレートで営業アプローチ</li>
+      </ol>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ── 定数 ──
+const FACILITY_TYPES = [
+  "回復期リハビリテーション","回復期リハビリ","介護老人保健施設","老健",
+  "通所リハビリ","デイケア","デイサービス","リハビリテーション病院",
+  "リハビリ病院","地域包括ケア","訪問リハビリ","介護医療院",
+  "特別養護老人ホーム","特養","有料老人ホーム",
+];
+
+const SIGNALS = [
+  "人手不足","急募","増員","欠員補充","即日","随時",
+  "未経験可","資格不問","経験不問","ブランク可",
+  "複数名","2名","3名",
+  "歩行介助","歩行訓練","転倒","転倒防止","身体介助","移乗",
+];
+
+const COL_MAP = {
+  company_name: ["施設名","事業所名","company_name","会社名","企業名","法人名"],
+  job_title: ["職種","募集職種","job_title","仕事の内容（職種）"],
+  location: ["所在地","就業場所","location","勤務地","住所"],
+  description: ["仕事の内容","概要","description","業務内容","備考"],
+  requirements: ["必要な経験等","requirements","資格","免許"],
+  job_number: ["求人番号","job_number","番号"],
+};
+
+let allFacilities = [];
+
+// ── Tab 切替 ──
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+  });
+});
+
+// ── CSV パース ──
+function parseCSV(text) {
+  const lines = text.trim().split(/\r?\n/);
+  if (lines.length < 2) return [];
+
+  // ヘッダー解析
+  const rawHeaders = splitCSVLine(lines[0]);
+  const colIndex = {};
+  for (const [key, aliases] of Object.entries(COL_MAP)) {
+    for (let i = 0; i < rawHeaders.length; i++) {
+      const h = rawHeaders[i].trim().replace(/^["']|["']$/g, '');
+      if (aliases.some(a => h.includes(a))) {
+        colIndex[key] = i;
+        break;
+      }
+    }
+  }
+
+  const listings = [];
+  for (let i = 1; i < lines.length; i++) {
+    if (!lines[i].trim()) continue;
+    const cols = splitCSVLine(lines[i]);
+    const listing = {};
+    for (const [key, idx] of Object.entries(colIndex)) {
+      listing[key] = (cols[idx] || '').trim().replace(/^["']|["']$/g, '');
+    }
+    listing.retrieved_at = new Date().toISOString().slice(0, 10);
+    if (listing.company_name || listing.job_title) listings.push(listing);
+  }
+  return listings;
+}
+
+function splitCSVLine(line) {
+  const result = [];
+  let current = '';
+  let inQuote = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"' && (i === 0 || line[i-1] !== '\\')) {
+      inQuote = !inQuote;
+    } else if ((ch === ',' || ch === '\t') && !inQuote) {
+      result.push(current);
+      current = '';
+    } else {
+      current += ch;
+    }
+  }
+  result.push(current);
+  return result;
+}
+
+// ── 手動入力パース ──
+function parseManual(text) {
+  const lines = text.trim().split(/\r?\n/).filter(l => l.trim());
+  return lines.map(line => {
+    const parts = line.split(/[,\t、]/).map(s => s.trim());
+    return {
+      company_name: parts[0] || '',
+      job_title: parts[1] || '',
+      location: parts[2] || '',
+      description: parts.slice(3).join(' '),
+      requirements: '',
+      job_number: '',
+      retrieved_at: new Date().toISOString().slice(0, 10),
+    };
+  });
+}
+
+// ── スコアリング ──
+function scoreListing(listing) {
+  let score = 0;
+  const reasons = [];
+  const text = [
+    listing.job_title || '',
+    listing.company_name || '',
+    listing.description || '',
+    listing.requirements || '',
+  ].join(' ');
+
+  // 施設種別
+  for (const ft of FACILITY_TYPES) {
+    if (text.includes(ft)) {
+      score += 20; reasons.push('施設種別: ' + ft); break;
+    }
+  }
+
+  // 職種
+  const job = listing.job_title || '';
+  if (/理学療法士|PT/.test(job)) { score += 15; reasons.push('PT求人'); }
+  else if (/作業療法士|OT/.test(job)) { score += 15; reasons.push('OT求人'); }
+  else if (/介護職|介護員|ケアワーカー/.test(job)) { score += 10; reasons.push('介護職求人'); }
+  else if (/機能訓練|リハビリ/.test(job)) { score += 12; reasons.push('リハビリ関連求人'); }
+
+  // シグナル
+  for (const sig of SIGNALS) {
+    if (text.includes(sig)) { score += 5; reasons.push(sig); }
+  }
+
+  // 歩行リハビリ直接言及
+  if (/歩行.*リハビリ|歩行.*訓練|歩行.*介助/.test(text)) {
+    score += 25; reasons.push('歩行リハビリ直接言及');
+  }
+  if (text.includes('転倒')) { score += 15; reasons.push('転倒関連'); }
+
+  // 複数名募集
+  const numMatch = text.match(/(\d+)名.*募集|募集.*(\d+)名/);
+  if (numMatch) {
+    const num = parseInt(numMatch[1] || numMatch[2]);
+    if (num >= 2) { score += 10 * Math.min(num, 5); reasons.push(num + '名募集'); }
+  }
+
+  // 急募（ボーナス）
+  if (text.includes('急募')) { score += 15; reasons.push('急募'); }
+
+  return { score, reasons: [...new Set(reasons)].slice(0, 8) };
+}
+
+function normalizeName(name) {
+  return (name || '').trim()
+    .replace(/[\s\u3000]+/g, ' ')
+    .replace(/（医）|[(（]医療法人[)）]/g, '医療法人')
+    .replace(/（社）|[(（]社会福祉法人[)）]/g, '社会福祉法人')
+    .replace(/（福）/g, '社会福祉法人');
+}
+
+function aggregate(listings) {
+  const map = {};
+  for (const l of listings) {
+    const key = normalizeName(l.company_name);
+    if (!key) continue;
+    if (!map[key]) {
+      map[key] = {
+        company_name: l.company_name, location: l.location || '',
+        jobCount: 0, jobTitles: [], bestScore: 0, allReasons: new Set(),
+        descriptions: [], jobNumbers: [], retrievedAt: l.retrieved_at || '',
+      };
+    }
+    const f = map[key];
+    f.jobCount++;
+    if (l.job_title) f.jobTitles.push(l.job_title);
+    if (l.job_number) f.jobNumbers.push(l.job_number);
+    if (l.description) f.descriptions.push(l.description.slice(0, 200));
+    if (!f.location && l.location) f.location = l.location;
+
+    const { score, reasons } = scoreListing(l);
+    if (score > f.bestScore) f.bestScore = score;
+    reasons.forEach(r => f.allReasons.add(r));
+  }
+
+  const result = [];
+  for (const [, f] of Object.entries(map)) {
+    if (f.jobCount >= 3) { f.bestScore += 20; f.allReasons.add('複数職種で求人: ' + f.jobCount + '件'); }
+    else if (f.jobCount >= 2) { f.bestScore += 10; f.allReasons.add('複数求人: ' + f.jobCount + '件'); }
+
+    const s = f.bestScore;
+    result.push({
+      priority: s >= 60 ? 'A' : s >= 35 ? 'B' : s >= 15 ? 'C' : 'D',
+      priorityLabel: s >= 60 ? 'A (最優先)' : s >= 35 ? 'B (有望)' : s >= 15 ? 'C (標準)' : 'D (低)',
+      score: s,
+      company_name: f.company_name,
+      location: f.location,
+      jobCount: f.jobCount,
+      jobTitles: [...new Set(f.jobTitles)].slice(0, 5).join(' / '),
+      reasons: [...f.allReasons].sort().slice(0, 8).join('; '),
+      jobNumbers: f.jobNumbers.slice(0, 3).join(', '),
+      retrievedAt: f.retrievedAt,
+      description: f.descriptions[0] ? f.descriptions[0].slice(0, 120) + '...' : '',
+    });
+  }
+
+  result.sort((a, b) => b.score - a.score);
+  return result;
+}
+
+// ── メイン処理 ──
+function runAnalysis() {
+  let listings = [];
+
+  const fileInput = document.getElementById('csvFile');
+  const manualInput = document.getElementById('manualInput').value.trim();
+
+  if (fileInput.files.length > 0) {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const text = e.target.result;
+      listings = parseCSV(text);
+      if (listings.length === 0) {
+        alert('CSV からデータを読み取れませんでした。列名を確認してください。');
+        return;
+      }
+      processListings(listings);
+    };
+    reader.readAsText(fileInput.files[0], 'UTF-8');
+  } else if (manualInput) {
+    listings = parseManual(manualInput);
+    processListings(listings);
+  } else {
+    alert('CSV ファイルをアップロードするか、テキストエリアにデータを入力してください。');
+  }
+}
+
+function processListings(listings) {
+  showProgress(true);
+  setTimeout(() => {
+    allFacilities = aggregate(listings);
+    showProgress(false);
+    showResults();
+    // Switch to results tab
+    document.querySelector('[data-tab="results"]').click();
+  }, 300);
+}
+
+function showProgress(show) {
+  const wrap = document.getElementById('progressWrap');
+  const fill = document.getElementById('progressFill');
+  const text = document.getElementById('progressText');
+  wrap.style.display = show ? 'block' : 'none';
+  if (show) {
+    fill.style.width = '70%';
+    text.textContent = 'スコアリング中...';
+    setTimeout(() => { fill.style.width = '100%'; text.textContent = '完了'; }, 200);
+  }
+}
+
+// ── 結果表示 ──
+function showResults() {
+  document.getElementById('resultsEmpty').classList.add('hidden');
+  document.getElementById('resultsContent').classList.remove('hidden');
+
+  const counts = { A: 0, B: 0, C: 0, D: 0 };
+  allFacilities.forEach(f => counts[f.priority]++);
+
+  document.getElementById('summaryGrid').innerHTML = `
+    <div class="summary-card" style="background:var(--gold-bg);">
+      <div class="num" style="color:var(--gold);">${counts.A}</div>
+      <div class="label">A（最優先）</div>
+    </div>
+    <div class="summary-card" style="background:var(--primary-light);">
+      <div class="num" style="color:var(--primary);">${counts.B}</div>
+      <div class="label">B（有望）</div>
+    </div>
+    <div class="summary-card" style="background:var(--gray-bg);">
+      <div class="num" style="color:var(--gray);">${counts.C}</div>
+      <div class="label">C（標準）</div>
+    </div>
+    <div class="summary-card">
+      <div class="num" style="color:#ccc;">${counts.D}</div>
+      <div class="label">D（低）</div>
+    </div>
+    <div class="summary-card" style="border-color:var(--primary);">
+      <div class="num" style="color:var(--text);">${allFacilities.length}</div>
+      <div class="label">合計</div>
+    </div>
+  `;
+
+  renderTable();
+}
+
+function renderTable() {
+  const filter = document.getElementById('filterPriority').value;
+  const search = document.getElementById('filterText').value.trim().toLowerCase();
+
+  let filtered = allFacilities;
+  if (filter === 'A') filtered = filtered.filter(f => f.priority === 'A');
+  else if (filter === 'B') filtered = filtered.filter(f => f.priority === 'A' || f.priority === 'B');
+  else if (filter === 'C') filtered = filtered.filter(f => f.priority !== 'D');
+
+  if (search) {
+    filtered = filtered.filter(f =>
+      (f.company_name || '').toLowerCase().includes(search) ||
+      (f.location || '').toLowerCase().includes(search) ||
+      (f.jobTitles || '').toLowerCase().includes(search)
+    );
+  }
+
+  document.getElementById('tableHead').innerHTML = `
+    <tr>
+      <th>優先度</th><th>スコア</th><th>施設名</th><th>所在地</th>
+      <th>求人数</th><th>募集職種</th><th>判定理由</th>
+    </tr>
+  `;
+
+  const maxScore = allFacilities.length > 0 ? allFacilities[0].score : 100;
+
+  document.getElementById('tableBody').innerHTML = filtered.map(f => {
+    const cls = f.priority === 'A' ? 'priority-a' : f.priority === 'B' ? 'priority-b' : f.priority === 'C' ? 'priority-c' : '';
+    const badge = `<span class="priority-badge ${f.priority.toLowerCase()}">${f.priority}</span>`;
+    const barW = Math.max(8, (f.score / Math.max(maxScore, 1)) * 60);
+    const bar = `<span class="score-bar" style="width:${barW}px;"></span>${f.score}`;
+    return `<tr class="${cls}">
+      <td>${badge}</td><td style="white-space:nowrap;">${bar}</td>
+      <td><strong>${esc(f.company_name)}</strong></td><td>${esc(f.location)}</td>
+      <td style="text-align:center;">${f.jobCount}</td>
+      <td style="font-size:.8rem;">${esc(f.jobTitles)}</td>
+      <td style="font-size:.78rem;color:var(--text-sub);">${esc(f.reasons)}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('tableFooter').textContent = `${filtered.length} / ${allFacilities.length} 施設を表示中`;
+}
+
+function esc(s) { return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+// ── デモデータ ──
+function loadDemo() {
+  document.getElementById('manualInput').value = `医療法人社団 リハビリテーション花の丘病院, 理学療法士（回復期リハビリテーション病棟）, 東京都世田谷区, 回復期リハビリテーション病棟での歩行訓練を中心としたリハビリ業務。急募。転倒防止に配慮した安全な環境。身体介助を含む。増員のため2名募集。
+医療法人社団 リハビリテーション花の丘病院, 理学療法士（リハビリテーション科）, 東京都世田谷区, 外来リハビリテーション。脳血管疾患の患者様の歩行訓練・ADL訓練。転倒リスクの高い患者様への対応。
+社会福祉法人 さくら福祉会, 介護職員（デイサービス）, 神奈川県横浜市, 通所介護施設での介護業務全般。歩行介助、移乗介助、入浴介助。リハビリプログラムの補助。急募。3名募集。未経験可。
+介護老人保健施設 グリーンヒルズ, 作業療法士, 埼玉県さいたま市, 老健での機能訓練業務。入所者様の日常生活動作の改善、歩行訓練、認知機能訓練。欠員補充のため募集。
+特別養護老人ホーム やすらぎの里, 介護職員, 大阪府大阪市, 特養での介護業務。食事・入浴・排泄介助。移乗介助。人手不足のため随時募集。ブランク可。資格不問。未経験可。
+有限会社 ケアプラス, 機能訓練指導員, 千葉県船橋市, デイサービスでの機能訓練業務。個別機能訓練計画の作成と実施。
+医療法人 桜木会 桜木リハビリテーション病院, 理学療法士, 愛知県名古屋市, 回復期リハビリ病棟。脳血管疾患・整形外科疾患の歩行訓練。急募。転倒防止ハーネス使用経験者歓迎。3名募集。
+医療法人 桜木会 桜木リハビリテーション病院, 作業療法士, 愛知県名古屋市, 回復期リハビリ病棟でのADL訓練。歩行介助を含む。増員。
+医療法人 桜木会 桜木リハビリテーション病院, 介護職員, 愛知県名古屋市, 回復期病棟での介護補助。移乗介助・歩行介助。欠員補充。2名。
+社会福祉法人 みどり会 デイケアみどり, 理学療法士, 福岡県福岡市, 通所リハビリでの機能訓練。歩行訓練プログラムの立案・実施。`;
+
+  runAnalysis();
+}
+
+// ── ファイル選択時の表示 ──
+document.getElementById('csvFile').addEventListener('change', function() {
+  const info = document.getElementById('fileInfo');
+  if (this.files.length > 0) {
+    info.textContent = `選択: ${this.files[0].name} (${(this.files[0].size / 1024).toFixed(1)} KB)`;
+    info.classList.remove('hidden');
+  } else {
+    info.classList.add('hidden');
+  }
+});
+
+// ── CSV ダウンロード ──
+function downloadCSV() {
+  if (allFacilities.length === 0) return;
+  const BOM = '\uFEFF';
+  const headers = ['優先度','スコア','施設名','所在地','求人数','募集職種','判定理由','求人番号','取得日','アクション','メモ'];
+  let csv = BOM + headers.join(',') + '\n';
+  for (const f of allFacilities) {
+    csv += [
+      q(f.priorityLabel), f.score, q(f.company_name), q(f.location),
+      f.jobCount, q(f.jobTitles), q(f.reasons), q(f.jobNumbers), q(f.retrievedAt), '', '',
+    ].join(',') + '\n';
+  }
+  download(csv, `yumeho_leads_${ts()}.csv`, 'text/csv;charset=utf-8');
+}
+
+function q(s) { return '"' + (s || '').replace(/"/g, '""') + '"'; }
+
+// ── Excel ダウンロード（XLSX via XML SpreadsheetML） ──
+function downloadExcel() {
+  if (allFacilities.length === 0) return;
+
+  const priorityColors = { A: '#FFF2CC', B: '#E8F4FD', C: '#F5F5F5', D: '#FFFFFF' };
+
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<?mso-application progid="Excel.Sheet"?>\n';
+  xml += '<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"\n';
+  xml += '  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">\n';
+
+  // Styles
+  xml += '<Styles>\n';
+  xml += '<Style ss:ID="header"><Font ss:Bold="1" ss:Color="#FFFFFF" ss:Size="10"/><Interior ss:Color="#0068B7" ss:Pattern="Solid"/><Alignment ss:Vertical="Center" ss:WrapText="0"/></Style>\n';
+  for (const [p, color] of Object.entries(priorityColors)) {
+    xml += `<Style ss:ID="p${p}"><Interior ss:Color="${color}" ss:Pattern="Solid"/><Font ss:Size="10"/><Alignment ss:Vertical="Center" ss:WrapText="1"/></Style>\n`;
+  }
+  xml += '</Styles>\n';
+
+  xml += '<Worksheet ss:Name="見込み施設リスト">\n';
+  xml += '<Table>\n';
+
+  // Column widths
+  [80, 50, 200, 130, 50, 180, 250, 120, 80, 100, 130].forEach(w => {
+    xml += `<Column ss:Width="${w}"/>\n`;
+  });
+
+  // Header
+  const headers = ['優先度','スコア','施設名','所在地','求人数','募集職種','判定理由','求人番号','取得日','アクション','メモ'];
+  xml += '<Row>\n';
+  headers.forEach(h => { xml += `<Cell ss:StyleID="header"><Data ss:Type="String">${xe(h)}</Data></Cell>\n`; });
+  xml += '</Row>\n';
+
+  // Data rows
+  for (const f of allFacilities) {
+    const style = `p${f.priority}`;
+    xml += '<Row>\n';
+    xml += `<Cell ss:StyleID="${style}"><Data ss:Type="String">${xe(f.priorityLabel)}</Data></Cell>\n`;
+    xml += `<Cell ss:StyleID="${style}"><Data ss:Type="Number">${f.score}</Data></Cell>\n`;
+    xml += `<Cell ss:StyleID="${style}"><Data ss:Type="String">${xe(f.company_name)}</Data></Cell>\n`;
+    xml += `<Cell ss:StyleID="${style}"><Data ss:Type="String">${xe(f.location)}</Data></Cell>\n`;
+    xml += `<Cell ss:StyleID="${style}"><Data ss:Type="Number">${f.jobCount}</Data></Cell>\n`;
+    xml += `<Cell ss:StyleID="${style}"><Data ss:Type="String">${xe(f.jobTitles)}</Data></Cell>\n`;
+    xml += `<Cell ss:StyleID="${style}"><Data ss:Type="String">${xe(f.reasons)}</Data></Cell>\n`;
+    xml += `<Cell ss:StyleID="${style}"><Data ss:Type="String">${xe(f.jobNumbers)}</Data></Cell>\n`;
+    xml += `<Cell ss:StyleID="${style}"><Data ss:Type="String">${xe(f.retrievedAt)}</Data></Cell>\n`;
+    xml += `<Cell ss:StyleID="${style}"><Data ss:Type="String"></Data></Cell>\n`;
+    xml += `<Cell ss:StyleID="${style}"><Data ss:Type="String"></Data></Cell>\n`;
+    xml += '</Row>\n';
+  }
+
+  xml += '</Table>\n</Worksheet>\n</Workbook>';
+
+  download(xml, `yumeho_leads_${ts()}.xls`, 'application/vnd.ms-excel');
+}
+
+function xe(s) { return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// ── テンプレート CSV ──
+function downloadTemplate() {
+  const BOM = '\uFEFF';
+  const csv = BOM + `施設名,職種,所在地,仕事の内容,必要な経験等,求人番号,取得日
+医療法人○○会 ○○リハビリ病院,理学療法士,東京都○○区,回復期リハビリ病棟での歩行訓練。急募。2名募集。,PT免許必須,13070-00000000,${new Date().toISOString().slice(0,10)}
+社会福祉法人 ○○会,介護職員,神奈川県○○市,デイサービス。歩行介助・移乗介助。3名募集。未経験可。,初任者研修以上,14010-00000000,${new Date().toISOString().slice(0,10)}
+`;
+  download(csv, 'yumeho_leads_template.csv', 'text/csv;charset=utf-8');
+}
+
+// ── ユーティリティ ──
+function ts() { const d = new Date(); return d.getFullYear() + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0'); }
+
+function download(content, filename, type) {
+  const blob = new Blob([content], { type });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+</script>
+
+</body>
+</html>

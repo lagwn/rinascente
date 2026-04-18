@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1440 5920">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st20, .st21, .st22, .st23, .st24, .st25, .st26, .st27, .st28, .st29, .st30, .st31, .st32, .st33, .st34, .st35, .st36, .st37, .st38, .st39, .st40, .st41, .st42, .st43, .st44, .st45, .st46, .st47, .st48, .st49, .st50, .st51, .st52, .st53, .st54, .st55, .st56, .st57, .st58, .st59, .st60, .st61, .st62, .st63, .st64, .st65, .st66, .st67, .st68, .st69, .st70, .st71, .st72, .st73, .st74, .st75, .st76, .st77, .st78, .st79, .st80, .st81, .st82, .st83, .st84, .st85 {
+        isolation: isolate;
+      }
+
+      .st1, .st2, .st3, .st6, .st7, .st9, .st13, .st16, .st19, .st24, .st26, .st27, .st31, .st36, .st38, .st39, .st42, .st43, .st51, .st52, .st53, .st56, .st57, .st86, .st62, .st63, .st72, .st75, .st77, .st78, .st80, .st83, .st85 {
+        font-weight: 700;
+      }
+
+      .st1, .st2, .st3, .st6, .st7, .st16, .st24, .st27, .st31, .st38, .st39, .st42, .st51, .st52, .st53, .st56, .st57, .st62, .st63, .st72, .st77, .st78, .st80, .st85 {
+        font-family: Helvetica-Bold, Helvetica;
+      }
+
+      .st1, .st3, .st8, .st9, .st17, .st18, .st24, .st31, .st87, .st36, .st88, .st89, .st44, .st90, .st50, .st56, .st60, .st64, .st67, .st71, .st72, .st75, .st91, .st81, .st83, .st85 {
+        fill: #fff;
+      }
+
+      .st1, .st7, .st9, .st11, .st20, .st28, .st30, .st32, .st38, .st42, .st54, .st57, .st66, .st69, .st74, .st77, .st78, .st79, .st81, .st84 {
+        font-size: 12px;
+      }
+
+      .st2, .st10, .st26, .st27, .st45, .st62, .st76 {
+        fill: #1a1a1a;
+      }
+
+      .st2, .st76, .st85 {
+        font-size: 32px;
+      }
+
+      .st3, .st22, .st44, .st50 {
+        font-size: 16px;
+      }
+
+      .st92 {
+        fill: #e0e0e0;
+      }
+
+      .st4, .st5, .st6, .st13, .st16, .st21, .st30, .st93, .st39, .st43, .st49, .st53, .st57, .st59, .st73 {
+        fill: #0068b7;
+      }
+
+      .st4, .st5, .st10, .st11, .st12, .st14, .st17, .st18, .st21, .st30, .st32, .st34, .st37, .st40, .st44, .st45, .st47, .st48, .st49, .st54, .st59, .st67, .st68, .st70, .st71, .st73, .st74, .st76, .st79, .st94, .st81, .st84 {
+        font-family: KozGoPr6N-Regular-83pv-RKSJ-H, 'Kozuka Gothic Pr6N';
+      }
+
+      .st4, .st6, .st15, .st27, .st45, .st48, .st64, .st67, .st68, .st72 {
+        font-size: 13px;
+      }
+
+      .st5, .st14, .st37, .st71 {
+        font-size: 28px;
+      }
+
+      .st95, .st96 {
+        stroke: #0068b7;
+      }
+
+      .st95, .st96, .st97, .st98 {
+        fill: #f0f7ff;
+      }
+
+      .st7, .st40, .st63, .st79 {
+        fill: #6a1b9a;
+      }
+
+      .st8, .st15, .st20, .st22, .st25, .st28, .st33, .st35, .st41, .st46, .st50, .st55, .st58, .st61, .st64, .st65, .st66, .st69, .st82 {
+        font-family: HiraKakuProN-W3-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN';
+      }
+
+      .st8, .st17, .st19, .st25, .st51, .st58, .st75, .st82, .st83 {
+        font-size: 10px;
+      }
+
+      .st9 {
+        letter-spacing: .2em;
+      }
+
+      .st9, .st13, .st19, .st26, .st36, .st43, .st86, .st75, .st83 {
+        font-family: HelveticaNeue-Bold, 'Helvetica Neue';
+      }
+
+      .st10, .st21, .st62 {
+        font-size: 15px;
+      }
+
+      .st11, .st12, .st99, .st42 {
+        fill: #4caf50;
+      }
+
+      .st96, .st97, .st100, .st101, .st90 {
+        stroke-width: .8px;
+      }
+
+      .st12, .st33, .st39, .st41, .st43, .st46, .st55, .st59, .st61 {
+        font-size: 11px;
+      }
+
+      .st13, .st16, .st23, .st34, .st40, .st52, .st63, .st70, .st73 {
+        font-size: 18px;
+      }
+
+      .st14, .st28, .st102 {
+        fill: #555;
+      }
+
+      .st15, .st54, .st66, .st68, .st77 {
+        fill: #333;
+      }
+
+      .st18 {
+        font-size: 44px;
+      }
+
+      .st19, .st20, .st35, .st37, .st41, .st103, .st82 {
+        fill: #888;
+      }
+
+      .st22, .st104 {
+        fill: #ccc;
+      }
+
+      .st105, .st74, .st78 {
+        fill: #9c27b0;
+      }
+
+      .st23, .st32, .st106, .st65, .st70 {
+        fill: #ff9800;
+      }
+
+      .st24 {
+        font-size: 9px;
+      }
+
+      .st107, .st46, .st58 {
+        fill: #aaa;
+      }
+
+      .st26 {
+        font-size: 26px;
+      }
+
+      .st31 {
+        font-size: 24px;
+      }
+
+      .st87 {
+        stroke-width: 1.5px;
+      }
+
+      .st87, .st101 {
+        stroke: #4caf50;
+      }
+
+      .st34, .st38, .st52, .st84 {
+        fill: #e65100;
+      }
+
+      .st35, .st47, .st49, .st53, .st60, .st65, .st80 {
+        font-size: 14px;
+      }
+
+      .st108 {
+        fill: #f3e5f5;
+        stroke: #9c27b0;
+      }
+
+      .st109 {
+        fill: #fff3e0;
+        stroke: #ff9800;
+      }
+
+      .st97 {
+        stroke: #b0d4ee;
+      }
+
+      .st36, .st56 {
+        font-size: 20px;
+      }
+
+      .st100, .st110, .st111 {
+        fill: #f8f9fa;
+      }
+
+      .st100, .st110, .st91 {
+        stroke: #e0e0e0;
+      }
+
+      .st110, .st88, .st98, .st111 {
+        stroke-width: .5px;
+      }
+
+      .st88, .st98, .st111 {
+        stroke: #e8e8e8;
+      }
+
+      .st101, .st112 {
+        fill: #e8f5e9;
+      }
+
+      .st43 {
+        letter-spacing: 0em;
+      }
+
+      .st90 {
+        stroke: #ffb74d;
+      }
+
+      .st47, .st80 {
+        fill: #2e7d32;
+      }
+
+      .st48, .st55, .st69 {
+        fill: #666;
+      }
+
+      .st51 {
+        letter-spacing: 0em;
+      }
+
+      .st113 {
+        fill: #ffce31;
+      }
+
+      .st60 {
+        font-family: HiraKakuProN-W6-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN';
+      }
+
+      .st61 {
+        fill: #66bb6a;
+      }
+
+      .st114 {
+        fill: #f6f8fb;
+      }
+
+      .st75 {
+        letter-spacing: .2em;
+      }
+
+      .st115 {
+        fill: #e3f2fd;
+      }
+
+      .st116 {
+        fill: #4fd1d9;
+      }
+    </style>
+  </defs>
+  <rect class="st93" y="0" width="1440" height="810"/>
+  <g class="st29">
+    <text class="st9" transform="translate(120 260)"><tspan x="0" y="0">INFRASTRUCTURE GUIDE</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st18" transform="translate(120 320)"><tspan x="0" y="0">サーバー・ドメイン・</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st18" transform="translate(120 380)"><tspan x="0" y="0">運用体制のご説明</tspan></text>
+  </g>
+  <line class="st0" x1="120" y1="400" x2="600" y2="400"/>
+  <g class="st29">
+    <text class="st50" transform="translate(120 440)"><tspan x="0" y="0">サーバー選定の根拠、医療認証の要否、ドメインの選び方、</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st50" transform="translate(120 466)"><tspan x="0" y="0">そして個人事業でも安心いただける運用体制をまとめました。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st83" transform="translate(148 544)"><tspan x="0" y="0">01</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st67" transform="translate(148 562.3)"><tspan x="0" y="0">サーバー：</tspan></text>
+    <text class="st72" transform="translate(213 562)"><tspan x="0" y="0">Xserver </tspan></text>
+    <text class="st67" transform="translate(264.3 562.3)"><tspan x="0" y="0">を選ぶ理由</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st83" transform="translate(488 544)"><tspan x="0" y="0">02</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st67" transform="translate(488 562)"><tspan x="0" y="0">医療認証サーバーの要否</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st83" transform="translate(828 544)"><tspan x="0" y="0">03</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st67" transform="translate(828 562)"><tspan x="0" y="0">ドメインの選び方</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st83" transform="translate(148 614)"><tspan x="0" y="0">04</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st67" transform="translate(148 632)"><tspan x="0" y="0">運用体制と緊急時の対応</tspan></text>
+  </g>
+  <rect class="st89" y="810" width="1440" height="900"/>
+  <path class="st93" d="M83,870h0c1.7,0,3,1.3,3,3v30c0,1.7-1.3,3-3,3h0c-1.7,0-3-1.3-3-3v-30c0-1.7,1.3-3,3-3Z"/>
+  <g class="st29">
+    <text class="st43" transform="translate(100 895)"><tspan x="0" y="0">01 SERVER SELECTION</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st2" transform="translate(80 940)"><tspan x="0" y="0">Xserver </tspan></text>
+    <text class="st76" transform="translate(206.3 940.7)"><tspan x="0" y="0">を選ぶ理由</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st35" transform="translate(80 968)"><tspan x="0" y="0">国内250万サイト以上の運用実績を持つ、日本最大級のレンタルサーバー</tspan></text>
+  </g>
+  <rect class="st97" x="80" y="1004" width="420" height="130" rx="12" ry="12"/>
+  <g class="st29">
+    <g>
+      <circle class="st116" cx="122" cy="1028.2" r="13.1" transform="translate(-909.7 1115.9) rotate(-88.1)"/>
+      <path class="st89" d="M120.5,1029.6v.3c0,1,0,1.7.3,2.1.2.4.6.6,1.2.6s1-.2,1.2-.7c0-.3.2-.7.2-1.3v-8.9h2.7v8.8c0,1.1-.2,1.9-.5,2.6-.6,1.1-1.7,1.6-3.3,1.6s-2.7-.4-3.2-1.3-.8-2-.8-3.5v-.3h2.5-.3Z"/>
+    </g>
+  </g>
+  <g class="st29">
+    <text class="st10" transform="translate(152 1034)"><tspan x="0" y="0">サーバーが日本国内にある</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(152 1058)"><tspan x="0" y="0">国内データセンターで運用されるため、表示速度が速く、</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(152 1076)"><tspan x="0" y="0">日本の法律（個人情報保護法）の下でデータが管理されます。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st59" transform="translate(152 1100.2)"><tspan x="0" y="0">海外サーバーと比べて表示速度が約</tspan></text>
+    <text class="st39" transform="translate(328 1100)"><tspan x="0" y="0">2</tspan></text>
+    <text class="st59" transform="translate(334.1 1100.2)"><tspan x="0" y="0">〜</tspan></text>
+    <text class="st39" transform="translate(345.1 1100)"><tspan x="0" y="0">3</tspan></text>
+    <text class="st59" transform="translate(351.2 1100.2)"><tspan x="0" y="0">倍高速</tspan></text>
+  </g>
+  <rect class="st97" x="520" y="1004" width="420" height="130" rx="12" ry="12"/>
+  <circle class="st93" cx="566" cy="1030" r="14"/>
+  <g class="st29">
+    <text class="st1" transform="translate(555 1036)"><tspan x="0" y="0">安定</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st10" transform="translate(592 1034.3)"><tspan x="0" y="0">国内シェアNo.1の安定した稼働実績</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(592 1058)"><tspan x="0" y="0">250万以上のサイトが稼働する高い信頼性。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(592 1076)"><tspan x="0" y="0">大量アクセスにも耐える安定したサーバー環境です。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st59" transform="translate(592 1100.2)"><tspan x="0" y="0">高速化技術（KUSANAGI・Xアクセラレータ）標準搭載</tspan></text>
+  </g>
+  <rect class="st97" x="960" y="1004" width="420" height="130" rx="12" ry="12"/>
+  <circle class="st93" cx="1006" cy="1030" r="14"/>
+  <g class="st29">
+    <text class="st1" transform="translate(998 1036)"><tspan x="0" y="0">DB</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st10" transform="translate(1032 1034)"><tspan x="0" y="0">毎日自動バックアップ</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(1032 1058)"><tspan x="0" y="0">Web データ・データベースとも毎日自動でバックアップ。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(1032 1076)"><tspan x="0" y="0">過去14日分を保持しており、いつでも復元が可能です。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st59" transform="translate(1032 1100)"><tspan x="0" y="0">万が一の障害や操作ミスにも即座に対応可能</tspan></text>
+  </g>
+  <rect class="st97" x="80" y="1150" width="420" height="130" rx="12" ry="12"/>
+  <circle class="st93" cx="126" cy="1176" r="14"/>
+  <g class="st29">
+    <text class="st1" transform="translate(117 1182)"><tspan x="0" y="0">SSL</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st62" transform="translate(152 1180)"><tspan x="0" y="0">SSL</tspan></text>
+    <text class="st10" transform="translate(181.2 1180.3)"><tspan x="0" y="0">・</tspan></text>
+    <text class="st62" transform="translate(196.2 1180)"><tspan x="0" y="0">WAF</tspan></text>
+    <text class="st10" transform="translate(230.3 1180.3)"><tspan x="0" y="0">・</tspan></text>
+    <text class="st62" transform="translate(245.3 1180)"><tspan x="0" y="0">DDoS</tspan></text>
+    <text class="st10" transform="translate(286.2 1180.3)"><tspan x="0" y="0">対策を標準搭載</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(152 1204)"><tspan x="0" y="0">無料SSLで通信を暗号化。WAF（Webアプリケーション</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(152 1222)"><tspan x="0" y="0">ファイアウォール）とDDoS自動防御で外部攻撃を遮断。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st59" transform="translate(152 1246)"><tspan x="0" y="0">追加費用なしでセキュリティ対策が完了</tspan></text>
+  </g>
+  <rect class="st97" x="520" y="1150" width="420" height="130" rx="12" ry="12"/>
+  <g class="st29">
+    <polygon class="st113" points="567.5 1161.1 563.5 1162.2 560.9 1161.1 556.5 1176.1 561.1 1176.1 557.1 1187.3 566.9 1172.3 561 1172.3 567.5 1161.1"/>
+  </g>
+  <g class="st29">
+    <text class="st62" transform="translate(592 1180)"><tspan x="0" y="0">WordPress </tspan></text>
+    <text class="st10" transform="translate(675.4 1180.3)"><tspan x="0" y="0">トラブルについて</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(592 1209)"><tspan x="0" y="0">自動リカバリー機能つきで、更新トラブルにも対応。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st39" transform="translate(592 1233)"><tspan x="0" y="0">CMS</tspan></text>
+    <text class="st59" transform="translate(616.4 1233.2)"><tspan x="0" y="0">運用に最適化された環境</tspan></text>
+  </g>
+  <rect class="st97" x="960" y="1150" width="420" height="130" rx="12" ry="12"/>
+  <circle class="st93" cx="1006" cy="1176" r="14"/>
+  <g class="st29">
+    <text class="st1" transform="translate(998 1182)"><tspan x="0" y="0">TEL</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st62" transform="translate(1032 1180)"><tspan x="0" y="0">24</tspan></text>
+    <text class="st10" transform="translate(1048.7 1180.3)"><tspan x="0" y="0">時間メール</tspan></text>
+    <text class="st62" transform="translate(1123.7 1180)"><tspan x="0" y="0" xml:space="preserve"> + </tspan></text>
+    <text class="st10" transform="translate(1140.8 1180.3)"><tspan x="0" y="0">電話サポート</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(1032 1204)"><tspan x="0" y="0">メールサポートは24時間受付。電話サポートもあり、</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(1032 1222)"><tspan x="0" y="0">サーバー側のトラブルは Xserver 側で対応してくれます。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st21" transform="translate(80 1326)"><tspan x="0" y="0">推奨プランと費用</tspan></text>
+  </g>
+  <rect class="st110" x="80" y="1342" width="1280" height="80" rx="10" ry="10"/>
+  <g class="st29">
+    <text class="st6" transform="translate(110 1374)"><tspan x="0" y="0">Xserver</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st26" transform="translate(250 1374)"><tspan x="0" y="0">¥3,000</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st20" transform="translate(360 1374)"><tspan x="0" y="0">/月 ｜ 年間 ¥36,000（ホスティング＋運用管理費込み）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st20" transform="translate(800 1374)"><tspan x="0" y="0">自動バックアップ14日間 ｜ 無料SSL標準</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st46" transform="translate(110 1400)"><tspan x="0" y="0">マルチドメイン対応 — 1契約で Rinascentes / YUMEHO / MICA30 の3サイトを運用可能</tspan></text>
+  </g>
+  <rect class="st114" y="1710" width="1440" height="1020"/>
+  <path class="st93" d="M83,1770h0c1.7,0,3,1.3,3,3v30c0,1.7-1.3,3-3,3h0c-1.7,0-3-1.3-3-3v-30c0-1.7,1.3-3,3-3Z"/>
+  <g class="st29">
+    <text class="st43" transform="translate(100 1795)"><tspan x="0" y="0">02 MEDICAL SERVER COMPLIANCE</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st76" transform="translate(80 1840)"><tspan x="0" y="0">医療認証サーバーは必要か？</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st35" transform="translate(80 1868)"><tspan x="0" y="0">結論：本サイトの用途では不要です。その理由をご説明します。</tspan></text>
+  </g>
+  <rect class="st87" x="80" y="1906" width="640" height="440" rx="16" ry="16"/>
+  <rect class="st99" x="80" y="1906" width="640" height="48"/>
+  <rect class="st99" x="80" y="1938" width="640" height="16"/>
+  <g class="st29">
+    <text class="st44" transform="translate(342.2 1938)"><tspan x="0" y="0">医療認証が不要な理由</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st15" transform="translate(108 1992)"><tspan x="0" y="0">本サイトで扱う情報は以下の範囲に限られます：</tspan></text>
+  </g>
+  <circle class="st99" cx="120" cy="2026" r="8"/>
+  <g class="st29">
+    <text class="st24" transform="translate(117.5 2030)"><tspan x="0" y="0">1</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st45" transform="translate(140 2030)"><tspan x="0" y="0">電子カルテ・患者情報を一切扱わない</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(140 2050)"><tspan x="0" y="0">本サイトは製品紹介・企業情報の発信が目的であり、</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(140 2066)"><tspan x="0" y="0">患者の診療情報や個人の医療データは保存・送受信しません。</tspan></text>
+  </g>
+  <circle class="st99" cx="120" cy="2098" r="8"/>
+  <g class="st29">
+    <text class="st24" transform="translate(117.5 2102)"><tspan x="0" y="0">2</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st45" transform="translate(140 2102)"><tspan x="0" y="0">医療情報システムに該当しない</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(140 2122)"><tspan x="0" y="0">厚労省「医療情報システムの安全管理に関するガイドライン」の対象は、</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(140 2138)"><tspan x="0" y="0">電子カルテ・オーダリング・PACS 等の医療情報システムです。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st12" transform="translate(140 2158)"><tspan x="0" y="0">製品紹介サイトはガイドラインの適用対象外です。</tspan></text>
+  </g>
+  <circle class="st99" cx="120" cy="2190" r="8"/>
+  <g class="st29">
+    <text class="st24" transform="translate(117.5 2194)"><tspan x="0" y="0">3</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st45" transform="translate(140 2194.3)"><tspan x="0" y="0">会員情報はログイン</tspan></text>
+    <text class="st27" transform="translate(257 2194)"><tspan x="0" y="0">ID</tspan></text>
+    <text class="st45" transform="translate(270 2194.3)"><tspan x="0" y="0">・購入履歴のみ</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(140 2214)"><tspan x="0" y="0">会員ページで管理するのは、メールアドレス・パスワード・購入履歴であり、</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(140 2230)"><tspan x="0" y="0">診療情報・検査結果・処方データ等の要配慮個人情報は含みません。</tspan></text>
+  </g>
+  <circle class="st99" cx="120" cy="2262" r="8"/>
+  <g class="st29">
+    <text class="st24" transform="translate(117.5 2266)"><tspan x="0" y="0">4</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st45" transform="translate(140 2266)"><tspan x="0" y="0">同様のサイトで医療認証サーバーは一般的でない</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(140 2286)"><tspan x="0" y="0">医療機器メーカーの製品紹介サイト（テルモ、オリンパス等）も、</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(140 2302)"><tspan x="0" y="0">AWS や一般ホスティングで運用されており、医療認証サーバーは使用していません。</tspan></text>
+  </g>
+  <rect class="st112" x="108" y="2320" width="584" height="16" rx="3" ry="3"/>
+  <rect class="st91" x="760" y="1906" width="600" height="440" rx="16" ry="16"/>
+  <rect class="st106" x="760" y="1906" width="600" height="48"/>
+  <rect class="st106" x="760" y="1938" width="600" height="16"/>
+  <g class="st29">
+    <text class="st44" transform="translate(961.8 1938)"><tspan x="0" y="0">医療認証が必要になるケース（参考）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st66" transform="translate(788 1992)"><tspan x="0" y="0">以下に該当する場合は 3省2ガイドライン 準拠が必要です：</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st32" transform="translate(788 2026)"><tspan x="0" y="0">●</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(808 2026)"><tspan x="0" y="0">電子カルテシステムをクラウドで運用する</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st32" transform="translate(788 2052)"><tspan x="0" y="0">●</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(808 2052)"><tspan x="0" y="0">患者の診療データを保存・送受信する</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st32" transform="translate(788 2078)"><tspan x="0" y="0">●</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(808 2078)"><tspan x="0" y="0">オンライン診療システムを構築する</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st32" transform="translate(788 2104)"><tspan x="0" y="0">●</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(808 2104)"><tspan x="0" y="0">処方データや検査結果をやり取りする</tspan></text>
+  </g>
+  <rect class="st92" x="788" y="2138" width="544" height="1"/>
+  <g class="st29">
+    <text class="st68" transform="translate(788 2170)"><tspan x="0" y="0">本サイトは上記いずれにも該当しません。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st20" transform="translate(788 2196)"><tspan x="0" y="0">今回のサイトは「製品紹介」「企業情報」「お問い合わせ」</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st20" transform="translate(788 2216)"><tspan x="0" y="0">が目的であり、患者情報を扱うシステムではありません。</tspan></text>
+  </g>
+  <rect class="st92" x="788" y="2248" width="544" height="1"/>
+  <g class="st29">
+    <text class="st30" transform="translate(788 2276.3)"><tspan x="0" y="0">それでもご希望の場合は</tspan></text>
+    <text class="st57" transform="translate(920 2276)"><tspan x="0" y="0"> </tspan></text>
+    <text class="st30" transform="translate(923.3 2276)"><tspan x="0" y="0">→</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(788 2300)"><tspan x="0" y="0">医療認証取得済みの Amazon AWS（東京リージョン）での</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(788 2320)"><tspan x="0" y="0">構築も検討可能です。（次ページで費用を比較します）</tspan></text>
+  </g>
+  <rect class="st101" x="80" y="2376" width="1280" height="56" rx="12" ry="12"/>
+  <g class="st29">
+    <text class="st47" transform="translate(523.6 2404.3)"><tspan x="0" y="0">結論：本サイトの用途では</tspan></text>
+    <text class="st80" transform="translate(691.6 2404)"><tspan x="0" y="0" xml:space="preserve"> Xserver </tspan></text>
+    <text class="st47" transform="translate(750.8 2404.3)"><tspan x="0" y="0">で十分なセキュリティと信頼性を確保できます</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st61" transform="translate(495.2 2422)"><tspan x="0" y="0">SSL暗号化 + WAF + 自動バックアップ — 一般的な企業サイト以上の水準</tspan></text>
+  </g>
+  <rect class="st89" y="2730" width="1440" height="820"/>
+  <path class="st93" d="M83,2790h0c1.7,0,3,1.3,3,3v30c0,1.7-1.3,3-3,3h0c-1.7,0-3-1.3-3-3v-30c0-1.7,1.3-3,3-3Z"/>
+  <g class="st29">
+    <text class="st43" transform="translate(100 2815)"><tspan x="0" y="0">02-2 COST COMPARISON</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st2" transform="translate(80 2860)"><tspan x="0" y="0">Xserver </tspan></text>
+    <text class="st76" transform="translate(206.3 2860.7)"><tspan x="0" y="0">と</tspan></text>
+    <text class="st2" transform="translate(238.3 2860)"><tspan x="0" y="0" xml:space="preserve"> AWS </tspan></text>
+    <text class="st76" transform="translate(330.8 2860.7)"><tspan x="0" y="0">の費用比較</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st35" transform="translate(80 2888)"><tspan x="0" y="0">同じサイトを運用する場合の年間コストと運用負荷の違い</tspan></text>
+  </g>
+  <rect class="st92" x="80" y="2920" width="400" height="40"/>
+  <rect class="st93" x="480" y="2920" width="420" height="40"/>
+  <rect class="st106" x="900" y="2920" width="460" height="40"/>
+  <g class="st29">
+    <text class="st48" transform="translate(261.2 2946)"><tspan x="0" y="0">比較項目</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st72" transform="translate(626.8 2946)"><tspan x="0" y="0">Xserver</tspan></text>
+    <text class="st67" transform="translate(678.1 2946.3)"><tspan x="0" y="0">（推奨）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st72" transform="translate(1088.3 2946)"><tspan x="0" y="0">Amazon AWS</tspan></text>
+  </g>
+  <rect class="st111" x="80" y="2960" width="400" height="48"/>
+  <rect class="st88" x="480" y="2960" width="420" height="48"/>
+  <rect class="st88" x="900" y="2960" width="460" height="48"/>
+  <g class="st29">
+    <text class="st54" transform="translate(100 2990)"><tspan x="0" y="0">月額費用</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st13" transform="translate(500 2990)"><tspan x="0" y="0">¥3,000</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st41" transform="translate(600 2990)"><tspan x="0" y="0">/月</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st70" transform="translate(920 2984)"><tspan x="0" y="0">Xserver の約</tspan></text>
+    <text class="st23" transform="translate(1018 2984)"><tspan class="st86" x="0" y="0" xml:space="preserve"> 3</tspan><tspan class="st94" x="15" y="0">〜</tspan><tspan class="st86" x="33" y="0">5</tspan><tspan class="st94" x="43" y="0">倍</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st41" transform="translate(920 3000)"><tspan x="0" y="0">（EC2+RDS構成 / 管理人件費別途）</tspan></text>
+  </g>
+  <rect class="st88" x="80" y="3008" width="400" height="48"/>
+  <rect class="st98" x="480" y="3008" width="420" height="48"/>
+  <rect class="st88" x="900" y="3008" width="460" height="48"/>
+  <g class="st29">
+    <text class="st54" transform="translate(100 3038)"><tspan x="0" y="0">年間コスト</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st13" transform="translate(500 3038)"><tspan x="0" y="0">¥36,000</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st70" transform="translate(920 3032.4)"><tspan x="0" y="0">年間</tspan></text>
+    <text class="st23" transform="translate(956 3032)"><tspan class="st86" x="0" y="0" xml:space="preserve"> ¥180,000</tspan><tspan class="st94" x="80.1" y="0">〜</tspan><tspan class="st86" x="98.1" y="0">300,000</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st41" transform="translate(920 3048)"><tspan x="0" y="0">（+ サーバー管理の技術人件費）</tspan></text>
+  </g>
+  <rect class="st111" x="80" y="3056" width="400" height="48"/>
+  <rect class="st88" x="480" y="3056" width="420" height="48"/>
+  <rect class="st88" x="900" y="3056" width="460" height="48"/>
+  <g class="st29">
+    <text class="st54" transform="translate(100 3086)"><tspan x="0" y="0">安定性</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st66" transform="translate(500 3086)"><tspan x="0" y="0">国内シェアNo.1 / 高い稼働実績</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st66" transform="translate(920 3086)"><tspan x="0" y="0">構成依存（設計・運用が必要）</tspan></text>
+  </g>
+  <rect class="st88" x="80" y="3104" width="400" height="48"/>
+  <rect class="st98" x="480" y="3104" width="420" height="48"/>
+  <rect class="st88" x="900" y="3104" width="460" height="48"/>
+  <g class="st29">
+    <text class="st54" transform="translate(100 3134)"><tspan x="0" y="0">サーバー管理</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st11" transform="translate(500 3134.3)"><tspan x="0" y="0">不要（すべて</tspan></text>
+    <text class="st42" transform="translate(572 3134)"><tspan x="0" y="0" xml:space="preserve"> Xserver </tspan></text>
+    <text class="st11" transform="translate(622.7 3134.3)"><tspan x="0" y="0">が管理）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st32" transform="translate(920 3134)"><tspan x="0" y="0">自己管理（専門知識が必要）</tspan></text>
+  </g>
+  <rect class="st111" x="80" y="3152" width="400" height="48"/>
+  <rect class="st88" x="480" y="3152" width="420" height="48"/>
+  <rect class="st88" x="900" y="3152" width="460" height="48"/>
+  <g class="st29">
+    <text class="st77" transform="translate(100 3182)"><tspan x="0" y="0">SSL</tspan></text>
+    <text class="st54" transform="translate(123.3 3182.3)"><tspan x="0" y="0">（暗号化）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st66" transform="translate(500 3182)"><tspan x="0" y="0">無料（標準搭載）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st66" transform="translate(920 3182)"><tspan x="0" y="0">無料（ACM）</tspan></text>
+  </g>
+  <rect class="st88" x="80" y="3200" width="400" height="48"/>
+  <rect class="st98" x="480" y="3200" width="420" height="48"/>
+  <rect class="st88" x="900" y="3200" width="460" height="48"/>
+  <g class="st29">
+    <text class="st54" transform="translate(100 3230)"><tspan x="0" y="0">自動バックアップ</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st11" transform="translate(500 3230.3)"><tspan x="0" y="0">毎日自動（</tspan></text>
+    <text class="st42" transform="translate(560 3230)"><tspan x="0" y="0">14</tspan></text>
+    <text class="st11" transform="translate(573.3 3230.3)"><tspan x="0" y="0">日間保持）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st32" transform="translate(920 3230)"><tspan x="0" y="0">手動設定が必要</tspan></text>
+  </g>
+  <rect class="st111" x="80" y="3248" width="400" height="48"/>
+  <rect class="st88" x="480" y="3248" width="420" height="48"/>
+  <rect class="st88" x="900" y="3248" width="460" height="48"/>
+  <g class="st29">
+    <text class="st77" transform="translate(100 3278)"><tspan x="0" y="0">WordPress</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st11" transform="translate(500 3278)"><tspan x="0" y="0">ワンクリックインストール</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st32" transform="translate(920 3278)"><tspan x="0" y="0">自分で構築</tspan></text>
+  </g>
+  <rect class="st88" x="80" y="3296" width="400" height="48"/>
+  <rect class="st98" x="480" y="3296" width="420" height="48"/>
+  <rect class="st88" x="900" y="3296" width="460" height="48"/>
+  <g class="st29">
+    <text class="st54" transform="translate(100 3326)"><tspan x="0" y="0">医療系認証</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st20" transform="translate(500 3326)"><tspan x="0" y="0">なし（本サイトでは不要）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st66" transform="translate(920 3326)"><tspan x="0" y="0">ISMAP / ISO27001 取得済</tspan></text>
+  </g>
+  <rect class="st95" x="80" y="3380" width="1280" height="80" rx="12" ry="12"/>
+  <g class="st29">
+    <text class="st49" transform="translate(110 3412.3)"><tspan x="0" y="0">推奨：</tspan></text>
+    <text class="st53" transform="translate(152 3412)"><tspan x="0" y="0">Xserver</tspan></text>
+    <text class="st53" transform="translate(223 3412)"><tspan x="0" y="0" xml:space="preserve"> — </tspan></text>
+    <text class="st49" transform="translate(245 3412.3)"><tspan x="0" y="0">年間</tspan></text>
+    <text class="st53" transform="translate(271 3412)"><tspan x="0" y="0" xml:space="preserve"> ¥36,000</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st69" transform="translate(110 3436)"><tspan x="0" y="0">マルチドメインで3サイトを1契約で運用。AWS の場合は年間3〜5倍のコスト + 技術者の管理人件費が別途必要です。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st58" transform="translate(110 3452)"><tspan x="0" y="0">※ AWS は月額費用に加え、サーバー管理の技術人件費（月額数万円〜）が別途発生します</tspan></text>
+  </g>
+  <rect class="st114" y="3550" width="1440" height="700"/>
+  <path class="st93" d="M83,3610h0c1.7,0,3,1.3,3,3v30c0,1.7-1.3,3-3,3h0c-1.7,0-3-1.3-3-3v-30c0-1.7,1.3-3,3-3Z"/>
+  <g class="st29">
+    <text class="st43" transform="translate(100 3635)"><tspan x="0" y="0">03 DOMAIN SELECTION</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st76" transform="translate(80 3680)"><tspan x="0" y="0">ドメインの選び方</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st35" transform="translate(80 3708)"><tspan x="0" y="0">.com / .co.jp / .jp — それぞれの特徴と費用を比較します</tspan></text>
+  </g>
+  <rect class="st91" x="80" y="3744" width="420" height="300" rx="16" ry="16"/>
+  <rect class="st93" x="80" y="3744" width="420" height="48"/>
+  <rect class="st93" x="80" y="3776" width="420" height="16"/>
+  <g class="st29">
+    <text class="st3" transform="translate(269.1 3776)"><tspan x="0" y="0">.co.jp</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st5" transform="translate(108 3820)"><tspan x="0" y="0">年額数千円</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st20" transform="translate(256 3820)"><tspan x="0" y="0">（3ドメイン中 最も高い）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st45" transform="translate(108 3848)"><tspan x="0" y="0">法人の信頼性が最も高い</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(108 3876)"><tspan x="0" y="0">・日本で登記された法人のみ取得可能</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(108 3896)"><tspan x="0" y="0">・1法人につき1ドメインのみ — なりすまし困難</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(108 3916)"><tspan x="0" y="0">・取引先・官公庁への信用力が最も大きい</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(108 3936)"><tspan x="0" y="0">・医療機器メーカーとしての格を示せる</tspan></text>
+  </g>
+  <path class="st93" d="M120,3960h56c6.6,0,12,5.4,12,12h0c0,6.6-5.4,12-12,12h-56c-6.6,0-12-5.4-12-12h0c0-6.6,5.4-12,12-12Z"/>
+  <g class="st29">
+    <text class="st17" transform="translate(137.2 3976)"><tspan x="0" y="0">最推奨</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st58" transform="translate(200 3978)"><tspan x="0" y="0">法人登記書類が必要</tspan></text>
+  </g>
+  <rect class="st91" x="520" y="3744" width="420" height="300" rx="16" ry="16"/>
+  <rect class="st102" x="520" y="3744" width="420" height="48"/>
+  <rect class="st102" x="520" y="3776" width="420" height="16"/>
+  <g class="st29">
+    <text class="st3" transform="translate(720.7 3776)"><tspan x="0" y="0">.jp</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st14" transform="translate(548 3820)"><tspan x="0" y="0">年額数千円</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st20" transform="translate(696 3820)"><tspan x="0" y="0">（中間の価格帯）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st45" transform="translate(548 3848)"><tspan x="0" y="0">日本国内向けの信頼性が高い</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(548 3876)"><tspan x="0" y="0">・日本国内に住所があれば取得可能</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(548 3896)"><tspan x="0" y="0">・複数ドメインを取得可能</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(548 3916)"><tspan x="0" y="0">・.co.jp より手続きが簡易</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(548 3936)"><tspan x="0" y="0">・法人格がなくても取得可能</tspan></text>
+  </g>
+  <path class="st103" d="M560,3960h36c6.6,0,12,5.4,12,12h0c0,6.6-5.4,12-12,12h-36c-6.6,0-12-5.4-12-12h0c0-6.6,5.4-12,12-12Z"/>
+  <g class="st29">
+    <text class="st17" transform="translate(570.8 3976)"><tspan x="0" y="0">推奨</tspan></text>
+  </g>
+  <rect class="st91" x="960" y="3744" width="420" height="300" rx="16" ry="16"/>
+  <rect class="st107" x="960" y="3744" width="420" height="48"/>
+  <rect class="st107" x="960" y="3776" width="420" height="16"/>
+  <g class="st29">
+    <text class="st3" transform="translate(1151.3 3776)"><tspan x="0" y="0">.com</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st37" transform="translate(988 3820)"><tspan x="0" y="0">年額千円台</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st20" transform="translate(1136 3820)"><tspan x="0" y="0">（最も安価）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st45" transform="translate(988 3848)"><tspan x="0" y="0">最安・国際的認知度が高い</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(988 3876)"><tspan x="0" y="0">・誰でも取得可能、費用が最も安い</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(988 3896)"><tspan x="0" y="0">・海外展開を視野に入れる場合に有利</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(988 3916)"><tspan x="0" y="0">・法人信頼性は .co.jp に劣る</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st55" transform="translate(988 3936)"><tspan x="0" y="0">・空きが少なく希望名が取れない場合も</tspan></text>
+  </g>
+  <path class="st104" d="M1000,3960h84c6.6,0,12,5.4,12,12h0c0,6.6-5.4,12-12,12h-84c-6.6,0-12-5.4-12-12h0c0-6.6,5.4-12,12-12Z"/>
+  <g class="st29">
+    <text class="st17" transform="translate(1020.3 3976)"><tspan x="0" y="0">補助的に推奨</tspan></text>
+  </g>
+  <rect class="st96" x="80" y="4076" width="1280" height="56" rx="12" ry="12"/>
+  <g class="st29">
+    <text class="st4" transform="translate(481.7 4104.3)"><tspan x="0" y="0">推奨：</tspan></text>
+    <text class="st6" transform="translate(520.7 4104)"><tspan x="0" y="0">.co.jp — </tspan></text>
+    <text class="st4" transform="translate(574.9 4104.3)"><tspan x="0" y="0">医療機器メーカーとしての信頼性を最大化。わずかな年額の差でブランド価値が大きく向上します。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st58" transform="translate(554.8 4122)"><tspan x="0" y="0">※ .co.jp は法人登記が必要です。取得手続きのサポートも対応可能です。</tspan></text>
+  </g>
+  <rect class="st89" y="4250" width="1440" height="1100"/>
+  <path class="st93" d="M83,4310h0c1.7,0,3,1.3,3,3v30c0,1.7-1.3,3-3,3h0c-1.7,0-3-1.3-3-3v-30c0-1.7,1.3-3,3-3Z"/>
+  <g class="st29">
+    <text class="st43" transform="translate(100 4335)"><tspan x="0" y="0">04 SUPPORT STRUCTURE</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st76" transform="translate(80 4380)"><tspan x="0" y="0">運用体制と緊急時の対応</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st35" transform="translate(80 4408)"><tspan x="0" y="0">個人事業であっても安心していただける、4層の安全対策を整えています</tspan></text>
+  </g>
+  <rect class="st95" x="80" y="4450" width="1280" height="180" rx="16" ry="16"/>
+  <path class="st93" d="M124,4470h0c13.3,0,24,10.7,24,24h0c0,13.3-10.7,24-24,24h0c-13.3,0-24-10.7-24-24h0c0-13.3,10.7-24,24-24Z"/>
+  <g class="st29">
+    <text class="st36" transform="translate(118.4 4502)"><tspan x="0" y="0">1</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st73" transform="translate(168 4494.4)"><tspan x="0" y="0">サーバー障害</tspan></text>
+    <text class="st16" transform="translate(276 4494)"><tspan x="0" y="0"> </tspan></text>
+    <text class="st73" transform="translate(281 4494)"><tspan x="0" y="0">→</tspan></text>
+    <text class="st16" transform="translate(299 4494)"><tspan x="0" y="0" xml:space="preserve"> Xserver </tspan></text>
+    <text class="st73" transform="translate(375.1 4494.4)"><tspan x="0" y="0">が対応</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st19" transform="translate(168 4518)"><tspan x="0" y="0">SERVER LEVEL</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(168 4548)"><tspan x="0" y="0">サーバー側のトラブル（ハードウェア障害、ネットワーク障害、DDoS攻撃等）は</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(168 4568)"><tspan x="0" y="0">Xserver のインフラチームが 24時間体制で監視・対応します。</tspan></text>
+  </g>
+  <rect class="st115" x="168" y="4588" width="240" height="28" rx="6" ry="6"/>
+  <g class="st29">
+    <text class="st59" transform="translate(186 4607.2)"><tspan x="0" y="0">国内シェアNo.1の安定稼働サーバー</tspan></text>
+  </g>
+  <rect class="st115" x="424" y="4588" width="240" height="28" rx="6" ry="6"/>
+  <g class="st29">
+    <text class="st59" transform="translate(442 4607.2)"><tspan x="0" y="0">自動バックアップ</tspan></text>
+    <text class="st39" transform="translate(530 4607)"><tspan x="0" y="0" xml:space="preserve"> 14</tspan></text>
+    <text class="st59" transform="translate(545.3 4607.2)"><tspan x="0" y="0">日間</tspan></text>
+  </g>
+  <rect class="st115" x="680" y="4588" width="240" height="28" rx="6" ry="6"/>
+  <g class="st29">
+    <text class="st39" transform="translate(698 4607)"><tspan x="0" y="0">RAID10 </tspan></text>
+    <text class="st59" transform="translate(740.2 4607.2)"><tspan x="0" y="0">冗長構成</tspan></text>
+  </g>
+  <rect class="st115" x="936" y="4588" width="240" height="28" rx="6" ry="6"/>
+  <g class="st29">
+    <text class="st59" transform="translate(954 4607.2)"><tspan x="0" y="0">電話</tspan></text>
+    <text class="st39" transform="translate(976 4607)"><tspan x="0" y="0" xml:space="preserve"> + </tspan></text>
+    <text class="st59" transform="translate(988.5 4607.2)"><tspan x="0" y="0">メールサポート</tspan></text>
+  </g>
+  <rect class="st95" x="80" y="4650" width="1280" height="150" rx="16" ry="16"/>
+  <path class="st93" d="M124,4670h0c13.3,0,24,10.7,24,24h0c0,13.3-10.7,24-24,24h0c-13.3,0-24-10.7-24-24h0c0-13.3,10.7-24,24-24Z"/>
+  <g class="st29">
+    <text class="st36" transform="translate(118.4 4702)"><tspan x="0" y="0">2</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st73" transform="translate(168 4694.4)"><tspan x="0" y="0">コンテンツ更新</tspan></text>
+    <text class="st16" transform="translate(294 4694)"><tspan x="0" y="0"> </tspan></text>
+    <text class="st73" transform="translate(299 4694)"><tspan x="0" y="0">→</tspan></text>
+    <text class="st16" transform="translate(317 4694)"><tspan x="0" y="0" xml:space="preserve"> CMS </tspan></text>
+    <text class="st73" transform="translate(367 4694.4)"><tspan x="0" y="0">でリアルタイム対応</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st19" transform="translate(168 4718)"><tspan x="0" y="0">CMS LEVEL</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(168 4748)"><tspan x="0" y="0">WordPress を CMS として導入するため、ニュース・FAQ・動画・購入履歴などの情報は</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(168 4768)"><tspan x="0" y="0">クライアント様ご自身で、いつでもリアルタイムに更新・修正が可能です。制作者の対応を待つ必要がありません。</tspan></text>
+  </g>
+  <rect class="st109" x="80" y="4820" width="1280" height="200" rx="16" ry="16"/>
+  <path class="st106" d="M124,4840h0c13.3,0,24,10.7,24,24h0c0,13.3-10.7,24-24,24h0c-13.3,0-24-10.7-24-24h0c0-13.3,10.7-24,24-24Z"/>
+  <g class="st29">
+    <text class="st36" transform="translate(118.4 4872)"><tspan x="0" y="0">3</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st34" transform="translate(168 4864.4)"><tspan x="0" y="0">セキュリティ異常</tspan></text>
+    <text class="st52" transform="translate(312 4864)"><tspan x="0" y="0"> </tspan></text>
+    <text class="st34" transform="translate(317 4864)"><tspan x="0" y="0">→</tspan></text>
+    <text class="st52" transform="translate(335 4864)"><tspan x="0" y="0" xml:space="preserve"> Slack </tspan></text>
+    <text class="st34" transform="translate(392 4864.4)"><tspan x="0" y="0">即時通知</tspan></text>
+    <text class="st52" transform="translate(464 4864)"><tspan x="0" y="0" xml:space="preserve"> + </tspan></text>
+    <text class="st34" transform="translate(484.6 4864.4)"><tspan x="0" y="0">自動対応</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st19" transform="translate(168 4888)"><tspan x="0" y="0">SECURITY LEVEL</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(168 4918)"><tspan x="0" y="0">WordPress にセキュリティプラグイン（Wordfence 等）を導入し、以下の監視体制を構築します：</tspan></text>
+  </g>
+  <rect class="st90" x="168" y="4940" width="280" height="56" rx="8" ry="8"/>
+  <g class="st29">
+    <text class="st84" transform="translate(186 4964)"><tspan x="0" y="0">不正ログイン試行を検知</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st82" transform="translate(186 4982)"><tspan x="0" y="0">ブルートフォース攻撃を自動ブロック</tspan></text>
+  </g>
+  <rect class="st90" x="468" y="4940" width="280" height="56" rx="8" ry="8"/>
+  <g class="st29">
+    <text class="st84" transform="translate(486 4964)"><tspan x="0" y="0">ファイル改ざんを検知</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st82" transform="translate(486 4982)"><tspan x="0" y="0">コアファイルの変更を即座に検出</tspan></text>
+  </g>
+  <rect class="st90" x="768" y="4940" width="280" height="56" rx="8" ry="8"/>
+  <g class="st29">
+    <text class="st84" transform="translate(786 4964)"><tspan x="0" y="0">マルウェア侵入を検知</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st82" transform="translate(786 4982)"><tspan x="0" y="0">ウイルス・不正コードをスキャン</tspan></text>
+  </g>
+  <rect class="st106" x="1068" y="4940" width="260" height="56" rx="8" ry="8"/>
+  <g class="st29">
+    <text class="st1" transform="translate(1086 4964)"><tspan x="0" y="0">Slack </tspan></text>
+    <text class="st81" transform="translate(1120.7 4964.3)"><tspan x="0" y="0">に即時通知</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st25" transform="translate(1086 4982)"><tspan x="0" y="0">異常検知と同時に担当者へ通知</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st65" transform="translate(428 4968)"><tspan x="0" y="0">→</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st65" transform="translate(728 4968)"><tspan x="0" y="0">→</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st65" transform="translate(1038 4968)"><tspan x="0" y="0">→</tspan></text>
+  </g>
+  <rect class="st108" x="80" y="5040" width="1280" height="160" rx="16" ry="16"/>
+  <path class="st105" d="M124,5060h0c13.3,0,24,10.7,24,24h0c0,13.3-10.7,24-24,24h0c-13.3,0-24-10.7-24-24h0c0-13.3,10.7-24,24-24Z"/>
+  <g class="st29">
+    <text class="st36" transform="translate(118.4 5092)"><tspan x="0" y="0">4</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st40" transform="translate(168 5084.4)"><tspan x="0" y="0">緊急時</tspan></text>
+    <text class="st63" transform="translate(222 5084)"><tspan x="0" y="0"> </tspan></text>
+    <text class="st40" transform="translate(227 5084)"><tspan x="0" y="0">→</tspan></text>
+    <text class="st63" transform="translate(245 5084)"><tspan x="0" y="0"> </tspan></text>
+    <text class="st40" transform="translate(250 5084.4)"><tspan x="0" y="0">外注パートナーによるバックアップ体制</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st19" transform="translate(168 5108)"><tspan x="0" y="0">PARTNER LEVEL</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(168 5138)"><tspan x="0" y="0">個人事業のリスクに備え、信頼できる外注パートナー（Web制作会社・エンジニア）を確保しています。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st28" transform="translate(168 5158)"><tspan x="0" y="0">万が一、私自身が対応できない状況が発生した場合でも、パートナーが代理で緊急対応を行います。</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st78" transform="translate(168 5182)"><tspan x="0" y="0">WordPress / PHP / </tspan></text>
+    <text class="st74" transform="translate(276 5182.3)"><tspan x="0" y="0">サーバー運用に対応可能なパートナーを複数確保済み</tspan></text>
+  </g>
+  <rect class="st100" x="80" y="5230" width="1280" height="100" rx="12" ry="12"/>
+  <g class="st29">
+    <text class="st62" transform="translate(623.8 5264)"><tspan x="0" y="0">4</tspan></text>
+    <text class="st10" transform="translate(632.1 5264.3)"><tspan x="0" y="0">層の安全対策でサイト運用を守ります</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st30" transform="translate(182.6 5300.3)"><tspan x="0" y="0">第</tspan></text>
+    <text class="st57" transform="translate(194.6 5300)"><tspan x="0" y="0">1</tspan></text>
+    <text class="st30" transform="translate(201.3 5300.3)"><tspan x="0" y="0">層：</tspan></text>
+    <text class="st57" transform="translate(225.3 5300)"><tspan x="0" y="0">Xserver </tspan></text>
+    <text class="st30" transform="translate(272.6 5300.3)"><tspan x="0" y="0">インフラ</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st82" transform="translate(163.2 5316)"><tspan x="0" y="0">無料SSL・WAF + 自動バックアップ</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st30" transform="translate(471.3 5300.3)"><tspan x="0" y="0">第</tspan></text>
+    <text class="st57" transform="translate(483.3 5300)"><tspan x="0" y="0">2</tspan></text>
+    <text class="st30" transform="translate(490 5300.3)"><tspan x="0" y="0">層：</tspan></text>
+    <text class="st57" transform="translate(514 5300)"><tspan x="0" y="0">CMS </tspan></text>
+    <text class="st30" transform="translate(544 5300.3)"><tspan x="0" y="0">自己更新</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st82" transform="translate(450.8 5316)"><tspan x="0" y="0">リアルタイムでコンテンツ更新</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st84" transform="translate(749 5300.3)"><tspan x="0" y="0">第</tspan></text>
+    <text class="st38" transform="translate(761 5300)"><tspan x="0" y="0">3</tspan></text>
+    <text class="st84" transform="translate(767.7 5300.3)"><tspan x="0" y="0">層：セキュリティ監視</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st82" transform="translate(736.9 5316)"><tspan x="0" y="0">異常検知 → Slack 即時通知</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st79" transform="translate(1033.3 5300.3)"><tspan x="0" y="0">第</tspan></text>
+    <text class="st7" transform="translate(1045.3 5300)"><tspan x="0" y="0">4</tspan></text>
+    <text class="st79" transform="translate(1052 5300.3)"><tspan x="0" y="0">層：外注パートナー</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st82" transform="translate(1030 5316)"><tspan x="0" y="0">緊急時の代理対応体制</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st22" transform="translate(380 5304)"><tspan x="0" y="0">→</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st22" transform="translate(660 5304)"><tspan x="0" y="0">→</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st22" transform="translate(940 5304)"><tspan x="0" y="0">→</tspan></text>
+  </g>
+  <rect class="st93" y="5370" width="1440" height="552.1"/>
+  <g class="st29">
+    <text class="st75" transform="translate(596 5420)"><tspan x="0" y="0">ANNUAL RUNNING COST</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st71" transform="translate(574 5464)"><tspan x="0" y="0">年間運用費用まとめ</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st64" transform="translate(490 5492)"><tspan x="0" y="0">Rinascentes（.co.jp）+ YUMEHO（.com）+ MICA30（.com）の3サイト運用</tspan></text>
+  </g>
+  <rect x="120" y="5524" width="360" height="110" rx="12" ry="12"/>
+  <g class="st29">
+    <text class="st51" transform="translate(148 5552)"><tspan x="0" y="0">SERVER</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st60" transform="translate(148 5576)"><tspan x="0" y="0">Xserver</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st33" transform="translate(148 5596)"><tspan x="0" y="0">¥3,000/月 x 12ヶ月 ｜ マルチドメイン3サイト（運用管理費込み）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st31" transform="translate(148 5624)"><tspan x="0" y="0">¥36,000</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st56" transform="translate(500 5586)"><tspan x="0" y="0">+</tspan></text>
+  </g>
+  <rect x="540" y="5524" width="360" height="110" rx="12" ry="12"/>
+  <g class="st29">
+    <text class="st51" transform="translate(568 5552)"><tspan x="0" y="0">DOMAIN</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st60" transform="translate(568 5576)"><tspan x="0" y="0">ドメイン 3件</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st33" transform="translate(568 5596)"><tspan x="0" y="0">.co.jp x1（¥6,000）+ .com x2（¥3,000 x2）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st31" transform="translate(568 5624)"><tspan x="0" y="0">¥12,000</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st56" transform="translate(920 5586)"><tspan x="0" y="0">=</tspan></text>
+  </g>
+  <rect x="960" y="5524" width="360" height="110" rx="12" ry="12"/>
+  <g class="st29">
+    <text class="st51" transform="translate(988 5552)"><tspan x="0" y="0">TOTAL / YEAR</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st60" transform="translate(988 5576)"><tspan x="0" y="0">年間合計（税別）</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st33" transform="translate(988 5596)"><tspan x="0" y="0">サーバー + ドメイン 3件</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st85" transform="translate(988 5628)"><tspan x="0" y="0">¥48,000</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st33" transform="translate(1140 5622)"><tspan x="0" y="0">/年</tspan></text>
+  </g>
+  <path d="M348,5670h744c15.5,0,28,12.5,28,28h0c0,15.5-12.5,28-28,28H348c-15.5,0-28-12.5-28-28h0c0-15.5,12.5-28,28-28Z"/>
+  <g class="st29">
+    <text class="st60" transform="translate(398 5704)"><tspan x="0" y="0">医療認証は不要 ｜ 4層の安全対策 ｜ AWS への移行も可能</tspan></text>
+  </g>
+  <g class="st29">
+    <text class="st8" transform="translate(348 5752)"><tspan x="0" y="0">※ AWS で同等構成を運用する場合は年間 ¥180,000〜300,000 + サーバー管理の技術人件費が別途必要です</tspan></text>
+  </g>
+</svg>

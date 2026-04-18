@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1440 810">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: none;
+      }
+
+      .st2 {
+        letter-spacing: .2em;
+      }
+
+      .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st20 {
+        isolation: isolate;
+      }
+
+      .st2, .st3, .st5, .st21, .st17, .st18, .st19 {
+        font-family: HelveticaNeue-Bold, 'Helvetica Neue';
+        font-weight: 700;
+      }
+
+      .st2, .st4, .st5, .st22, .st11 {
+        fill: #0068b7;
+      }
+
+      .st2, .st8 {
+        font-size: 11px;
+      }
+
+      .st3, .st5, .st17 {
+        font-size: 28px;
+      }
+
+      .st3, .st15, .st16, .st23 {
+        fill: #1a1a1a;
+      }
+
+      .st4, .st24, .st9, .st10, .st11, .st14, .st15, .st16, .st20 {
+        font-family: HiraKakuProN-W6-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN';
+      }
+
+      .st4, .st12, .st21, .st18, .st19, .st20 {
+        font-size: 10px;
+      }
+
+      .st6, .st24, .st9, .st25, .st26, .st14, .st21, .st17, .st19 {
+        fill: #fff;
+      }
+
+      .st6, .st7, .st8, .st12, .st26, .st13 {
+        font-family: HiraKakuProN-W3-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN';
+      }
+
+      .st6, .st7, .st26 {
+        font-size: 12px;
+      }
+
+      .st24, .st10, .st11, .st13, .st14 {
+        font-size: 14px;
+      }
+
+      .st7 {
+        fill: #888;
+      }
+
+      .st8, .st13 {
+        fill: #999;
+      }
+
+      .st9, .st15 {
+        font-size: 20px;
+      }
+
+      .st27 {
+        fill: #f6f8fb;
+      }
+
+      .st27, .st1 {
+        stroke: #e0e0e0;
+      }
+
+      .st28 {
+        fill: #f0f7ff;
+        stroke: #b0d4ee;
+        stroke-width: .8px;
+      }
+
+      .st10 {
+        fill: #333;
+      }
+
+      .st12 {
+        fill: #ccc;
+      }
+
+      .st21, .st18, .st19 {
+        letter-spacing: .1em;
+      }
+
+      .st16 {
+        font-size: 36px;
+        letter-spacing: .1em;
+      }
+
+      .st18 {
+        fill: #aaa;
+      }
+    </style>
+  </defs>
+  <rect class="st22" y="0" width="1440" height="4"/>
+  <text class="st2" transform="translate(655.8 80)"><tspan x="0" y="0">TODAY&apos;S AGENDA</tspan></text>
+  <text class="st16" transform="translate(522 126)"><tspan x="0" y="0">本日お伝えしたいこと</tspan></text>
+  <text class="st13" transform="translate(617.9 160)"><tspan x="0" y="0">30分で、3つのことをお伝えします。</tspan></text>
+  <line class="st1" x1="620" y1="180" x2="820" y2="180"/>
+  <rect class="st22" x="80" y="220" width="400" height="380" rx="20" ry="20"/>
+  <circle class="st25" cx="160" cy="290" r="32"/>
+  <text class="st5" transform="translate(152.2 300)"><tspan x="0" y="0">1</tspan></text>
+  <text class="st9" transform="translate(210 296)"><tspan x="0" y="0">サイトの全体設計</tspan></text>
+  <text class="st21" transform="translate(120 340)"><tspan x="0" y="0">SITE ARCHITECTURE</tspan></text>
+  <line class="st0" x1="120" y1="358" x2="440" y2="358"/>
+  <text class="st24" transform="translate(120 392)"><tspan x="0" y="0">2つの製品を</tspan></text>
+  <text class="st24" transform="translate(120 416)"><tspan x="0" y="0">どう世の中に届けるか</tspan></text>
+  <text class="st26" transform="translate(120 460)"><tspan x="0" y="0">3サイト構成で</tspan></text>
+  <text class="st26" transform="translate(120 480)"><tspan x="0" y="0">「会社の信頼」と「製品の魅力」を</tspan></text>
+  <text class="st26" transform="translate(120 500)"><tspan x="0" y="0">それぞれ最適な形で伝えます。</tspan></text>
+  <path class="st25" d="M134,540h92c7.7,0,14,6.3,14,14h0c0,7.7-6.3,14-14,14h-92c-7.7,0-14-6.3-14-14h0c0-7.7,6.3-14,14-14Z"/>
+  <text class="st20" transform="translate(147.3 558)"><tspan x="0" y="0">Rinascentes</tspan></text>
+  <path class="st25" d="M264,540h72c7.7,0,14,6.3,14,14h0c0,7.7-6.3,14-14,14h-72c-7.7,0-14-6.3-14-14h0c0-7.7,6.3-14,14-14Z"/>
+  <text class="st20" transform="translate(275.4 558)"><tspan x="0" y="0">YUMEHO</tspan></text>
+  <path class="st25" d="M374,540h62c7.7,0,14,6.3,14,14h0c0,7.7-6.3,14-14,14h-62c-7.7,0-14-6.3-14-14h0c0-7.7,6.3-14,14-14Z"/>
+  <text class="st20" transform="translate(383.5 558)"><tspan x="0" y="0">MICA30</tspan></text>
+  <rect class="st23" x="520" y="220" width="400" height="380" rx="20" ry="20"/>
+  <circle class="st25" cx="600" cy="290" r="32"/>
+  <text class="st3" transform="translate(592.2 300)"><tspan x="0" y="0">2</tspan></text>
+  <text class="st9" transform="translate(650 296)"><tspan x="0" y="0">完成イメージ</tspan></text>
+  <text class="st19" transform="translate(560 340)"><tspan x="0" y="0">LIVE PROTOTYPE DEMO</tspan></text>
+  <line class="st25" x1="560" y1="358" x2="880" y2="358"/>
+  <text class="st14" transform="translate(560 392)"><tspan x="0" y="0">実際に動くサイトを</tspan></text>
+  <text class="st14" transform="translate(560 416)"><tspan x="0" y="0">お見せしながらご説明</tspan></text>
+  <text class="st6" transform="translate(560 460)"><tspan x="0" y="0">提案書ではなく「動くプロトタイプ」で</tspan></text>
+  <text class="st6" transform="translate(560 480)"><tspan x="0" y="0">完成後の姿をその場で体験いただきます。</tspan></text>
+  <text class="st6" transform="translate(560 500)"><tspan x="0" y="0">導入シミュレーションも実際に操作します。</tspan></text>
+  <g>
+    <path class="st25" d="M554,540h92c7.7,0,14,6.3,14,14h0c0,7.7-6.3,14-14,14h-92c-7.7,0-14-6.3-14-14h0c0-7.7,6.3-14,14-14Z"/>
+    <text class="st20" transform="translate(571.4 558)"><tspan x="0" y="0">3サイト実機</tspan></text>
+    <path class="st25" d="M684,540h72c7.7,0,14,6.3,14,14h0c0,7.7-6.3,14-14,14h-72c-7.7,0-14-6.3-14-14h0c0-7.7,6.3-14,14-14Z"/>
+    <text class="st20" transform="translate(700 558)"><tspan x="0" y="0">動画再生</tspan></text>
+    <path class="st25" d="M794,540h92c7.7,0,14,6.3,14,14h0c0,7.7-6.3,14-14,14h-92c-7.7,0-14-6.3-14-14h0c0-7.7,6.3-14,14-14Z"/>
+    <text class="st20" transform="translate(820 558)"><tspan x="0" y="0">操作体験</tspan></text>
+  </g>
+  <rect class="st27" x="960" y="220" width="400" height="380" rx="20" ry="20"/>
+  <circle class="st22" cx="1040" cy="290" r="32"/>
+  <text class="st17" transform="translate(1032.2 300)"><tspan x="0" y="0">3</tspan></text>
+  <text class="st15" transform="translate(1090 296)"><tspan x="0" y="0">安心の根拠</tspan></text>
+  <text class="st18" transform="translate(1000 340)"><tspan x="0" y="0">BUDGET / SECURITY / SUPPORT</tspan></text>
+  <line class="st1" x1="1000" y1="358" x2="1320" y2="358"/>
+  <text class="st10" transform="translate(1000 392)"><tspan x="0" y="0">費用・スケジュール・運用体制</tspan></text>
+  <text class="st10" transform="translate(1000 416)"><tspan x="0" y="0">安心して任せられる根拠</tspan></text>
+  <text class="st7" transform="translate(1000 460)"><tspan x="0" y="0">お見積りとスケジュール</tspan></text>
+  <text class="st7" transform="translate(1000 480)"><tspan x="0" y="0">サーバー・セキュリティ体制</tspan></text>
+  <text class="st7" transform="translate(1000 500)"><tspan x="0" y="0">公開後の運用サポート</tspan></text>
+  <path class="st28" d="M1014,540h58c7.7,0,14,6.3,14,14h0c0,7.7-6.3,14-14,14h-58c-7.7,0-14-6.3-14-14h0c0-7.7,6.3-14,14-14Z"/>
+  <text class="st4" transform="translate(1028 558)"><tspan x="0" y="0">見積り</tspan></text>
+  <path class="st28" d="M1110,540h82c7.7,0,14,6.3,14,14h0c0,7.7-6.3,14-14,14h-82c-7.7,0-14-6.3-14-14h0c0-7.7,6.3-14,14-14Z"/>
+  <text class="st4" transform="translate(1121.3 558)"><tspan x="0" y="0">セキュリティ</tspan></text>
+  <path class="st28" d="M1230,540h82c7.7,0,14,6.3,14,14h0c0,7.7-6.3,14-14,14h-82c-7.7,0-14-6.3-14-14h0c0-7.7,6.3-14,14-14Z"/>
+  <text class="st4" transform="translate(1251 558)"><tspan x="0" y="0">運用体制</tspan></text>
+  <rect class="st28" x="80" y="650" width="1280" height="64" rx="12" ry="12"/>
+  <text class="st11" transform="translate(433.6 680)"><tspan x="0" y="0">サイトを作るだけでなく、公開後の SNS 運用・広告・改善まで一気通貫でサポートします</tspan></text>
+  <text class="st8" transform="translate(546.6 700)"><tspan x="0" y="0">制作 → 運用 → 改善 をひとつの窓口で。それが私の最大の強みです。</tspan></text>
+  <text class="st12" transform="translate(613.4 770)"><tspan x="0" y="0">Confidential — Prepared for 医療法人真誠会</tspan></text>
+</svg>

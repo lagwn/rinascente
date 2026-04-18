@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="'Yu Gothic','Hiragino Sans',sans-serif">
+<rect width="1920" height="1080" fill="#f7fafc"/>
+<rect width="1920" height="6" fill="#0068B7"/>
+<text x="160" y="90" fill="#0068B7" font-size="16" font-weight="600" letter-spacing=".15em">EXECUTION TIMELINE</text>
+<text x="160" y="140" fill="#1a202c" font-size="42" font-weight="700">実行タイムラインと Next Actions</text>
+<rect x="160" y="165" width="60" height="3" rx="1.5" fill="#0068B7"/>
+
+<!-- Timeline bar -->
+<rect x="160" y="230" width="1600" height="8" rx="4" fill="#e2e8f0"/>
+<rect x="160" y="230" width="400" height="8" rx="4" fill="#276749"/>
+<rect x="560" y="230" width="400" height="8" rx="4" fill="#0068B7"/>
+<rect x="960" y="230" width="400" height="8" rx="4" fill="#DD6B20"/>
+<rect x="1360" y="230" width="400" height="8" rx="4" fill="#805AD5"/>
+
+<!-- Timeline labels -->
+<text x="360" y="265" fill="#276749" font-size="16" font-weight="700" text-anchor="middle">第1四半期</text>
+<text x="360" y="285" fill="#718096" font-size="13" text-anchor="middle">即実行</text>
+<text x="760" y="265" fill="#0068B7" font-size="16" font-weight="700" text-anchor="middle">第2四半期</text>
+<text x="760" y="285" fill="#718096" font-size="13" text-anchor="middle">コンテンツ整備</text>
+<text x="1160" y="265" fill="#DD6B20" font-size="16" font-weight="700" text-anchor="middle">第3四半期</text>
+<text x="1160" y="285" fill="#718096" font-size="13" text-anchor="middle">拡大</text>
+<text x="1560" y="265" fill="#805AD5" font-size="16" font-weight="700" text-anchor="middle">以降</text>
+<text x="1560" y="285" fill="#718096" font-size="13" text-anchor="middle">定常運用</text>
+
+<!-- Q1 Detail -->
+<rect x="160" y="310" width="380" height="320" rx="12" fill="#fff" stroke="#276749" stroke-width="2"/>
+<rect x="160" y="310" width="380" height="50" rx="12" fill="#276749"/>
+<rect x="160" y="345" width="380" height="16" fill="#276749"/>
+<text x="350" y="343" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">第1四半期</text>
+<rect x="420" y="324" width="80" height="26" rx="6" fill="#C6F6D5"/>
+<text x="460" y="343" fill="#276749" font-size="12" font-weight="700" text-anchor="middle">コスト 0円</text>
+
+<text x="190" y="400" fill="#1a202c" font-size="15"><tspan font-weight="600">Week 1-2</tspan></text>
+<text x="300" y="400" fill="#718096" font-size="15">見込み施設100件リスト作成</text>
+<line x1="190" y1="415" x2="510" y2="415" stroke="#e2e8f0"/>
+<text x="190" y="440" fill="#1a202c" font-size="15"><tspan font-weight="600">Week 2-3</tspan></text>
+<text x="300" y="440" fill="#718096" font-size="15">DM 50通送付開始</text>
+<line x1="190" y1="455" x2="510" y2="455" stroke="#e2e8f0"/>
+<text x="190" y="480" fill="#1a202c" font-size="15"><tspan font-weight="600">Week 3-4</tspan></text>
+<text x="300" y="480" fill="#718096" font-size="15">電話フォロー開始</text>
+<line x1="190" y1="495" x2="510" y2="495" stroke="#e2e8f0"/>
+<text x="190" y="520" fill="#1a202c" font-size="15"><tspan font-weight="600">Week 4</tspan></text>
+<text x="300" y="520" fill="#718096" font-size="15">結果分析・リスト精査</text>
+
+<rect x="190" y="550" width="320" height="55" rx="8" fill="#F0FFF4"/>
+<text x="350" y="575" fill="#276749" font-size="14" font-weight="600" text-anchor="middle">初月投資: ほぼ0円</text>
+<text x="350" y="595" fill="#276749" font-size="13" text-anchor="middle">（人件費除く）</text>
+
+<!-- Q2 Detail -->
+<rect x="570" y="310" width="380" height="320" rx="12" fill="#fff" stroke="#0068B7" stroke-width="2"/>
+<rect x="570" y="310" width="380" height="50" rx="12" fill="#0068B7"/>
+<rect x="570" y="345" width="380" height="16" fill="#0068B7"/>
+<text x="760" y="343" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">第2四半期</text>
+<rect x="830" y="324" width="100" height="26" rx="6" fill="#EBF8FF"/>
+<text x="880" y="343" fill="#0068B7" font-size="12" font-weight="700" text-anchor="middle">月5万円</text>
+
+<text x="600" y="400" fill="#1a202c" font-size="15"><tspan font-weight="600">Month 2</tspan></text>
+<text x="710" y="400" fill="#718096" font-size="15">コラム記事 #1 #2 公開</text>
+<line x1="600" y1="415" x2="920" y2="415" stroke="#e2e8f0"/>
+<text x="600" y="440" fill="#1a202c" font-size="15"><tspan font-weight="600">Month 2</tspan></text>
+<text x="710" y="440" fill="#718096" font-size="15">Google 広告テスト開始</text>
+<line x1="600" y1="455" x2="920" y2="455" stroke="#e2e8f0"/>
+<text x="600" y="480" fill="#1a202c" font-size="15"><tspan font-weight="600">Month 3</tspan></text>
+<text x="710" y="480" fill="#718096" font-size="15">コラム記事 #3 #4 公開</text>
+<line x1="600" y1="495" x2="920" y2="495" stroke="#e2e8f0"/>
+<text x="600" y="520" fill="#1a202c" font-size="15"><tspan font-weight="600">Month 3</tspan></text>
+<text x="710" y="520" fill="#718096" font-size="15">「採用力」特設ページ作成</text>
+
+<rect x="600" y="550" width="320" height="55" rx="8" fill="#EBF8FF"/>
+<text x="760" y="575" fill="#0068B7" font-size="14" font-weight="600" text-anchor="middle">月次投資: 約5万円</text>
+<text x="760" y="595" fill="#0068B7" font-size="13" text-anchor="middle">（Google 広告費）</text>
+
+<!-- Q3 Detail -->
+<rect x="980" y="310" width="380" height="320" rx="12" fill="#fff" stroke="#DD6B20" stroke-width="2"/>
+<rect x="980" y="310" width="380" height="50" rx="12" fill="#DD6B20"/>
+<rect x="980" y="345" width="380" height="16" fill="#DD6B20"/>
+<text x="1170" y="343" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">第3四半期</text>
+<rect x="1220" y="324" width="120" height="26" rx="6" fill="#FFFAF0"/>
+<text x="1280" y="343" fill="#DD6B20" font-size="12" font-weight="700" text-anchor="middle">月10-20万円</text>
+
+<text x="1010" y="400" fill="#1a202c" font-size="15"><tspan font-weight="600">Month 4-6</tspan></text>
+<text x="1130" y="400" fill="#718096" font-size="15">広告予算拡大</text>
+<line x1="1010" y1="415" x2="1330" y2="415" stroke="#e2e8f0"/>
+<text x="1010" y="440" fill="#1a202c" font-size="15"><tspan font-weight="600">Month 4-6</tspan></text>
+<text x="1130" y="440" fill="#718096" font-size="15">求人サイト事業者向け広告</text>
+<line x1="1010" y1="455" x2="1330" y2="455" stroke="#e2e8f0"/>
+<text x="1010" y="480" fill="#1a202c" font-size="15"><tspan font-weight="600">Month 4-6</tspan></text>
+<text x="1130" y="480" fill="#718096" font-size="15">月100通DM + フォロー定常化</text>
+<line x1="1010" y1="495" x2="1330" y2="495" stroke="#e2e8f0"/>
+<text x="1010" y="520" fill="#1a202c" font-size="15"><tspan font-weight="600">Month 5</tspan></text>
+<text x="1130" y="520" fill="#718096" font-size="15">採用改善事例の取材・掲載</text>
+
+<rect x="1010" y="550" width="320" height="55" rx="8" fill="#FFFAF0"/>
+<text x="1170" y="575" fill="#DD6B20" font-size="14" font-weight="600" text-anchor="middle">月次投資: 約10-20万円</text>
+<text x="1170" y="595" fill="#DD6B20" font-size="13" text-anchor="middle">（効果検証済みチャネルのみ拡大）</text>
+
+<!-- Summary card -->
+<rect x="1390" y="310" width="370" height="320" rx="12" fill="#fff" stroke="#805AD5" stroke-width="2"/>
+<rect x="1390" y="310" width="370" height="50" rx="12" fill="#805AD5"/>
+<rect x="1390" y="345" width="370" height="16" fill="#805AD5"/>
+<text x="1575" y="343" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">まとめ</text>
+
+<text x="1420" y="400" fill="#1a202c" font-size="15" font-weight="600">戦略A（リスト営業）</text>
+<rect x="1630" y="383" width="60" height="22" rx="4" fill="#C6F6D5"/>
+<text x="1660" y="400" fill="#276749" font-size="12" font-weight="700" text-anchor="middle">最優先</text>
+<text x="1420" y="425" fill="#718096" font-size="13">即効性: 高  コスト: 極低</text>
+
+<line x1="1420" y1="445" x2="1720" y2="445" stroke="#e2e8f0"/>
+
+<text x="1420" y="475" fill="#1a202c" font-size="15" font-weight="600">戦略B-1（コラム / SEO）</text>
+<rect x="1650" y="458" width="60" height="22" rx="4" fill="#EBF8FF"/>
+<text x="1680" y="475" fill="#0068B7" font-size="12" font-weight="700" text-anchor="middle">並行</text>
+<text x="1420" y="500" fill="#718096" font-size="13">即効性: 中  コスト: 低</text>
+
+<line x1="1420" y1="520" x2="1720" y2="520" stroke="#e2e8f0"/>
+
+<text x="1420" y="550" fill="#1a202c" font-size="15" font-weight="600">戦略B-2（リスティング広告）</text>
+<rect x="1660" y="533" width="50" height="22" rx="4" fill="#FFFAF0"/>
+<text x="1685" y="550" fill="#DD6B20" font-size="12" font-weight="700" text-anchor="middle">Q2〜</text>
+<text x="1420" y="575" fill="#718096" font-size="13">即効性: 中〜高  月5-15万円</text>
+
+<line x1="1420" y1="595" x2="1720" y2="595" stroke="#e2e8f0"/>
+
+<text x="1420" y="620" fill="#805AD5" font-size="13" font-weight="600">1件の成約で十分にペイする構造</text>
+
+<!-- Next actions highlight -->
+<rect x="160" y="680" width="1600" height="280" rx="16" fill="#0068B7"/>
+<text x="960" y="730" fill="#fff" font-size="24" font-weight="700" text-anchor="middle">NEXT ACTIONS — 今すぐ始められること</text>
+
+<rect x="200" y="760" width="480" height="170" rx="12" fill="#fff" fill-opacity=".1"/>
+<rect x="220" y="780" width="36" height="36" rx="18" fill="#fff" fill-opacity=".2"/>
+<text x="238" y="805" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">1</text>
+<text x="275" y="800" fill="#fff" font-size="18" font-weight="700">今すぐ</text>
+<text x="275" y="835" fill="#fff" font-size="16" opacity=".9">求人サイトから</text>
+<text x="275" y="860" fill="#fff" font-size="16" opacity=".9">見込み施設100件のリストを作る</text>
+<rect x="275" y="880" width="80" height="24" rx="6" fill="#C6F6D5"/>
+<text x="315" y="897" fill="#276749" font-size="12" font-weight="700" text-anchor="middle">コスト 0円</text>
+
+<rect x="720" y="760" width="480" height="170" rx="12" fill="#fff" fill-opacity=".1"/>
+<rect x="740" y="780" width="36" height="36" rx="18" fill="#fff" fill-opacity=".2"/>
+<text x="758" y="805" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">2</text>
+<text x="795" y="800" fill="#fff" font-size="18" font-weight="700">今週中</text>
+<text x="795" y="835" fill="#fff" font-size="16" opacity=".9">DM テンプレートを作成し</text>
+<text x="795" y="860" fill="#fff" font-size="16" opacity=".9">上位50施設へ送付する</text>
+<rect x="795" y="880" width="80" height="24" rx="6" fill="#FFF2CC"/>
+<text x="835" y="897" fill="#744210" font-size="12" font-weight="700" text-anchor="middle">切手代のみ</text>
+
+<rect x="1240" y="760" width="480" height="170" rx="12" fill="#fff" fill-opacity=".1"/>
+<rect x="1260" y="780" width="36" height="36" rx="18" fill="#fff" fill-opacity=".2"/>
+<text x="1278" y="805" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">3</text>
+<text x="1315" y="800" fill="#fff" font-size="18" font-weight="700">来週</text>
+<text x="1315" y="835" fill="#fff" font-size="16" opacity=".9">DM送付済み施設へ</text>
+<text x="1315" y="860" fill="#fff" font-size="16" opacity=".9">電話フォローを開始する</text>
+<rect x="1315" y="880" width="80" height="24" rx="6" fill="#C6F6D5"/>
+<text x="1355" y="897" fill="#276749" font-size="12" font-weight="700" text-anchor="middle">コスト 0円</text>
+
+<text x="1760" y="1050" fill="#a0aec0" font-size="14" text-anchor="end">05</text>
+</svg>
