@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会社概要 | 株式会社 Rinascentes</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uor0jvw.css">
+    <link rel="stylesheet" href="yumeho/assets/css/style.css">
+    <style>
+        :root {
+            --primary-color: #0068b7;
+        }
+        .company-table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        .company-table tr {
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        .company-table tr:last-child { border-bottom: none; }
+        .company-table th {
+            text-align: left;
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--primary-color);
+            padding: 20px 24px 20px 0;
+            width: 160px;
+            vertical-align: top;
+            white-space: nowrap;
+        }
+        .company-table td {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: rgba(0,0,0,0.65);
+            padding: 20px 0;
+        }
+
+        .company-mission {
+            max-width: 800px;
+            margin: 0 auto 56px;
+            text-align: center;
+        }
+        .company-mission__en {
+            font-family: var(--font-logo);
+            font-size: clamp(1.4rem, 2.5vw, 2rem);
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: 0.06em;
+            margin-bottom: 8px;
+        }
+        .company-mission__ja {
+            font-size: 0.88rem;
+            color: rgba(0,0,0,0.45);
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+        .company-mission p {
+            font-size: 0.92rem;
+            line-height: 1.9;
+            color: rgba(0,0,0,0.55);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .company-products {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .company-product-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 32px 28px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+            text-align: center;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .company-product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+        }
+        .company-product-card__name {
+            font-family: var(--font-logo);
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            margin-bottom: 6px;
+        }
+        .company-product-card__desc {
+            font-size: 0.78rem;
+            color: rgba(0,0,0,0.45);
+            line-height: 1.6;
+        }
+        .company-product-card--yumeho .company-product-card__name { color: #0068b7; }
+        .company-product-card--mica .company-product-card__name { color: #005f73; }
+
+        @media (max-width: 640px) {
+            .company-table th { width: 100px; padding: 14px 12px 14px 0; }
+            .company-table td { padding: 14px 0; }
+            .company-products { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner" style="display:flex;align-items:center;justify-content:space-between;min-height:84px;">
+            <a href="rinascentes/index.html" style="font-family:var(--font-logo);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;color:#0068b7;text-decoration:none;letter-spacing:0.04em;">Rinascentes</a>
+            <nav style="display:flex;align-items:center;gap:20px;">
+                <a href="rinascentes/index.html" style="font-size:0.82rem;font-weight:600;color:rgba(0,0,0,0.55);text-decoration:none;">Corporate</a>
+                <a href="yumeho/index.html" style="font-size:0.82rem;font-weight:600;color:rgba(0,0,0,0.55);text-decoration:none;">YUMEHO</a>
+                <a href="mica30/index.html" style="font-size:0.82rem;font-weight:600;color:rgba(0,0,0,0.55);text-decoration:none;">MICA30</a>
+                <a href="company.html" style="font-size:0.82rem;font-weight:700;color:#0068b7;text-decoration:none;">会社概要</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero bg-light">
+        <div class="container text-center">
+            <p class="hero-en">COMPANY</p>
+            <h1 class="hero-title">会社概要</h1>
+            <p class="hero-subtitle">医療・福祉機器の開発・販売を通じて、人の生活を支えるソリューションを届けます</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <!-- Mission -->
+            <div class="company-mission animate-on-scroll">
+                <div class="company-mission__en">Rinascentes</div>
+                <div class="company-mission__ja">復活する。再生する。</div>
+                <p>医療・福祉の現場で、もう一度歩く喜びを。もう一度自分らしく生きる力を。<br>私たちは「再生」をテーマに、人と技術の新しい関係を創造します。</p>
+            </div>
+
+            <!-- Company info table -->
+            <div class="section-heading" style="max-width:800px;margin:0 auto 40px;">
+                <p class="section-kicker">Overview</p>
+                <h2 class="section-title">基本情報</h2>
+            </div>
+            <div class="animate-on-scroll" style="background:#fff;border-radius:12px;padding:36px 40px;box-shadow:0 2px 16px rgba(0,0,0,0.04);max-width:800px;margin:0 auto 56px;">
+                <table class="company-table">
+                    <tr>
+                        <th>会社名</th>
+                        <td>株式会社 Rinascentes（リナシェンテ）</td>
+                    </tr>
+                    <tr>
+                        <th>代表者</th>
+                        <td>代表取締役 ○○○○</td>
+                    </tr>
+                    <tr>
+                        <th>設立</th>
+                        <td>2026年0月0日</td>
+                    </tr>
+                    <tr>
+                        <th>所在地</th>
+                        <td>○○○○</td>
+                    </tr>
+                    <tr>
+                        <th>電話番号</th>
+                        <td><a href="tel:0859-00-1234" style="color:#0068b7;font-weight:700;">0859-00-1234</a></td>
+                    </tr>
+                    <tr>
+                        <th>事業内容</th>
+                        <td>医療機器・福祉機器の企画、販売<br>歩行リハビリ支援システムの保守<br>医療機器の輸入販売</td>
+                    </tr>
+                    <tr>
+                        <th>主要製品</th>
+                        <td>YUMEHO（歩行リハビリ支援システム）<br>MICA30（多相電動式造影剤注入装置）</td>
+                    </tr>
+                    <tr>
+                        <th>受付時間</th>
+                        <td>平日 9:00〜17:00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Products -->
+            <div class="section-heading" style="max-width:800px;margin:0 auto 40px;">
+                <p class="section-kicker">Products</p>
+                <h2 class="section-title">製品ラインナップ</h2>
+            </div>
+            <div class="company-products animate-on-scroll">
+                <a href="yumeho/index.html" class="company-product-card company-product-card--yumeho">
+                    <div class="company-product-card__name">YUMEHO</div>
+                    <div class="company-product-card__desc">歩行リハビリ支援システム<br>転倒リスクを抑え、安全な歩行訓練を実現</div>
+                </a>
+                <a href="mica30/index.html" class="company-product-card company-product-card--mica">
+                    <div class="company-product-card__name">MICA30</div>
+                    <div class="company-product-card__desc">多相電動式造影剤注入装置<br>0.05mL単位の精密注入と確実な安全性</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-cta">
+        <div class="container text-center" style="max-width:700px;margin:0 auto;">
+            <p style="margin-bottom:20px;font-size:0.9rem;color:rgba(0,0,0,0.5);">製品に関するお問い合わせ・ご相談はお気軽にどうぞ。</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+                <a href="yumeho/contact.html" class="btn btn-primary btn-lg">YUMEHO お問い合わせ</a>
+                <a href="mica30/contact.html" class="btn btn-secondary btn-lg">MICA30 お問い合わせ</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="rinascentes/index.html">コーポレート</a>
+                <a href="company.html">会社概要</a>
+                <a href="yumeho/index.html">YUMEHO</a>
+                <a href="mica30/index.html">MICA30</a>
+            </div>
+            <p class="copyright">&copy; 2026 株式会社 Rinascentes All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    // Scroll animation
+    const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.animate-on-scroll').forEach(el => obs.observe(el));
+    </script>
+</body>
+</html>

@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1440 3800">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2 {
+        fill: #8e44ad;
+      }
+
+      .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st20, .st21, .st22, .st23, .st24, .st25, .st26, .st27, .st28, .st29, .st1, .st30, .st2, .st31, .st32, .st33, .st34, .st35, .st36, .st37, .st38, .st39, .st40, .st41 {
+        isolation: isolate;
+      }
+
+      .st3, .st6, .st42, .st9, .st20, .st35, .st38 {
+        fill: #444;
+      }
+
+      .st3, .st7, .st13, .st43, .st23, .st44 {
+        font-family: Helvetica, Helvetica;
+      }
+
+      .st3, .st25, .st31, .st38 {
+        font-size: 13px;
+      }
+
+      .st4, .st45, .st6, .st7, .st8, .st42, .st9, .st10, .st12, .st13, .st14, .st16, .st17, .st43, .st18, .st19, .st20, .st22, .st24, .st26, .st27, .st29, .st1, .st30, .st2, .st32, .st34, .st35, .st37, .st39, .st40, .st41 {
+        font-size: 12px;
+      }
+
+      .st4, .st15, .st17, .st20, .st21, .st22, .st46, .st47, .st26, .st27, .st29, .st32, .st48 {
+        font-family: KozGoPr6N-Regular-83pv-RKSJ-H, 'Kozuka Gothic Pr6N';
+      }
+
+      .st4, .st24, .st25 {
+        fill: #856404;
+      }
+
+      .st49 {
+        filter: url(#headerShadow);
+      }
+
+      .st50 {
+        filter: url(#cardShadow);
+      }
+
+      .st5, .st45, .st11, .st43, .st21, .st51, .st33 {
+        fill: #fff;
+      }
+
+      .st5, .st21, .st33 {
+        font-size: 17px;
+      }
+
+      .st6, .st11, .st28, .st52, .st53, .st33, .st54, .st55, .st56, .st57 {
+        font-family: HelveticaNeue-Bold, 'Helvetica Neue';
+        font-weight: 700;
+      }
+
+      .st8, .st26, .st58 {
+        fill: #e74c3c;
+      }
+
+      .st59, .st30, .st37 {
+        fill: #2980b9;
+      }
+
+      .st60, .st12, .st32, .st39 {
+        fill: #e67e22;
+      }
+
+      .st10, .st19, .st29, .st61 {
+        fill: #1abc9c;
+      }
+
+      .st62 {
+        fill: #fff3cd;
+      }
+
+      .st11 {
+        font-size: 22px;
+      }
+
+      .st12, .st16, .st19, .st47, .st26, .st29, .st1, .st52, .st32, .st37 {
+        letter-spacing: .2em;
+      }
+
+      .st13, .st17, .st34 {
+        fill: #666;
+      }
+
+      .st63 {
+        fill: #e8f8f5;
+      }
+
+      .st14 {
+        fill: #333;
+      }
+
+      .st14, .st35 {
+        font-family: HiraKakuProN-W6-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN';
+      }
+
+      .st15, .st18, .st22, .st36 {
+        fill: #888;
+      }
+
+      .st15, .st28, .st36 {
+        font-size: 11px;
+      }
+
+      .st16, .st64, .st40 {
+        fill: #27ae60;
+      }
+
+      .st65 {
+        font-size: 42px;
+        letter-spacing: 0em;
+      }
+
+      .st66 {
+        fill: url(#_名称未設定グラデーション_6);
+      }
+
+      .st67 {
+        fill: url(#_名称未設定グラデーション_5);
+      }
+
+      .st68 {
+        fill: url(#_名称未設定グラデーション_4);
+      }
+
+      .st69 {
+        fill: url(#_名称未設定グラデーション_3);
+      }
+
+      .st70 {
+        fill: url(#_名称未設定グラデーション_2);
+      }
+
+      .st71 {
+        fill: url(#_名称未設定グラデーション_8);
+      }
+
+      .st72 {
+        fill: url(#_名称未設定グラデーション_7);
+      }
+
+      .st23 {
+        font-size: 16px;
+        letter-spacing: 0em;
+      }
+
+      .st46, .st53 {
+        letter-spacing: .2em;
+      }
+
+      .st27, .st41 {
+        fill: #999;
+      }
+
+      .st28 {
+        letter-spacing: .4em;
+      }
+
+      .st28, .st73 {
+        fill: #c8a96e;
+      }
+
+      .st74 {
+        fill: #0068b7;
+      }
+
+      .st75 {
+        filter: url(#cardShadow5);
+      }
+
+      .st76 {
+        filter: url(#cardShadow4);
+      }
+
+      .st77 {
+        filter: url(#cardShadow6);
+      }
+
+      .st78 {
+        filter: url(#cardShadow1);
+      }
+
+      .st79 {
+        filter: url(#cardShadow3);
+      }
+
+      .st80 {
+        filter: url(#cardShadow2);
+      }
+
+      .st81 {
+        fill: #f0f0f0;
+      }
+
+      .st82 {
+        fill: #fafafa;
+      }
+
+      .st83 {
+        fill: #f0ede8;
+      }
+
+      .st84 {
+        fill: #f5f5f5;
+      }
+
+      .st85 {
+        fill: #fef3e0;
+      }
+
+      .st55 {
+        letter-spacing: 0em;
+      }
+
+      .st86 {
+        fill: #005f73;
+      }
+
+      .st87 {
+        fill: url(#_名称未設定グラデーション);
+      }
+
+      .st56 {
+        letter-spacing: 0em;
+      }
+
+      .st57 {
+        letter-spacing: 0em;
+      }
+    </style>
+    <filter id="headerShadow">
+      <feDropShadow dx="0" dy="6" flood-color="#000" flood-opacity="0.3" stdDeviation="20"/>
+    </filter>
+    <linearGradient id="_名称未設定グラデーション" data-name="名称未設定グラデーション" x1="0" y1="3669.3" x2="1440" y2="3669.3" gradientTransform="translate(0 3799.3) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a1a2e"/>
+      <stop offset="1" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="_名称未設定グラデーション_2" data-name="名称未設定グラデーション 2" x1="0" y1="3722.3" x2="120" y2="3722.3" gradientTransform="translate(0 3799.3) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c8a96e"/>
+      <stop offset="1" stop-color="#dfc392"/>
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="4" flood-color="#000" flood-opacity="0.08" stdDeviation="12"/>
+    </filter>
+    <linearGradient id="_名称未設定グラデーション_3" data-name="名称未設定グラデーション 3" x1="299.3" y1="2224" x2="299.3" y2="2223" gradientTransform="translate(-370361 133818.5) scale(1240 -60)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e74c3c"/>
+      <stop offset="1" stop-color="#c0392b"/>
+    </linearGradient>
+    <filter id="cardShadow1" data-name="cardShadow">
+      <feDropShadow dx="0" dy="4" flood-color="#000" flood-opacity="0.08" stdDeviation="12"/>
+    </filter>
+    <linearGradient id="_名称未設定グラデーション_4" data-name="名称未設定グラデーション 4" x1="299.3" y1="2224" x2="299.3" y2="2223" gradientTransform="translate(-370361 134308.5) scale(1240 -60)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2980b9"/>
+      <stop offset="1" stop-color="#1a5276"/>
+    </linearGradient>
+    <filter id="cardShadow2" data-name="cardShadow">
+      <feDropShadow dx="0" dy="4" flood-color="#000" flood-opacity="0.08" stdDeviation="12"/>
+    </filter>
+    <linearGradient id="_名称未設定グラデーション_5" data-name="名称未設定グラデーション 5" x1="299.3" y1="2224" x2="299.3" y2="2223" gradientTransform="translate(-370361 134788.5) scale(1240 -60)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#27ae60"/>
+      <stop offset="1" stop-color="#1e8449"/>
+    </linearGradient>
+    <filter id="cardShadow3" data-name="cardShadow">
+      <feDropShadow dx="0" dy="4" flood-color="#000" flood-opacity="0.08" stdDeviation="12"/>
+    </filter>
+    <linearGradient id="_名称未設定グラデーション_6" data-name="名称未設定グラデーション 6" x1="299.3" y1="2224" x2="299.3" y2="2223" gradientTransform="translate(-370361 135408.5) scale(1240 -60)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8e44ad"/>
+      <stop offset="1" stop-color="#6c3483"/>
+    </linearGradient>
+    <filter id="cardShadow4" data-name="cardShadow">
+      <feDropShadow dx="0" dy="4" flood-color="#000" flood-opacity="0.08" stdDeviation="12"/>
+    </filter>
+    <linearGradient id="_名称未設定グラデーション_7" data-name="名称未設定グラデーション 7" x1="299.3" y1="2224" x2="299.3" y2="2223" gradientTransform="translate(-370361 135808.5) scale(1240 -60)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e67e22"/>
+      <stop offset="1" stop-color="#d35400"/>
+    </linearGradient>
+    <filter id="cardShadow5" data-name="cardShadow">
+      <feDropShadow dx="0" dy="4" flood-color="#000" flood-opacity="0.08" stdDeviation="12"/>
+    </filter>
+    <linearGradient id="_名称未設定グラデーション_8" data-name="名称未設定グラデーション 8" x1="299.3" y1="2224" x2="299.3" y2="2223" gradientTransform="translate(-370361 136268.5) scale(1240 -60)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1abc9c"/>
+      <stop offset="1" stop-color="#16a085"/>
+    </linearGradient>
+    <filter id="cardShadow6" data-name="cardShadow">
+      <feDropShadow dx="0" dy="4" flood-color="#000" flood-opacity="0.08" stdDeviation="12"/>
+    </filter>
+  </defs>
+  <rect class="st83" y="0" width="1440" height="3800"/>
+  <g class="st49">
+    <rect class="st87" y="0" width="1440" height="260"/>
+  </g>
+  <text class="st28" transform="translate(100 60)"><tspan x="0" y="0">RINASCENTES / YUMEHO / MICA30</tspan></text>
+  <path class="st70" d="M101,76h78c.6,0,1,.4,1,1h0c0,.6-.4,1-1,1h-78c-.6,0-1-.4-1-1h0c0-.6.4-1,1-1Z"/>
+  <text class="st65" transform="translate(100 130)"><tspan class="st54" x="0" y="0">CMS</tspan><tspan class="st48" x="95.1" y="0">管理コンテンツ要件定義</tspan></text>
+  <text class="st23" transform="translate(100 170)"><tspan x="0" y="0">Content Management System — Editable Content Specification</tspan></text>
+  <text class="st31" transform="translate(100 220)"><tspan class="st48" x="0" y="0">対象：コーポレートサイト（</tspan><tspan class="st44" x="169" y="0">Rinascentes</tspan><tspan class="st48" x="240.5" y="0">）</tspan><tspan class="st44" x="253.5" y="0">/ </tspan><tspan class="st48" x="260.8" y="0">製品サイト（</tspan><tspan class="st44" x="338.8" y="0">YUMEHO</tspan><tspan class="st48" x="395.8" y="0">・</tspan><tspan class="st44" x="408.8" y="0">MICA30</tspan><tspan class="st48" x="455.8" y="0">）</tspan><tspan class="st44" x="468.8" y="0">/ </tspan><tspan class="st48" x="476" y="0">会員専用サイト</tspan></text>
+  <text class="st7" transform="translate(1279.9 220)"><tspan x="0" y="0">2026.04.07</tspan></text>
+  <g class="st50">
+    <rect class="st51" x="100" y="290" width="1240" height="56" rx="10" ry="10"/>
+  </g>
+  <text class="st18" transform="translate(130 324)"><tspan class="st53" x="0" y="0">CMS</tspan><tspan class="st47" x="33.5" y="0">化優先度</tspan></text>
+  <rect class="st58" x="320" y="309" width="10" height="10" rx="2" ry="2"/>
+  <text class="st35" transform="translate(338 320)"><tspan x="0" y="0">最高（日常更新）</tspan></text>
+  <rect class="st59" x="480" y="309" width="10" height="10" rx="2" ry="2"/>
+  <text class="st35" transform="translate(498 320)"><tspan x="0" y="0">高（月次更新）</tspan></text>
+  <rect class="st64" x="630" y="309" width="10" height="10" rx="2" ry="2"/>
+  <text class="st35" transform="translate(648 320)"><tspan x="0" y="0">高（随時追加）</tspan></text>
+  <rect class="st0" x="790" y="309" width="10" height="10" rx="2" ry="2"/>
+  <text class="st35" transform="translate(808 320)"><tspan x="0" y="0">中（随時追加）</tspan></text>
+  <rect class="st60" x="940" y="309" width="10" height="10" rx="2" ry="2"/>
+  <text class="st35" transform="translate(958 320)"><tspan x="0" y="0">中（改定時）</tspan></text>
+  <rect class="st61" x="1080" y="309" width="10" height="10" rx="2" ry="2"/>
+  <text class="st35" transform="translate(1098 320)"><tspan x="0" y="0">高（会員運営）</tspan></text>
+  <g>
+    <rect class="st69" x="100" y="380" width="1240" height="60" rx="10" ry="10"/>
+    <text class="st11" transform="translate(124 418)"><tspan x="0" y="0">01</tspan></text>
+    <path class="st51" d="M159,394h0c.6,0,1,.4,1,1v30c0,.6-.4,1-1,1h0c-.6,0-1-.4-1-1v-30c0-.6.4-1,1-1Z"/>
+    <text class="st5" transform="translate(176 413)"><tspan class="st48" x="0" y="0">ニュース</tspan><tspan class="st54" x="68" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="83.8" y="0">プレスリリース</tspan></text>
+    <text class="st43" transform="translate(420 415)"><tspan x="0" y="0">News &amp; Press Releases</tspan></text>
+    <g class="st78">
+      <rect class="st51" x="100" y="452" width="1240" height="400" rx="12" ry="12"/>
+    </g>
+    <text class="st26" transform="translate(132 488)"><tspan x="0" y="0">掲載箇所</tspan></text>
+    <rect class="st81" x="132" y="498" width="1176" height="1"/>
+    <text class="st3" transform="translate(150 522)"><tspan x="0" y="0">rinascentes/press.html</tspan></text>
+    <text class="st18" transform="translate(420 522)"><tspan class="st44" x="0" y="0">— </tspan><tspan class="st48" x="15.3" y="0">プレスリリース一覧（</tspan><tspan class="st44" x="135.3" y="0">8</tspan><tspan class="st48" x="142" y="0">件</tspan><tspan class="st44" x="154" y="0" xml:space="preserve"> + </tspan><tspan class="st48" x="167.7" y="0">フィーチャード</tspan><tspan class="st44" x="251.7" y="0">1</tspan><tspan class="st48" x="258.4" y="0">件）</tspan></text>
+    <text class="st38" transform="translate(150 546)"><tspan class="st44" x="0" y="0">rinascentes/news-*.html</tspan><tspan class="st48" x="138" y="0">（</tspan><tspan class="st44" x="151" y="0">4</tspan><tspan class="st48" x="158.2" y="0">ページ）</tspan></text>
+    <text class="st18" transform="translate(480 546)"><tspan class="st44" x="0" y="0">— </tspan><tspan class="st48" x="15.3" y="0">個別ニュース記事ページ</tspan></text>
+    <text class="st3" transform="translate(150 570)"><tspan x="0" y="0">rinascentes/index.html</tspan></text>
+    <text class="st18" transform="translate(420 570)"><tspan class="st44" x="0" y="0">— </tspan><tspan class="st48" x="15.3" y="0">トップページ「最新ニュース」セクション</tspan></text>
+    <text class="st8" transform="translate(132 608)"><tspan class="st53" x="0" y="0">CMS</tspan><tspan class="st47" x="33.5" y="0">で管理するフィールド</tspan></text>
+    <rect class="st81" x="132" y="618" width="1176" height="1"/>
+    <rect class="st82" x="132" y="630" width="1176" height="30" rx="4" ry="4"/>
+    <text class="st15" transform="translate(150 650)"><tspan x="0" y="0">フィールド名</tspan></text>
+    <text class="st15" transform="translate(360 650)"><tspan x="0" y="0">型</tspan></text>
+    <text class="st15" transform="translate(520 650)"><tspan x="0" y="0">説明</tspan></text>
+    <text class="st15" transform="translate(1000 650)"><tspan x="0" y="0">備考</tspan></text>
+    <text class="st14" transform="translate(150 680)"><tspan x="0" y="0">タイトル</tspan></text>
+    <text class="st17" transform="translate(360 680)"><tspan x="0" y="0">テキスト</tspan></text>
+    <text class="st17" transform="translate(520 680)"><tspan x="0" y="0">記事の見出し</tspan></text>
+    <text class="st27" transform="translate(1000 680)"><tspan x="0" y="0">一覧表示・詳細ページ両方で使用</tspan></text>
+    <rect class="st84" x="132" y="692" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 712)"><tspan x="0" y="0">カテゴリ</tspan></text>
+    <text class="st17" transform="translate(360 712)"><tspan x="0" y="0">セレクト</tspan></text>
+    <text class="st34" transform="translate(520 712)"><tspan class="st48" x="0" y="0">会社情報</tspan><tspan class="st44" x="48" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="58" y="0">製品情報</tspan><tspan class="st44" x="106" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="116" y="0">導入事例</tspan><tspan class="st44" x="164" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="174" y="0">受賞・認証</tspan><tspan class="st44" x="234" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="244" y="0">事業展開</tspan></text>
+    <text class="st27" transform="translate(1000 712)"><tspan x="0" y="0">フィルタリング用</tspan></text>
+    <rect class="st84" x="132" y="724" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 744)"><tspan x="0" y="0">公開日</tspan></text>
+    <text class="st17" transform="translate(360 744)"><tspan x="0" y="0">日付</tspan></text>
+    <text class="st34" transform="translate(520 744)"><tspan class="st44" x="0" y="0">YYYY.MM.DD </tspan><tspan class="st48" x="79.3" y="0">形式</tspan></text>
+    <text class="st27" transform="translate(1000 744)"><tspan x="0" y="0">ソート・表示用</tspan></text>
+    <rect class="st84" x="132" y="756" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 776)"><tspan x="0" y="0">抜粋テキスト</tspan></text>
+    <text class="st17" transform="translate(360 776)"><tspan x="0" y="0">テキスト</tspan></text>
+    <text class="st34" transform="translate(520 776)"><tspan class="st48" x="0" y="0">一覧ページに表示される概要文（</tspan><tspan class="st44" x="180" y="0">80</tspan><tspan class="st48" x="193.3" y="0">〜</tspan><tspan class="st44" x="205.3" y="0">120</tspan><tspan class="st48" x="225.4" y="0">字）</tspan></text>
+    <text class="st41" transform="translate(1000 776)"><tspan class="st48" x="0" y="0">自動生成</tspan><tspan class="st44" x="48" y="0" xml:space="preserve"> or </tspan><tspan class="st48" x="65.3" y="0">手動入力</tspan></text>
+    <rect class="st84" x="132" y="788" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 808)"><tspan x="0" y="0">本文</tspan></text>
+    <text class="st17" transform="translate(360 808)"><tspan x="0" y="0">リッチテキスト</tspan></text>
+    <text class="st17" transform="translate(520 808)"><tspan x="0" y="0">記事本文（見出し・段落・画像・引用対応）</tspan></text>
+    <text class="st27" transform="translate(1000 808)"><tspan x="0" y="0">個別記事ページ用</tspan></text>
+    <rect class="st84" x="132" y="820" width="1176" height="1"/>
+    <text class="st41" transform="translate(1000 840)"><tspan class="st44" x="0" y="0">1</tspan><tspan class="st48" x="6.7" y="0">件のみ有効</tspan></text>
+  </g>
+  <g>
+    <rect class="st68" x="100" y="870" width="1240" height="60" rx="10" ry="10"/>
+    <text class="st11" transform="translate(124 908)"><tspan x="0" y="0">02</tspan></text>
+    <path class="st51" d="M159,884h0c.6,0,1,.4,1,1v30c0,.6-.4,1-1,1h0c-.6,0-1-.4-1-1v-30c0-.6.4-1,1-1Z"/>
+    <text class="st21" transform="translate(176 903)"><tspan x="0" y="0">会社情報</tspan></text>
+    <text class="st45" transform="translate(280 905)"><tspan class="st44" x="0" y="0">Company Information — 3</tspan><tspan class="st48" x="140.1" y="0">サイト横断で一元管理が必須</tspan></text>
+    <g class="st80">
+      <rect class="st51" x="100" y="942" width="1240" height="390" rx="12" ry="12"/>
+    </g>
+    <rect class="st62" x="132" y="958" width="1176" height="48" rx="8" ry="8"/>
+    <text class="st25" transform="translate(156 986)"><tspan class="st54" x="0" y="0">!! </tspan><tspan class="st48" x="10.8" y="0">重要：同一情報が</tspan><tspan class="st54" x="114.8" y="0">3</tspan><tspan class="st48" x="122.1" y="0">サイト</tspan><tspan class="st55" x="161.1" y="0">×</tspan><tspan class="st48" x="168.9" y="0">計</tspan><tspan class="st56" x="181.9" y="0">6</tspan><tspan class="st48" x="189.1" y="0">箇所以上に重複しています。</tspan><tspan class="st55" x="358.1" y="0">CMS</tspan><tspan class="st48" x="388" y="0">で</tspan><tspan class="st54" x="401" y="0">1</tspan><tspan class="st48" x="408.2" y="0">箇所管理</tspan><tspan class="st54" x="460.2" y="0"> </tspan><tspan class="st48" x="463.8" y="0">→</tspan><tspan class="st54" x="476.8" y="0"> </tspan><tspan class="st48" x="480.4" y="0">全ページ自動反映の仕組みが必須です。</tspan></text>
+    <text class="st37" transform="translate(132 1036)"><tspan class="st48" x="0" y="0">重複掲載箇所（</tspan><tspan class="st54" x="97.9" y="0">6</tspan><tspan class="st48" x="106.6" y="0">箇所）</tspan></text>
+    <rect class="st81" x="132" y="1046" width="1176" height="1"/>
+    <path class="st73" d="M154,1058h0c2.2,0,4,1.8,4,4h0c0,2.2-1.8,4-4,4h0c-2.2,0-4-1.8-4-4h0c0-2.2,1.8-4,4-4Z"/>
+    <text class="st35" transform="translate(168 1067)"><tspan x="0" y="0">rinascentes/identity.html</tspan></text>
+    <text class="st22" transform="translate(420 1067)"><tspan x="0" y="0">会社概要セクション</tspan></text>
+    <path class="st74" d="M154,1082h0c2.2,0,4,1.8,4,4h0c0,2.2-1.8,4-4,4h0c-2.2,0-4-1.8-4-4h0c0-2.2,1.8-4,4-4Z"/>
+    <text class="st35" transform="translate(168 1091)"><tspan x="0" y="0">yumeho/company.html</tspan></text>
+    <text class="st22" transform="translate(420 1091)"><tspan x="0" y="0">会社概要ページ</tspan></text>
+    <path class="st86" d="M154,1106h0c2.2,0,4,1.8,4,4h0c0,2.2-1.8,4-4,4h0c-2.2,0-4-1.8-4-4h0c0-2.2,1.8-4,4-4Z"/>
+    <text class="st35" transform="translate(168 1115)"><tspan x="0" y="0">mica30/company.html</tspan></text>
+    <text class="st22" transform="translate(420 1115)"><tspan x="0" y="0">会社概要ページ</tspan></text>
+    <path class="st73" d="M744,1058h0c2.2,0,4,1.8,4,4h0c0,2.2-1.8,4-4,4h0c-2.2,0-4-1.8-4-4h0c0-2.2,1.8-4,4-4Z"/>
+    <text class="st9" transform="translate(758 1067)"><tspan class="st48" x="0" y="0">全ページフッター</tspan><tspan class="st44" x="96" y="0" xml:space="preserve"> × 3</tspan><tspan class="st48" x="116.3" y="0">サイト</tspan></text>
+    <text class="st22" transform="translate(980 1067)"><tspan x="0" y="0">電話番号・住所</tspan></text>
+    <text class="st30" transform="translate(132 1152)"><tspan class="st53" x="0" y="0">CMS</tspan><tspan class="st47" x="33.5" y="0">で管理するフィールド</tspan></text>
+    <rect class="st81" x="132" y="1162" width="1176" height="1"/>
+    <rect class="st82" x="132" y="1172" width="1176" height="30" rx="4" ry="4"/>
+    <text class="st15" transform="translate(150 1192)"><tspan x="0" y="0">フィールド名</tspan></text>
+    <text class="st15" transform="translate(400 1192)"><tspan x="0" y="0">現在値</tspan></text>
+    <text class="st15" transform="translate(850 1192)"><tspan x="0" y="0">型</tspan></text>
+    <text class="st14" transform="translate(150 1222)"><tspan x="0" y="0">会社名</tspan></text>
+    <text class="st34" transform="translate(400 1222)"><tspan class="st48" x="0" y="0">株式会社</tspan><tspan class="st44" x="48" y="0" xml:space="preserve"> Rinascentes</tspan><tspan class="st48" x="117.4" y="0">（リナシェンテス）</tspan></text>
+    <text class="st27" transform="translate(850 1222)"><tspan x="0" y="0">テキスト</tspan></text>
+    <rect class="st84" x="132" y="1234" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 1254)"><tspan x="0" y="0">代表者</tspan></text>
+    <text class="st8" transform="translate(400 1254)"><tspan class="st48" x="0" y="0">代表取締役</tspan><tspan class="st44" x="60" y="0"> </tspan><tspan class="st48" x="63.3" y="0">○○○○（要入力）</tspan></text>
+    <text class="st27" transform="translate(850 1254)"><tspan x="0" y="0">テキスト</tspan></text>
+    <rect class="st84" x="132" y="1266" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 1286)"><tspan x="0" y="0">設立日 / 所在地 / 電話番号</tspan></text>
+    <text class="st8" transform="translate(400 1286)"><tspan class="st44" x="0" y="0">2026</tspan><tspan class="st48" x="26.7" y="0">年</tspan><tspan class="st44" x="38.7" y="0">0</tspan><tspan class="st48" x="45.4" y="0">月</tspan><tspan class="st44" x="57.4" y="0">0</tspan><tspan class="st48" x="64" y="0">日</tspan><tspan class="st44" x="76" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="86" y="0">○○○○</tspan><tspan class="st44" x="134" y="0" xml:space="preserve"> / 0859-00-1234</tspan><tspan class="st48" x="218.8" y="0">（要入力）</tspan></text>
+    <text class="st41" transform="translate(850 1286)"><tspan class="st48" x="0" y="0">日付</tspan><tspan class="st44" x="24" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="34" y="0">テキスト</tspan><tspan class="st44" x="82" y="0" xml:space="preserve"> / tel</tspan></text>
+    <rect class="st84" x="132" y="1298" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 1318)"><tspan x="0" y="0">事業内容 / 主要製品 / 受付時間</tspan></text>
+    <text class="st34" transform="translate(400 1318)"><tspan class="st48" x="0" y="0">医療機器・福祉機器の企画、販売</tspan><tspan class="st44" x="180" y="0"> </tspan><tspan class="st48" x="183.3" y="0">他</tspan><tspan class="st44" x="195.3" y="0" xml:space="preserve"> / YUMEHO, MICA30 / </tspan><tspan class="st48" x="318" y="0">平日</tspan><tspan class="st44" x="342" y="0" xml:space="preserve"> 9:00</tspan><tspan class="st48" x="368.7" y="0">〜</tspan><tspan class="st44" x="380.7" y="0">17:00</tspan></text>
+    <text class="st27" transform="translate(850 1318)"><tspan x="0" y="0">リッチテキスト</tspan></text>
+  </g>
+  <g>
+    <rect class="st67" x="100" y="1350" width="1240" height="60" rx="10" ry="10"/>
+    <text class="st11" transform="translate(124 1388)"><tspan x="0" y="0">03</tspan></text>
+    <path class="st51" d="M159,1364h0c.6,0,1,.4,1,1v30c0,.6-.4,1-1,1h0c-.6,0-1-.4-1-1v-30c0-.6.4-1,1-1Z"/>
+    <text class="st5" transform="translate(176 1383)"><tspan class="st48" x="0" y="0">導入事例</tspan><tspan class="st54" x="68" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="83.8" y="0">施設の声</tspan></text>
+    <text class="st43" transform="translate(390 1385)"><tspan x="0" y="0">Case Studies &amp; Testimonials</tspan></text>
+    <g class="st79">
+      <rect class="st51" x="100" y="1422" width="1240" height="530" rx="12" ry="12"/>
+    </g>
+    <text class="st16" transform="translate(132 1458)"><tspan class="st48" x="0" y="0">掲載箇所（</tspan><tspan class="st54" x="70" y="0">4</tspan><tspan class="st48" x="78.6" y="0">ページ）</tspan></text>
+    <rect class="st81" x="132" y="1468" width="1176" height="1"/>
+    <path class="st73" d="M154,1480h0c2.2,0,4,1.8,4,4h0c0,2.2-1.8,4-4,4h0c-2.2,0-4-1.8-4-4h0c0-2.2,1.8-4,4-4Z"/>
+    <text class="st35" transform="translate(168 1490)"><tspan x="0" y="0">rinascentes/cases.html</tspan></text>
+    <text class="st18" transform="translate(400 1490)"><tspan class="st48" x="0" y="0">コーポレート導入事例一覧（</tspan><tspan class="st44" x="156" y="0">6</tspan><tspan class="st48" x="162.7" y="0">件）</tspan><tspan class="st44" x="186.7" y="0" xml:space="preserve"> — YUMEHO/MICA30</tspan><tspan class="st48" x="304.7" y="0">混合</tspan></text>
+    <path class="st74" d="M154,1505h0c2.2,0,4,1.8,4,4h0c0,2.2-1.8,4-4,4h0c-2.2,0-4-1.8-4-4h0c0-2.2,1.8-4,4-4Z"/>
+    <text class="st35" transform="translate(168 1515)"><tspan x="0" y="0">yumeho/cases.html</tspan></text>
+    <text class="st18" transform="translate(400 1515)"><tspan class="st44" x="0" y="0">YUMEHO</tspan><tspan class="st48" x="52.7" y="0">導入事例（病院タブ・デイサービスタブ）</tspan></text>
+    <path class="st86" d="M154,1530h0c2.2,0,4,1.8,4,4h0c0,2.2-1.8,4-4,4h0c-2.2,0-4-1.8-4-4h0c0-2.2,1.8-4,4-4Z"/>
+    <text class="st35" transform="translate(168 1540)"><tspan x="0" y="0">mica30/cases.html</tspan></text>
+    <text class="st18" transform="translate(400 1540)"><tspan class="st44" x="0" y="0">MICA30</tspan><tspan class="st48" x="43.3" y="0">導入事例（総合病院・循環器病院・クリニック）</tspan></text>
+    <path class="st86" d="M154,1555h0c2.2,0,4,1.8,4,4h0c0,2.2-1.8,4-4,4h0c-2.2,0-4-1.8-4-4h0c0-2.2,1.8-4,4-4Z"/>
+    <text class="st35" transform="translate(168 1565)"><tspan x="0" y="0">mica30/voices.html</tspan></text>
+    <text class="st18" transform="translate(400 1565)"><tspan class="st48" x="0" y="0">ご利用施設の声（</tspan><tspan class="st44" x="96" y="0">3</tspan><tspan class="st48" x="102.7" y="0">件）</tspan><tspan class="st44" x="126.7" y="0">+ </tspan><tspan class="st48" x="137" y="0">統計ヘッダー</tspan></text>
+    <text class="st40" transform="translate(132 1604)"><tspan class="st47" x="0" y="0">コレクション</tspan><tspan class="st53" x="84" y="0" xml:space="preserve"> A</tspan><tspan class="st46" x="99.5" y="0">：導入事例</tspan></text>
+    <rect class="st81" x="132" y="1614" width="1176" height="1"/>
+    <rect class="st82" x="132" y="1626" width="1176" height="30" rx="4" ry="4"/>
+    <text class="st15" transform="translate(150 1646)"><tspan x="0" y="0">フィールド名</tspan></text>
+    <text class="st15" transform="translate(360 1646)"><tspan x="0" y="0">型</tspan></text>
+    <text class="st15" transform="translate(520 1646)"><tspan x="0" y="0">説明</tspan></text>
+    <text class="st14" transform="translate(150 1672)"><tspan x="0" y="0">施設名・施設種別</tspan></text>
+    <text class="st34" transform="translate(360 1672)"><tspan class="st48" x="0" y="0">テキスト</tspan><tspan class="st44" x="48" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="58" y="0">セレクト</tspan></text>
+    <text class="st34" transform="translate(520 1672)"><tspan class="st48" x="0" y="0">「○○総合病院」「回復期リハビリ病棟」等</tspan><tspan class="st44" x="240" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="250" y="0">病院・老健・デイ・クリニック</tspan></text>
+    <rect class="st84" x="132" y="1684" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 1704)"><tspan x="0" y="0">対象製品</tspan></text>
+    <text class="st17" transform="translate(360 1704)"><tspan x="0" y="0">セレクト</tspan></text>
+    <text class="st34" transform="translate(520 1704)"><tspan class="st44" x="0" y="0">YUMEHO / MICA30</tspan><tspan class="st48" x="106" y="0">（コーポレートページのフィルタ用）</tspan></text>
+    <rect class="st84" x="132" y="1716" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 1736)"><tspan x="0" y="0">導入前課題 / 決め手 / 導入後効果</tspan></text>
+    <text class="st17" transform="translate(360 1736)"><tspan x="0" y="0">リッチテキスト</tspan></text>
+    <text class="st34" transform="translate(520 1736)"><tspan class="st48" x="0" y="0">事例ストーリーの</tspan><tspan class="st44" x="96" y="0">3</tspan><tspan class="st48" x="102.7" y="0">ブロック構成</tspan></text>
+    <rect class="st84" x="132" y="1748" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 1768)"><tspan x="0" y="0">引用コメント / 話者名・役職</tspan></text>
+    <text class="st17" transform="translate(360 1768)"><tspan x="0" y="0">テキスト</tspan></text>
+    <text class="st34" transform="translate(520 1768)"><tspan class="st48" x="0" y="0">「導入して本当に良かった」等の引用ブロック</tspan><tspan class="st44" x="252" y="0" xml:space="preserve"> + </tspan><tspan class="st48" x="265.7" y="0">属性</tspan></text>
+    <rect class="st84" x="132" y="1780" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 1800)"><tspan x="0" y="0">数値成果</tspan></text>
+    <text class="st34" transform="translate(360 1800)"><tspan class="st48" x="0" y="0">キー</tspan><tspan class="st44" x="24" y="0">/</tspan><tspan class="st48" x="27.3" y="0">バリュー</tspan></text>
+    <text class="st34" transform="translate(520 1800)"><tspan class="st48" x="0" y="0">「転倒事故</tspan><tspan class="st44" x="60" y="0" xml:space="preserve"> 0</tspan><tspan class="st48" x="70" y="0">件」「介助スタッフ</tspan><tspan class="st44" x="178" y="0" xml:space="preserve"> 3</tspan><tspan class="st48" x="188" y="0">名→</tspan><tspan class="st44" x="212" y="0">1</tspan><tspan class="st48" x="218.7" y="0">名」等の定量指標</tspan></text>
+    <rect class="st84" x="132" y="1812" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 1832)"><tspan x="0" y="0">施設画像</tspan></text>
+    <text class="st17" transform="translate(360 1832)"><tspan x="0" y="0">画像</tspan></text>
+    <text class="st17" transform="translate(520 1832)"><tspan x="0" y="0">カード表示用サムネイル</tspan></text>
+    <text class="st40" transform="translate(132 1870)"><tspan class="st47" x="0" y="0">コレクション</tspan><tspan class="st53" x="84" y="0" xml:space="preserve"> B</tspan><tspan class="st47" x="99.7" y="0">：施設の声（</tspan><tspan class="st52" x="183.7" y="0">voices — MICA30</tspan><tspan class="st47" x="314" y="0">固有）</tspan></text>
+    <rect class="st81" x="132" y="1880" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 1904)"><tspan x="0" y="0">施設名 / 診療科 / 施設画像</tspan></text>
+    <text class="st34" transform="translate(450 1904)"><tspan class="st48" x="0" y="0">テキスト</tspan><tspan class="st44" x="48" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="58" y="0">セレクト</tspan><tspan class="st44" x="106" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="116" y="0">画像</tspan></text>
+    <rect class="st84" x="132" y="1916" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 1936)"><tspan x="0" y="0">導入前課題 / 決め手 / 導入後の変化</tspan></text>
+    <text class="st34" transform="translate(450 1936)"><tspan class="st48" x="0" y="0">リッチテキスト</tspan><tspan class="st44" x="84" y="0" xml:space="preserve"> × 3</tspan><tspan class="st48" x="104.3" y="0">セクション（事例と同構造だが独立管理）</tspan></text>
+  </g>
+  <g>
+    <rect class="st66" x="100" y="1970" width="1240" height="60" rx="10" ry="10"/>
+    <text class="st11" transform="translate(124 2008)"><tspan x="0" y="0">04</tspan></text>
+    <path class="st51" d="M159,1984h0c.6,0,1,.4,1,1v30c0,.6-.4,1-1,1h0c-.6,0-1-.4-1-1v-30c0-.6.4-1,1-1Z"/>
+    <text class="st33" transform="translate(176 2003)"><tspan x="0" y="0">FAQ</tspan></text>
+    <text class="st43" transform="translate(230 2005)"><tspan x="0" y="0">Frequently Asked Questions</tspan></text>
+    <g class="st76">
+      <rect class="st51" x="100" y="2042" width="1240" height="310" rx="12" ry="12"/>
+    </g>
+    <text class="st1" transform="translate(132 2078)"><tspan class="st48" x="0" y="0">掲載箇所（</tspan><tspan class="st54" x="70" y="0">2</tspan><tspan class="st48" x="78.6" y="0">ページ）</tspan></text>
+    <rect class="st81" x="132" y="2088" width="1176" height="1"/>
+    <path class="st74" d="M154,2100h0c2.2,0,4,1.8,4,4h0c0,2.2-1.8,4-4,4h0c-2.2,0-4-1.8-4-4h0c0-2.2,1.8-4,4-4Z"/>
+    <text class="st35" transform="translate(168 2110)"><tspan x="0" y="0">yumeho/faq.html</tspan></text>
+    <text class="st18" transform="translate(360 2110)"><tspan class="st44" x="0" y="0">8</tspan><tspan class="st48" x="6.7" y="0">件（カテゴリ：導入</tspan><tspan class="st44" x="114.7" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="124.7" y="0">コスト</tspan><tspan class="st44" x="160.7" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="170.7" y="0">運用</tspan><tspan class="st44" x="194.7" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="204.7" y="0">デモ）</tspan></text>
+    <path class="st86" d="M154,2125h0c2.2,0,4,1.8,4,4h0c0,2.2-1.8,4-4,4h0c-2.2,0-4-1.8-4-4h0c0-2.2,1.8-4,4-4Z"/>
+    <text class="st35" transform="translate(168 2135)"><tspan x="0" y="0">mica30/faq.html</tspan></text>
+    <text class="st18" transform="translate(360 2135)"><tspan class="st44" x="0" y="0">10</tspan><tspan class="st48" x="13.3" y="0">件以上（カテゴリ：仕様</tspan><tspan class="st44" x="145.3" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="155.3" y="0">消耗品</tspan><tspan class="st44" x="191.3" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="201.4" y="0">安全</tspan><tspan class="st44" x="225.4" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="235.4" y="0">保守）</tspan></text>
+    <text class="st2" transform="translate(132 2174)"><tspan class="st53" x="0" y="0">CMS</tspan><tspan class="st47" x="33.5" y="0">で管理するフィールド</tspan></text>
+    <rect class="st81" x="132" y="2184" width="1176" height="1"/>
+    <rect class="st82" x="132" y="2196" width="1176" height="30" rx="4" ry="4"/>
+    <text class="st15" transform="translate(150 2216)"><tspan x="0" y="0">フィールド名</tspan></text>
+    <text class="st15" transform="translate(360 2216)"><tspan x="0" y="0">型</tspan></text>
+    <text class="st15" transform="translate(520 2216)"><tspan x="0" y="0">説明</tspan></text>
+    <text class="st15" transform="translate(1000 2216)"><tspan x="0" y="0">備考</tspan></text>
+    <text class="st14" transform="translate(150 2246)"><tspan x="0" y="0">対象製品</tspan></text>
+    <text class="st17" transform="translate(360 2246)"><tspan x="0" y="0">セレクト</tspan></text>
+    <text class="st13" transform="translate(520 2246)"><tspan x="0" y="0">YUMEHO / MICA30</tspan></text>
+    <text class="st27" transform="translate(1000 2246)"><tspan x="0" y="0">製品別で管理を分離</tspan></text>
+    <rect class="st84" x="132" y="2258" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 2278)"><tspan x="0" y="0">カテゴリ</tspan></text>
+    <text class="st17" transform="translate(360 2278)"><tspan x="0" y="0">セレクト</tspan></text>
+    <text class="st17" transform="translate(520 2278)"><tspan x="0" y="0">製品ごとに異なるカテゴリ体系</tspan></text>
+    <text class="st27" transform="translate(1000 2278)"><tspan x="0" y="0">フィルタリング用タブ</tspan></text>
+    <rect class="st84" x="132" y="2290" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 2310)"><tspan x="0" y="0">質問（Q）</tspan></text>
+    <text class="st17" transform="translate(360 2310)"><tspan x="0" y="0">テキスト</tspan></text>
+    <text class="st17" transform="translate(520 2310)"><tspan x="0" y="0">アコーディオンの見出し部分</tspan></text>
+    <rect class="st84" x="132" y="2322" width="1176" height="1"/>
+    <text class="st14" transform="translate(150 2342)"><tspan x="0" y="0">回答（A）</tspan></text>
+    <text class="st17" transform="translate(360 2342)"><tspan x="0" y="0">リッチテキスト</tspan></text>
+    <text class="st17" transform="translate(520 2342)"><tspan x="0" y="0">展開時に表示される回答（段落・リスト・リンク対応）</tspan></text>
+  </g>
+  <g>
+    <rect class="st72" x="100" y="2370" width="1240" height="60" rx="10" ry="10"/>
+    <text class="st11" transform="translate(124 2408)"><tspan x="0" y="0">05</tspan></text>
+    <path class="st51" d="M159,2384h0c.6,0,1,.4,1,1v30c0,.6-.4,1-1,1h0c-.6,0-1-.4-1-1v-30c0-.6.4-1,1-1Z"/>
+    <text class="st5" transform="translate(176 2403)"><tspan class="st48" x="0" y="0">価格</tspan><tspan class="st54" x="34" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="49.8" y="0">スペック数値</tspan></text>
+    <text class="st43" transform="translate(370 2405)"><tspan x="0" y="0">Pricing &amp; Specifications</tspan></text>
+    <g class="st75">
+      <rect class="st51" x="100" y="2442" width="1240" height="430" rx="12" ry="12"/>
+    </g>
+    <text class="st32" transform="translate(132 2478)"><tspan x="0" y="0">掲載箇所</tspan></text>
+    <rect class="st81" x="132" y="2488" width="1176" height="1"/>
+    <text class="st35" transform="translate(150 2512)"><tspan x="0" y="0">yumeho/price.html</tspan></text>
+    <text class="st18" transform="translate(380 2512)"><tspan class="st44" x="0" y="0">— </tspan><tspan class="st48" x="15.3" y="0">価格テーブル・構成別料金</tspan></text>
+    <text class="st35" transform="translate(150 2536)"><tspan x="0" y="0">yumeho/simulation.html</tspan></text>
+    <text class="st18" transform="translate(380 2536)"><tspan class="st44" x="0" y="0">— </tspan><tspan class="st48" x="15.3" y="0">コスト計算パラメータ（施設規模別）</tspan></text>
+    <text class="st35" transform="translate(150 2560)"><tspan x="0" y="0">mica30/price.html</tspan></text>
+    <text class="st18" transform="translate(380 2560)"><tspan class="st44" x="0" y="0">— </tspan><tspan class="st48" x="15.3" y="0">価格・</tspan><tspan class="st44" x="51.3" y="0">TCO</tspan><tspan class="st48" x="76.7" y="0">計算要素</tspan></text>
+    <text class="st35" transform="translate(150 2584)"><tspan x="0" y="0">mica30/product.html</tspan></text>
+    <text class="st18" transform="translate(380 2584)"><tspan class="st44" x="0" y="0">— </tspan><tspan class="st48" x="15.3" y="0">製品スペック表（注入量・速度・圧力・電源等）</tspan></text>
+    <text class="st39" transform="translate(132 2622)"><tspan class="st52" x="0" y="0">YUMEHO </tspan><tspan class="st46" x="71.1" y="0">価格データ</tspan></text>
+    <rect class="st81" x="132" y="2632" width="570" height="1"/>
+    <text class="st14" transform="translate(150 2656)"><tspan x="0" y="0">製品構成名 / 型番</tspan></text>
+    <text class="st34" transform="translate(350 2656)"><tspan class="st48" x="0" y="0">テキスト</tspan><tspan class="st44" x="48" y="0" xml:space="preserve"> — </tspan><tspan class="st48" x="66.7" y="0">スタンド型、天井型</tspan><tspan class="st44" x="174.7" y="0"> </tspan><tspan class="st48" x="178" y="0">等</tspan></text>
+    <text class="st14" transform="translate(150 2680)"><tspan x="0" y="0">本体価格 / オプション価格</tspan></text>
+    <text class="st34" transform="translate(350 2680)"><tspan class="st48" x="0" y="0">数値（円）</tspan><tspan class="st44" x="60" y="0" xml:space="preserve"> — </tspan><tspan class="st48" x="78.7" y="0">税別・税込表示</tspan></text>
+    <text class="st14" transform="translate(150 2704)"><tspan x="0" y="0">シミュレーション係数</tspan></text>
+    <text class="st34" transform="translate(350 2704)"><tspan class="st48" x="0" y="0">数値</tspan><tspan class="st44" x="24" y="0" xml:space="preserve"> — </tspan><tspan class="st48" x="42.7" y="0">施設規模別の計算パラメータ</tspan></text>
+    <text class="st14" transform="translate(150 2728)"><tspan x="0" y="0">補助金情報</tspan></text>
+    <text class="st34" transform="translate(350 2728)"><tspan class="st48" x="0" y="0">テキスト</tspan><tspan class="st44" x="48" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="58" y="0">金額</tspan><tspan class="st44" x="82" y="0" xml:space="preserve"> — </tspan><tspan class="st48" x="100.7" y="0">制度名・補助率・上限額</tspan></text>
+    <text class="st12" transform="translate(742 2622)"><tspan class="st54" x="0" y="0">MICA30 </tspan><tspan class="st48" x="62.2" y="0">スペック・価格データ</tspan></text>
+    <rect class="st81" x="742" y="2632" width="566" height="1"/>
+    <text class="st14" transform="translate(760 2656)"><tspan x="0" y="0">注入量範囲</tspan></text>
+    <text class="st34" transform="translate(930 2656)"><tspan class="st44" x="0" y="0">0.05</tspan><tspan class="st48" x="23.4" y="0">〜</tspan><tspan class="st44" x="35.4" y="0">30mL</tspan></text>
+    <text class="st14" transform="translate(760 2680)"><tspan x="0" y="0">注入速度</tspan></text>
+    <text class="st34" transform="translate(930 2680)"><tspan class="st44" x="0" y="0">0.05</tspan><tspan class="st48" x="23.4" y="0">〜</tspan><tspan class="st44" x="35.4" y="0">5mL/s</tspan><tspan class="st48" x="68" y="0">（モード別）</tspan></text>
+    <text class="st14" transform="translate(760 2704)"><tspan x="0" y="0">最大圧力</tspan></text>
+    <text class="st34" transform="translate(930 2704)"><tspan class="st44" x="0" y="0">50</tspan><tspan class="st48" x="13.3" y="0">〜</tspan><tspan class="st44" x="25.3" y="0">500psi</tspan></text>
+    <text class="st14" transform="translate(760 2728)"><tspan x="0" y="0">電源 / 寿命 / 価格</tspan></text>
+    <text class="st34" transform="translate(930 2728)"><tspan class="st44" x="0" y="0">AC100-240V, 250VA / 8</tspan><tspan class="st48" x="128.1" y="0">年</tspan><tspan class="st44" x="140.1" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="150.1" y="0">数値（円）</tspan></text>
+    <rect class="st85" x="132" y="2752" width="1176" height="48" rx="8" ry="8"/>
+    <text class="st24" transform="translate(156 2773)"><tspan class="st48" x="0" y="0">注意：価格変更は全関連ページ（</tspan><tspan class="st54" x="180" y="0">price / simulation / </tspan><tspan class="st48" x="290.4" y="0">会員ページ見積）に即時反映が必要。</tspan></text>
+    <text class="st4" transform="translate(156 2792)"><tspan x="0" y="0">スペック値は薬事法上の数値と一致している必要があるため、更新時には薬事担当の承認フローを推奨。</tspan></text>
+    <text class="st12" transform="translate(132 2840)"><tspan class="st48" x="0" y="0">導入実績統計（</tspan><tspan class="st54" x="97.9" y="0">voices.html </tspan><tspan class="st48" x="190.7" y="0">ヘッダー）</tspan></text>
+    <rect class="st81" x="132" y="2850" width="1176" height="1"/>
+    <g>
+      <text class="st20" transform="translate(150 2868)"><tspan x="0" y="0">導入施設数：</tspan></text>
+      <text class="st9" transform="translate(195.6 2868)"><tspan class="st54" x="0" y="0">8</tspan><tspan class="st48" x="6.7" y="0">施設</tspan></text>
+      <text class="st42" transform="translate(214.3 2868)"><tspan class="st48" x="0" y="0">　</tspan><tspan class="st44" x="12" y="0">/</tspan><tspan class="st48" x="15.3" y="0">　満足度：</tspan></text>
+      <text class="st6" transform="translate(263.3 2868)"><tspan x="0" y="0">98%</tspan></text>
+      <text class="st42" transform="translate(288.6 2868)"><tspan class="st48" x="0" y="0">　</tspan><tspan class="st44" x="12" y="0">/</tspan><tspan class="st48" x="15.3" y="0">　設置エリア：</tspan></text>
+      <text class="st9" transform="translate(352.8 2868)"><tspan class="st54" x="0" y="0">5</tspan><tspan class="st48" x="6.7" y="0">都府県</tspan></text>
+      <text class="st42" transform="translate(377.5 2868)"><tspan class="st48" x="0" y="0">　→</tspan><tspan class="st44" x="24" y="0"> </tspan><tspan class="st48" x="27.3" y="0">数値フィールドとして個別管理</tspan></text>
+    </g>
+  </g>
+  <g>
+    <rect class="st71" x="100" y="2830" width="1240" height="60" rx="10" ry="10"/>
+    <text class="st11" transform="translate(124 2868)"><tspan x="0" y="0">06</tspan></text>
+    <path class="st51" d="M159,2844h0c.6,0,1,.4,1,1v30c0,.6-.4,1-1,1h0c-.6,0-1-.4-1-1v-30c0-.6.4-1,1-1Z"/>
+    <text class="st21" transform="translate(176 2863)"><tspan x="0" y="0">会員専用サイト</tspan></text>
+    <text class="st43" transform="translate(340 2865)"><tspan x="0" y="0">Member Portal — Login / Member Area</tspan></text>
+    <g class="st77">
+      <rect class="st51" x="100" y="2902" width="1240" height="770" rx="12" ry="12"/>
+    </g>
+    <text class="st29" transform="translate(132 2938)"><tspan x="0" y="0">構成概要</tspan></text>
+    <rect class="st81" x="132" y="2948" width="1176" height="1"/>
+    <text class="st35" transform="translate(150 2972)"><tspan x="0" y="0">rinascentes/login.html</tspan></text>
+    <text class="st18" transform="translate(400 2972)"><tspan class="st44" x="0" y="0">— </tspan><tspan class="st48" x="15.3" y="0">コーポレートログインページ（会員特典説明</tspan><tspan class="st44" x="255.3" y="0" xml:space="preserve"> + </tspan><tspan class="st48" x="269" y="0">ログインフォーム）</tspan></text>
+    <text class="st35" transform="translate(150 2996)"><tspan x="0" y="0">rinascentes/member.html</tspan></text>
+    <text class="st18" transform="translate(400 2996)"><tspan class="st44" x="0" y="0">— </tspan><tspan class="st48" x="15.3" y="0">会員ダッシュボード（</tspan><tspan class="st44" x="135.3" y="0">7</tspan><tspan class="st48" x="142" y="0">セクション構成）</tspan></text>
+    <text class="st35" transform="translate(150 3020)"><tspan x="0" y="0">yumeho/login.php + member.php</tspan></text>
+    <text class="st18" transform="translate(400 3020)"><tspan class="st44" x="0" y="0">— YUMEHO</tspan><tspan class="st48" x="68" y="0">会員ログイン</tspan><tspan class="st44" x="140" y="0" xml:space="preserve"> + </tspan><tspan class="st48" x="153.7" y="0">動画ライブラリ（</tspan><tspan class="st44" x="249.7" y="0">6</tspan><tspan class="st48" x="256.4" y="0">本）</tspan></text>
+    <text class="st19" transform="translate(132 3058)"><tspan class="st48" x="0" y="0">会員ダッシュボード（</tspan><tspan class="st54" x="139.9" y="0">rinascentes/member.html</tspan><tspan class="st48" x="333" y="0">）管理コンテンツ</tspan></text>
+    <rect class="st81" x="132" y="3068" width="1176" height="1"/>
+    <rect class="st63" x="132" y="3080" width="580" height="28" rx="6" ry="6"/>
+    <text class="st10" transform="translate(148 3100)"><tspan class="st54" x="0" y="0">A. </tspan><tspan class="st48" x="14.9" y="0">購入履歴</tspan></text>
+    <text class="st36" transform="translate(280 3100)"><tspan class="st48" x="0" y="0">注文番号</tspan><tspan class="st44" x="44" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="53.2" y="0">製品名</tspan><tspan class="st44" x="86.2" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="95.3" y="0">数量</tspan><tspan class="st44" x="117.3" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="126.5" y="0">注文日</tspan><tspan class="st44" x="159.5" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="168.7" y="0">納品日</tspan><tspan class="st44" x="201.7" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="210.8" y="0">ステータス</tspan></text>
+    <text class="st34" transform="translate(150 3128)"><tspan class="st48" x="0" y="0">→</tspan><tspan class="st44" x="12" y="0"> </tspan><tspan class="st48" x="15.3" y="0">販売管理システム連携</tspan><tspan class="st44" x="135.3" y="0" xml:space="preserve"> or CMS</tspan><tspan class="st48" x="179.3" y="0">手動入力。ステータス（納品済み</tspan><tspan class="st44" x="359.3" y="0">/</tspan><tspan class="st48" x="362.7" y="0">発送中</tspan><tspan class="st44" x="398.7" y="0">/</tspan><tspan class="st48" x="402" y="0">保守予定）の更新が必要。</tspan></text>
+    <text class="st34" transform="translate(150 3148)"><tspan class="st48" x="0" y="0">　</tspan><tspan class="st44" x="12" y="0"> </tspan><tspan class="st48" x="15.3" y="0">現在</tspan><tspan class="st44" x="39.3" y="0">4</tspan><tspan class="st48" x="46" y="0">件のダミーデータ。顧客ごとの購入データとして管理。</tspan></text>
+    <rect class="st63" x="132" y="3170" width="580" height="28" rx="6" ry="6"/>
+    <text class="st10" transform="translate(148 3190)"><tspan class="st54" x="0" y="0">B. </tspan><tspan class="st48" x="15.1" y="0">動画コンテンツ（設置方法</tspan><tspan class="st54" x="159.1" y="0" xml:space="preserve"> + </tspan><tspan class="st48" x="173" y="0">利用方法）</tspan></text>
+    <rect class="st82" x="150" y="3206" width="1158" height="30" rx="4" ry="4"/>
+    <text class="st15" transform="translate(168 3226)"><tspan x="0" y="0">フィールド</tspan></text>
+    <text class="st15" transform="translate(350 3226)"><tspan x="0" y="0">型</tspan></text>
+    <text class="st15" transform="translate(520 3226)"><tspan x="0" y="0">説明</tspan></text>
+    <text class="st14" transform="translate(168 3252)"><tspan x="0" y="0">YouTube動画ID</tspan></text>
+    <text class="st17" transform="translate(350 3252)"><tspan x="0" y="0">テキスト</tspan></text>
+    <text class="st34" transform="translate(520 3252)"><tspan class="st48" x="0" y="0">例：</tspan><tspan class="st44" x="24" y="0">K82ErnB4xDA</tspan><tspan class="st48" x="101.4" y="0">（サムネイル自動取得）</tspan></text>
+    <rect class="st84" x="150" y="3264" width="1158" height="1"/>
+    <text class="st14" transform="translate(168 3284)"><tspan x="0" y="0">タイトル / 説明文</tspan></text>
+    <text class="st17" transform="translate(350 3284)"><tspan x="0" y="0">テキスト</tspan></text>
+    <text class="st34" transform="translate(520 3284)"><tspan class="st48" x="0" y="0">「免荷式リハビリ機器</tspan><tspan class="st44" x="120" y="0"> </tspan><tspan class="st48" x="123.3" y="0">設置・機能紹介①」等</tspan></text>
+    <rect class="st84" x="150" y="3296" width="1158" height="1"/>
+    <text class="st14" transform="translate(168 3316)"><tspan x="0" y="0">カテゴリ / 対象製品</tspan></text>
+    <text class="st17" transform="translate(350 3316)"><tspan x="0" y="0">セレクト</tspan></text>
+    <text class="st34" transform="translate(520 3316)"><tspan class="st48" x="0" y="0">設置方法</tspan><tspan class="st44" x="48" y="0" xml:space="preserve"> or </tspan><tspan class="st48" x="65.3" y="0">利用方法</tspan><tspan class="st44" x="113.3" y="0" xml:space="preserve"> / YUMEHO or MICA30</tspan></text>
+    <rect class="st84" x="150" y="3328" width="1158" height="1"/>
+    <text class="st41" transform="translate(150 3350)"><tspan class="st48" x="0" y="0">現在の動画：設置方法</tspan><tspan class="st44" x="120" y="0">3</tspan><tspan class="st48" x="126.7" y="0">本（</tspan><tspan class="st44" x="150.7" y="0">YUMEHO 2, MICA30 1</tspan><tspan class="st48" x="273.4" y="0">）</tspan><tspan class="st44" x="285.4" y="0">/ </tspan><tspan class="st48" x="292" y="0">利用方法</tspan><tspan class="st44" x="340" y="0">4</tspan><tspan class="st48" x="346.7" y="0">本（</tspan><tspan class="st44" x="370.7" y="0">YUMEHO 3, MICA30 1</tspan><tspan class="st48" x="493.4" y="0">）</tspan></text>
+    <rect class="st63" x="132" y="3370" width="580" height="28" rx="6" ry="6"/>
+    <text class="st10" transform="translate(148 3390)"><tspan class="st54" x="0" y="0">C. </tspan><tspan class="st48" x="15.6" y="0">資料ダウンロード</tspan></text>
+    <text class="st36" transform="translate(320 3390)"><tspan class="st44" x="0" y="0">6</tspan><tspan class="st48" x="6.1" y="0">件（仕様書・稟議資料・取説・カタログ）</tspan></text>
+    <text class="st14" transform="translate(150 3416)"><tspan x="0" y="0">管理フィールド：</tspan></text>
+    <text class="st34" transform="translate(270 3416)"><tspan class="st48" x="0" y="0">タイトル</tspan><tspan class="st44" x="48" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="58" y="0">ファイル（</tspan><tspan class="st44" x="118" y="0">PDF/ZIP</tspan><tspan class="st48" x="164" y="0">）</tspan><tspan class="st44" x="176" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="186" y="0">ファイルサイズ</tspan><tspan class="st44" x="270" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="280" y="0">更新日</tspan><tspan class="st44" x="316" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="326" y="0">カテゴリ</tspan></text>
+    <text class="st27" transform="translate(150 3436)"><tspan x="0" y="0">ファイルアップロード機能が必須。更新時に旧版を自動アーカイブする仕組みを推奨。</tspan></text>
+    <rect class="st63" x="132" y="3458" width="580" height="28" rx="6" ry="6"/>
+    <text class="st10" transform="translate(148 3478)"><tspan class="st54" x="0" y="0">D. </tspan><tspan class="st48" x="15.6" y="0">補助金サポート資料</tspan></text>
+    <text class="st36" transform="translate(350 3478)"><tspan class="st48" x="0" y="0">認定制度情報</tspan><tspan class="st44" x="66" y="0" xml:space="preserve"> + </tspan><tspan class="st48" x="78.5" y="0">申請書類テンプレート</tspan></text>
+    <text class="st34" transform="translate(150 3504)"><tspan class="st48" x="0" y="0">認定ステータス</tspan><tspan class="st44" x="84" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="94" y="0">制度名</tspan><tspan class="st44" x="130" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="140" y="0">説明文</tspan><tspan class="st44" x="176" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="186" y="0">申請手順</tspan><tspan class="st44" x="234" y="0">PDF / </tspan><tspan class="st48" x="268" y="0">申請書類サンプル（</tspan><tspan class="st44" x="376" y="0">ZIP</tspan><tspan class="st48" x="394.7" y="0">）</tspan></text>
+    <rect class="st63" x="132" y="3526" width="580" height="28" rx="6" ry="6"/>
+    <text class="st10" transform="translate(148 3546)"><tspan class="st54" x="0" y="0">E. </tspan><tspan class="st48" x="14.4" y="0">サポート・保守情報</tspan></text>
+    <text class="st36" transform="translate(350 3546)"><tspan class="st48" x="0" y="0">お知らせ通知（</tspan><tspan class="st44" x="77" y="0">5</tspan><tspan class="st48" x="83.1" y="0">件）</tspan></text>
+    <text class="st14" transform="translate(150 3572)"><tspan x="0" y="0">管理フィールド：</tspan></text>
+    <text class="st34" transform="translate(270 3572)"><tspan class="st48" x="0" y="0">タイトル</tspan><tspan class="st44" x="48" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="58" y="0">本文</tspan><tspan class="st44" x="82" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="92" y="0">日付</tspan><tspan class="st44" x="116" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="126" y="0">緊急度（</tspan><tspan class="st44" x="174" y="0">urgent / info / normal</tspan><tspan class="st48" x="284.1" y="0">）</tspan></text>
+    <text class="st27" transform="translate(150 3592)"><tspan x="0" y="0">ファームウェア更新通知・保守予定・セミナー案内・在庫情報等。プッシュ通知連携も検討。</tspan></text>
+    <rect class="st63" x="132" y="3614" width="580" height="28" rx="6" ry="6"/>
+    <text class="st10" transform="translate(148 3634)"><tspan class="st54" x="0" y="0">F. </tspan><tspan class="st48" x="13.8" y="0">製品レビュー（</tspan><tspan class="st57" x="97.8" y="0">UGC</tspan><tspan class="st48" x="124.7" y="0">）</tspan></text>
+    <text class="st36" transform="translate(360 3634)"><tspan class="st48" x="0" y="0">会員が投稿。</tspan><tspan class="st44" x="66" y="0">YUMEHO 3</tspan><tspan class="st48" x="123.5" y="0">件</tspan><tspan class="st44" x="134.5" y="0" xml:space="preserve"> / MICA30 2</tspan><tspan class="st48" x="192.5" y="0">件</tspan></text>
+    <text class="st14" transform="translate(150 3660)"><tspan x="0" y="0">管理フィールド：</tspan></text>
+    <text class="st34" transform="translate(270 3660)"><tspan class="st48" x="0" y="0">投稿者名</tspan><tspan class="st44" x="48" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="58" y="0">施設名・職種</tspan><tspan class="st44" x="130" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="140" y="0">星評価（</tspan><tspan class="st44" x="188" y="0">1-5</tspan><tspan class="st48" x="205.3" y="0">）</tspan><tspan class="st44" x="217.3" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="227.3" y="0">レビュー本文</tspan><tspan class="st44" x="299.3" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="309.4" y="0">タグ</tspan><tspan class="st44" x="333.4" y="0" xml:space="preserve"> / </tspan><tspan class="st48" x="343.4" y="0">参考になった数</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,138 @@
+name: Auto Deploy Theme
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+    paths:
+      - 'wp-themes/**'
+      - 'yumeho/assets/**'
+      - 'rinascentes/assets/**'
+      - 'config/*.env'
+      - '.github/workflows/deploy.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - branch: develop
+            env: staging
+            site: yumeho
+          - branch: develop
+            env: staging
+            site: rinascente
+          - branch: main
+            env: production
+            site: yumeho
+          - branch: main
+            env: production
+            site: rinascente
+      max-parallel: 2
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.XSERVER_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p ${{ secrets.XSERVER_SSH_PORT }} ${{ secrets.XSERVER_HOST }} >> ~/.ssh/known_hosts 2>/dev/null || true
+
+      - name: Create config files
+        env:
+          XSERVER_HOST: ${{ secrets.XSERVER_HOST }}
+          XSERVER_USER: ${{ secrets.XSERVER_USER }}
+          XSERVER_PORT: ${{ secrets.XSERVER_PORT }}
+          STAGING_YUMEHO_URL: ${{ secrets.STAGING_YUMEHO_URL }}
+          STAGING_RINASCENTE_URL: ${{ secrets.STAGING_RINASCENTE_URL }}
+          STAGING_YUMEHO_WP_PATH: ${{ secrets.STAGING_YUMEHO_WP_PATH }}
+          STAGING_RINASCENTE_WP_PATH: ${{ secrets.STAGING_RINASCENTE_WP_PATH }}
+          STAGING_YUMEHO_THEME_DIR: ${{ secrets.STAGING_YUMEHO_THEME_DIR }}
+          STAGING_RINASCENTE_THEME_DIR: ${{ secrets.STAGING_RINASCENTE_THEME_DIR }}
+          PRODUCTION_YUMEHO_URL: ${{ secrets.PRODUCTION_YUMEHO_URL }}
+          PRODUCTION_RINASCENTE_URL: ${{ secrets.PRODUCTION_RINASCENTE_URL }}
+          PRODUCTION_YUMEHO_WP_PATH: ${{ secrets.PRODUCTION_YUMEHO_WP_PATH }}
+          PRODUCTION_RINASCENTE_WP_PATH: ${{ secrets.PRODUCTION_RINASCENTE_WP_PATH }}
+          PRODUCTION_YUMEHO_THEME_DIR: ${{ secrets.PRODUCTION_YUMEHO_THEME_DIR }}
+          PRODUCTION_RINASCENTE_THEME_DIR: ${{ secrets.PRODUCTION_RINASCENTE_THEME_DIR }}
+        run: |
+          cat > config/staging.env << 'EOF'
+          XSERVER_HOST="${XSERVER_HOST}"
+          XSERVER_USER="${XSERVER_USER}"
+          XSERVER_PORT="${XSERVER_PORT}"
+
+          STAGING_YUMEHO_URL="${STAGING_YUMEHO_URL}"
+          STAGING_RINASCENTE_URL="${STAGING_RINASCENTE_URL}"
+          STAGING_YUMEHO_WP_PATH="${STAGING_YUMEHO_WP_PATH}"
+          STAGING_RINASCENTE_WP_PATH="${STAGING_RINASCENTE_WP_PATH}"
+          STAGING_YUMEHO_THEME_DIR="${STAGING_YUMEHO_THEME_DIR}"
+          STAGING_RINASCENTE_THEME_DIR="${STAGING_RINASCENTE_THEME_DIR}"
+          EOF
+
+          cat > config/production.env << 'EOF'
+          XSERVER_HOST="${XSERVER_HOST}"
+          XSERVER_USER="${XSERVER_USER}"
+          XSERVER_PORT="${XSERVER_PORT}"
+
+          PRODUCTION_YUMEHO_URL="${PRODUCTION_YUMEHO_URL}"
+          PRODUCTION_RINASCENTE_URL="${PRODUCTION_RINASCENTE_URL}"
+          PRODUCTION_YUMEHO_WP_PATH="${PRODUCTION_YUMEHO_WP_PATH}"
+          PRODUCTION_RINASCENTE_WP_PATH="${PRODUCTION_RINASCENTE_WP_PATH}"
+          PRODUCTION_YUMEHO_THEME_DIR="${PRODUCTION_YUMEHO_THEME_DIR}"
+          PRODUCTION_RINASCENTE_THEME_DIR="${PRODUCTION_RINASCENTE_THEME_DIR}"
+          EOF
+
+      - name: Deploy to ${{ matrix.env }} (${{ matrix.site }})
+        if: github.ref == format('refs/heads/{0}', matrix.branch)
+        run: |
+          chmod +x ./scripts/deploy-theme.sh
+          ./scripts/deploy-theme.sh ${{ matrix.site }} ${{ matrix.env }}
+
+      - name: Run smoke tests
+        if: github.ref == format('refs/heads/{0}', matrix.branch)
+        run: |
+          chmod +x ./scripts/smoke-test.sh
+          ./scripts/smoke-test.sh ${{ matrix.site }} ${{ matrix.env }}
+
+      - name: Slack notification (Success)
+        if: success()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          webhook-url: ${{ secrets.SLACK_WEBHOOK }}
+          payload: |
+            {
+              "text": "✅ Deploy Success",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Deploy Completed*\n*Site:* ${{ matrix.site }}\n*Env:* ${{ matrix.env }}\n*Branch:* ${{ github.ref_name }}\n*Commit:* <${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}|${{ github.sha }}>"
+                  }
+                }
+              ]
+            }
+
+      - name: Slack notification (Failure)
+        if: failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          webhook-url: ${{ secrets.SLACK_WEBHOOK }}
+          payload: |
+            {
+              "text": "❌ Deploy Failed",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Deploy Failed*\n*Site:* ${{ matrix.site }}\n*Env:* ${{ matrix.env }}\n*Branch:* ${{ github.ref_name }}\n*Commit:* <${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}|${{ github.sha }}>"
+                  }
+                }
+              ]
+            }

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 595.3 1080">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #999;
+      }
+
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7 {
+        isolation: isolate;
+      }
+
+      .st0, .st2 {
+        font-size: 8px;
+      }
+
+      .st0, .st7 {
+        font-family: HiraKakuProN-W3-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN';
+      }
+
+      .st1 {
+        font-size: 10px;
+      }
+
+      .st1, .st8, .st6 {
+        fill: #0068b7;
+      }
+
+      .st1, .st4, .st5, .st6 {
+        font-family: HiraKakuProN-W6-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN';
+      }
+
+      .st9 {
+        fill: #fafafa;
+      }
+
+      .st9, .st10 {
+        stroke: #e0e0e0;
+        stroke-width: .5px;
+      }
+
+      .st10, .st11 {
+        fill: none;
+      }
+
+      .st12 {
+        fill: #f0f7ff;
+        stroke: #b0d4ee;
+      }
+
+      .st12, .st11 {
+        stroke-width: .8px;
+      }
+
+      .st2, .st3 {
+        fill: #fff;
+        font-family: HelveticaNeue-Bold, 'Helvetica Neue';
+        font-weight: 700;
+      }
+
+      .st3 {
+        font-size: 7px;
+      }
+
+      .st11 {
+        stroke: #0068b7;
+      }
+
+      .st4 {
+        font-size: 14px;
+        letter-spacing: .2em;
+      }
+
+      .st4, .st5 {
+        fill: #1a1a1a;
+      }
+
+      .st5, .st7 {
+        font-size: 7.5px;
+      }
+
+      .st6 {
+        font-size: 9px;
+      }
+
+      .st7 {
+        fill: #333;
+      }
+    </style>
+  </defs>
+  <rect class="st8" x="40" y="40" width="515.3" height="2.5"/>
+  <text class="st4" transform="translate(40 68)"><tspan x="0" y="0">御見積書 — 別紙</tspan></text>
+  <text class="st0" transform="translate(40 82)"><tspan x="0" y="0">EST-2026-0403-01　スケジュール・前提条件・備考</tspan></text>
+  <line class="st10" x1="40" y1="90" x2="555.3" y2="90"/>
+  <text class="st1" transform="translate(40 114)"><tspan x="0" y="0">1. スケジュール目安</tspan></text>
+  <rect class="st12" x="40" y="126" width="160" height="72" rx="6" ry="6"/>
+  <rect class="st8" x="40" y="126" width="160" height="20"/>
+  <rect class="st8" x="40" y="136" width="160" height="10"/>
+  <text class="st2" transform="translate(104.8 140)"><tspan x="0" y="0">WEEK 1</tspan></text>
+  <text class="st5" transform="translate(52 160)"><tspan x="0" y="0">要件確定・画面整理</tspan></text>
+  <text class="st7" transform="translate(52 172)"><tspan x="0" y="0">ヒアリング、要件整理、全体方針の確定</tspan></text>
+  <text class="st7" transform="translate(52 184)"><tspan x="0" y="0">サイトマップ整理、デザイン調整方針の確定</tspan></text>
+  <rect class="st12" x="218" y="126" width="160" height="72" rx="6" ry="6"/>
+  <rect class="st8" x="218" y="126" width="160" height="20"/>
+  <rect class="st8" x="218" y="136" width="160" height="10"/>
+  <text class="st2" transform="translate(282.8 140)"><tspan x="0" y="0">WEEK 2</tspan></text>
+  <text class="st5" transform="translate(230 160)"><tspan x="0" y="0">制作・実装</tspan></text>
+  <text class="st7" transform="translate(230 172)"><tspan x="0" y="0">公開ページ制作（3サイト 32ページ）</tspan></text>
+  <text class="st7" transform="translate(230 184)"><tspan x="0" y="0">CMS / 管理画面、共通会員機能の実装</tspan></text>
+  <rect class="st12" x="396" y="126" width="160" height="72" rx="6" ry="6"/>
+  <rect class="st8" x="396" y="126" width="160" height="20"/>
+  <rect class="st8" x="396" y="136" width="160" height="10"/>
+  <text class="st2" transform="translate(460.8 140)"><tspan x="0" y="0">WEEK 3</tspan></text>
+  <text class="st5" transform="translate(408 160)"><tspan x="0" y="0">テスト・公開</tspan></text>
+  <text class="st7" transform="translate(408 172)"><tspan x="0" y="0">結合テスト、表示確認、導線確認</tspan></text>
+  <text class="st7" transform="translate(408 184)"><tspan x="0" y="0">修正対応、公開準備、最終調整</tspan></text>
+  <polygon class="st8" points="204 162 214 157 214 167 204 162"/>
+  <polygon class="st8" points="382 162 392 157 392 167 382 162"/>
+  <rect class="st11" x="40" y="208" width="516" height="28" rx="4" ry="4"/>
+  <text class="st6" transform="translate(52 226)"><tspan x="0" y="0">本体：約3週間</tspan></text>
+  <text class="st7" transform="translate(150 226)"><tspan x="0" y="0">｜</tspan></text>
+  <text class="st6" transform="translate(164 226)"><tspan x="0" y="0">オプション同時採用の場合：+1週間程度（計 約4週間）</tspan></text>
+  <line class="st10" x1="40" y1="252" x2="555.3" y2="252"/>
+  <text class="st1" transform="translate(40 274)"><tspan x="0" y="0">2. 前提条件</tspan></text>
+  <circle class="st8" cx="52" cy="290" r="6"/>
+  <text class="st3" transform="translate(50.1 293)"><tspan x="0" y="0">1</tspan></text>
+  <text class="st5" transform="translate(66 293)"><tspan x="0" y="0">既存プロトタイプの流用</tspan></text>
+  <text class="st7" transform="translate(66 305)"><tspan x="0" y="0">既存プロトタイプの HTML、画面構成、既存パーツを最大限流用します。</tspan></text>
+  <text class="st7" transform="translate(66 317)"><tspan x="0" y="0">ページごとに完全新規デザインを行わず、共通テンプレートを横展開する前提です。</tspan></text>
+  <circle class="st8" cx="52" cy="337" r="6"/>
+  <text class="st3" transform="translate(50.1 340)"><tspan x="0" y="0">2</tspan></text>
+  <text class="st5" transform="translate(66 340)"><tspan x="0" y="0">デザイン範囲</tspan></text>
+  <text class="st7" transform="translate(66 352)"><tspan x="0" y="0">既存プロトタイプのブラッシュアップを前提とし、全面リニューアルは含みません。</tspan></text>
+  <text class="st7" transform="translate(66 364)"><tspan x="0" y="0">表示最適化は PC / スマートフォン対応を含みます。</tspan></text>
+  <circle class="st8" cx="52" cy="384" r="6"/>
+  <text class="st3" transform="translate(50.1 387)"><tspan x="0" y="0">3</tspan></text>
+  <text class="st5" transform="translate(66 387)"><tspan x="0" y="0">素材のご支給</tspan></text>
+  <text class="st7" transform="translate(66 399)"><tspan x="0" y="0">原稿、写真、製品情報はご支給、または既存素材を活用する前提です。</tspan></text>
+  <text class="st7" transform="translate(66 411)"><tspan x="0" y="0">大幅な原稿制作・取材ライティングは含みません。</tspan></text>
+  <circle class="st8" cx="52" cy="431" r="6"/>
+  <text class="st3" transform="translate(50.1 434)"><tspan x="0" y="0">4</tspan></text>
+  <text class="st5" transform="translate(66 434)"><tspan x="0" y="0">CMS / 管理画面</tspan></text>
+  <text class="st7" transform="translate(66 446)"><tspan x="0" y="0">簡易管理方式とし、更新範囲を限定します。</tspan></text>
+  <text class="st7" transform="translate(66 458)"><tspan x="0" y="0">複数権限ロールを持つ高機能 CMS は含みません。</tspan></text>
+  <circle class="st8" cx="52" cy="478" r="6"/>
+  <text class="st3" transform="translate(50.1 481)"><tspan x="0" y="0">5</tspan></text>
+  <text class="st5" transform="translate(66 481)"><tspan x="0" y="0">会員機能</tspan></text>
+  <text class="st7" transform="translate(66 493)"><tspan x="0" y="0">基本機能（動画閲覧、購入履歴閲覧）に絞り、複雑な権限設計は行いません。（コミュニティ機能はオプションで対応可能）</tspan></text>
+  <text class="st7" transform="translate(66 505)"><tspan x="0" y="0">会員認証エリアは Rinascentes 管理下に配置します。</tspan></text>
+  <text class="st7" transform="translate(66 517)"><tspan x="0" y="0">会員ごとの細かな権限分岐やマイページ拡張は含みません。</tspan></text>
+  <circle class="st8" cx="52" cy="537" r="6"/>
+  <text class="st3" transform="translate(50.1 540)"><tspan x="0" y="0">6</tspan></text>
+  <text class="st5" transform="translate(66 540)"><tspan x="0" y="0">購入履歴</tspan></text>
+  <text class="st7" transform="translate(66 552)"><tspan x="0" y="0">管理画面から手動登録・更新する前提です。</tspan></text>
+  <text class="st7" transform="translate(66 564)"><tspan x="0" y="0">オンライン決済との自動連携は本体範囲に含みません（オプションで対応可能）。</tspan></text>
+  <circle class="st8" cx="52" cy="584" r="6"/>
+  <text class="st3" transform="translate(50.1 587)"><tspan x="0" y="0">7</tspan></text>
+  <text class="st5" transform="translate(66 587)"><tspan x="0" y="0">確認進行</tspan></text>
+  <text class="st7" transform="translate(66 599)"><tspan x="0" y="0">3週間での迅速な確認進行をお願いいたします。</tspan></text>
+  <line class="st10" x1="40" y1="630" x2="555.3" y2="630"/>
+  <text class="st1" transform="translate(40 652)"><tspan x="0" y="0">3. 本見積りに含まないもの</tspan></text>
+  <rect class="st9" x="40" y="662" width="516" height="120" rx="6" ry="6"/>
+  <text class="st7" transform="translate(56 680)"><tspan x="0" y="0">・大幅な原稿制作や取材ライティング</tspan></text>
+  <text class="st7" transform="translate(56 694)"><tspan x="0" y="0">・写真撮影、動画撮影、図版制作</tspan></text>
+  <text class="st7" transform="translate(56 708)"><tspan x="0" y="0">・複数権限ロールを持つ高機能 CMS</tspan></text>
+  <text class="st7" transform="translate(56 722)"><tspan x="0" y="0">・会員ごとの細かな権限分岐やマイページ拡張</tspan></text>
+  <text class="st7" transform="translate(56 736)"><tspan x="0" y="0">・スレッド形式のコミュニティ機能（オプション OP1 で対応可能）</tspan></text>
+  <text class="st7" transform="translate(56 750)"><tspan x="0" y="0">・YUMEHO / MICA30 からのオンライン決済機能（オプション OP2 で対応可能）</tspan></text>
+  <text class="st7" transform="translate(56 764)"><tspan x="0" y="0">・決済に伴う購入履歴の自動反映、多言語化、広告運用、SEO 記事制作</tspan></text>
+  <line class="st10" x1="40" y1="800" x2="555.3" y2="800"/>
+
+  <text class="st1" transform="translate(40 822)"><tspan x="0" y="0">4. テンプレート型サイトとの違い</tspan></text>
+
+  <text class="st7" transform="translate(40 840)"><tspan x="0" y="0">市販の WordPress テンプレート（TCD 等）を用いた制作との主な違いは以下の通りです。</tspan></text>
+
+  <!-- Comparison table -->
+  <!-- Header -->
+  <rect fill="#0068b7" x="40" y="852" width="200" height="18"/>
+  <rect fill="#e0e0e0" x="240" y="852" width="156" height="18"/>
+  <rect fill="#0068b7" x="396" y="852" width="160" height="18"/>
+  <text style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:7px;fill:#fff;" transform="translate(120 864)"><tspan x="0" y="0" text-anchor="middle">比較項目</tspan></text>
+  <text style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:7px;fill:#333;" transform="translate(318 864)"><tspan x="0" y="0" text-anchor="middle">テンプレート型</tspan></text>
+  <text style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:7px;fill:#fff;" transform="translate(476 864)"><tspan x="0" y="0" text-anchor="middle">本提案（オーダーメイド）</tspan></text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="870" width="516" height="28" fill="#fff"/>
+  <line class="st10" x1="40" y1="898" x2="556" y2="898"/>
+  <text class="st5" transform="translate(48 888)"><tspan x="0" y="0">ブランド独自性</tspan></text>
+  <text class="st7" transform="translate(248 884)"><tspan x="0" y="0">他社と同じ見た目になりやすい</tspan></text>
+  <text class="st7" transform="translate(248 894)"><tspan x="0" y="0">（テンプレート利用者同士で類似）</tspan></text>
+  <text style="font-family:HiraKakuProN-W3-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:7.5px;fill:#0068b7;font-weight:700;" transform="translate(404 888)"><tspan x="0" y="0">完全オリジナルで唯一無二のブランド表現</tspan></text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="898" width="516" height="28" fill="#fafafa"/>
+  <line class="st10" x1="40" y1="926" x2="556" y2="926"/>
+  <text class="st5" transform="translate(48 916)"><tspan x="0" y="0">3サイト統合設計</tspan></text>
+  <text class="st7" transform="translate(248 912)"><tspan x="0" y="0">サイトごとに個別テーマを購入</tspan></text>
+  <text class="st7" transform="translate(248 922)"><tspan x="0" y="0">（統一感・回遊導線の設計が困難）</tspan></text>
+  <text style="font-family:HiraKakuProN-W3-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:7.5px;fill:#0068b7;font-weight:700;" transform="translate(404 916)"><tspan x="0" y="0">3サイト横断の共通設計・会員基盤</tspan></text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="926" width="516" height="28" fill="#fff"/>
+  <line class="st10" x1="40" y1="954" x2="556" y2="954"/>
+  <text class="st5" transform="translate(48 944)"><tspan x="0" y="0">カスタマイズ性</tspan></text>
+  <text class="st7" transform="translate(248 940)"><tspan x="0" y="0">テーマの設定範囲内に限定</tspan></text>
+  <text class="st7" transform="translate(248 950)"><tspan x="0" y="0">（想定外の機能追加は困難・高コスト化）</tspan></text>
+  <text style="font-family:HiraKakuProN-W3-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:7.5px;fill:#0068b7;font-weight:700;" transform="translate(404 944)"><tspan x="0" y="0">事業成長に合わせた柔軟な拡張が可能</tspan></text>
+
+  <!-- Row 4 -->
+  <rect x="40" y="954" width="516" height="28" fill="#fafafa"/>
+  <line class="st10" x1="40" y1="982" x2="556" y2="982"/>
+  <text class="st5" transform="translate(48 972)"><tspan x="0" y="0">セキュリティ</tspan></text>
+  <text class="st7" transform="translate(248 968)"><tspan x="0" y="0">WordPress + プラグイン依存</tspan></text>
+  <text class="st7" transform="translate(248 978)"><tspan x="0" y="0">（攻撃対象になりやすく定期更新が必須）</tspan></text>
+  <text style="font-family:HiraKakuProN-W3-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:7.5px;fill:#0068b7;font-weight:700;" transform="translate(404 972)"><tspan x="0" y="0">不要なプラグインなし・攻撃面が小さい</tspan></text>
+
+  <!-- Row 5 -->
+  <rect x="40" y="982" width="516" height="28" fill="#fff"/>
+  <line class="st10" x1="40" y1="1010" x2="556" y2="1010"/>
+  <text class="st5" transform="translate(48 1000)"><tspan x="0" y="0">表示速度</tspan></text>
+  <text class="st7" transform="translate(248 996)"><tspan x="0" y="0">プラグイン増加で速度低下しやすい</tspan></text>
+  <text class="st7" transform="translate(248 1006)"><tspan x="0" y="0">（テーマ自体の冗長コードも影響）</tspan></text>
+  <text style="font-family:HiraKakuProN-W3-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:7.5px;fill:#0068b7;font-weight:700;" transform="translate(404 1000)"><tspan x="0" y="0">必要最小限の軽量設計で高速表示</tspan></text>
+
+  <!-- Row 6 -->
+  <rect x="40" y="1010" width="516" height="28" fill="#fafafa"/>
+  <rect x="40" y="1010" width="516" height="28" fill="none" stroke="#999" stroke-width="0.5"/>
+  <text class="st5" transform="translate(48 1028)"><tspan x="0" y="0">長期運用コスト</tspan></text>
+  <text class="st7" transform="translate(248 1024)"><tspan x="0" y="0">テーマ更新停止リスク・プラグイン課金</tspan></text>
+  <text class="st7" transform="translate(248 1034)"><tspan x="0" y="0">（乗り換え時は全面作り直し）</tspan></text>
+  <text style="font-family:HiraKakuProN-W3-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:7.5px;fill:#0068b7;font-weight:700;" transform="translate(404 1028)"><tspan x="0" y="0">自社資産として長期運用・改修が容易</tspan></text>
+
+  <!-- Table border -->
+  <rect x="40" y="852" width="516" height="186" rx="0" ry="0" fill="none" stroke="#999" stroke-width="0.5"/>
+  <line stroke="#999" stroke-width="0.5" x1="240" y1="852" x2="240" y2="1038"/>
+  <line stroke="#999" stroke-width="0.5" x1="396" y1="852" x2="396" y2="1038"/>
+
+  <text class="st0" transform="translate(40 1058)"><tspan x="0" y="0">※ 初期費用だけでなく、ブランド価値・拡張性・セキュリティ・長期運用コストを総合的にご判断ください。</tspan></text>
+
+  <rect class="st8" x="40" y="1070" width="515.3" height="1"/>
+</svg>

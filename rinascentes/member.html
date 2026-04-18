@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+  <title>会員ページ | Rinascente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260409f">
+  <style>
+    /* ── Layout ── */
+    .member-layout {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      min-height: 100vh;
+      padding-top: 64px;
+    }
+    /* ── Sidebar ── */
+    .member-sidebar {
+      background: var(--black);
+      padding: 36px 0;
+      position: sticky;
+      top: 64px;
+      height: calc(100vh - 64px);
+      overflow-y: auto;
+    }
+    .sidebar-user {
+      padding: 0 24px 28px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      margin-bottom: 20px;
+    }
+    .sidebar-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-deep), var(--gold));
+      display: grid;
+      place-items: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 10px;
+    }
+    .sidebar-name { font-size: 0.88rem; font-weight: 700; color: var(--white); }
+    .sidebar-role { font-size: 0.72rem; color: rgba(200,169,110,0.7); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 2px; }
+    .sidebar-nav { list-style: none; padding: 0; margin: 0; }
+    .sidebar-nav li a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 24px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: all 0.18s;
+      border-left: 2px solid transparent;
+    }
+    .sidebar-nav li a:hover,
+    .sidebar-nav li a.active {
+      color: var(--white);
+      background: rgba(255,255,255,0.04);
+      border-left-color: var(--gold);
+    }
+    .sidebar-nav .nav-icon { font-size: 1rem; width: 20px; text-align: center; }
+    .sidebar-section-label {
+      padding: 20px 24px 6px;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.25);
+    }
+    /* ── Main ── */
+    .member-main {
+      background: #f5f3ef;
+      padding: 48px 56px;
+    }
+    .member-section {
+      margin-bottom: 64px;
+    }
+    .member-section-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--charcoal);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    /* ── Purchase History ── */
+    .purchase-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      font-size: 0.88rem;
+    }
+    .purchase-table th {
+      background: var(--charcoal);
+      color: white;
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .purchase-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line-light);
+      color: var(--charcoal);
+    }
+    .purchase-table tr:last-child td { border-bottom: none; }
+    .purchase-table tr:hover td { background: var(--cream); }
+    .status-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+    .status-delivered { background: #e8f5e9; color: #2e7d32; }
+    .status-shipped   { background: #e3f2fd; color: #1565c0; }
+    .status-support   { background: #fff3e0; color: #e65100; }
+    /* ── Video Grid ── */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .video-card {
+      background: white;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .video-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.13);
+    }
+    .video-thumb {
+      position: relative;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: var(--charcoal);
+    }
+    .video-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .video-play-btn {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.3);
+      transition: background 0.2s;
+    }
+    .video-card:hover .video-play-btn { background: rgba(0,0,0,0.18); }
+    .video-play-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.92);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+    .video-play-icon::after {
+      content: '';
+      border-left: 18px solid var(--charcoal);
+      border-top: 11px solid transparent;
+      border-bottom: 11px solid transparent;
+      margin-left: 4px;
+    }
+    .video-product-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .video-meta { padding: 14px 16px; }
+    .video-title { font-size: 0.88rem; font-weight: 700; color: var(--charcoal); line-height: 1.45; margin-bottom: 4px; }
+    .video-desc  { font-size: 0.78rem; color: var(--mid-gray); line-height: 1.5; }
+    /* ── Modal ── */
+    .video-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0,0,0,0.88);
+      align-items: center;
+      justify-content: center;
+    }
+    .video-modal.open { display: flex; }
+    .modal-inner {
+      position: relative;
+      width: min(900px, 94vw);
+    }
+    .modal-close {
+      position: absolute;
+      top: -44px;
+      right: 0;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.6rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px 8px;
+    }
+    .modal-iframe-wrap {
+      position: relative;
+      aspect-ratio: 16/9;
+      background: black;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+    }
+    .modal-iframe-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    /* ── Download Cards ── */
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .download-card {
+      background: white;
+      border-radius: var(--r-lg);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .download-card:hover {
+      box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
+    }
+    .dl-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--r-md);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      font-size: 1.4rem;
+    }
+    .dl-info { flex: 1; min-width: 0; }
+    .dl-title { font-size: 0.9rem; font-weight: 700; color: var(--charcoal); margin-bottom: 3px; }
+    .dl-meta  { font-size: 0.75rem; color: var(--mid-gray); }
+    .dl-btn {
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.15);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      white-space: nowrap;
+      background: var(--cream);
+    }
+    /* ── Support Notices ── */
+    .notice-list { display: grid; gap: 12px; }
+    .notice-card {
+      background: white;
+      border-radius: var(--r-lg);
+      padding: 18px 22px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .notice-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: 5px;
+    }
+    .notice-dot.urgent { background: #e74c3c; }
+    .notice-dot.info   { background: #0068b7; }
+    .notice-title { font-size: 0.9rem; font-weight: 700; color: var(--charcoal); margin-bottom: 3px; }
+    .notice-body  { font-size: 0.82rem; color: var(--mid-gray); line-height: 1.55; }
+    .notice-date  { font-size: 0.75rem; color: rgba(0,0,0,0.3); margin-top: 4px; }
+    /* ── Reviews ── */
+    .review-product-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .rtab {
+      padding: 7px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.15);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      background: white;
+      color: var(--mid-gray);
+      transition: all 0.18s;
+    }
+    .rtab.active, .rtab:hover {
+      background: var(--charcoal);
+      color: white;
+      border-color: var(--charcoal);
+    }
+    .review-summary {
+      background: white;
+      border-radius: var(--r-lg);
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .review-score-big {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      line-height: 1;
+    }
+    .stars { color: #f59e0b; font-size: 1.1rem; letter-spacing: 2px; }
+    .star-bar-row { display: flex; align-items: center; gap: 10px; font-size: 0.78rem; color: var(--mid-gray); }
+    .star-bar-wrap { flex: 1; height: 6px; background: var(--line-light); border-radius: 3px; min-width: 100px; }
+    .star-bar { height: 100%; border-radius: 3px; background: #f59e0b; }
+    .review-thread { display: grid; gap: 12px; }
+    .review-post {
+      background: white;
+      border-radius: var(--r-lg);
+      padding: 20px 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .review-post-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      gap: 12px;
+    }
+    .reviewer-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0068b7, #003d7a);
+      display: grid;
+      place-items: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: white;
+      flex-shrink: 0;
+    }
+    .reviewer-name { font-size: 0.88rem; font-weight: 700; color: var(--charcoal); }
+    .reviewer-facility { font-size: 0.75rem; color: var(--mid-gray); }
+    .review-stars { font-size: 0.9rem; color: #f59e0b; }
+    .review-date { font-size: 0.75rem; color: rgba(0,0,0,0.3); white-space: nowrap; }
+    .review-body { font-size: 0.88rem; color: var(--charcoal); line-height: 1.75; }
+    .review-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+    .review-tag { padding: 3px 10px; border-radius: 999px; background: var(--cream); font-size: 0.72rem; color: var(--mid-gray); border: 1px solid var(--line-light); }
+    .review-helpful { margin-top: 12px; font-size: 0.78rem; color: var(--mid-gray); display: flex; align-items: center; gap: 8px; }
+    .helpful-btn { border: 1px solid rgba(0,0,0,0.15); border-radius: 4px; padding: 3px 10px; background: white; cursor: pointer; font-size: 0.75rem; transition: all 0.15s; }
+    .helpful-btn:hover { background: var(--charcoal); color: white; }
+    .review-write {
+      background: white;
+      border-radius: var(--r-lg);
+      padding: 24px 28px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-top: 20px;
+    }
+    .review-write textarea {
+      width: 100%;
+      min-height: 100px;
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: var(--r-md);
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      font-family: var(--font-body);
+      resize: vertical;
+      box-sizing: border-box;
+    }
+    .star-select { font-size: 1.6rem; cursor: pointer; letter-spacing: 4px; margin-bottom: 12px; }
+    .table-scroll-hint { display: none; }
+    .sp-nav-toggle { display: none; }
+    @media (max-width: 900px) {
+      .table-scroll-hint { display: flex; }
+      .member-layout { grid-template-columns: 1fr; }
+      .member-sidebar { position: static; height: auto; padding: 20px 0; }
+      .member-main { padding: 28px 20px; }
+      .video-grid { grid-template-columns: 1fr 1fr; }
+      .download-grid { grid-template-columns: 1fr; }
+      .review-summary { flex-direction: column; gap: 16px; text-align: center; }
+    }
+    @media (max-width: 640px) {
+      /* レイアウト */
+      .member-layout { padding-top: 90px; overflow-x: hidden; background: var(--black); }
+
+      /* サイドバー → ドロップダウンメニュー */
+      .member-sidebar {
+        padding: 0;
+      }
+      .sidebar-user {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 20px;
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+      .sidebar-avatar { margin-bottom: 0; width: 36px; height: 36px; font-size: 0.9rem; }
+      .sidebar-nav {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 16px;
+        transition: max-height 0.8s cubic-bezier(0.22,1,0.36,1),
+                    padding 0.8s cubic-bezier(0.22,1,0.36,1);
+      }
+      .sidebar-nav.sp-open {
+        max-height: 500px;
+        padding: 8px 16px 12px;
+      }
+      .sidebar-nav li a {
+        border-left: none;
+        padding: 12px 16px;
+        border-radius: var(--r-sm);
+        font-size: 0.85rem;
+      }
+      .sidebar-nav li a:hover,
+      .sidebar-nav li a.active {
+        border-left-color: transparent;
+        background: rgba(200,169,110,0.1);
+        border-color: transparent;
+      }
+      .sidebar-section-label { display: none; }
+      .nav-icon { display: none !important; }
+      /* SP用トグルボタン */
+      .sp-nav-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 12px 20px;
+        background: rgba(255,255,255,0.04);
+        border: none;
+        border-top: 1px solid rgba(255,255,255,0.07);
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+        color: var(--gold);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+      }
+      .sp-nav-toggle__arrow {
+        transition: transform 0.3s;
+        font-size: 0.7rem;
+      }
+      .sp-nav-toggle.is-open .sp-nav-toggle__arrow {
+        transform: rotate(180deg);
+      }
+
+      /* メインコンテンツ */
+      .member-main { padding: 24px 16px; overflow-x: hidden; box-sizing: border-box; max-width: 100vw; }
+      .member-section { margin-bottom: 40px; }
+      .member-section-title { font-size: 1rem; }
+
+      /* テーブルスクロールラッパー */
+      .table-scroll-wrap {
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: var(--r-lg);
+      }
+      .table-scroll-hint {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 6px;
+        padding: 0 4px 8px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: var(--gold-deep);
+        animation: scrollHintPulse 2s ease-in-out infinite;
+      }
+      @keyframes scrollHintPulse {
+        0%, 100% { opacity: 0.6; transform: translateX(0); }
+        50% { opacity: 1; transform: translateX(4px); }
+      }
+
+      /* 購入テーブル → 横スクロール */
+      .purchase-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        font-size: 0.78rem;
+      }
+      .purchase-table thead,
+      .purchase-table tbody,
+      .purchase-table tr { display: table; width: 100%; table-layout: auto; }
+      .purchase-table thead { display: table-header-group; }
+      .purchase-table tbody { display: table-row-group; }
+      .purchase-table tr { display: table-row; }
+      .purchase-table th { padding: 10px 12px; font-size: 0.68rem; }
+      .purchase-table td { padding: 10px 12px; }
+
+      /* 動画グリッド */
+      .video-grid { grid-template-columns: 1fr !important; }
+
+      /* ダウンロード */
+      .download-grid { grid-template-columns: 1fr !important; }
+      .download-card { padding: 14px 16px; }
+      .dl-icon { width: 40px; height: 40px; font-size: 1.1rem; }
+
+      /* 補助金セクション内カード */
+      .member-section [style*="padding:24px 28px"] {
+        padding: 18px 16px !important;
+      }
+
+      /* レビュー */
+      .review-summary {
+        flex-direction: column;
+        gap: 16px;
+        padding: 18px;
+        text-align: center;
+      }
+      .review-score-big { font-size: 2.5rem; }
+      .review-post { padding: 16px 14px; }
+      .review-post-header { flex-direction: column; gap: 8px; }
+      .review-write { padding: 18px 16px; }
+
+      /* サポート情報 */
+      .notice-card { padding: 14px 16px; flex-direction: column; gap: 8px; }
+      .notice-dot { width: 8px; height: 8px; margin-top: 0; }
+
+      /* 全体の幅制御 */
+      .member-section { overflow-x: hidden; }
+      .member-section * { max-width: 100%; box-sizing: border-box; }
+      .star-bar-wrap { min-width: 60px; }
+      .review-write textarea { width: 100%; box-sizing: border-box; }
+
+      /* モーダル */
+      .modal-inner { width: 96vw; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header" style="background:var(--black);border-bottom:1px solid rgba(255,255,255,0.07);">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="assets/img/logo.svg" alt="" class="header-logo__img">
+        <span class="header-logo__text">
+          <span class="logo-wordmark">Rinascente</span>
+          <span class="logo-sub">復活する。再生する。</span>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-label="メニュー" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav class="header-nav header-nav--desktop" role="navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="identity.html" class="nav-item">Identity</a>
+        <a href="press.html" class="nav-item">Press</a>
+        <a href="cases.html" class="nav-item">Cases</a>
+        <a href="contact.html" class="header-cta">Contact</a>
+        <a href="login.html" class="btn btn-outline-light" style="min-height:auto;padding:8px 20px;font-size:0.8rem;">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile fullscreen nav -->
+  <nav class="mobile-nav" id="mobileNav" role="navigation" aria-hidden="true">
+    <a href="index.html" class="mobile-nav__item">Home</a>
+    <a href="identity.html" class="mobile-nav__item">Identity</a>
+    <a href="press.html" class="mobile-nav__item">Press</a>
+    <a href="cases.html" class="mobile-nav__item">Cases</a>
+    <a href="contact.html" class="mobile-nav__item">Contact</a>
+    <a href="login.html" class="mobile-nav__item">Login</a>
+    <div class="mobile-nav__divider"></div>
+    <a href="../yumeho/index.html" class="nav-external" target="_blank" rel="noopener">
+      <span class="nav-external__label">Product Site</span>
+      <span class="nav-external__name">YUMEHO</span>
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="flex-shrink:0;"><path d="M4 1.5H2.5A1 1 0 001.5 2.5v7a1 1 0 001 1h7a1 1 0 001-1V8M7.5 1.5h3v3M6 6l4.5-4.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </nav>
+
+  <div class="member-layout">
+
+    <!-- Sidebar -->
+    <aside class="member-sidebar">
+      <div class="sidebar-user">
+        <div class="sidebar-avatar" id="avatarInitial">D</div>
+        <div class="sidebar-name" id="sidebarName">demo@rinascente.jp</div>
+        <div class="sidebar-role">Member — YUMEHO</div>
+      </div>
+
+      <button class="sp-nav-toggle" id="spNavToggle">
+        <span>MENU</span>
+        <span class="sp-nav-toggle__arrow">▼</span>
+      </button>
+      <ul class="sidebar-nav" id="sidebarNav">
+        <li class="sidebar-section-label">メニュー</li>
+        <li><a href="#purchases" class="active"><span class="nav-icon">🛒</span>購入履歴</a></li>
+        <li><a href="#videos-setup"><span class="nav-icon">🔧</span>設置方法動画</a></li>
+        <li><a href="#videos-usage"><span class="nav-icon">▶</span>利用方法動画</a></li>
+        <li><a href="#downloads"><span class="nav-icon">📄</span>資料ダウンロード</a></li>
+        <li><a href="#subsidy"><span class="nav-icon">💴</span>補助金サポート</a></li>
+        <li><a href="#support"><span class="nav-icon">🔔</span>サポート情報</a></li>
+        <!-- <li><a href="#reviews"><span class="nav-icon">★</span>製品レビュー</a></li> -->
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="member-main">
+
+      <!-- ① 購入履歴 -->
+      <section class="member-section" id="purchases">
+        <h2 class="member-section-title"><span>🛒</span> 購入履歴</h2>
+        <div class="table-scroll-wrap">
+          <div class="table-scroll-hint">
+            <svg width="16" height="12" viewBox="0 0 24 12" fill="none"><path d="M0 6H18M18 6L13 1M18 6L13 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>横にスクロール</span>
+          </div>
+        <table class="purchase-table">
+          <thead>
+            <tr>
+              <th>注文番号</th>
+              <th>製品名</th>
+              <th>数量</th>
+              <th>注文日</th>
+              <th>納品日</th>
+              <th>ステータス</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="font-family:monospace;font-size:0.82rem;">ORD-2026-0312</td>
+              <td><strong>YUMEHO スタンド型 PGT-9001</strong></td>
+              <td>1台</td>
+              <td>2026.03.12</td>
+              <td>2026.03.28</td>
+              <td><span class="status-badge status-delivered">納品済み</span></td>
+            </tr>
+            <tr>
+              <td style="font-family:monospace;font-size:0.82rem;">ORD-2026-0315</td>
+              <td>G-SUITハーネス Mサイズ × 3</td>
+              <td>3点</td>
+              <td>2026.03.15</td>
+              <td>2026.03.22</td>
+              <td><span class="status-badge status-delivered">納品済み</span></td>
+            </tr>
+            <tr>
+              <td style="font-family:monospace;font-size:0.82rem;">ORD-2026-0120</td>
+              <td><strong>YUMEHO 天井型レールセット（6m）</strong></td>
+              <td>1式</td>
+              <td>2026.01.20</td>
+              <td>2026.02.10</td>
+              <td><span class="status-badge status-delivered">納品済み</span></td>
+            </tr>
+            <tr>
+              <td style="font-family:monospace;font-size:0.82rem;">SVC-2026-0401</td>
+              <td>定期保守点検（年次）</td>
+              <td>—</td>
+              <td>2026.04.01予定</td>
+              <td>—</td>
+              <td><span class="status-badge status-support">保守予定</span></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+
+      <!-- ② 設置方法動画 -->
+      <section class="member-section" id="videos-setup">
+        <h2 class="member-section-title"><span>🔧</span> 設置方法動画</h2>
+
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#0068b7;margin-bottom:12px;">YUMEHO</div>
+        <div class="video-grid" style="margin-bottom:32px;">
+          <div class="video-card" data-video-id="K82ErnB4xDA" data-title="免荷式リハビリ機器 設置・機能紹介①">
+            <div class="video-thumb">
+              <img src="https://img.youtube.com/vi/K82ErnB4xDA/hqdefault.jpg" alt="設置・機能紹介①">
+              <div class="video-play-btn"><div class="video-play-icon"></div></div>
+              <span class="video-product-tag">YUMEHO</span>
+            </div>
+            <div class="video-meta">
+              <div class="video-title">免荷式リハビリ機器 設置・機能紹介①</div>
+              <div class="video-desc">各部の名称・機能説明と基本セットアップ手順（提供：日本メディックス）</div>
+            </div>
+          </div>
+          <div class="video-card" data-video-id="CYi2T3AB2XM" data-title="免荷式リハビリ機器 設置・機能紹介②">
+            <div class="video-thumb">
+              <img src="https://img.youtube.com/vi/CYi2T3AB2XM/hqdefault.jpg" alt="設置・機能紹介②">
+              <div class="video-play-btn"><div class="video-play-icon"></div></div>
+              <span class="video-product-tag">YUMEHO</span>
+            </div>
+            <div class="video-meta">
+              <div class="video-title">免荷式リハビリ機器 設置・機能紹介②</div>
+              <div class="video-desc">ハーネス取付けと高さ調整・安全確認の手順（提供：日本メディックス）</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#005f73;margin-bottom:12px;">MICA30</div>
+        <div class="video-grid">
+          <div class="video-card" data-video-id="unRS45Sa1og" data-title="各部機能と操作方法の総合解説">
+            <div class="video-thumb">
+              <img src="https://img.youtube.com/vi/unRS45Sa1og/hqdefault.jpg" alt="機能とアプローチ方法">
+              <div class="video-play-btn"><div class="video-play-icon"></div></div>
+              <span class="video-product-tag">MICA30</span>
+            </div>
+            <div class="video-meta">
+              <div class="video-title">各部機能と操作方法の総合解説</div>
+              <div class="video-desc">装置の各機能・設定項目・操作パネルの使い方（提供：日本メディックス）</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ③ 利用方法動画 -->
+      <section class="member-section" id="videos-usage">
+        <h2 class="member-section-title"><span>▶</span> 利用方法動画</h2>
+
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#0068b7;margin-bottom:12px;">YUMEHO</div>
+        <div class="video-grid" style="margin-bottom:32px;">
+          <div class="video-card" data-video-id="hoIpa-SVP9g" data-title="歩行訓練装置を用いた脳卒中患者へのアプローチ">
+            <div class="video-thumb">
+              <img src="https://img.youtube.com/vi/hoIpa-SVP9g/hqdefault.jpg" alt="脳卒中患者へのアプローチ">
+              <div class="video-play-btn"><div class="video-play-icon"></div></div>
+              <span class="video-product-tag">YUMEHO</span>
+            </div>
+            <div class="video-meta">
+              <div class="video-title">歩行訓練装置を用いた脳卒中患者へのアプローチ</div>
+              <div class="video-desc">免荷式装置による安全な立位・歩行訓練の実施例（提供：日本メディックス）</div>
+            </div>
+          </div>
+          <div class="video-card" data-video-id="XoVoWiHBjrQ" data-title="全身吊り上げ式 機能改善アプローチ">
+            <div class="video-thumb">
+              <img src="https://img.youtube.com/vi/XoVoWiHBjrQ/hqdefault.jpg" alt="全身吊り上げ式アプローチ">
+              <div class="video-play-btn"><div class="video-play-icon"></div></div>
+              <span class="video-product-tag">YUMEHO</span>
+            </div>
+            <div class="video-meta">
+              <div class="video-title">全身吊り上げ式 機能改善アプローチ</div>
+              <div class="video-desc">ハーネス免荷を活用した全身機能改善訓練の実演（提供：日本メディックス）</div>
+            </div>
+          </div>
+          <div class="video-card" data-video-id="DHWAotYrDio" data-title="患者アプローチ実践映像">
+            <div class="video-thumb">
+              <img src="https://img.youtube.com/vi/DHWAotYrDio/hqdefault.jpg" alt="患者アプローチ実践">
+              <div class="video-play-btn"><div class="video-play-icon"></div></div>
+              <span class="video-product-tag">YUMEHO</span>
+            </div>
+            <div class="video-meta">
+              <div class="video-title">患者アプローチ実践映像</div>
+              <div class="video-desc">実際の患者様を対象とした機能改善アプローチの実施映像（提供：日本メディックス）</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#005f73;margin-bottom:12px;">MICA30</div>
+        <div class="video-grid">
+          <div class="video-card" data-video-id="pLewK31plCM" data-title="10m歩行計測アプリの臨床活用">
+            <div class="video-thumb">
+              <img src="https://img.youtube.com/vi/pLewK31plCM/hqdefault.jpg" alt="10m歩行計測アプリ">
+              <div class="video-play-btn"><div class="video-play-icon"></div></div>
+              <span class="video-product-tag">MICA30</span>
+            </div>
+            <div class="video-meta">
+              <div class="video-title">10m歩行計測アプリの臨床活用</div>
+              <div class="video-desc">歩行速度・歩数・歩行率を自動計測するセラピスト向けツールの操作解説（提供：日本メディックス）</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ③ 資料ダウンロード -->
+      <section class="member-section" id="downloads">
+        <h2 class="member-section-title"><span>📄</span> 製品仕様書・稟議用資料ダウンロード</h2>
+        <div class="download-grid">
+
+          <a href="#" class="download-card" onclick="alert('プロトタイプのためダウンロード機能は未実装です。');return false;">
+            <div class="dl-icon" style="background:#e3f2fd;">📘</div>
+            <div class="dl-info">
+              <div class="dl-title">YUMEHO PGT-9001 製品詳細仕様書</div>
+              <div class="dl-meta">PDF / 2.4MB / 2026.03.15更新</div>
+            </div>
+            <span class="dl-btn">↓ DL</span>
+          </a>
+
+          <a href="#" class="download-card" onclick="alert('プロトタイプのためダウンロード機能は未実装です。');return false;">
+            <div class="dl-icon" style="background:#f3e5f5;">📋</div>
+            <div class="dl-info">
+              <div class="dl-title">YUMEHO 稟議用導入提案資料</div>
+              <div class="dl-meta">PDF / 4.1MB / 2026.03.01更新</div>
+            </div>
+            <span class="dl-btn">↓ DL</span>
+          </a>
+
+          <a href="#" class="download-card" onclick="alert('プロトタイプのためダウンロード機能は未実装です。');return false;">
+            <div class="dl-icon" style="background:#e8f5e9;">📗</div>
+            <div class="dl-info">
+              <div class="dl-title">MICA30 製品詳細仕様書（認証番号付）</div>
+              <div class="dl-meta">PDF / 1.8MB / 2026.02.10更新</div>
+            </div>
+            <span class="dl-btn">↓ DL</span>
+          </a>
+
+          <a href="#" class="download-card" onclick="alert('プロトタイプのためダウンロード機能は未実装です。');return false;">
+            <div class="dl-icon" style="background:#fff8e1;">📙</div>
+            <div class="dl-info">
+              <div class="dl-title">MICA30 稟議用資料・比較検討資料</div>
+              <div class="dl-meta">PDF / 3.2MB / 2026.01.20更新</div>
+            </div>
+            <span class="dl-btn">↓ DL</span>
+          </a>
+
+          <a href="#" class="download-card" onclick="alert('プロトタイプのためダウンロード機能は未実装です。');return false;">
+            <div class="dl-icon" style="background:#fce4ec;">📕</div>
+            <div class="dl-info">
+              <div class="dl-title">G-SUIT ハーネス 取扱説明書</div>
+              <div class="dl-meta">PDF / 1.1MB / 2025.11.01更新</div>
+            </div>
+            <span class="dl-btn">↓ DL</span>
+          </a>
+
+          <a href="#" class="download-card" onclick="alert('プロトタイプのためダウンロード機能は未実装です。');return false;">
+            <div class="dl-icon" style="background:#e0f2f1;">📓</div>
+            <div class="dl-info">
+              <div class="dl-title">製品カタログ（YUMEHO + MICA30 合本）</div>
+              <div class="dl-meta">PDF / 6.8MB / 2026.02.01更新</div>
+            </div>
+            <span class="dl-btn">↓ DL</span>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- ④ 補助金サポート -->
+      <section class="member-section" id="subsidy">
+        <h2 class="member-section-title"><span>💴</span> 補助金・助成金申請サポート資料</h2>
+        <div style="background:white;border-radius:var(--r-lg);padding:24px 28px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+            <span style="background:#e8f5e9;color:#2e7d32;font-size:0.72rem;font-weight:700;padding:3px 10px;border-radius:999px;">認定済み</span>
+            <span style="font-size:0.82rem;color:var(--mid-gray);">2026年2月28日 認定</span>
+          </div>
+          <div style="font-size:1rem;font-weight:700;color:var(--charcoal);margin-bottom:8px;">福祉機器普及推進事業補助金（厚生労働省）</div>
+          <div style="font-size:0.86rem;color:var(--mid-gray);line-height:1.65;margin-bottom:16px;">YUMEHOは本補助金の対象機器として認定されています。補助率・上限額は都道府県により異なります。申請書類の準備は弊社担当がサポートします。</div>
+          <div class="download-grid subsidy-downloads" style="grid-template-columns:repeat(2,1fr);">
+            <a href="#" class="download-card" style="padding:14px 18px;" onclick="alert('プロトタイプのためダウンロード機能は未実装です。');return false;">
+              <div class="dl-icon" style="background:#e8f5e9;font-size:1.1rem;">📝</div>
+              <div class="dl-info">
+                <div class="dl-title" style="font-size:0.85rem;">補助金申請手順ガイド</div>
+                <div class="dl-meta">PDF / 1.3MB</div>
+              </div>
+              <span class="dl-btn">↓ DL</span>
+            </a>
+            <a href="#" class="download-card" style="padding:14px 18px;" onclick="alert('プロトタイプのためダウンロード機能は未実装です。');return false;">
+              <div class="dl-icon" style="background:#e8f5e9;font-size:1.1rem;">📋</div>
+              <div class="dl-info">
+                <div class="dl-title" style="font-size:0.85rem;">申請書類サンプル一式</div>
+                <div class="dl-meta">ZIP / 2.0MB</div>
+              </div>
+              <span class="dl-btn">↓ DL</span>
+            </a>
+          </div>
+        </div>
+        <div style="background:white;border-radius:var(--r-lg);padding:24px 28px;box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+          <div style="font-size:1rem;font-weight:700;color:var(--charcoal);margin-bottom:8px;">その他の助成金・補助金情報</div>
+          <div style="font-size:0.86rem;color:var(--mid-gray);line-height:1.65;margin-bottom:16px;">都道府県・市区町村独自の福祉機器導入助成金についても、ご相談に応じて情報提供・申請サポートを行っています。</div>
+          <a href="contact.html" class="btn btn-outline-dark btn-sm">担当に相談する →</a>
+        </div>
+      </section>
+
+      <!-- ⑤ サポート情報 -->
+      <section class="member-section" id="support">
+        <h2 class="member-section-title"><span>🔔</span> 優先サポート・保守情報</h2>
+        <div class="notice-list">
+          <div class="notice-card">
+            <div class="notice-dot urgent"></div>
+            <div>
+              <div class="notice-title">【重要】PGT-8000シリーズ ファームウェア更新のお願い</div>
+              <div class="notice-body">一部環境でモーター制御のタイムアウトが発生する事象を確認しました。ファームウェア v2.3.1 へのアップデートを推奨します。更新手順書を資料ダウンロードにて配布中です。</div>
+              <div class="notice-date">2026.03.20</div>
+            </div>
+          </div>
+          <div class="notice-card">
+            <div class="notice-dot" style="background:var(--gold);"></div>
+            <div>
+              <div class="notice-title">2026年度 定期保守点検スケジュールのご案内</div>
+              <div class="notice-body">年次保守点検の訪問予定日を順次お知らせします。ご都合の悪い日程がある場合は担当営業までご連絡ください。</div>
+              <div class="notice-date">2026.03.05</div>
+            </div>
+          </div>
+          <div class="notice-card">
+            <div class="notice-dot info"></div>
+            <div>
+              <div class="notice-title">YUMEHO ユーザー事例共有セミナー（オンライン）開催のご案内</div>
+              <div class="notice-body">2026年5月15日（木）14:00〜15:30にて開催予定です。導入施設様同士の情報交換の場として、毎回ご好評いただいています。会員の方は無料でご参加いただけます。</div>
+              <div class="notice-date">2026.02.28</div>
+            </div>
+          </div>
+          <div class="notice-card">
+            <div class="notice-dot info"></div>
+            <div>
+              <div class="notice-title">MICA30 造影用耐圧チューブ（新認証品）の提供開始</div>
+              <div class="notice-body">認証番号 304ADBZX00072000 の新耐圧チューブを2026年3月より提供開始しました。500psi対応で安全性がさらに向上しています。MICA30ご導入施設は優先的にご案内します。</div>
+              <div class="notice-date">2026.02.10</div>
+            </div>
+          </div>
+          <div class="notice-card">
+            <div class="notice-dot" style="background:rgba(0,0,0,0.2);"></div>
+            <div>
+              <div class="notice-title">G-SUIT ハーネス Lサイズ 在庫回復のお知らせ</div>
+              <div class="notice-body">一時品薄となっておりましたG-SUITハーネスLサイズの在庫が回復しました。ご注文を再開いただけます。</div>
+              <div class="notice-date">2026.01.15</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⑥ 製品レビュー -->
+      <!--
+      <section class="member-section" id="reviews">
+        <h2 class="member-section-title"><span>★</span> 製品レビュー</h2>
+
+        <div class="review-product-tabs">
+          <button class="rtab active" data-product="yumeho">YUMEHO</button>
+          <button class="rtab" data-product="mica30">MICA30</button>
+        </div>
+
+        Summary
+        <div class="review-summary" id="reviewSummary">
+          <div style="text-align:center;">
+            <div class="review-score-big">4.6</div>
+            <div class="stars">★★★★★</div>
+            <div style="font-size:0.78rem;color:var(--mid-gray);margin-top:4px;">18件のレビュー</div>
+          </div>
+          <div style="flex:1;">
+            <div class="star-bar-row"><span>5</span><div class="star-bar-wrap"><div class="star-bar" style="width:68%;"></div></div><span>12</span></div>
+            <div class="star-bar-row" style="margin-top:5px;"><span>4</span><div class="star-bar-wrap"><div class="star-bar" style="width:22%;"></div></div><span>4</span></div>
+            <div class="star-bar-row" style="margin-top:5px;"><span>3</span><div class="star-bar-wrap"><div class="star-bar" style="width:6%;"></div></div><span>1</span></div>
+            <div class="star-bar-row" style="margin-top:5px;"><span>2</span><div class="star-bar-wrap"><div class="star-bar" style="width:6%;"></div></div><span>1</span></div>
+            <div class="star-bar-row" style="margin-top:5px;"><span>1</span><div class="star-bar-wrap"><div class="star-bar" style="width:0%;"></div></div><span>0</span></div>
+          </div>
+        </div>
+
+        Thread
+        <div class="review-thread" id="reviewThread">
+
+          <div class="review-post" data-product="yumeho">
+            <div class="review-post-header">
+              <div style="display:flex;align-items:flex-start;gap:12px;">
+                <div class="reviewer-avatar">山</div>
+                <div>
+                  <div class="reviewer-name">山下 PT</div>
+                  <div class="reviewer-facility">回復期リハビリ病棟 / 理学療法士</div>
+                </div>
+              </div>
+              <div style="text-align:right;flex-shrink:0;">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-date">2026.03.10</div>
+              </div>
+            </div>
+            <div class="review-body">スタッフ3名で介助していた患者様を、YUMEHOのおかげで見守り1名体制に移行できました。転倒リスクが大幅に下がり、患者様も安心して訓練に集中できています。スタンド型の設置も1人でできる点が現場では大変助かっています。</div>
+            <div class="review-tags">
+              <span class="review-tag">スタンド型</span>
+              <span class="review-tag">回復期</span>
+              <span class="review-tag">スタッフ削減</span>
+            </div>
+            <div class="review-helpful">
+              参考になった？ <button class="helpful-btn">👍 参考になった (12)</button>
+            </div>
+          </div>
+
+          <div class="review-post" data-product="yumeho">
+            <div class="review-post-header">
+              <div style="display:flex;align-items:flex-start;gap:12px;">
+                <div class="reviewer-avatar" style="background:linear-gradient(135deg,#2e7d32,#1b5e20);">田</div>
+                <div>
+                  <div class="reviewer-name">田中 施設長</div>
+                  <div class="reviewer-facility">介護老人保健施設 / 施設長</div>
+                </div>
+              </div>
+              <div style="text-align:right;flex-shrink:0;">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-date">2026.02.18</div>
+              </div>
+            </div>
+            <div class="review-body">プレイ型リハビリの導入で利用者の参加意欲が明らかに変わりました。ボール投げやバドミントンを楽しんでもらいながら歩行訓練ができるので、以前は拒否していた方も自ら参加を希望するようになっています。集団運用の安全性にも不安はありません。</div>
+            <div class="review-tags">
+              <span class="review-tag">老健施設</span>
+              <span class="review-tag">集団リハビリ</span>
+              <span class="review-tag">参加率向上</span>
+            </div>
+            <div class="review-helpful">
+              参考になった？ <button class="helpful-btn">👍 参考になった (8)</button>
+            </div>
+          </div>
+
+          <div class="review-post" data-product="yumeho">
+            <div class="review-post-header">
+              <div style="display:flex;align-items:flex-start;gap:12px;">
+                <div class="reviewer-avatar" style="background:linear-gradient(135deg,#7b1fa2,#4a0080);">佐</div>
+                <div>
+                  <div class="reviewer-name">佐藤 OT</div>
+                  <div class="reviewer-facility">デイサービス / 作業療法士</div>
+                </div>
+              </div>
+              <div style="text-align:right;flex-shrink:0;">
+                <div class="review-stars">★★★★☆</div>
+                <div class="review-date">2026.01.25</div>
+              </div>
+            </div>
+            <div class="review-body">口コミで「安全に歩ける場所」として評判が広まり、新規入会が増えました。スタンド型のコンパクトさは私たちの施設には最適でした。一点だけ、ハーネスの着脱に慣れるまで少し時間がかかりました。動画を参考にしてからはスムーズになっています。</div>
+            <div class="review-tags">
+              <span class="review-tag">デイサービス</span>
+              <span class="review-tag">口コミ効果</span>
+            </div>
+            <div class="review-helpful">
+              参考になった？ <button class="helpful-btn">👍 参考になった (5)</button>
+            </div>
+          </div>
+
+          <div class="review-post" data-product="mica30" style="display:none;">
+            <div class="review-post-header">
+              <div style="display:flex;align-items:flex-start;gap:12px;">
+                <div class="reviewer-avatar" style="background:linear-gradient(135deg,#005f73,#003040);">木</div>
+                <div>
+                  <div class="reviewer-name">木村 診療放射線技師</div>
+                  <div class="reviewer-facility">循環器専門病院 / 放射線科</div>
+                </div>
+              </div>
+              <div style="text-align:right;flex-shrink:0;">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-date">2026.02.05</div>
+              </div>
+            </div>
+            <div class="review-body">バリアブルモードによる速度のリアルタイム変更が非常に有用です。複雑なインターベンションでも術者のリズムに合わせた注入が可能になりました。2系統の気泡センサーの信頼性も高く、安心して使用できています。</div>
+            <div class="review-tags">
+              <span class="review-tag">循環器科</span>
+              <span class="review-tag">バリアブルモード</span>
+              <span class="review-tag">安全性</span>
+            </div>
+            <div class="review-helpful">
+              参考になった？ <button class="helpful-btn">👍 参考になった (9)</button>
+            </div>
+          </div>
+
+          <div class="review-post" data-product="mica30" style="display:none;">
+            <div class="review-post-header">
+              <div style="display:flex;align-items:flex-start;gap:12px;">
+                <div class="reviewer-avatar" style="background:linear-gradient(135deg,#1565c0,#003070);">林</div>
+                <div>
+                  <div class="reviewer-name">林 診療放射線技師</div>
+                  <div class="reviewer-facility">総合病院 放射線科</div>
+                </div>
+              </div>
+              <div style="text-align:right;flex-shrink:0;">
+                <div class="review-stars">★★★★☆</div>
+                <div class="review-date">2026.01.10</div>
+              </div>
+            </div>
+            <div class="review-body">0.05mL単位の精密制御と準備時間の短縮が業務改善に直結しました。以前の装置と比べて操作ミスが減り、技師全員の習熟も早かったです。チューブ接続の手順が最初は少し慣れが必要でしたが、動画マニュアルで問題なく解決できました。</div>
+            <div class="review-tags">
+              <span class="review-tag">総合病院</span>
+              <span class="review-tag">精密制御</span>
+              <span class="review-tag">業務効率</span>
+            </div>
+            <div class="review-helpful">
+              参考になった？ <button class="helpful-btn">👍 参考になった (6)</button>
+            </div>
+          </div>
+
+        </div>
+
+        Write Review
+        <div class="review-write">
+          <div style="font-size:0.95rem;font-weight:700;color:var(--charcoal);margin-bottom:16px;">レビューを投稿する</div>
+          <div class="star-select" id="starSelect" title="クリックで評価">☆☆☆☆☆</div>
+          <textarea placeholder="製品の使用感や導入効果、スタッフの反応など、他の施設の参考になるレビューをお書きください。"></textarea>
+          <div style="margin-top:12px;display:flex;gap:8px;justify-content:flex-end;">
+            <button class="btn btn-outline-dark btn-sm" onclick="alert('プロトタイプのため投稿機能は未実装です。')">投稿する</button>
+          </div>
+        </div>
+      </section>
+      -->
+
+    </main>
+  </div>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="modal-inner">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-iframe-wrap">
+        <iframe id="modalIframe" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js?v=20260413a"></script>
+  <script>
+    // Auth guard
+    if (!sessionStorage.getItem('rina_member')) {
+      window.location.href = 'login.html';
+    }
+
+    // Show user info
+    const userId = sessionStorage.getItem('rina_member') || '';
+    document.getElementById('sidebarName').textContent = userId;
+    document.getElementById('avatarInitial').textContent = userId.charAt(0).toUpperCase();
+
+    // Logout
+    var logoutBtn = document.getElementById('logoutBtn');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', () => {
+        sessionStorage.removeItem('rina_member');
+        window.location.href = 'login.html';
+      });
+    }
+
+    // SP nav dropdown toggle
+    (function() {
+      var toggleBtn = document.getElementById('spNavToggle');
+      var navList = document.getElementById('sidebarNav');
+      if (toggleBtn && navList) {
+        toggleBtn.addEventListener('click', function() {
+          navList.classList.toggle('sp-open');
+          toggleBtn.classList.toggle('is-open');
+        });
+      }
+
+      // Sidebar smooth scroll + active state
+      var navLinks = document.querySelectorAll('#sidebarNav a');
+      for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener('click', function(e) {
+          var href = this.getAttribute('href');
+          if (href && href.charAt(0) === '#') {
+            e.preventDefault();
+            for (var j = 0; j < navLinks.length; j++) navLinks[j].classList.remove('active');
+            this.classList.add('active');
+            if (navList) navList.classList.remove('sp-open');
+            if (toggleBtn) {
+              toggleBtn.classList.remove('is-open');
+              toggleBtn.querySelector('span').textContent = this.textContent.trim();
+            }
+            var target = document.querySelector(href);
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      }
+    })();
+
+    // Video modal
+    const modal  = document.getElementById('videoModal');
+    const iframe = document.getElementById('modalIframe');
+    const closeBtn = document.getElementById('modalClose');
+
+    document.querySelectorAll('.video-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const vid = card.dataset.videoId;
+        const origin = location.protocol === 'file:' ? '' : `&origin=${location.origin}`;
+        iframe.src = `https://www.youtube.com/embed/${vid}?autoplay=1&rel=0&enablejsapi=1${origin}`;
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    const closeModal = () => {
+      modal.classList.remove('open');
+      iframe.src = '';
+      document.body.style.overflow = '';
+    };
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+    /* Review tabs
+    const summaryData = {
+      yumeho: { score: '4.6', count: 18, bars: [68, 22, 6, 6, 0], counts: [12, 4, 1, 1, 0] },
+      mica30: { score: '4.7', count: 7,  bars: [72, 14, 14, 0, 0], counts: [5, 1, 1, 0, 0] }
+    };
+
+    document.querySelectorAll('.rtab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.rtab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const product = tab.dataset.product;
+
+        // Toggle posts
+        document.querySelectorAll('.review-post').forEach(post => {
+          post.style.display = post.dataset.product === product ? '' : 'none';
+        });
+
+        // Update summary
+        const d = summaryData[product];
+        const summary = document.getElementById('reviewSummary');
+        summary.querySelector('.review-score-big').textContent = d.score;
+        summary.querySelector('.review-date-count, [style*="件のレビュー"]').textContent = `${d.count}件のレビュー`;
+        const bars = summary.querySelectorAll('.star-bar');
+        const counts = summary.querySelectorAll('.star-bar-row span:last-child');
+        d.bars.forEach((w, i)  => { bars[i].style.width = w + '%'; });
+        d.counts.forEach((c, i) => { counts[i].textContent = c; });
+      });
+    });
+
+    // Star select
+    const starSelect = document.getElementById('starSelect');
+    const STARS = ['☆☆☆☆☆','★☆☆☆☆','★★☆☆☆','★★★☆☆','★★★★☆','★★★★★'];
+    let currentStar = 0;
+    starSelect.addEventListener('click', () => {
+      currentStar = (currentStar % 5) + 1;
+      starSelect.textContent = STARS[currentStar];
+      starSelect.style.color = '#f59e0b';
+    });
+
+    // Helpful buttons
+    document.querySelectorAll('.helpful-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const match = btn.textContent.match(/\((\d+)\)/);
+        if (match) {
+          const n = parseInt(match[1]) + 1;
+          btn.textContent = btn.textContent.replace(/\(\d+\)/, `(${n})`);
+          btn.style.background = 'var(--charcoal)';
+          btn.style.color = 'white';
+          btn.disabled = true;
+        }
+      });
+    });
+    */
+  </script>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="assets/img/logo.svg" alt="Rinascente" style="height:32px;vertical-align:middle;margin-right:4px;">Rinascente</div>
+          <div class="footer-tagline">復活する。再生する。</div>
+          <p><span style="white-space:nowrap;">医療・福祉機器の企画・販売を中心に、</span><span style="white-space:nowrap;">人の生活を支えるソリューションを届けます。</span><br>○○○○<br><span style="white-space:nowrap;">TEL: 0859-00-1234</span></p>
+        </div>
+        <div class="footer-col footer-col--desktop">
+          <h4>Corporate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="identity.html">Identity</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="cases.html">Cases</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Member Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col--desktop">
+          <h4>YUMEHO</h4>
+          <ul>
+            <li><a href="../yumeho/index.html">トップ</a></li>
+            <li><a href="../yumeho/product.html">製品紹介</a></li>
+            <li><a href="../yumeho/simulation.html">導入シミュレーション</a></li>
+            <li><a href="../yumeho/cases.html">導入事例</a></li>
+            <li><a href="../yumeho/flow.html">導入フロー</a></li>
+            <li><a href="../yumeho/price.html">価格・見積</a></li>
+            <li><a href="../yumeho/subsidy.html">補助金ガイド</a></li>
+            <li><a href="../yumeho/faq.html">FAQ</a></li>
+            <li><a href="../yumeho/contact.html">お問い合わせ</a></li>
+            <li><a href="../yumeho/company.html">会社概要</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col--desktop">
+          <h4>MICA30</h4>
+          <ul>
+            <li><a href="../mica30/index.html">トップ</a></li>
+            <li><a href="../mica30/product.html">製品詳細</a></li>
+            <li><a href="../mica30/cases.html">導入事例</a></li>
+            <li><a href="../mica30/voices.html">ご利用施設の声</a></li>
+            <li><a href="../mica30/price.html">価格・導入</a></li>
+            <li><a href="../mica30/flow.html">導入の流れ</a></li>
+            <li><a href="../mica30/faq.html">FAQ</a></li>
+            <li><a href="../mica30/company.html">会社概要</a></li>
+            <li><a href="../mica30/contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Rinascente. All Rights Reserved.</span>
+        <span>Rinascente Inc.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

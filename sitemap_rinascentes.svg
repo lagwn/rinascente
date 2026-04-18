@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1200 900">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        font-size: 24px;
+        letter-spacing: 0em;
+      }
+
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st20, .st21 {
+        isolation: isolate;
+      }
+
+      .st0, .st5, .st6, .st9, .st15 {
+        font-family: HelveticaNeue-Bold, 'Helvetica Neue';
+        font-weight: 700;
+      }
+
+      .st0, .st5, .st9, .st22 {
+        fill: #1a1a1a;
+      }
+
+      .st1, .st3, .st11, .st13, .st14, .st16, .st20 {
+        font-size: 10px;
+      }
+
+      .st1, .st7 {
+        fill: #0068b7;
+      }
+
+      .st1, .st11, .st12, .st14, .st21 {
+        font-family: HiraKakuProN-W6-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN';
+      }
+
+      .st2 {
+        font-size: 9px;
+      }
+
+      .st2, .st3, .st23, .st16, .st18, .st19, .st20 {
+        font-family: Helvetica, Helvetica;
+      }
+
+      .st2, .st20 {
+        fill: #bbb;
+      }
+
+      .st3 {
+        fill: #ccc;
+      }
+
+      .st24 {
+        stroke: #e0c880;
+      }
+
+      .st24, .st25, .st26, .st27, .st28, .st29 {
+        stroke-width: 1.5px;
+      }
+
+      .st24, .st30, .st28, .st29 {
+        stroke-dasharray: 5 3;
+      }
+
+      .st24, .st31, .st26, .st29 {
+        fill: none;
+      }
+
+      .st25 {
+        stroke: #1a1a1a;
+      }
+
+      .st25, .st30, .st6, .st32, .st28 {
+        fill: #fff;
+      }
+
+      .st4 {
+        stroke: #005f73;
+      }
+
+      .st4, .st7 {
+        opacity: 0;
+      }
+
+      .st4, .st14 {
+        fill: #005f73;
+      }
+
+      .st5 {
+        letter-spacing: 0em;
+      }
+
+      .st5, .st8 {
+        font-size: 12px;
+      }
+
+      .st30, .st33 {
+        stroke: #d0d0d0;
+      }
+
+      .st6 {
+        font-size: 16px;
+        letter-spacing: 0em;
+      }
+
+      .st7 {
+        stroke: #0068b7;
+      }
+
+      .st8 {
+        fill: #b8860b;
+      }
+
+      .st8, .st10, .st34 {
+        font-family: KozGoPr6N-Regular-83pv-RKSJ-H, 'Kozuka Gothic Pr6N';
+      }
+
+      .st9, .st15, .st18 {
+        font-size: 13px;
+      }
+
+      .st10, .st11, .st12 {
+        fill: #666;
+      }
+
+      .st10, .st12, .st17, .st21 {
+        font-size: 11px;
+      }
+
+      .st33 {
+        fill: #f8f8f8;
+      }
+
+      .st31 {
+        stroke: #e0e0e0;
+      }
+
+      .st13, .st17, .st19 {
+        fill: #aaa;
+      }
+
+      .st26 {
+        stroke: #ccc;
+      }
+
+      .st27 {
+        fill: #fff8e1;
+        stroke: #e0a800;
+      }
+
+      .st28, .st29 {
+        stroke: silver;
+      }
+
+      .st15, .st16, .st18 {
+        fill: #999;
+      }
+
+      .st18 {
+        letter-spacing: 0em;
+      }
+
+      .st19 {
+        font-size: 8px;
+      }
+
+      .st21 {
+        fill: #888;
+      }
+    </style>
+  </defs>
+  <rect class="st32" y="0" width="1200" height="900"/>
+  <text class="st0" transform="translate(60 52)"><tspan x="0" y="0">SITEMAP — Rinascentes</tspan></text>
+  <text class="st18" transform="translate(60 76)"><tspan x="0" y="0">Corporate Site Structure</tspan></text>
+  <line class="st31" x1="60" y1="92" x2="1140" y2="92"/>
+  <rect class="st22" x="460" y="120" width="280" height="56" rx="8" ry="8"/>
+  <text class="st6" transform="translate(545.9 154)"><tspan x="0" y="0">Rinascentes</tspan></text>
+  <g>
+    <line class="st26" x1="600" y1="176" x2="600" y2="210"/>
+    <line class="st26" x1="100" y1="210" x2="1100" y2="210"/>
+    <line class="st26" x1="100" y1="210" x2="100" y2="240"/>
+    <line class="st26" x1="300" y1="210" x2="300" y2="240"/>
+    <line class="st26" x1="500" y1="210" x2="500" y2="240"/>
+    <line class="st26" x1="700" y1="210" x2="700" y2="240"/>
+    <line class="st26" x1="900" y1="210" x2="900" y2="240"/>
+    <line class="st26" x1="1100" y1="210" x2="1100" y2="240"/>
+  </g>
+  <rect class="st25" x="24" y="240" width="152" height="50" rx="6" ry="6"/>
+  <text class="st9" transform="translate(81.6 262)"><tspan x="0" y="0">Home</tspan></text>
+  <text class="st16" transform="translate(77.2 278)"><tspan x="0" y="0">index.html</tspan></text>
+  <rect class="st25" x="224" y="240" width="152" height="50" rx="6" ry="6"/>
+  <text class="st9" transform="translate(276.9 262)"><tspan x="0" y="0">Identity</tspan></text>
+  <text class="st16" transform="translate(273.7 278)"><tspan x="0" y="0">identity.html</tspan></text>
+  <rect class="st25" x="424" y="240" width="152" height="50" rx="6" ry="6"/>
+  <text class="st9" transform="translate(482.5 262)"><tspan x="0" y="0">Press</tspan></text>
+  <text class="st16" transform="translate(476.9 278)"><tspan x="0" y="0">press.html</tspan></text>
+  <rect class="st25" x="624" y="240" width="152" height="50" rx="6" ry="6"/>
+  <text class="st9" transform="translate(680.7 262)"><tspan x="0" y="0">Cases</tspan></text>
+  <text class="st16" transform="translate(676.1 278)"><tspan x="0" y="0">cases.html</tspan></text>
+  <rect class="st25" x="824" y="240" width="152" height="50" rx="6" ry="6"/>
+  <text class="st9" transform="translate(875.3 262)"><tspan x="0" y="0">Contact</tspan></text>
+  <text class="st16" transform="translate(873 278)"><tspan x="0" y="0">contact.html</tspan></text>
+  <rect class="st25" x="1024" y="240" width="152" height="50" rx="6" ry="6"/>
+  <text class="st9" transform="translate(1082.7 262)"><tspan x="0" y="0">Login</tspan></text>
+  <text class="st16" transform="translate(1078.6 278)"><tspan x="0" y="0">login.html</tspan></text>
+  <g>
+    <line class="st26" x1="500" y1="290" x2="500" y2="330"/>
+    <line class="st26" x1="200" y1="330" x2="800" y2="330"/>
+    <line class="st26" x1="200" y1="330" x2="200" y2="360"/>
+    <line class="st26" x1="400" y1="330" x2="400" y2="360"/>
+    <line class="st26" x1="600" y1="330" x2="600" y2="360"/>
+    <line class="st26" x1="800" y1="330" x2="800" y2="360"/>
+  </g>
+  <rect class="st33" x="116" y="360" width="168" height="50" rx="6" ry="6"/>
+  <text class="st12" transform="translate(167 382)"><tspan x="0" y="0">ブランド発表</tspan></text>
+  <text class="st19" transform="translate(162.9 398)"><tspan x="0" y="0">news-20260120.html</tspan></text>
+  <rect class="st33" x="316" y="360" width="168" height="50" rx="6" ry="6"/>
+  <text class="st11" transform="translate(348.5 382)"><tspan x="0" y="0">MICA30チューブ認証</tspan></text>
+  <text class="st19" transform="translate(362.9 398)"><tspan x="0" y="0">news-20260210.html</tspan></text>
+  <rect class="st33" x="516" y="360" width="168" height="50" rx="6" ry="6"/>
+  <text class="st11" transform="translate(550.4 382)"><tspan x="0" y="0">YUMEHO補助金認定</tspan></text>
+  <text class="st19" transform="translate(562.9 398)"><tspan x="0" y="0">news-20260228.html</tspan></text>
+  <rect class="st33" x="716" y="360" width="168" height="50" rx="6" ry="6"/>
+  <text class="st11" transform="translate(753 382)"><tspan x="0" y="0">PGT-9001販売開始</tspan></text>
+  <text class="st19" transform="translate(762.9 398)"><tspan x="0" y="0">news-20260315.html</tspan></text>
+  <g>
+    <line class="st29" x1="1100" y1="290" x2="1100" y2="330"/>
+    <line class="st29" x1="1100" y1="330" x2="1100" y2="360"/>
+  </g>
+  <rect class="st28" x="1024" y="360" width="152" height="50" rx="6" ry="6"/>
+  <text class="st15" transform="translate(1074.3 382)"><tspan x="0" y="0">Member</tspan></text>
+  <text class="st20" transform="translate(1071.1 398)"><tspan x="0" y="0">member.html</tspan></text>
+  <line class="st31" x1="60" y1="450" x2="1140" y2="450"/>
+  <text class="st5" transform="translate(60 480)"><tspan x="0" y="0">AUTH PAGES</tspan></text>
+  <text class="st13" transform="translate(155 480)"><tspan class="st34" x="0" y="0">（</tspan><tspan class="st23" x="10" y="0">YUMEHO </tspan><tspan class="st34" x="56.7" y="0">会員認証</tspan><tspan class="st23" x="96.7" y="0" xml:space="preserve"> — Rinascentes</tspan><tspan class="st34" x="167.3" y="0">管理下）</tspan></text>
+  <rect class="st27" x="340" y="500" width="180" height="44" rx="6" ry="6"/>
+  <text class="st8" transform="translate(390 526)"><tspan x="0" y="0">会員認証エリア</tspan></text>
+  <g>
+    <line class="st24" x1="430" y1="544" x2="430" y2="570"/>
+    <line class="st24" x1="120" y1="570" x2="740" y2="570"/>
+    <line class="st24" x1="120" y1="570" x2="120" y2="598"/>
+    <line class="st24" x1="276" y1="570" x2="276" y2="598"/>
+    <line class="st24" x1="430" y1="570" x2="430" y2="598"/>
+    <line class="st24" x1="586" y1="570" x2="586" y2="598"/>
+    <line class="st24" x1="740" y1="570" x2="740" y2="598"/>
+  </g>
+  <rect class="st30" x="36" y="598" width="168" height="50" rx="6" ry="6"/>
+  <text class="st21" transform="translate(98.3 620)"><tspan x="0" y="0">ログイン</tspan></text>
+  <text class="st2" transform="translate(101.7 636)"><tspan x="0" y="0">login.php</tspan></text>
+  <rect class="st30" x="192" y="598" width="168" height="50" rx="6" ry="6"/>
+  <text class="st21" transform="translate(248.7 620)"><tspan x="0" y="0">会員ページ</tspan></text>
+  <text class="st2" transform="translate(251 636)"><tspan x="0" y="0">member.php</tspan></text>
+  <rect class="st30" x="346" y="598" width="168" height="50" rx="6" ry="6"/>
+  <text class="st21" transform="translate(402.5 620)"><tspan x="0" y="0">ログアウト</tspan></text>
+  <text class="st2" transform="translate(409 636)"><tspan x="0" y="0">logout.php</tspan></text>
+  <rect class="st30" x="502" y="598" width="168" height="50" rx="6" ry="6"/>
+  <text class="st21" transform="translate(542.2 620)"><tspan x="0" y="0">パスワード再設定</tspan></text>
+  <text class="st2" transform="translate(544 636)"><tspan x="0" y="0">forgot_password.php</tspan></text>
+  <rect class="st30" x="656" y="598" width="168" height="50" rx="6" ry="6"/>
+  <text class="st21" transform="translate(706.4 620)"><tspan x="0" y="0">PW リセット</tspan></text>
+  <text class="st2" transform="translate(699.5 636)"><tspan x="0" y="0">reset_password.php</tspan></text>
+  <line class="st31" x1="60" y1="696" x2="1140" y2="696"/>
+  <text class="st5" transform="translate(60 726)"><tspan x="0" y="0">LEGEND</tspan></text>
+  <rect class="st25" x="60" y="744" width="24" height="16" rx="3" ry="3"/>
+  <text class="st10" transform="translate(94 757)"><tspan x="0" y="0">ナビゲーション掲載ページ</tspan></text>
+  <rect class="st28" x="290" y="744" width="24" height="16" rx="3" ry="3"/>
+  <text class="st10" transform="translate(324 757)"><tspan x="0" y="0">認証後ページ（非公開）</tspan></text>
+  <rect class="st33" x="520" y="744" width="24" height="16" rx="3" ry="3"/>
+  <text class="st10" transform="translate(554 757)"><tspan x="0" y="0">ニュース記事（個別）</tspan></text>
+  <rect class="st27" x="730" y="744" width="24" height="16" rx="3" ry="3"/>
+  <text class="st17" transform="translate(60 794)"><tspan class="st34" x="0" y="0">総ページ数</tspan><tspan class="st23" x="55" y="0">: 16 </tspan><tspan class="st34" x="76.4" y="0">｜</tspan><tspan class="st23" x="87.4" y="0"> </tspan><tspan class="st34" x="90.5" y="0">ナビ掲載</tspan><tspan class="st23" x="134.5" y="0">: 6 </tspan><tspan class="st34" x="149.7" y="0">｜</tspan><tspan class="st23" x="160.7" y="0"> </tspan><tspan class="st34" x="163.8" y="0">記事</tspan><tspan class="st23" x="185.8" y="0">: 4 </tspan><tspan class="st34" x="201.1" y="0">｜</tspan><tspan class="st23" x="212.1" y="0"> </tspan><tspan class="st34" x="215.1" y="0">認証後</tspan><tspan class="st23" x="248.1" y="0">: 1 </tspan><tspan class="st34" x="263.4" y="0">｜</tspan><tspan class="st23" x="274.4" y="0" xml:space="preserve"> YUMEHO</tspan><tspan class="st34" x="325.8" y="0">認証</tspan><tspan class="st23" x="347.8" y="0">: 5</tspan></text>
+  <text class="st5" transform="translate(760 726)"><tspan x="0" y="0">LINKED SITES</tspan></text>
+  <rect class="st7" x="760" y="740" width="140" height="36" rx="6" ry="6"/>
+  <text class="st1" transform="translate(798.7 763)"><tspan x="0" y="0">→ YUMEHO</tspan></text>
+  <rect class="st4" x="916" y="740" width="140" height="36" rx="6" ry="6"/>
+  <text class="st14" transform="translate(957.8 763)"><tspan x="0" y="0">→ MICA30</tspan></text>
+  <line class="st31" x1="60" y1="840" x2="1140" y2="840"/>
+  <text class="st3" transform="translate(60 868)"><tspan x="0" y="0">Rinascentes Site Map — Updated 2026-04-03</tspan></text>
+</svg>

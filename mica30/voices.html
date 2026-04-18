@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    <title>ご利用施設の声 | MICA30</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uor0jvw.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=20260409sp">
+    <link rel="stylesheet" href="assets/css/site-switcher.css">
+    <style>
+        .voice-hero-stat {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-bottom: 56px;
+        }
+        .voice-hero-stat__item {
+            text-align: center;
+        }
+        .voice-hero-stat__num {
+            font-family: var(--font-logo);
+            font-size: clamp(2.4rem, 4vw, 3.2rem);
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+        .voice-hero-stat__label {
+            font-size: 0.72rem;
+            color: rgba(0,0,0,0.72);
+            letter-spacing: 0.08em;
+            margin-top: 6px;
+        }
+
+        .voice-card-full {
+            display: grid;
+            grid-template-columns: 5fr 6fr;
+            gap: 0;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            margin-bottom: 48px;
+        }
+        .voice-card-full:last-child { margin-bottom: 0; }
+
+        .voice-card-full__img {
+            position: relative;
+            overflow: hidden;
+        }
+        .voice-card-full__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .voice-card-full:hover .voice-card-full__img img {
+            transform: scale(1.04);
+        }
+
+        .voice-card-full__body {
+            padding: 40px 44px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .voice-card-full__stat {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 4px;
+            background: rgba(0,95,115,0.05);
+            border-radius: 6px;
+            padding: 8px 14px;
+            margin-bottom: 16px;
+            align-self: flex-start;
+        }
+        .voice-card-full__stat-num {
+            font-family: var(--font-logo);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+        .voice-card-full__stat-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            opacity: 0.88;
+        }
+
+        .voice-card-full__quote {
+            font-size: 0.95rem;
+            line-height: 1.85;
+            color: rgba(0,0,0,0.85);
+            margin-bottom: 24px;
+        }
+
+        .voice-card-full__pullquote {
+            padding: 16px 20px;
+            background: rgba(0,95,115,0.04);
+            border-left: 3px solid var(--primary-color);
+            border-radius: 0 6px 6px 0;
+            font-size: 0.88rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .voice-card-full__author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+        .voice-card-full__avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #005f73, #48cae4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .voice-card-full__avatar svg {
+            width: 20px;
+            height: 20px;
+        }
+        .voice-card-full__name {
+            font-weight: 700;
+            font-size: 0.88rem;
+        }
+        .voice-card-full__facility {
+            font-size: 0.75rem;
+            color: rgba(0,0,0,0.72);
+            margin-top: 2px;
+        }
+
+        .voice-context { margin: 20px 0; }
+        .voice-context-item {
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(0,95,115,0.08);
+        }
+        .voice-context-item:last-child { border-bottom: none; }
+        .voice-context-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #005f73;
+            letter-spacing: 0.06em;
+            background: rgba(0,95,115,0.06);
+            padding: 3px 10px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        .voice-context-item p {
+            font-size: 0.88rem;
+            line-height: 1.75;
+            color: rgba(0,0,0,0.85);
+            margin: 0;
+        }
+
+        @media (max-width: 860px) {
+            .voice-card-full { grid-template-columns: 1fr; }
+            .voice-card-full__img { max-height: 240px; }
+            .voice-card-full__body { padding: 28px 24px; }
+            .voice-hero-stat { gap: 28px; flex-wrap: wrap; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Marquee -->
+    <div class="top-marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>MICA30 INJECTOR</span>
+            <span>CONTRAST AGENT</span>
+            <span>ANGIOGRAPHY SUPPORT</span>
+            <span>MEDICAL GRADE</span>
+            <span>PRECISION INJECTION</span>
+            <span>BUBBLE DETECTION</span>
+            <span>MICA30 INJECTOR</span>
+            <span>CONTRAST AGENT</span>
+            <span>ANGIOGRAPHY SUPPORT</span>
+            <span>MEDICAL GRADE</span>
+            <span>PRECISION INJECTION</span>
+            <span>BUBBLE DETECTION</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="header-brand">
+                <a href="index.html" class="logo" aria-label="MICA30 ホームへ">MICA30</a>
+                <div class="site-switcher">
+                    <a href="../rinascente/index.html" class="ss-link ss-corp">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                        Corporate
+                    </a>
+                    <span class="ss-divider"></span>
+                    <a href="../yumeho/index.html" class="ss-link ss-product">YUMEHO</a>
+                    <a href="index.html" class="ss-link ss-product active">MICA30</a>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">トップ</a></li>
+                    <li><a href="product.html" class="nav-link">製品詳細</a></li>
+                    <li><a href="voices.html" class="nav-link active">ご利用施設の声</a></li>
+                    <li><a href="cases.html" class="nav-link">導入事例</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="price.html" class="nav-link">価格・導入</a></li>
+                    <li><a href="flow.html" class="nav-link">導入の流れ</a></li>
+                    <li><a href="company.html" class="nav-link">会社概要</a></li>
+                    <li style="margin-left:12px;"><a href="contact.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem; white-space: nowrap;">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- SP ドロワーメニュー -->
+    <div class="sp-drawer" id="spDrawer" aria-hidden="true">
+        <nav class="sp-drawer__nav">
+            <a href="index.html" class="sp-drawer__link">トップ</a>
+            <a href="product.html" class="sp-drawer__link">製品詳細</a>
+            <a href="voices.html" class="sp-drawer__link">ご利用施設の声</a>
+            <a href="cases.html" class="sp-drawer__link">導入事例</a>
+            <a href="faq.html" class="sp-drawer__link">FAQ</a>
+            <a href="price.html" class="sp-drawer__link">価格・導入</a>
+            <a href="flow.html" class="sp-drawer__link">導入の流れ</a>
+            <a href="company.html" class="sp-drawer__link">会社概要</a>
+        </nav>
+        <div class="sp-drawer__sites">
+            <a href="../rinascente/index.html" class="sp-drawer__site">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                Corporate
+            </a>
+            <a href="../yumeho/index.html" class="sp-drawer__site">YUMEHO</a>
+            <a href="index.html" class="sp-drawer__site sp-drawer__site--active">MICA30</a>
+        </div>
+        <div class="sp-drawer__footer">
+            <a href="contact.html" class="btn btn-primary sp-drawer__cta">お問い合わせ</a>
+        </div>
+    </div>
+
+    <section class="hero bg-light">
+        <div class="container text-center">
+            <p class="hero-en">VOICES</p>
+            <h1 class="hero-title">ご利用施設の声</h1>
+            <p class="hero-subtitle">MICA30を導入いただいた施設の皆様から寄せられたお声をご紹介します</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <!-- Summary stats -->
+            <div class="voice-hero-stat animate-on-scroll">
+                <div class="voice-hero-stat__item">
+                    <div class="voice-hero-stat__num">8</div>
+                    <div class="voice-hero-stat__label">導入施設数</div>
+                </div>
+                <div class="voice-hero-stat__item">
+                    <div class="voice-hero-stat__num">98%</div>
+                    <div class="voice-hero-stat__label">満足度</div>
+                </div>
+                <div class="voice-hero-stat__item">
+                    <div class="voice-hero-stat__num">5</div>
+                    <div class="voice-hero-stat__label">都府県</div>
+                </div>
+            </div>
+
+            <!-- Voice 1 -->
+            <article class="voice-card-full animate-on-scroll">
+                <div class="voice-card-full__img">
+                    <img src="assets/img/AdobeStock_534080689_Editorial_Use_Only.jpeg" alt="総合病院 血管造影室">
+                </div>
+                <div class="voice-card-full__body">
+                    <div class="voice-card-full__stat">
+                        <span class="voice-card-full__stat-num">0.05mL</span>
+                        <span class="voice-card-full__stat-label">単位の精密設定</span>
+                    </div>
+                    <div class="voice-context">
+                        <div class="voice-context-item">
+                            <span class="voice-context-label">導入前の課題</span>
+                            <p>従来の注入装置では微量調整の精度に限界があり、患者様ごとの最適な造影剤量の設定に苦慮していました。検査中のパラメータ確認も手元の操作パネルに限られ、視線移動による集中力の低下が課題でした。</p>
+                        </div>
+                        <div class="voice-context-item">
+                            <span class="voice-context-label">導入の決め手</span>
+                            <p>0.05mL単位の精密な注入量設定と、ベッドサイドディスプレイによる術中のリアルタイム確認機能。コンソール操作の直感性も評価しました。</p>
+                        </div>
+                        <div class="voice-context-item">
+                            <span class="voice-context-label">導入後の変化</span>
+                            <p>造影剤の無駄が減り、患者様ごとに最適化された注入プログラムの運用が定着。技師全員の検査品質が均一化され、属人的な運用から脱却できました。</p>
+                        </div>
+                    </div>
+                    <p class="voice-card-full__quote">造影剤の注入量をコンソールで細かく設定できるため、患者様一人ひとりの状態に合わせた精密な診断が可能になりました。ベッドサイドディスプレイで残量がリアルタイムに確認でき、術中の集中力が格段に上がっています。</p>
+                    <div class="voice-card-full__pullquote">「精密さと視認性の両立が、日々の検査の質を変えてくれた」</div>
+                    <div class="voice-card-full__author">
+                        <div class="voice-card-full__avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <div>
+                            <div class="voice-card-full__name">診療放射線技師</div>
+                            <div class="voice-card-full__facility">鳥取県内 総合病院 血管造影室</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Voice 2 -->
+            <article class="voice-card-full animate-on-scroll">
+                <div class="voice-card-full__img">
+                    <img src="assets/img/AdobeStock_1941389986.jpeg" alt="循環器専門病院">
+                </div>
+                <div class="voice-card-full__body">
+                    <div class="voice-card-full__stat">
+                        <span class="voice-card-full__stat-num">2系統</span>
+                        <span class="voice-card-full__stat-label">気泡センサーで安全確保</span>
+                    </div>
+                    <div class="voice-context">
+                        <div class="voice-context-item">
+                            <span class="voice-context-label">導入前の課題</span>
+                            <p>冠動脈造影やインターベンション中に注入速度をリアルタイムで変更したい場面が多く、従来装置ではプリセット変更の手間が術者のリズムを妨げていました。</p>
+                        </div>
+                        <div class="voice-context-item">
+                            <span class="voice-context-label">導入の決め手</span>
+                            <p>バリアブルモードによるリアルタイム速度変更と、2系統気泡センサーの多重安全設計。術中の柔軟性と安全性の両立が決定打でした。</p>
+                        </div>
+                        <div class="voice-context-item">
+                            <span class="voice-context-label">導入後の変化</span>
+                            <p>術者の手技リズムに合わせたシームレスな注入制御が実現。安全アラートへの信頼感から、チーム全体が手技に集中できる環境が整いました。</p>
+                        </div>
+                    </div>
+                    <p class="voice-card-full__quote">2系統の気泡センサーによる安全設計が導入の決め手でした。冠動脈造影中に安全アラートが即座に作動することで、医師もスタッフも安心して処置に集中できます。医療機器認証取得済みという点も信頼性の証明になっています。</p>
+                    <div class="voice-card-full__pullquote">「安全機構への信頼が、処置への集中力につながっている」</div>
+                    <div class="voice-card-full__author">
+                        <div class="voice-card-full__avatar" style="background:linear-gradient(135deg,#004d5e,#0077a3);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <div>
+                            <div class="voice-card-full__name">循環器内科 医師</div>
+                            <div class="voice-card-full__facility">島根県内 循環器専門病院</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Voice 3 -->
+            <article class="voice-card-full animate-on-scroll">
+                <div class="voice-card-full__img">
+                    <img src="assets/img/AdobeStock_829903067.jpeg" alt="クリニック">
+                </div>
+                <div class="voice-card-full__body">
+                    <div class="voice-card-full__stat">
+                        <span class="voice-card-full__stat-num">迅速</span>
+                        <span class="voice-card-full__stat-label">な保守・サポート対応</span>
+                    </div>
+                    <div class="voice-context">
+                        <div class="voice-context-item">
+                            <span class="voice-context-label">導入前の課題</span>
+                            <p>少人数体制のクリニックで、大型装置の設置スペース確保とスタッフ全員への操作教育が大きな負担でした。前メーカーのサポート対応にも不満がありました。</p>
+                        </div>
+                        <div class="voice-context-item">
+                            <span class="voice-context-label">導入の決め手</span>
+                            <p>コンパクトな筐体設計と、導入時の丁寧なハンズオン研修。メーカーの問い合わせ対応の速さも安心材料でした。</p>
+                        </div>
+                        <div class="voice-context-item">
+                            <span class="voice-context-label">導入後の変化</span>
+                            <p>設置からスタッフ習熟までスムーズに完了。困った時の問い合わせ対応も迅速で、少人数体制でも安心して日常運用できています。</p>
+                        </div>
+                    </div>
+                    <p class="voice-card-full__quote">コンパクトな設計で設置スペースを取らず、少人数スタッフでの運用がしやすいのが助かっています。導入時の操作説明も丁寧で、スタッフ全員がすぐに使いこなせるようになりました。メーカーの対応も迅速で信頼できます。</p>
+                    <div class="voice-card-full__pullquote">「導入のしやすさと、導入後のサポートの手厚さが決め手」</div>
+                    <div class="voice-card-full__author">
+                        <div class="voice-card-full__avatar" style="background:linear-gradient(135deg,#006174,#0096b7);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <div>
+                            <div class="voice-card-full__name">臨床工学技士</div>
+                            <div class="voice-card-full__facility">岡山県内 クリニック</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="text-center" style="margin-top:56px;">
+                <p style="margin-bottom:20px;font-size:0.9rem;color:rgba(0,0,0,0.82);">MICA30の導入をご検討中の方は、お気軽にお問い合わせください。</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">お問い合わせ・資料請求</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">ホーム</a>
+                <a href="product.html">製品詳細</a>
+                <a href="voices.html">ご利用施設の声</a>
+                <a href="cases.html">導入事例</a>
+                <a href="faq.html">よくある質問</a>
+                <a href="price.html">価格・導入</a>
+                <a href="flow.html">導入の流れ</a>
+                <a href="company.html">会社概要</a>
+                <a href="contact.html">お問い合わせ</a>
+                <a href="../yumeho/index.html">YUMEHO サイト</a>
+                <a href="../rinascente/index.html">コーポレートサイト</a>
+            </div>
+                <a href="contact.html" class="footer-cta-sp">
+                    <span class="floating-cta__pulse"></span>
+                    お問い合わせ
+                </a>
+            <p class="copyright">&copy; 2026 株式会社 Rinascente All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

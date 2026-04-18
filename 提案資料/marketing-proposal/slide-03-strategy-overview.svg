@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="'Yu Gothic','Hiragino Sans',sans-serif">
+<rect width="1920" height="1080" fill="#f7fafc"/>
+<rect width="1920" height="6" fill="#0068B7"/>
+<text x="160" y="90" fill="#0068B7" font-size="16" font-weight="600" letter-spacing=".15em">STRATEGY OVERVIEW</text>
+<text x="160" y="140" fill="#1a202c" font-size="42" font-weight="700">2つの戦略と統合フロー</text>
+<rect x="160" y="165" width="60" height="3" rx="1.5" fill="#0068B7"/>
+
+<!-- Strategy A -->
+<rect x="160" y="220" width="760" height="400" rx="16" fill="#fff" stroke="#0068B7" stroke-width="2"/>
+<rect x="160" y="220" width="760" height="60" rx="16" fill="#0068B7"/>
+<rect x="160" y="265" width="760" height="16" fill="#0068B7"/>
+<text x="200" y="260" fill="#fff" font-size="14" font-weight="600" letter-spacing=".1em">STRATEGY A</text>
+<text x="540" y="260" fill="#fff" font-size="22" font-weight="700" text-anchor="middle">求人データからの見込み施設特定</text>
+<rect x="200" y="310" width="100" height="30" rx="6" fill="#C6F6D5"/>
+<text x="250" y="331" fill="#276749" font-size="13" font-weight="700" text-anchor="middle">即効性 高</text>
+<rect x="320" y="310" width="100" height="30" rx="6" fill="#C6F6D5"/>
+<text x="370" y="331" fill="#276749" font-size="13" font-weight="700" text-anchor="middle">コスト 0円</text>
+
+<text x="200" y="385" fill="#1a202c" font-size="18" font-weight="600">手順</text>
+<circle cx="215" cy="420" r="12" fill="#EBF8FF" stroke="#0068B7"/>
+<text x="215" y="425" fill="#0068B7" font-size="12" font-weight="700" text-anchor="middle">1</text>
+<text x="240" y="425" fill="#1a202c" font-size="16">ハローワーク等から求人データを収集</text>
+
+<circle cx="215" cy="460" r="12" fill="#EBF8FF" stroke="#0068B7"/>
+<text x="215" y="465" fill="#0068B7" font-size="12" font-weight="700" text-anchor="middle">2</text>
+<text x="240" y="465" fill="#1a202c" font-size="16">リハビリ施設をスコアリング・優先順位付け</text>
+
+<circle cx="215" cy="500" r="12" fill="#EBF8FF" stroke="#0068B7"/>
+<text x="215" y="505" fill="#0068B7" font-size="12" font-weight="700" text-anchor="middle">3</text>
+<text x="240" y="505" fill="#1a202c" font-size="16">A/Bランク施設へ DM → 電話フォロー</text>
+
+<circle cx="215" cy="540" r="12" fill="#EBF8FF" stroke="#0068B7"/>
+<text x="215" y="545" fill="#0068B7" font-size="12" font-weight="700" text-anchor="middle">4</text>
+<text x="240" y="545" fill="#1a202c" font-size="16">訪問デモ → 稟議サポート → 成約</text>
+
+<text x="200" y="595" fill="#718096" font-size="14">月100施設リスト → 50通DM → 5件問合せ → 月1件成約</text>
+
+<!-- Strategy B -->
+<rect x="1000" y="220" width="760" height="400" rx="16" fill="#fff" stroke="#DD6B20" stroke-width="2"/>
+<rect x="1000" y="220" width="760" height="60" rx="16" fill="#DD6B20"/>
+<rect x="1000" y="265" width="760" height="16" fill="#DD6B20"/>
+<text x="1040" y="260" fill="#fff" font-size="14" font-weight="600" letter-spacing=".1em">STRATEGY B</text>
+<text x="1380" y="260" fill="#fff" font-size="22" font-weight="700" text-anchor="middle">「採用に効く YUMEHO」訴求</text>
+<rect x="1040" y="310" width="110" height="30" rx="6" fill="#FEFCBF"/>
+<text x="1095" y="331" fill="#744210" font-size="13" font-weight="700" text-anchor="middle">中長期施策</text>
+<rect x="1170" y="310" width="130" height="30" rx="6" fill="#FEFCBF"/>
+<text x="1235" y="331" fill="#744210" font-size="13" font-weight="700" text-anchor="middle">月5-15万円</text>
+
+<text x="1040" y="385" fill="#1a202c" font-size="18" font-weight="600">3つの訴求軸</text>
+
+<rect x="1040" y="405" width="680" height="50" rx="8" fill="#FFF5F5"/>
+<text x="1060" y="436" fill="#1a202c" font-size="16"><tspan font-weight="600" fill="#e53e3e">人を減らせる</tspan>  人件費削減 年間254万円</text>
+
+<rect x="1040" y="465" width="680" height="50" rx="8" fill="#EBF8FF"/>
+<text x="1060" y="496" fill="#1a202c" font-size="16"><tspan font-weight="600" fill="#0068B7">人が集まる</tspan>  先端設備で求人の訴求力アップ</text>
+
+<rect x="1040" y="525" width="680" height="50" rx="8" fill="#F0FFF4"/>
+<text x="1060" y="556" fill="#1a202c" font-size="16"><tspan font-weight="600" fill="#276749">人が辞めない</tspan>  身体負担軽減で離職率低下</text>
+
+<text x="1040" y="608" fill="#718096" font-size="14">コラム記事 + リスティング広告 + 求人サイト事業者向け広告</text>
+
+<!-- Funnel -->
+<text x="960" y="690" fill="#1a202c" font-size="24" font-weight="700" text-anchor="middle">統合ファネル</text>
+
+<!-- Funnel steps -->
+<rect x="260" y="720" width="280" height="70" rx="10" fill="#0068B7"/>
+<text x="400" y="750" fill="#fff" font-size="14" font-weight="600" text-anchor="middle">認知</text>
+<text x="400" y="772" fill="#fff" font-size="12" text-anchor="middle" opacity=".8">リスト営業 / SEO / 広告</text>
+
+<polygon points="540,755 570,740 570,770" fill="#0068B7" opacity=".4"/>
+
+<rect x="580" y="720" width="280" height="70" rx="10" fill="#2b6cb0"/>
+<text x="720" y="750" fill="#fff" font-size="14" font-weight="600" text-anchor="middle">関心</text>
+<text x="720" y="772" fill="#fff" font-size="12" text-anchor="middle" opacity=".8">サイト訪問 / シミュレーション</text>
+
+<polygon points="860,755 890,740 890,770" fill="#2b6cb0" opacity=".4"/>
+
+<rect x="900" y="720" width="280" height="70" rx="10" fill="#2c5282"/>
+<text x="1040" y="750" fill="#fff" font-size="14" font-weight="600" text-anchor="middle">検討</text>
+<text x="1040" y="772" fill="#fff" font-size="12" text-anchor="middle" opacity=".8">資料請求 / 稟議サポート</text>
+
+<polygon points="1180,755 1210,740 1210,770" fill="#2c5282" opacity=".4"/>
+
+<rect x="1220" y="720" width="280" height="70" rx="10" fill="#1a365d"/>
+<text x="1360" y="750" fill="#fff" font-size="14" font-weight="600" text-anchor="middle">商談・成約</text>
+<text x="1360" y="772" fill="#fff" font-size="12" text-anchor="middle" opacity=".8">訪問デモ / 導入決定</text>
+
+<!-- Bottom conversion numbers -->
+<rect x="160" y="830" width="1600" height="130" rx="12" fill="#fff" stroke="#e2e8f0"/>
+<text x="960" y="870" fill="#1a202c" font-size="18" font-weight="700" text-anchor="middle">コンバージョン試算（月次）</text>
+<text x="280" y="920" fill="#0068B7" font-size="36" font-weight="700" text-anchor="middle">100</text>
+<text x="280" y="945" fill="#718096" font-size="13" text-anchor="middle">施設リスト</text>
+<text x="430" y="925" fill="#a0aec0" font-size="20">→</text>
+<text x="560" y="920" fill="#0068B7" font-size="36" font-weight="700" text-anchor="middle">50</text>
+<text x="560" y="945" fill="#718096" font-size="13" text-anchor="middle">DM 送付</text>
+<text x="710" y="925" fill="#a0aec0" font-size="20">→</text>
+<text x="840" y="920" fill="#0068B7" font-size="36" font-weight="700" text-anchor="middle">5</text>
+<text x="840" y="945" fill="#718096" font-size="13" text-anchor="middle">問い合わせ</text>
+<text x="990" y="925" fill="#a0aec0" font-size="20">→</text>
+<text x="1120" y="920" fill="#0068B7" font-size="36" font-weight="700" text-anchor="middle">2-3</text>
+<text x="1120" y="945" fill="#718096" font-size="13" text-anchor="middle">デモ実施</text>
+<text x="1270" y="925" fill="#a0aec0" font-size="20">→</text>
+<text x="1440" y="920" fill="#DD6B20" font-size="42" font-weight="700" text-anchor="middle">1件</text>
+<text x="1440" y="945" fill="#718096" font-size="13" text-anchor="middle">成約 / 月</text>
+<rect x="1560" y="895" width="160" height="55" rx="8" fill="#F0FFF4" stroke="#276749"/>
+<text x="1640" y="920" fill="#276749" font-size="14" font-weight="700" text-anchor="middle">3ヶ月累計</text>
+<text x="1640" y="940" fill="#276749" font-size="14" font-weight="700" text-anchor="middle">1-2件成約</text>
+
+<text x="1760" y="1050" fill="#a0aec0" font-size="14" text-anchor="end">03</text>
+</svg>

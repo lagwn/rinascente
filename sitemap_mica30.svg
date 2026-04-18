@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1300 680">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19 {
+        isolation: isolate;
+      }
+
+      .st0, .st6, .st9, .st11, .st14 {
+        font-family: HelveticaNeue-Bold, 'Helvetica Neue';
+        font-weight: 700;
+      }
+
+      .st0, .st14, .st16 {
+        fill: #0d1b1e;
+      }
+
+      .st0, .st14, .st16, .st19 {
+        font-size: 12px;
+      }
+
+      .st1, .st7 {
+        fill: #0068b7;
+      }
+
+      .st1, .st9, .st10, .st12 {
+        font-size: 10px;
+      }
+
+      .st1, .st10 {
+        font-family: HiraKakuProN-W6-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN';
+      }
+
+      .st2 {
+        font-size: 7px;
+      }
+
+      .st2, .st8, .st16, .st20, .st18, .st19 {
+        font-family: KozGoPr6N-Regular-83pv-RKSJ-H, 'Kozuka Gothic Pr6N';
+      }
+
+      .st2, .st12 {
+        fill: #a8dadc;
+      }
+
+      .st3, .st5, .st21, .st12, .st15 {
+        font-family: Helvetica, Helvetica;
+      }
+
+      .st3, .st5, .st18 {
+        font-size: 9px;
+      }
+
+      .st3, .st15 {
+        fill: #999;
+      }
+
+      .st4, .st8, .st13 {
+        font-size: 11px;
+      }
+
+      .st4, .st8, .st18 {
+        fill: #666;
+      }
+
+      .st5, .st6, .st22, .st23, .st19 {
+        fill: #fff;
+      }
+
+      .st6 {
+        font-size: 16px;
+        letter-spacing: .1em;
+      }
+
+      .st7 {
+        opacity: 0;
+        stroke: #0068b7;
+      }
+
+      .st24 {
+        stroke: #d0f0eb;
+      }
+
+      .st24, .st25 {
+        fill: none;
+      }
+
+      .st25, .st23 {
+        stroke-width: 1.5px;
+      }
+
+      .st25, .st26 {
+        stroke: #a8dadc;
+      }
+
+      .st9, .st11, .st27 {
+        fill: #005f73;
+      }
+
+      .st23 {
+        stroke: #005f73;
+      }
+
+      .st10, .st17 {
+        fill: #1a1a1a;
+      }
+
+      .st11 {
+        font-size: 24px;
+        letter-spacing: 0em;
+      }
+
+      .st13 {
+        fill: #aaa;
+      }
+
+      .st14 {
+        letter-spacing: 0em;
+      }
+
+      .st15 {
+        font-size: 13px;
+        letter-spacing: 0em;
+      }
+
+      .st17 {
+        opacity: 0;
+        stroke: #1a1a1a;
+      }
+
+      .st26 {
+        fill: #f5fafa;
+      }
+    </style>
+  </defs>
+  <rect class="st22" y="0" width="1300" height="680"/>
+  <text class="st11" transform="translate(60 52)"><tspan x="0" y="0">SITEMAP — MICA30</tspan></text>
+  <text class="st15" transform="translate(60 76)"><tspan x="0" y="0">Product Site Structure — Contrast Media Injector</tspan></text>
+  <line class="st24" x1="60" y1="92" x2="1240" y2="92"/>
+  <rect class="st27" x="490" y="120" width="320" height="56" rx="8" ry="8"/>
+  <text class="st6" transform="translate(615.3 154)"><tspan x="0" y="0">MICA30</tspan></text>
+  <g>
+    <line class="st25" x1="650" y1="176" x2="650" y2="210"/>
+    <line class="st25" x1="80" y1="210" x2="1220" y2="210"/>
+    <line class="st25" x1="80" y1="210" x2="80" y2="240"/>
+    <line class="st25" x1="222" y1="210" x2="222" y2="240"/>
+    <line class="st25" x1="364" y1="210" x2="364" y2="240"/>
+    <line class="st25" x1="506" y1="210" x2="506" y2="240"/>
+    <line class="st25" x1="650" y1="210" x2="650" y2="240"/>
+    <line class="st25" x1="792" y1="210" x2="792" y2="240"/>
+    <line class="st25" x1="936" y1="210" x2="936" y2="240"/>
+    <line class="st25" x1="1078" y1="210" x2="1078" y2="240"/>
+    <line class="st25" x1="1220" y1="210" x2="1220" y2="240"/>
+  </g>
+  <rect class="st23" x="12" y="240" width="136" height="54" rx="6" ry="6"/>
+  <text class="st16" transform="translate(63.3 264)"><tspan x="0" y="0">トップ</tspan></text>
+  <text class="st3" transform="translate(59.5 280)"><tspan x="0" y="0">index.html</tspan></text>
+  <rect class="st23" x="154" y="240" width="136" height="54" rx="6" ry="6"/>
+  <text class="st16" transform="translate(198.3 264)"><tspan x="0" y="0">製品詳細</tspan></text>
+  <text class="st3" transform="translate(197.3 280)"><tspan x="0" y="0">product.html</tspan></text>
+  <rect class="st23" x="296" y="240" width="136" height="54" rx="6" ry="6"/>
+  <text class="st16" transform="translate(322.2 264)"><tspan x="0" y="0">ご利用施設の声</tspan></text>
+  <text class="st3" transform="translate(341.8 280)"><tspan x="0" y="0">voices.html</tspan></text>
+  <rect class="st23" x="438" y="240" width="136" height="54" rx="6" ry="6"/>
+  <text class="st16" transform="translate(482.1 264)"><tspan x="0" y="0">導入事例</tspan></text>
+  <text class="st3" transform="translate(484.7 280)"><tspan x="0" y="0">cases.html</tspan></text>
+  <rect class="st23" x="582" y="240" width="136" height="54" rx="6" ry="6"/>
+  <text class="st0" transform="translate(637.8 264)"><tspan x="0" y="0">FAQ</tspan></text>
+  <text class="st3" transform="translate(634.2 280)"><tspan x="0" y="0">faq.html</tspan></text>
+  <rect class="st23" x="724" y="240" width="136" height="54" rx="6" ry="6"/>
+  <text class="st16" transform="translate(765.1 264)"><tspan x="0" y="0">価格・導入</tspan></text>
+  <text class="st3" transform="translate(772.5 280)"><tspan x="0" y="0">price.html</tspan></text>
+  <rect class="st23" x="868" y="240" width="136" height="54" rx="6" ry="6"/>
+  <text class="st16" transform="translate(906 264)"><tspan x="0" y="0">導入の流れ</tspan></text>
+  <text class="st3" transform="translate(918.7 280)"><tspan x="0" y="0">flow.html</tspan></text>
+  <rect class="st23" x="1010" y="240" width="136" height="54" rx="6" ry="6"/>
+  <text class="st16" transform="translate(1054 264)"><tspan x="0" y="0">会社概要</tspan></text>
+  <text class="st3" transform="translate(1050.5 280)"><tspan x="0" y="0">company.html</tspan></text>
+  <rect class="st27" x="1152" y="240" width="136" height="54" rx="6" ry="6"/>
+  <text class="st19" transform="translate(1183.9 264)"><tspan x="0" y="0">お問い合わせ</tspan></text>
+  <text class="st5" transform="translate(1195.9 280)"><tspan x="0" y="0">contact.html</tspan></text>
+  <g>
+    <line class="st25" x1="364" y1="294" x2="364" y2="330"/>
+    <line class="st25" x1="220" y1="330" x2="510" y2="330"/>
+    <line class="st25" x1="220" y1="330" x2="220" y2="358"/>
+    <line class="st25" x1="364" y1="330" x2="364" y2="358"/>
+    <line class="st25" x1="510" y1="330" x2="510" y2="358"/>
+  </g>
+  <rect class="st26" x="140" y="358" width="160" height="60" rx="6" ry="6"/>
+  <text class="st9" transform="translate(200.9 380)"><tspan x="0" y="0">Voice 01</tspan></text>
+  <text class="st18" transform="translate(188.5 396)"><tspan x="0" y="0">診療放射線技師</tspan></text>
+  <text class="st2" transform="translate(190.7 410)"><tspan x="0" y="0">ページ内セクション</tspan></text>
+  <rect class="st26" x="284" y="358" width="160" height="60" rx="6" ry="6"/>
+  <text class="st9" transform="translate(344.2 380)"><tspan x="0" y="0">Voice 02</tspan></text>
+  <text class="st18" transform="translate(337.1 396)"><tspan x="0" y="0">循環器専門医</tspan></text>
+  <text class="st2" transform="translate(334.7 410)"><tspan x="0" y="0">ページ内セクション</tspan></text>
+  <rect class="st26" x="430" y="358" width="160" height="60" rx="6" ry="6"/>
+  <text class="st9" transform="translate(490.2 380)"><tspan x="0" y="0">Voice 03</tspan></text>
+  <text class="st18" transform="translate(482.9 396)"><tspan x="0" y="0">臨床工学技士</tspan></text>
+  <text class="st2" transform="translate(480.7 410)"><tspan x="0" y="0">ページ内セクション</tspan></text>
+  <line class="st24" x1="60" y1="470" x2="1240" y2="470"/>
+  <text class="st14" transform="translate(60 500)"><tspan x="0" y="0">LEGEND</tspan></text>
+  <rect class="st23" x="60" y="520" width="24" height="16" rx="3" ry="3"/>
+  <text class="st8" transform="translate(94 533)"><tspan x="0" y="0">公開ページ</tspan></text>
+  <rect class="st27" x="220" y="520" width="24" height="16" rx="3" ry="3"/>
+  <text class="st4" transform="translate(254 533)"><tspan class="st21" x="0" y="0">CTA</tspan><tspan class="st20" x="22" y="0">ページ</tspan></text>
+  <rect class="st26" x="350" y="520" width="24" height="16" rx="3" ry="3"/>
+  <text class="st8" transform="translate(384 533)"><tspan x="0" y="0">ページ内コンテンツ</tspan></text>
+  <text class="st13" transform="translate(60 566)"><tspan class="st20" x="0" y="0">総ページ数</tspan><tspan class="st21" x="55" y="0">: 9 </tspan><tspan class="st20" x="70.3" y="0">｜</tspan><tspan class="st21" x="81.3" y="0"> </tspan><tspan class="st20" x="84.3" y="0">ナビ掲載</tspan><tspan class="st21" x="128.3" y="0">: 9 </tspan><tspan class="st20" x="143.6" y="0">｜</tspan><tspan class="st21" x="154.6" y="0"> </tspan><tspan class="st20" x="157.7" y="0">ページ内セクション</tspan><tspan class="st21" x="256.7" y="0">: 3</tspan><tspan class="st20" x="268.9" y="0">（お客様の声）</tspan></text>
+  <text class="st14" transform="translate(760 500)"><tspan x="0" y="0">LINKED SITES</tspan></text>
+  <rect class="st7" x="760" y="516" width="140" height="36" rx="6" ry="6"/>
+  <text class="st1" transform="translate(798.7 539)"><tspan x="0" y="0">→ YUMEHO</tspan></text>
+  <rect class="st17" x="916" y="516" width="140" height="36" rx="6" ry="6"/>
+  <text class="st10" transform="translate(946.6 539)"><tspan x="0" y="0">→ Rinascentes</tspan></text>
+  <line class="st24" x1="60" y1="610" x2="1240" y2="610"/>
+  <text class="st12" transform="translate(60 638)"><tspan x="0" y="0">MICA30 Site Map — Updated 2026-04-03</tspan></text>
+</svg>

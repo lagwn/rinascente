@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+  <title>Press | Rinascente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260409f">
+  <style>
+    .press-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 40px;
+    }
+    .filter-btn {
+      padding: 6px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.15);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      background: white;
+      color: var(--mid-gray);
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--black);
+      color: white;
+      border-color: var(--black);
+    }
+    .press-list-item {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 24px;
+      align-items: start;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line-light);
+      text-decoration: none;
+      color: inherit;
+      transition: opacity 0.2s;
+    }
+    .press-list-item:first-child { border-top: 1px solid var(--line-light); }
+    .press-list-item:hover { opacity: 0.7; }
+    .press-list-date { font-size: 0.82rem; color: var(--mid-gray); padding-top: 4px; font-weight: 500; }
+    .press-list-title { font-size: 1rem; font-weight: 700; line-height: 1.5; margin-bottom: 8px; }
+    .press-list-excerpt { font-size: 0.86rem; color: var(--mid-gray); line-height: 1.6; }
+    @media (max-width: 640px) {
+      .press-list-item { grid-template-columns: 1fr; gap: 8px; }
+    }
+  </style>
+  <meta name="description" content="Rinascente（リナシェンテ）グループの最新ニュース。YUMEHO・MICA30の製品情報、認証取得、導入事例、事業展開に関するプレスリリースをお届けします。">
+  <meta name="keywords" content="Rinascente,プレスリリース,ニュース,YUMEHO,MICA30,新製品,認証,医療機器">
+  <link rel="canonical" href="https://example.com/press.html">
+  <meta property="og:title" content="Press | Rinascente ニュース・プレスリリース">
+  <meta property="og:description" content="YUMEHO・MICA30の製品情報、認証取得、事業展開の最新ニュースをお届けします。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://example.com/press.html">
+  <meta property="og:image" content="https://example.com/assets/img/ogp-rinascente.jpg">
+  <meta property="og:site_name" content="Rinascente（リナシェンテ）">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Press | Rinascente",
+    "description": "Rinascenteグループの最新ニュース・プレスリリース。",
+    "url": "https://example.com/press.html",
+    "isPartOf": { "@type": "WebSite", "name": "Rinascente", "url": "https://example.com/" }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header scrolled">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="assets/img/logo.svg" alt="" class="header-logo__img">
+        <span class="header-logo__text">
+          <span class="logo-wordmark">Rinascente</span>
+          <span class="logo-sub">復活する。再生する。</span>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-label="メニュー" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav class="header-nav header-nav--desktop" role="navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="identity.html" class="nav-item">Identity</a>
+        <a href="press.html" class="nav-item active">Press</a>
+        <a href="cases.html" class="nav-item">Cases</a>
+        <a href="contact.html" class="header-cta">Contact</a>
+        <a href="login.html" class="btn btn-outline-light" style="min-height:auto;padding:8px 20px;font-size:0.8rem;">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile fullscreen nav -->
+  <nav class="mobile-nav" id="mobileNav" role="navigation" aria-hidden="true">
+    <a href="index.html" class="mobile-nav__item">Home</a>
+    <a href="identity.html" class="mobile-nav__item">Identity</a>
+    <a href="press.html" class="mobile-nav__item active">Press</a>
+    <a href="cases.html" class="mobile-nav__item">Cases</a>
+    <a href="contact.html" class="mobile-nav__item">Contact</a>
+    <a href="login.html" class="mobile-nav__item">Login</a>
+    <div class="mobile-nav__divider"></div>
+    <a href="../yumeho/index.html" class="nav-external" target="_blank" rel="noopener">
+      <span class="nav-external__label">Product Site</span>
+      <span class="nav-external__name">YUMEHO</span>
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="flex-shrink:0;"><path d="M4 1.5H2.5A1 1 0 001.5 2.5v7a1 1 0 001 1h7a1 1 0 001-1V8M7.5 1.5h3v3M6 6l4.5-4.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </nav>
+
+  <main>
+
+    <div class="page-hero">
+      <div class="container">
+        <div class="page-hero-label">News &amp; Press Release</div>
+        <h1>Press</h1>
+        <p>Rinascente グループの最新ニュース、製品情報、企業発表をお届けします。</p>
+      </div>
+    </div>
+
+    <section class="section bg-cream">
+      <div class="container">
+
+        <!-- Featured -->
+        <div class="fade-up" style="margin-bottom:64px;">
+          <span class="label" style="color:var(--gold-deep);margin-bottom:16px;display:block;">Featured</span>
+          <a href="news-20260120.html" class="press-featured">
+            <div class="press-featured__content">
+              <span class="press-featured__eyebrow">Press Highlight</span>
+              <div class="press-featured__meta">
+                <span class="badge badge-light">会社情報</span>
+                <span class="press-featured__date">2026.01.20</span>
+              </div>
+              <h2 class="press-featured__title">
+                コーポレートブランド「Rinascente（リナシェンテ）」を発表。グループビジョンを刷新。
+              </h2>
+              <p class="press-featured__excerpt">
+                Rinascente株式会社は、コーポレートブランド「Rinascente（リナシェンテ）」を発表しました。医療・福祉機器から旅行・ウェルネスへの事業拡張を見据えた新たなグループビジョンです。
+              </p>
+              <div class="press-featured__footer">
+                <div class="press-featured__info">
+                  <div class="press-featured__info-item">
+                    <span class="press-featured__info-label">Category</span>
+                    <span class="press-featured__info-value">会社情報</span>
+                  </div>
+                  <div class="press-featured__info-item">
+                    <span class="press-featured__info-label">Published</span>
+                    <span class="press-featured__info-value">2026.01.20</span>
+                  </div>
+                </div>
+                <span class="press-featured__cta">
+                  続きを読む <span>→</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Filter -->
+        <div class="press-filter fade-up">
+          <button class="filter-btn active" data-filter="すべて">すべて</button>
+          <button class="filter-btn" data-filter="会社情報">会社情報</button>
+          <button class="filter-btn" data-filter="製品情報">製品情報</button>
+          <button class="filter-btn" data-filter="導入事例">導入事例</button>
+          <button class="filter-btn" data-filter="受賞・認証">受賞・認証</button>
+          <button class="filter-btn" data-filter="事業展開">事業展開</button>
+        </div>
+
+        <!-- Press List -->
+        <div class="fade-up d-100">
+
+          <a href="news-20260315.html" class="press-list-item" data-category="製品情報">
+            <div class="press-list-date">2026.03.15</div>
+            <div>
+              <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+                <span class="badge badge-blue">製品情報</span>
+              </div>
+              <div class="press-list-title">YUMEHO 新型スタンド型（PGT-9001）の販売開始のお知らせ</div>
+              <div class="press-list-excerpt">最小幅1.4mから設置可能な最小クラスのスタンド型モデルが新発売。コンパクトな施設にも対応した新設計です。</div>
+            </div>
+          </a>
+
+          <a href="news-20260228.html" class="press-list-item" data-category="受賞・認証">
+            <div class="press-list-date">2026.02.28</div>
+            <div>
+              <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+                <span class="badge badge-light">受賞・認証</span>
+              </div>
+              <div class="press-list-title">YUMEHO、福祉機器普及推進事業補助金の対象機器に認定</div>
+              <div class="press-list-excerpt">厚生労働省管轄の補助金制度において、YUMEHOが対象機器として認定されました。導入施設は補助金申請が可能になります。</div>
+            </div>
+          </a>
+
+          <a href="news-20260210.html" class="press-list-item" data-category="製品情報">
+            <div class="press-list-date">2026.02.10</div>
+            <div>
+              <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+                <span class="badge badge-teal">製品情報</span>
+              </div>
+              <div class="press-list-title">MICA30 造影用耐圧チューブ（認証番号：304ADBZX00072000）の認証取得完了</div>
+              <div class="press-list-excerpt">MICA30専用の造影用耐圧チューブが医療機器製造販売認証を取得しました。最高500psiの高圧注入に対応します。</div>
+            </div>
+          </a>
+
+          <a href="news-20260120.html" class="press-list-item" data-category="会社情報">
+            <div class="press-list-date">2026.01.20</div>
+            <div>
+              <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+                <span class="badge badge-light">会社情報</span>
+              </div>
+              <div class="press-list-title">コーポレートブランド「Rinascente（リナシェンテ）」を発表</div>
+              <div class="press-list-excerpt">医療・福祉機器から旅行・ウェルネス等の新領域への事業拡張を見据え、グループブランドを刷新しました。</div>
+            </div>
+          </a>
+
+          <a href="#" class="press-list-item" data-category="導入事例">
+            <div class="press-list-date">2025.12.05</div>
+            <div>
+              <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+                <span class="badge badge-blue">導入事例</span>
+              </div>
+              <div class="press-list-title">回復期リハビリ病棟にYUMEHOを導入、歩行訓練機会が1.5倍に向上</div>
+              <div class="press-list-excerpt">関東圏の200床規模の回復期リハビリ病棟において、YUMEHOの導入効果を測定。介助体制の大幅な改善と訓練機会の向上が実証されました。</div>
+            </div>
+          </a>
+
+          <a href="#" class="press-list-item" data-category="事業展開">
+            <div class="press-list-date">2025.11.14</div>
+            <div>
+              <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+                <span class="badge badge-light">事業展開</span>
+              </div>
+              <div class="press-list-title">旅行業・ウェルネス分野への事業参入を検討中。ヘルスツーリズム事業の調査開始</div>
+              <div class="press-list-excerpt">医療知識とリハビリ支援の知見を活用した「ヘルスツーリズム」分野への参入に向けた調査・検討を開始しました。</div>
+            </div>
+          </a>
+
+          <a href="#" class="press-list-item" data-category="製品情報">
+            <div class="press-list-date">2025.10.20</div>
+            <div>
+              <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+                <span class="badge badge-teal">製品情報</span>
+              </div>
+              <div class="press-list-title">MICA30、医療機器認証（認証番号：304ADBZX00064000）を取得</div>
+              <div class="press-list-excerpt">多相電動式造影剤注入装置「MICA30」が医療機器製造販売認証を取得し、国内販売を正式に開始しました。</div>
+            </div>
+          </a>
+
+          <a href="#" class="press-list-item" data-category="導入事例">
+            <div class="press-list-date">2025.09.01</div>
+            <div>
+              <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+                <span class="badge badge-blue">導入事例</span>
+              </div>
+              <div class="press-list-title">老健施設5施設でのYUMEHO集団運用の成果報告</div>
+              <div class="press-list-excerpt">プレイ型リハビリによる集団運用で、利用者の自発的参加率が平均31%向上。スタッフ負担は40%削減された事例を公開。</div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Pagination -->
+        <div style="display:flex;justify-content:center;gap:8px;margin-top:48px;" class="fade-up">
+          <span style="width:36px;height:36px;border-radius:50%;border:1px solid var(--black);background:var(--black);color:white;display:grid;place-items:center;font-size:0.82rem;font-weight:700;">1</span>
+          <a href="#" style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(0,0,0,0.15);display:grid;place-items:center;font-size:0.82rem;color:var(--mid-gray);">2</a>
+          <a href="#" style="width:36px;height:36px;border-radius:50%;border:1px solid rgba(0,0,0,0.15);display:grid;place-items:center;font-size:0.82rem;color:var(--mid-gray);">3</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="assets/img/logo.svg" alt="Rinascente" style="height:32px;vertical-align:middle;margin-right:4px;">Rinascente</div>
+          <div class="footer-tagline">復活する。再生する。</div>
+          <p><span style="white-space:nowrap;">医療・福祉機器の企画・販売を中心に、</span><span style="white-space:nowrap;">人の生活を支えるソリューションを届けます。</span><br>○○○○<br><span style="white-space:nowrap;">TEL: 0859-00-1234</span></p>
+        </div>
+        <div class="footer-col footer-col--desktop">
+          <h4>Corporate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="identity.html">Identity</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="cases.html">Cases</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Member Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col--desktop">
+          <h4>YUMEHO</h4>
+          <ul>
+            <li><a href="../yumeho/index.html">トップ</a></li>
+            <li><a href="../yumeho/product.html">製品紹介</a></li>
+            <li><a href="../yumeho/simulation.html">導入シミュレーション</a></li>
+            <li><a href="../yumeho/cases.html">導入事例</a></li>
+            <li><a href="../yumeho/flow.html">導入フロー</a></li>
+            <li><a href="../yumeho/price.html">価格・見積</a></li>
+            <li><a href="../yumeho/subsidy.html">補助金ガイド</a></li>
+            <li><a href="../yumeho/faq.html">FAQ</a></li>
+            <li><a href="../yumeho/contact.html">お問い合わせ</a></li>
+            <li><a href="../yumeho/company.html">会社概要</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col--desktop">
+          <h4>MICA30</h4>
+          <ul>
+            <li><a href="../mica30/index.html">トップ</a></li>
+            <li><a href="../mica30/product.html">製品詳細</a></li>
+            <li><a href="../mica30/cases.html">導入事例</a></li>
+            <li><a href="../mica30/voices.html">ご利用施設の声</a></li>
+            <li><a href="../mica30/price.html">価格・導入</a></li>
+            <li><a href="../mica30/flow.html">導入の流れ</a></li>
+            <li><a href="../mica30/faq.html">FAQ</a></li>
+            <li><a href="../mica30/company.html">会社概要</a></li>
+            <li><a href="../mica30/contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Rinascente. All Rights Reserved.</span>
+        <span>Rinascente Inc.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=20260413a"></script>
+  <script>
+    const items = document.querySelectorAll('.press-list-item');
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        items.forEach(item => {
+          const show = filter === 'すべて' || item.dataset.category === filter;
+          item.style.display = show ? '' : 'none';
+          // 最後の表示アイテムのborder-bottomを消す処理
+          item.style.borderBottom = '';
+        });
+        // 表示中の最後のアイテムのborder-bottomを除去
+        const visible = [...items].filter(i => i.style.display !== 'none');
+        if (visible.length) visible[visible.length - 1].style.borderBottom = 'none';
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1440 810" width="1440" height="810">
+  <defs>
+    <style>
+      text{font-family:HiraKakuProN-W3-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN',sans-serif}
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1440" height="810" fill="#fff"/>
+  <rect width="1440" height="4" fill="#0068b7"/>
+
+  <!-- Header -->
+  <text x="720" y="66" text-anchor="middle" fill="#0068b7" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:11px;letter-spacing:.2em">SELF INTRODUCTION</text>
+  <text x="720" y="110" text-anchor="middle" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:34px;letter-spacing:.08em">自己紹介</text>
+
+  <!-- ===== Left Column: Profile ===== -->
+  <!-- Photo placeholder -->
+  <rect x="80" y="160" width="440" height="540" rx="20" ry="20" fill="#f6f8fb" stroke="#e0e0e0" stroke-width=".75"/>
+
+  <!-- Name area -->
+  <circle cx="180" cy="240" r="48" fill="#0068b7"/>
+  <text x="180" y="236" text-anchor="middle" fill="rgba(255,255,255,.3)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:10px;letter-spacing:.1em">PHOTO</text>
+  <text x="180" y="256" text-anchor="middle" fill="rgba(255,255,255,.3)" style="font-size:9px">写真を配置</text>
+
+  <text x="250" y="228" fill="#1a1a1a" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:24px">屋号 / 氏名</text>
+  <text x="250" y="256" fill="#888" style="font-size:12px">Web制作 / デザイン / マーケティング</text>
+
+  <!-- Divider -->
+  <line x1="110" y1="290" x2="490" y2="290" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- Key message -->
+  <rect x="110" y="310" width="390" height="64" rx="10" ry="10" fill="#0068b7"/>
+  <text x="305" y="340" text-anchor="middle" fill="#fff" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:15px">作って終わりではなく</text>
+  <text x="305" y="364" text-anchor="middle" fill="rgba(255,255,255,.7)" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:15px">公開後の運用・成果まで一貫して対応</text>
+
+  <!-- Support areas -->
+  <text x="110" y="412" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">対応領域</text>
+  <rect x="110" y="426" width="120" height="30" rx="6" ry="6" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="170" y="446" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px">Web制作</text>
+  <rect x="240" y="426" width="120" height="30" rx="6" ry="6" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="300" y="446" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px">デザイン</text>
+  <rect x="370" y="426" width="120" height="30" rx="6" ry="6" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="430" y="446" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px">SNS運用</text>
+  <rect x="110" y="466" width="120" height="30" rx="6" ry="6" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="170" y="486" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px">広告運用</text>
+  <rect x="240" y="466" width="120" height="30" rx="6" ry="6" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="300" y="486" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px">アクセス解析</text>
+  <rect x="370" y="466" width="120" height="30" rx="6" ry="6" fill="#f0f7ff" stroke="#b0d4ee" stroke-width=".5"/>
+  <text x="430" y="486" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:11px">コンサル</text>
+
+  <!-- Divider -->
+  <line x1="110" y1="516" x2="490" y2="516" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- One-stop message -->
+  <text x="110" y="548" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px">制作会社に頼むと…</text>
+  <text x="110" y="572" fill="#aaa" style="font-size:11px">制作は A社、運用は B社、広告は C社 → 窓口がバラバラ</text>
+  <text x="110" y="606" fill="#333" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px">私の場合 →</text>
+  <text x="200" y="606" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:13px">窓口がひとつで、すべてつながります</text>
+
+  <!-- Arrow -->
+  <rect x="110" y="628" width="380" height="52" rx="8" ry="8" fill="#f0f7ff"/>
+  <text x="300" y="652" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:12px">制作 → SNS運用 → 広告 → 分析・改善</text>
+  <text x="300" y="670" text-anchor="middle" fill="#888" style="font-size:10px">ひとりの担当者が一気通貫で対応</text>
+
+
+  <!-- ===== Right Column: Credentials ===== -->
+  <!-- Card 1: Yorozu -->
+  <rect x="560" y="160" width="800" height="200" rx="16" ry="16" fill="#1a1510"/>
+  <rect x="590" y="188" width="56" height="56" rx="28" ry="28" fill="rgba(212,175,55,.2)"/>
+  <text x="618" y="222" text-anchor="middle" fill="#d4af37" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:20px">6</text>
+  <text x="618" y="238" text-anchor="middle" fill="rgba(212,175,55,.5)" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:8px">年間</text>
+
+  <text x="670" y="208" fill="rgba(255,255,255,.35)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:10px;letter-spacing:.1em">PUBLIC SUPPORT</text>
+  <text x="670" y="238" fill="#d4af37" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:20px">鳥取県よろず支援拠点</text>
+  <text x="670" y="264" fill="rgba(255,255,255,.7)" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">デザイン・IT・広告の専門コーディネーター</text>
+
+  <line x1="590" y1="286" x2="1320" y2="286" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+
+  <text x="590" y="316" fill="rgba(255,255,255,.5)" style="font-size:12px">中小企業庁が全国に設置する経営相談所。デザイン・IT・広告の専門家として</text>
+  <text x="590" y="336" fill="rgba(255,255,255,.5)" style="font-size:12px">6年間で多数の事業者様の Web 戦略・サイト構築・SNS運用・広告設計を支援。</text>
+
+  <!-- Card 2: Shinyo Hosho -->
+  <rect x="560" y="380" width="800" height="200" rx="16" ry="16" fill="#1a1510"/>
+  <rect x="590" y="408" width="56" height="56" rx="28" ry="28" fill="rgba(212,175,55,.2)"/>
+  <text x="618" y="436" text-anchor="middle" fill="#d4af37" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:14px">MA</text>
+  <text x="618" y="456" text-anchor="middle" fill="rgba(212,175,55,.4)" style="font-size:7px">ADVISOR</text>
+
+  <text x="670" y="428" fill="rgba(255,255,255,.35)" style="font-family:HelveticaNeue-Bold,'Helvetica Neue';font-weight:700;font-size:10px;letter-spacing:.1em">PUBLIC SUPPORT</text>
+  <text x="670" y="458" fill="#d4af37" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:20px">鳥取県信用保証協会</text>
+  <text x="670" y="484" fill="rgba(255,255,255,.7)" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:14px">メソッドアドバイザー</text>
+
+  <line x1="590" y1="506" x2="1320" y2="506" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+
+  <text x="590" y="536" fill="rgba(255,255,255,.5)" style="font-size:12px">信用保証協会の融資先事業者に対し、Web・デジタル分野の専門アドバイザーとして</text>
+  <text x="590" y="556" fill="rgba(255,255,255,.5)" style="font-size:12px">サイト改善・集客戦略・SNS活用などの実務支援を実施。多数の案件を経験。</text>
+
+  <!-- Bottom highlight -->
+  <rect x="560" y="604" width="800" height="96" rx="16" ry="16" fill="#f0f7ff" stroke="#0068b7" stroke-width="1"/>
+  <text x="960" y="640" text-anchor="middle" fill="#0068b7" style="font-family:HiraKakuProN-W6-83pv-RKSJ-H,'Hiragino Kaku Gothic ProN';font-size:16px">公的支援機関のコンサルタントが、サイト制作からお手伝いします</text>
+  <text x="960" y="670" text-anchor="middle" fill="#888" style="font-size:12px">単なる制作者ではなく、事業の成長を見据えた「仕組みづくり」のパートナーです</text>
+
+  <!-- Footer -->
+  <rect x="0" y="768" width="1440" height="42" fill="#0068b7"/>
+  <text x="720" y="794" text-anchor="middle" fill="rgba(255,255,255,.4)" style="font-size:10px">Confidential — Prepared for 医療法人真誠会</text>
+</svg>

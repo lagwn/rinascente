@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>WordPress 更新マニュアル</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="wp-operation-manual-print.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">WordPress 更新マニュアル</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#wordpress-更新マニュアルrinascente--yumeho"
+id="toc-wordpress-更新マニュアルrinascente--yumeho">WordPress
+更新マニュアル（Rinascente / YUMEHO）</a>
+<ul>
+<li><a href="#1-更新場所の早見表" id="toc-1-更新場所の早見表">1.
+更新場所の早見表</a>
+<ul>
+<li><a href="#11-yumeho-の主な更新箇所"
+id="toc-11-yumeho-の主な更新箇所">1.1 YUMEHO の主な更新箇所</a></li>
+<li><a href="#12-rinascente-の主な更新箇所"
+id="toc-12-rinascente-の主な更新箇所">1.2 Rinascente
+の主な更新箇所</a></li>
+<li><a href="#13-cms-で更新できない--現在停止中の項目"
+id="toc-13-cms-で更新できない--現在停止中の項目">1.3 CMS で更新できない
+/ 現在停止中の項目</a></li>
+</ul></li>
+<li><a href="#2-公開ページごとの更新元マップ"
+id="toc-2-公開ページごとの更新元マップ">2.
+公開ページごとの更新元マップ</a>
+<ul>
+<li><a href="#21-yumeho-側の公開ページ"
+id="toc-21-yumeho-側の公開ページ">2.1 YUMEHO 側の公開ページ</a></li>
+<li><a href="#22-rinascente-側の公開ページ"
+id="toc-22-rinascente-側の公開ページ">2.2 Rinascente
+側の公開ページ</a></li>
+</ul></li>
+<li><a href="#3-ログイン方法" id="toc-3-ログイン方法">3.
+ログイン方法</a>
+<ul>
+<li><a href="#31-ログイン画面の見方" id="toc-31-ログイン画面の見方">3.1
+ログイン画面の見方</a></li>
+<li><a href="#32-url-の考え方" id="toc-32-url-の考え方">3.2 URL
+の考え方</a></li>
+</ul></li>
+<li><a href="#4-yumeho-の更新手順" id="toc-4-yumeho-の更新手順">4.
+YUMEHO の更新手順</a>
+<ul>
+<li><a href="#41-サイト更新ダッシュボード"
+id="toc-41-サイト更新ダッシュボード">4.1
+サイト更新ダッシュボード</a></li>
+<li><a href="#42-導入事例の更新" id="toc-42-導入事例の更新">4.2
+導入事例の更新</a></li>
+<li><a href="#43-faq-の更新" id="toc-43-faq-の更新">4.3 FAQ
+の更新</a></li>
+<li><a href="#44-導入拠点の更新" id="toc-44-導入拠点の更新">4.4
+導入拠点の更新</a></li>
+<li><a href="#45-価格参照画面の使い方"
+id="toc-45-価格参照画面の使い方">4.5 価格参照画面の使い方</a></li>
+<li><a href="#46-メディアの更新" id="toc-46-メディアの更新">4.6
+メディアの更新</a></li>
+<li><a href="#47-固定ページの更新" id="toc-47-固定ページの更新">4.7
+固定ページの更新</a></li>
+</ul></li>
+<li><a href="#5-rinascente-の更新手順"
+id="toc-5-rinascente-の更新手順">5. Rinascente の更新手順</a>
+<ul>
+<li><a href="#51-サイト更新ダッシュボード"
+id="toc-51-サイト更新ダッシュボード">5.1
+サイト更新ダッシュボード</a></li>
+<li><a href="#52-ニュースの更新" id="toc-52-ニュースの更新">5.2
+ニュースの更新</a></li>
+<li><a href="#53-コラムの更新" id="toc-53-コラムの更新">5.3
+コラムの更新</a></li>
+<li><a href="#54-会社概要の更新" id="toc-54-会社概要の更新">5.4
+会社概要の更新</a></li>
+<li><a href="#55-会員サイト運用ダッシュボード"
+id="toc-55-会員サイト運用ダッシュボード">5.5
+会員サイト運用ダッシュボード</a></li>
+<li><a href="#56-製品マスターの更新" id="toc-56-製品マスターの更新">5.6
+製品マスターの更新</a></li>
+<li><a href="#57-契約購入履歴の更新" id="toc-57-契約購入履歴の更新">5.7
+契約・購入履歴の更新</a></li>
+<li><a href="#58-会員限定動画の更新" id="toc-58-会員限定動画の更新">5.8
+会員限定動画の更新</a></li>
+<li><a href="#59-会員限定資料の更新" id="toc-59-会員限定資料の更新">5.9
+会員限定資料の更新</a></li>
+<li><a href="#510-サポート情報の更新"
+id="toc-510-サポート情報の更新">5.10 サポート情報の更新</a></li>
+<li><a href="#511-固定ページの更新" id="toc-511-固定ページの更新">5.11
+固定ページの更新</a></li>
+<li><a href="#512-テーマカスタマイザーの更新"
+id="toc-512-テーマカスタマイザーの更新">5.12
+テーマカスタマイザーの更新</a></li>
+</ul></li>
+<li><a href="#6-固定ページを編集するときの判断ルール"
+id="toc-6-固定ページを編集するときの判断ルール">6.
+固定ページを編集するときの判断ルール</a></li>
+<li><a href="#7-公開前チェックリスト" id="toc-7-公開前チェックリスト">7.
+公開前チェックリスト</a>
+<ul>
+<li><a href="#71-投稿系更新の共通チェック"
+id="toc-71-投稿系更新の共通チェック">7.1
+投稿系更新の共通チェック</a></li>
+<li><a href="#72-yumeho-価格会社情報更新のチェック"
+id="toc-72-yumeho-価格会社情報更新のチェック">7.2 YUMEHO
+価格・会社情報更新のチェック</a></li>
+<li><a href="#73-会員向け更新のチェック"
+id="toc-73-会員向け更新のチェック">7.3 会員向け更新のチェック</a></li>
+</ul></li>
+<li><a href="#8-よくある迷いどころ" id="toc-8-よくある迷いどころ">8.
+よくある迷いどころ</a>
+<ul>
+<li><a href="#81-yumeho-の会社概要を直したい"
+id="toc-81-yumeho-の会社概要を直したい">8.1 YUMEHO
+の会社概要を直したい</a></li>
+<li><a href="#82-yumeho-の価格を変えたい"
+id="toc-82-yumeho-の価格を変えたい">8.2 YUMEHO の価格を変えたい</a></li>
+<li><a href="#83-faqページに見出し文を追加したい"
+id="toc-83-faqページに見出し文を追加したい">8.3
+FAQページに見出し文を追加したい</a></li>
+<li><a href="#84-会員向けコンテンツを-yumeho-側で探してしまう"
+id="toc-84-会員向けコンテンツを-yumeho-側で探してしまう">8.4
+会員向けコンテンツを YUMEHO 側で探してしまう</a></li>
+<li><a href="#85-固定ページを編集したのに公開画面が変わらない"
+id="toc-85-固定ページを編集したのに公開画面が変わらない">8.5
+固定ページを編集したのに公開画面が変わらない</a></li>
+</ul></li>
+<li><a href="#9-cmsで変更できない項目を開発者へ依頼するとき"
+id="toc-9-cmsで変更できない項目を開発者へ依頼するとき">9.
+CMSで変更できない項目を開発者へ依頼するとき</a></li>
+<li><a href="#10-開発依頼時に共有するとよい情報"
+id="toc-10-開発依頼時に共有するとよい情報">10.
+開発依頼時に共有するとよい情報</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="wordpress-更新マニュアルrinascente--yumeho">WordPress
+更新マニュアル（Rinascente / YUMEHO）</h1>
+<p><strong>作成日</strong>: 2026-04-13<br />
+<strong>対象</strong>: サイト運用担当者 / 更新担当者<br />
+<strong>対象サイト</strong>: Rinascente コーポレートサイト / YUMEHO
+製品サイト<br />
+<strong>スクリーンショット</strong>: 管理画面で撮影</p>
+<p>このマニュアルは、現在の WordPress
+管理画面で実際に更新できる箇所を、画面単位で細かく整理した運用用マニュアルです。<br />
+特に重要なのは、<strong>「固定ページを開けても、本文を編集しても見た目が変わらないページがある」</strong>
+ことです。更新先を間違えないよう、まずは次の 3
+点を先に確認してください。</p>
+<ol type="1">
+<li>YUMEHO の<strong>会社概要</strong>は、YUMEHO 側ではなく
+<strong>Rinascente の「会社概要」</strong> で更新します。</li>
+<li>YUMEHO の<strong>価格・見積 /
+シミュレーション</strong>の元データは、YUMEHO 側ではなく
+<strong>Rinascente の「製品マスター」</strong> で更新します。</li>
+<li>YUMEHO の<strong>会員向け動画・資料・サポート情報</strong>は、現在
+<strong>Rinascente 側の「会員サイト運用」</strong>
+で一元管理します。</li>
+</ol>
+<h2 id="1-更新場所の早見表">1. 更新場所の早見表</h2>
+<h3 id="11-yumeho-の主な更新箇所">1.1 YUMEHO の主な更新箇所</h3>
+<table>
+<thead>
+<tr>
+<th>更新したい内容</th>
+<th>管理画面の場所</th>
+<th>反映先</th>
+<th>反映タイミング</th>
+<th>補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>導入事例</td>
+<td><code>導入事例</code></td>
+<td>導入事例一覧 / 詳細 / トップの事例訴求</td>
+<td>通常は保存後すぐ</td>
+<td>一番よく使う更新画面</td>
+</tr>
+<tr>
+<td>FAQ本文</td>
+<td><code>FAQ</code></td>
+<td>FAQページ / トップFAQ</td>
+<td>通常は保存後すぐ</td>
+<td>質問1件ごとに1投稿</td>
+</tr>
+<tr>
+<td>FAQページ導入文</td>
+<td><code>固定ページ &gt; FAQ</code></td>
+<td>FAQページ上部</td>
+<td>通常は保存後すぐ</td>
+<td>FAQ投稿とは別</td>
+</tr>
+<tr>
+<td>導入拠点</td>
+<td><code>導入拠点</code></td>
+<td>全国マップ / 導入件数表示</td>
+<td>通常は保存後すぐ</td>
+<td>住所から地図座標を生成</td>
+</tr>
+<tr>
+<td>価格の確認</td>
+<td><code>サイト更新 &gt; 価格参照（Rinascente編集）</code></td>
+<td>参照のみ</td>
+<td>参照のみ</td>
+<td>実際の編集は Rinascente 側</td>
+</tr>
+<tr>
+<td>価格・見積・シミュレーションの元データ</td>
+<td><code>Rinascente &gt; 製品マスター</code></td>
+<td>YUMEHO 価格 / 見積 / シミュレーション</td>
+<td>最大約15分</td>
+<td>YUMEHO側では編集しない</td>
+</tr>
+<tr>
+<td>会社概要の会社情報</td>
+<td><code>Rinascente &gt; 会社概要</code></td>
+<td>YUMEHO 会社概要ページ</td>
+<td>通常は保存後すぐ</td>
+<td>YUMEHO 側固定ページ本文ではない</td>
+</tr>
+<tr>
+<td>画像・PDFなどのアップロード</td>
+<td><code>メディア</code></td>
+<td>各投稿・固定ページで使用</td>
+<td>すぐ利用可能</td>
+<td>画像差し替えの共通入口</td>
+</tr>
+<tr>
+<td>プライバシーポリシー</td>
+<td><code>固定ページ</code></td>
+<td>該当ページ</td>
+<td>通常は保存後すぐ</td>
+<td>本文編集がそのまま反映</td>
+</tr>
+<tr>
+<td>利用規約</td>
+<td><code>固定ページ</code></td>
+<td>該当ページ</td>
+<td>通常は保存後すぐ</td>
+<td>本文編集がそのまま反映</td>
+</tr>
+<tr>
+<td>特定商取引法に基づく表記</td>
+<td><code>固定ページ</code></td>
+<td>該当ページ</td>
+<td>通常は保存後すぐ</td>
+<td>本文編集がそのまま反映</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-rinascente-の主な更新箇所">1.2 Rinascente の主な更新箇所</h3>
+<table>
+<thead>
+<tr>
+<th>更新したい内容</th>
+<th>管理画面の場所</th>
+<th>反映先</th>
+<th>反映タイミング</th>
+<th>補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ニュース</td>
+<td><code>ニュース</code></td>
+<td>Press / ニュース詳細 / トップ掲載</td>
+<td>通常は保存後すぐ</td>
+<td>Featured は1件のみ強調表示</td>
+</tr>
+<tr>
+<td>コラム</td>
+<td><code>コラム</code></td>
+<td>コラム一覧 / 詳細</td>
+<td>通常は保存後すぐ</td>
+<td>YUMEHO 連携設定あり</td>
+</tr>
+<tr>
+<td>YUMEHOにも出すコラム</td>
+<td><code>コラム</code> の連携設定</td>
+<td>YUMEHO コラム一覧 / 詳細</td>
+<td>最大約15分</td>
+<td>REST連携 + キャッシュあり</td>
+</tr>
+<tr>
+<td>会社情報 / サポート窓口</td>
+<td><code>会社概要</code></td>
+<td>Rinascente 会社情報 / YUMEHO会社概要</td>
+<td>通常は保存後すぐ</td>
+<td>両サイト共通の元データ</td>
+</tr>
+<tr>
+<td>製品マスター</td>
+<td><code>会員サイト運用 &gt; 製品マスター</code></td>
+<td>YUMEHO価格 / 見積 / 契約テンプレート</td>
+<td>最大約15分</td>
+<td>価格の元管理画面</td>
+</tr>
+<tr>
+<td>契約・購入履歴</td>
+<td><code>会員サイト運用 &gt; 契約・購入履歴</code></td>
+<td>会員ページの契約表示</td>
+<td>通常は保存後すぐ</td>
+<td>会員別の履歴管理</td>
+</tr>
+<tr>
+<td>会員限定動画</td>
+<td><code>会員サイト運用 &gt; 会員限定動画</code></td>
+<td>会員ページ</td>
+<td>通常は保存後すぐ</td>
+<td>YouTube URL / ID を登録</td>
+</tr>
+<tr>
+<td>会員限定資料</td>
+<td><code>会員サイト運用 &gt; 会員限定資料</code></td>
+<td>会員ページ</td>
+<td>通常は保存後すぐ</td>
+<td>PDF等の配布資料</td>
+</tr>
+<tr>
+<td>サポート情報</td>
+<td><code>会員サイト運用 &gt; サポート情報</code></td>
+<td>会員ページ</td>
+<td>通常は保存後すぐ</td>
+<td>お知らせ・重要情報</td>
+</tr>
+<tr>
+<td>プライバシーポリシー</td>
+<td><code>固定ページ</code></td>
+<td>該当ページ</td>
+<td>通常は保存後すぐ</td>
+<td>本文編集がそのまま反映</td>
+</tr>
+<tr>
+<td>利用規約</td>
+<td><code>固定ページ</code></td>
+<td>該当ページ</td>
+<td>通常は保存後すぐ</td>
+<td>本文編集がそのまま反映</td>
+</tr>
+<tr>
+<td>アナリティクス / 連携URL</td>
+<td><code>外観 &gt; カスタマイズ</code></td>
+<td>サイト全体</td>
+<td>保存後すぐ</td>
+<td>管理者向けの全体設定</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-cms-で更新できない--現在停止中の項目">1.3 CMS で更新できない
+/ 現在停止中の項目</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>状態</th>
+<th>対応方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YUMEHO 製品紹介ページ本文</td>
+<td>テンプレート固定</td>
+<td>開発者へ依頼</td>
+</tr>
+<tr>
+<td>YUMEHO 導入の流れページ</td>
+<td>テンプレート固定</td>
+<td>開発者へ依頼</td>
+</tr>
+<tr>
+<td>YUMEHO 補助金ガイドの構造変更</td>
+<td>テンプレート固定</td>
+<td>開発者へ依頼</td>
+</tr>
+<tr>
+<td>YUMEHO お問い合わせページの構造変更</td>
+<td>テンプレート固定</td>
+<td>開発者へ依頼</td>
+</tr>
+<tr>
+<td>Rinascente Corporate Identity の構造変更</td>
+<td>テンプレート固定</td>
+<td>開発者へ依頼</td>
+</tr>
+<tr>
+<td>Rinascente お問い合わせページの構造変更</td>
+<td>テンプレート固定</td>
+<td>開発者へ依頼</td>
+</tr>
+<tr>
+<td>Rinascente 導入事例ページ</td>
+<td>現在の管理画面更新対象外</td>
+<td>開発者へ依頼</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-公開ページごとの更新元マップ">2.
+公開ページごとの更新元マップ</h2>
+<h3 id="21-yumeho-側の公開ページ">2.1 YUMEHO 側の公開ページ</h3>
+<table>
+<thead>
+<tr>
+<th>公開ページ</th>
+<th>CMSで更新できるか</th>
+<th>実際の更新元</th>
+<th>補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>トップページ</td>
+<td>一部可</td>
+<td>導入事例 / FAQ / 導入拠点 / Rinascente 製品マスター</td>
+<td>ページ本文ではなく各機能の内容が反映</td>
+</tr>
+<tr>
+<td>製品紹介</td>
+<td>基本不可</td>
+<td>テンプレート</td>
+<td>文言や構造変更は開発対応</td>
+</tr>
+<tr>
+<td>導入シミュレーション</td>
+<td>一部可</td>
+<td>Rinascente 製品マスター</td>
+<td>商品・価格ロジックは製品マスター参照</td>
+</tr>
+<tr>
+<td>導入の流れ</td>
+<td>基本不可</td>
+<td>テンプレート</td>
+<td>CMS本文編集では運用しない</td>
+</tr>
+<tr>
+<td>価格・見積</td>
+<td>一部可</td>
+<td>Rinascente 製品マスター</td>
+<td>価格の元データは Rinascente 側</td>
+</tr>
+<tr>
+<td>補助金ガイド</td>
+<td>基本不可</td>
+<td>テンプレート</td>
+<td>構造変更は開発対応</td>
+</tr>
+<tr>
+<td>FAQ</td>
+<td>可</td>
+<td><code>FAQ</code> 投稿 + <code>固定ページ &gt; FAQ</code></td>
+<td>投稿が質問一覧、本体ページは導入文</td>
+</tr>
+<tr>
+<td>会社概要</td>
+<td>可</td>
+<td><code>Rinascente &gt; 会社概要</code></td>
+<td>YUMEHO 側の固定ページ本文ではない</td>
+</tr>
+<tr>
+<td>お問い合わせ</td>
+<td>基本不可</td>
+<td>テンプレート / フォーム設定</td>
+<td>構造変更は開発対応</td>
+</tr>
+<tr>
+<td>プライバシーポリシー</td>
+<td>可</td>
+<td><code>固定ページ &gt; プライバシーポリシー</code></td>
+<td>本文編集が反映</td>
+</tr>
+<tr>
+<td>利用規約</td>
+<td>可</td>
+<td><code>固定ページ &gt; 利用規約</code></td>
+<td>本文編集が反映</td>
+</tr>
+<tr>
+<td>特定商取引法に基づく表記</td>
+<td>可</td>
+<td><code>固定ページ &gt; 特定商取引法に基づく表記</code></td>
+<td>本文編集が反映</td>
+</tr>
+<tr>
+<td>Member Login / Member Area / Forgot / Reset / 決済完了 /
+決済キャンセル</td>
+<td>原則触らない</td>
+<td>システムページ</td>
+<td>通常運用では編集しない</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-rinascente-側の公開ページ">2.2 Rinascente 側の公開ページ</h3>
+<table>
+<thead>
+<tr>
+<th>公開ページ</th>
+<th>CMSで更新できるか</th>
+<th>実際の更新元</th>
+<th>補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>トップページ</td>
+<td>一部可</td>
+<td>ニュース / コラム</td>
+<td>主要構造はテンプレート固定</td>
+</tr>
+<tr>
+<td>Corporate Identity</td>
+<td>一部可</td>
+<td>会社概要</td>
+<td>会社データはCMS更新可、構造変更は開発対応</td>
+</tr>
+<tr>
+<td>導入事例</td>
+<td>現在不可</td>
+<td>開発対応</td>
+<td>現構成では管理画面更新対象外</td>
+</tr>
+<tr>
+<td>Press</td>
+<td>可</td>
+<td>ニュース</td>
+<td>一覧・詳細ともニュース投稿から更新</td>
+</tr>
+<tr>
+<td>お問い合わせ</td>
+<td>基本不可</td>
+<td>テンプレート / フォーム設定</td>
+<td>構造変更は開発対応</td>
+</tr>
+<tr>
+<td>プライバシーポリシー</td>
+<td>可</td>
+<td><code>固定ページ &gt; プライバシーポリシー</code></td>
+<td>本文編集が反映</td>
+</tr>
+<tr>
+<td>利用規約</td>
+<td>可</td>
+<td><code>固定ページ &gt; 利用規約</code></td>
+<td>本文編集が反映</td>
+</tr>
+<tr>
+<td>Member Login / Member Page / Forgot / Reset</td>
+<td>原則触らない</td>
+<td>システムページ</td>
+<td>通常運用では編集しない</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-ログイン方法">3. ログイン方法</h2>
+<h3 id="31-ログイン画面の見方">3.1 ログイン画面の見方</h3>
+<p><img src="./wp-operation-manual-assets/01-login.png"
+alt="ログイン画面" /></p>
+<ol type="1">
+<li>dev環境では、まず各サイトの <code>/wp-admin/</code>
+を開きます。</li>
+<li>公開までは
+dev環境にベーシック認証がかかっているため、ブラウザの認証ダイアログが出たら共有の
+ID / PW を入力します。</li>
+<li><code>ユーザー名またはメールアドレス</code> と
+<code>パスワード</code> を入力します。</li>
+<li><code>ログイン</code> を押します。</li>
+<li>本番環境で
+2段階認証が有効な場合は、認証コード入力まで進みます。</li>
+</ol>
+<h3 id="32-url-の考え方">3.2 URL の考え方</h3>
+<table>
+<thead>
+<tr>
+<th>環境</th>
+<th>Rinascente</th>
+<th>YUMEHO</th>
+<th>補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dev環境（確認用）</td>
+<td><code>https://corp-dev.rinascenteyumeho.jp/wp-admin/</code></td>
+<td><code>https://dev.rinascenteyumeho.jp/wp-admin/</code></td>
+<td>公開まではベーシック認証あり</td>
+</tr>
+<tr>
+<td>本番環境ではこちら</td>
+<td><code>https://onerinascente.co.jp/wp-admin/</code></td>
+<td><code>https://rinascenteyumeho.jp/wp-admin/</code></td>
+<td>公開後に使用</td>
+</tr>
+</tbody>
+</table>
+<p>dev環境は公開までベーシック認証で保護されています。WordPress
+のログイン画面が出る前に、共有のベーシック認証 ID / PW
+の入力が必要です。</p>
+<h2 id="4-yumeho-の更新手順">4. YUMEHO の更新手順</h2>
+<h3 id="41-サイト更新ダッシュボード">4.1 サイト更新ダッシュボード</h3>
+<p><img src="./wp-operation-manual-assets/02-yumeho-dashboard.png"
+alt="YUMEHO ダッシュボード" /></p>
+<p>この画面は、YUMEHO
+の更新導線をまとめた入口です。迷ったらまずここを開いてください。</p>
+<ol type="1">
+<li>左メニューの <code>サイト更新</code> を開きます。</li>
+<li>画面上部のカードから、更新したい内容を選びます。</li>
+<li>次の使い分けを基準にします。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>カード / 導線</th>
+<th>使うとき</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>導入事例</td>
+<td>導入施設の事例を追加・修正したい</td>
+</tr>
+<tr>
+<td>FAQ</td>
+<td>よくある質問を追加・修正したい</td>
+</tr>
+<tr>
+<td>導入拠点</td>
+<td>地図や導入件数の元データを更新したい</td>
+</tr>
+<tr>
+<td>固定ページ</td>
+<td>規約や法務ページ、FAQ導入文を変えたい</td>
+</tr>
+<tr>
+<td>テーマ設定</td>
+<td>サイト全体の設定を変えたい</td>
+</tr>
+<tr>
+<td>価格参照</td>
+<td>価格を確認したいが、編集は Rinascente 側で行う</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-導入事例の更新">4.2 導入事例の更新</h3>
+<h4 id="一覧画面">一覧画面</h4>
+<p><img src="./wp-operation-manual-assets/03-yumeho-case-list.png"
+alt="YUMEHO 導入事例一覧" /></p>
+<ol type="1">
+<li>左メニューの <code>導入事例</code> を開きます。</li>
+<li>既存記事を直す場合はタイトルをクリックします。</li>
+<li>新規追加は <code>新規追加</code> を押します。</li>
+<li>一覧では主に次を確認します。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>確認項目</th>
+<th>見るポイント</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>サムネイル</td>
+<td>メイン画像が入っているか</td>
+</tr>
+<tr>
+<td>タイトル</td>
+<td>施設名・機種が分かるか</td>
+</tr>
+<tr>
+<td>概要</td>
+<td>施設種別や機種が想定どおりか</td>
+</tr>
+<tr>
+<td>フラグ</td>
+<td><code>おすすめ</code> や <code>一覧非表示</code> の有無</td>
+</tr>
+</tbody>
+</table>
+<h4 id="編集画面">編集画面</h4>
+<p><img src="./wp-operation-manual-assets/04-yumeho-case-edit.png"
+alt="YUMEHO 導入事例編集" /></p>
+<ol type="1">
+<li><code>① 基本情報</code> を入力します。</li>
+<li><code>② メイン画像</code> で代表画像を設定します。</li>
+<li><code>③ 課題・決め手・変化</code> を入力します。</li>
+<li>必要なら
+<code>④ 数値で見る変化</code>、<code>⑤ 経緯・お客様の声</code>、<code>⑥ 表示設定</code>
+を入力します。</li>
+<li>右上の <code>公開</code> または <code>更新</code> を押します。</li>
+</ol>
+<h4 id="入力項目の意味">入力項目の意味</h4>
+<table>
+<thead>
+<tr>
+<th>セクション</th>
+<th>項目</th>
+<th>使い方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 基本情報</td>
+<td>事例タイトル</td>
+<td>空欄でも可。未入力なら施設名と機種から自動生成</td>
+</tr>
+<tr>
+<td>① 基本情報</td>
+<td>施設名</td>
+<td>一覧・詳細の主表示</td>
+</tr>
+<tr>
+<td>① 基本情報</td>
+<td>導入年月</td>
+<td>例: <code>2025年4月導入</code></td>
+</tr>
+<tr>
+<td>① 基本情報</td>
+<td>所在地</td>
+<td>例: <code>東京都</code></td>
+</tr>
+<tr>
+<td>① 基本情報</td>
+<td>対象製品</td>
+<td>機種名を選択</td>
+</tr>
+<tr>
+<td>① 基本情報</td>
+<td>施設種別</td>
+<td>タブ切替や分類に使用</td>
+</tr>
+<tr>
+<td>② メイン画像</td>
+<td>画像を選択</td>
+<td>一覧サムネイルと詳細の代表画像</td>
+</tr>
+<tr>
+<td>② メイン画像</td>
+<td>画像の表示方法</td>
+<td><code>cover</code> / <code>contain</code> を選択</td>
+</tr>
+<tr>
+<td>③ 課題・決め手・変化</td>
+<td>課題 / 決め手 / 変化</td>
+<td>公開ページの本文にそのまま反映</td>
+</tr>
+<tr>
+<td>④ 数値で見る変化</td>
+<td>ラベル / 値</td>
+<td>成果を3件まで表示可能</td>
+</tr>
+<tr>
+<td>⑤ 経緯・お客様の声</td>
+<td>導入決定までの経緯 / お客様の声 / 発言者</td>
+<td>詳細ページの補足情報</td>
+</tr>
+<tr>
+<td>⑥ 表示設定</td>
+<td>おすすめ事例として出す</td>
+<td>トップなど優先表示</td>
+</tr>
+<tr>
+<td>⑥ 表示設定</td>
+<td>一覧には出さない</td>
+<td>詳細URLを残しつつ一覧から除外</td>
+</tr>
+</tbody>
+</table>
+<h4 id="更新時の判断基準">更新時の判断基準</h4>
+<ol type="1">
+<li>まず最低限、<code>施設名</code> <code>対象製品</code>
+<code>施設種別</code> <code>導入年月</code> <code>メイン画像</code>
+<code>課題</code> <code>決め手</code> <code>変化</code>
+を埋めます。</li>
+<li>画像だけ差し替えたい場合も、本文を消さずに <code>② メイン画像</code>
+だけ更新して問題ありません。</li>
+<li>類似事例を増やすときは <code>この事例を複製して下書きを作る</code>
+を使うと早いです。</li>
+</ol>
+<h3 id="43-faq-の更新">4.3 FAQ の更新</h3>
+<h4 id="一覧画面-1">一覧画面</h4>
+<p><img src="./wp-operation-manual-assets/05-yumeho-faq-list.png"
+alt="YUMEHO FAQ 一覧" /></p>
+<ol type="1">
+<li>左メニューの <code>FAQ</code> を開きます。</li>
+<li>既存FAQの修正はタイトルをクリックします。</li>
+<li>新しいFAQは <code>新規追加</code> を押します。</li>
+<li>一覧で
+<code>FAQカテゴリ</code>、<code>対象製品</code>、<code>回答要約</code>、<code>並び順</code>
+を確認します。</li>
+</ol>
+<h4 id="編集画面-1">編集画面</h4>
+<p><img src="./wp-operation-manual-assets/06-yumeho-faq-edit.png"
+alt="YUMEHO FAQ 編集" /></p>
+<ol type="1">
+<li>画面上部のタイトル欄に <code>質問タイトル</code> を入れます。</li>
+<li>本文エリアに <code>回答本文</code> を入れます。</li>
+<li>上部のカードで <code>FAQカテゴリ</code> を選びます。</li>
+<li>必要に応じて <code>対象製品</code> を選びます。</li>
+<li><code>並び順</code> を設定します。</li>
+<li>右上の <code>公開</code> または <code>更新</code> を押します。</li>
+</ol>
+<h4 id="faq-の基本ルール">FAQ の基本ルール</h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>ルール</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>質問タイトル</td>
+<td>1投稿につき1質問</td>
+</tr>
+<tr>
+<td>回答本文</td>
+<td>そのまま公開ページの回答欄に出る</td>
+</tr>
+<tr>
+<td>FAQカテゴリ</td>
+<td>FAQページの絞り込みタブに使う</td>
+</tr>
+<tr>
+<td>対象製品</td>
+<td>通常は YUMEHO を選べば問題なし</td>
+</tr>
+<tr>
+<td>並び順</td>
+<td>小さい数字ほど上に表示</td>
+</tr>
+</tbody>
+</table>
+<h4 id="並び順のコツ">並び順のコツ</h4>
+<ol type="1">
+<li>最初は <code>10, 20, 30...</code> のように登録します。</li>
+<li>あとから間に差し込みたいときは <code>15</code> などを入れます。</li>
+<li>一覧画面で順序調整できる場合もありますが、迷ったら編集画面の
+<code>並び順</code> を基準にしてください。</li>
+</ol>
+<h3 id="44-導入拠点の更新">4.4 導入拠点の更新</h3>
+<h4 id="一覧画面-2">一覧画面</h4>
+<p><img
+src="./wp-operation-manual-assets/07-yumeho-installation-list.png"
+alt="YUMEHO 導入拠点一覧" /></p>
+<ol type="1">
+<li>左メニューの <code>導入拠点</code> を開きます。</li>
+<li>施設ごとに1件登録されていることを確認します。</li>
+<li>既存の修正はタイトルをクリックします。</li>
+<li>新規追加は <code>新規追加</code> を押します。</li>
+</ol>
+<h4 id="編集画面-2">編集画面</h4>
+<p><img
+src="./wp-operation-manual-assets/08-yumeho-installation-edit.png"
+alt="YUMEHO 導入拠点編集" /></p>
+<ol type="1">
+<li>タイトル欄に <code>施設名</code> を入れます。</li>
+<li><code>対象製品</code> を選びます。</li>
+<li><code>都道府県</code> と <code>住所</code> を入力します。</li>
+<li><code>並び順</code> を設定します。</li>
+<li><code>地図に表示する</code> と <code>件数に含める</code>
+を必要に応じて切り替えます。</li>
+<li>地図位置がずれる場合だけ <code>位置を手動で調整する</code>
+を開き、緯度経度を入力します。</li>
+<li><code>公開</code> または <code>更新</code> を押します。</li>
+</ol>
+<h4 id="入力ルール">入力ルール</h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>必須</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>施設名</td>
+<td>必須</td>
+<td>投稿タイトルに入力</td>
+</tr>
+<tr>
+<td>対象製品</td>
+<td>必須</td>
+<td>地図の製品別集計に使う</td>
+</tr>
+<tr>
+<td>都道府県</td>
+<td>必須</td>
+<td>位置計算の基準</td>
+</tr>
+<tr>
+<td>住所</td>
+<td>必須</td>
+<td>位置計算の基準</td>
+</tr>
+<tr>
+<td>並び順</td>
+<td>必須</td>
+<td>一覧表示順</td>
+</tr>
+<tr>
+<td>公開用表示名</td>
+<td>任意</td>
+<td>地図に短い名称で出したいとき</td>
+</tr>
+<tr>
+<td>地図に表示する</td>
+<td>任意</td>
+<td>オフでマップ非表示</td>
+</tr>
+<tr>
+<td>件数に含める</td>
+<td>任意</td>
+<td>オフで件数カウント対象外</td>
+</tr>
+<tr>
+<td>緯度 / 経度</td>
+<td>任意</td>
+<td>自動位置がずれたときだけ使う</td>
+</tr>
+</tbody>
+</table>
+<h3 id="45-価格参照画面の使い方">4.5 価格参照画面の使い方</h3>
+<p><img
+src="./wp-operation-manual-assets/09-yumeho-pricing-reference.png"
+alt="YUMEHO 価格参照" /></p>
+<p>この画面は<strong>確認用</strong>です。YUMEHO
+側で価格を直接編集する画面ではありません。</p>
+<ol type="1">
+<li><code>サイト更新 &gt; 価格参照（Rinascente編集）</code>
+を開きます。</li>
+<li>現在の本体価格・オプション価格を確認します。</li>
+<li>実際に修正したい場合は、画面内の
+<code>Rinascente の製品マスターを開く</code> を押します。</li>
+<li>詳細な編集方法は、このマニュアルの
+<code>5.6 製品マスターの更新</code> を参照します。</li>
+</ol>
+<h4 id="反映の考え方">反映の考え方</h4>
+<table>
+<thead>
+<tr>
+<th>更新したいもの</th>
+<th>実際の編集先</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YUMEHO の価格表</td>
+<td>Rinascente の <code>製品マスター</code></td>
+</tr>
+<tr>
+<td>YUMEHO の見積シミュレーション</td>
+<td>Rinascente の <code>製品マスター</code></td>
+</tr>
+<tr>
+<td>契約情報のひな形</td>
+<td>Rinascente の <code>製品マスター</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="46-メディアの更新">4.6 メディアの更新</h3>
+<p><img src="./wp-operation-manual-assets/10-yumeho-media-library.png"
+alt="YUMEHO メディアライブラリ" /></p>
+<p>画像・PDF・資料ファイルをアップロードする共通画面です。操作は
+Rinascente 側でもほぼ同じです。</p>
+<ol type="1">
+<li>左メニューの <code>メディア</code> を開きます。</li>
+<li><code>新規メディアファイルを追加</code>
+でファイルをアップロードします。</li>
+<li>既存ファイルを差し替えたい場合は、関連する投稿編集画面から再選択する運用を推奨します。</li>
+<li>画像を使う更新では、以下を目安にします。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>用途</th>
+<th>推奨</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>導入事例の代表画像</td>
+<td>横長・明るめ・施設や製品が分かるもの</td>
+</tr>
+<tr>
+<td>ニュース / コラムの代表画像</td>
+<td>横長・一覧で内容が伝わるもの</td>
+</tr>
+<tr>
+<td>PDF資料</td>
+<td>ファイル名を分かりやすくする</td>
+</tr>
+</tbody>
+</table>
+<h3 id="47-固定ページの更新">4.7 固定ページの更新</h3>
+<h4 id="一覧画面-3">一覧画面</h4>
+<p><img src="./wp-operation-manual-assets/11-yumeho-fixed-pages.png"
+alt="YUMEHO 固定ページ一覧" /></p>
+<p>固定ページは<strong>全部が本文更新対象ではありません</strong>。次の表で使い分けてください。</p>
+<table>
+<thead>
+<tr>
+<th>固定ページ</th>
+<th>本文編集が反映されるか</th>
+<th>更新方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FAQ</td>
+<td>一部反映</td>
+<td>ページ上部導入文は本文、質問一覧は <code>FAQ</code> 投稿で更新</td>
+</tr>
+<tr>
+<td>プライバシーポリシー</td>
+<td>反映される</td>
+<td>本文を編集</td>
+</tr>
+<tr>
+<td>利用規約</td>
+<td>反映される</td>
+<td>本文を編集</td>
+</tr>
+<tr>
+<td>特定商取引法に基づく表記</td>
+<td>反映される</td>
+<td>本文を編集</td>
+</tr>
+<tr>
+<td>会社概要</td>
+<td>基本反映しない</td>
+<td><code>Rinascente &gt; 会社概要</code> を更新</td>
+</tr>
+<tr>
+<td>トップページ / 製品紹介 / 導入の流れ / 価格・見積 / 補助金ガイド /
+お問い合わせ</td>
+<td>基本反映しない</td>
+<td>テンプレートまたは別機能を更新</td>
+</tr>
+</tbody>
+</table>
+<h4 id="法務ページ編集">法務ページ編集</h4>
+<p><img src="./wp-operation-manual-assets/12-yumeho-legal-page-edit.png"
+alt="YUMEHO 法務ページ編集" /></p>
+<ol type="1">
+<li><code>固定ページ</code> から対象ページを開きます。</li>
+<li>本文ブロック内の文章を更新します。</li>
+<li>見出しや箇条書きはブロックエディタで整えます。</li>
+<li><code>更新</code> を押します。</li>
+</ol>
+<h4 id="yumeho-会社概要の注意">YUMEHO 会社概要の注意</h4>
+<p>YUMEHO の <code>会社概要</code> ページに表示される会社情報は、現在
+<strong>Rinascente の「会社概要」</strong> を参照しています。<br />
+YUMEHO
+側の固定ページ本文を直しても、会社名・住所・電話番号などの主要情報はここでは運用しません。</p>
+<h2 id="5-rinascente-の更新手順">5. Rinascente の更新手順</h2>
+<h3 id="51-サイト更新ダッシュボード">5.1 サイト更新ダッシュボード</h3>
+<p><img src="./wp-operation-manual-assets/13-rinascente-dashboard.png"
+alt="Rinascente ダッシュボード" /></p>
+<ol type="1">
+<li>左メニューの <code>サイト更新</code> を開きます。</li>
+<li>画面上部の導線から、更新先の画面へ移動します。</li>
+<li>日常的によく使うのは次の 4 つです。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>導線</th>
+<th>使うとき</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ニュース</td>
+<td>Press 更新</td>
+</tr>
+<tr>
+<td>コラム</td>
+<td>コラム公開</td>
+</tr>
+<tr>
+<td>会社概要</td>
+<td>会社情報 / 問い合わせ先 / YUMEHO 会社情報更新</td>
+</tr>
+<tr>
+<td>会員サイト運用</td>
+<td>製品マスター / 契約 / 会員向けコンテンツ更新</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-ニュースの更新">5.2 ニュースの更新</h3>
+<h4 id="一覧画面-4">一覧画面</h4>
+<p><img src="./wp-operation-manual-assets/14-rinascente-news-list.png"
+alt="Rinascente ニュース一覧" /></p>
+<ol type="1">
+<li>左メニューの <code>ニュース</code> を開きます。</li>
+<li>修正は既存タイトルをクリックします。</li>
+<li>新規は <code>新規追加</code> を押します。</li>
+<li>一覧では次の列を確認します。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>列</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>サムネイル</td>
+<td>代表画像の有無</td>
+</tr>
+<tr>
+<td>カテゴリー</td>
+<td>ニュース分類</td>
+</tr>
+<tr>
+<td>抜粋</td>
+<td>一覧説明文の有無</td>
+</tr>
+<tr>
+<td>表示タイトル</td>
+<td>詳細ページ専用タイトルの有無</td>
+</tr>
+<tr>
+<td>Featured</td>
+<td>Press 先頭で強調表示されるか</td>
+</tr>
+</tbody>
+</table>
+<h4 id="編集画面-3">編集画面</h4>
+<p><img src="./wp-operation-manual-assets/15-rinascente-news-edit.png"
+alt="Rinascente ニュース編集" /></p>
+<ol type="1">
+<li>タイトルを入力します。</li>
+<li>本文を入力します。</li>
+<li><code>一覧説明文</code> を入力します。</li>
+<li><code>一覧・詳細で使う代表画像</code> を設定します。</li>
+<li><code>ニュースカテゴリー</code> を選びます。</li>
+<li>必要に応じて <code>詳細ページ用タイトル</code> を入れます。</li>
+<li>Press の先頭で強調したい場合だけ
+<code>Press の Featured に表示する</code> をオンにします。</li>
+<li><code>公開</code> または <code>更新</code> を押します。</li>
+</ol>
+<h4 id="ニュース更新時のルール">ニュース更新時のルール</h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>ルール</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>タイトル</td>
+<td>一覧と詳細の基本タイトル</td>
+</tr>
+<tr>
+<td>一覧説明文</td>
+<td>Press 一覧カードで使う短文</td>
+</tr>
+<tr>
+<td>本文</td>
+<td>詳細ページ本文</td>
+</tr>
+<tr>
+<td>代表画像</td>
+<td>一覧カードと詳細のメイン画像</td>
+</tr>
+<tr>
+<td>詳細ページ用タイトル</td>
+<td>任意。詳細だけ見出しを変えたいとき</td>
+</tr>
+<tr>
+<td>Featured</td>
+<td>1件だけ。次をONにすると前のFeaturedは外れる</td>
+</tr>
+</tbody>
+</table>
+<h3 id="53-コラムの更新">5.3 コラムの更新</h3>
+<h4 id="一覧画面-5">一覧画面</h4>
+<p><img src="./wp-operation-manual-assets/16-rinascente-column-list.png"
+alt="Rinascente コラム一覧" /></p>
+<ol type="1">
+<li>左メニューの <code>コラム</code> を開きます。</li>
+<li>既存コラムを修正する場合はタイトルをクリックします。</li>
+<li>新規作成は <code>新規追加</code> を押します。</li>
+<li>一覧では <code>YUMEHO連動</code> と <code>YUMEHOリード</code>
+を特に確認します。</li>
+</ol>
+<h4 id="編集画面-4">編集画面</h4>
+<p><img src="./wp-operation-manual-assets/17-rinascente-column-edit.png"
+alt="Rinascente コラム編集" /></p>
+<ol type="1">
+<li>タイトルを入力します。</li>
+<li>本文を入力します。</li>
+<li><code>一覧説明文</code> を入力します。</li>
+<li><code>代表画像</code> を設定します。</li>
+<li><code>コラムカテゴリー</code> を選びます。</li>
+<li>YUMEHO にも出したい場合だけ <code>YUMEHO サイトでも公開する</code>
+をオンにします。</li>
+<li>必要なら <code>YUMEHO 向けの冒頭文</code> を入れます。</li>
+<li><code>公開</code> または <code>更新</code> を押します。</li>
+</ol>
+<h4 id="yumeho-連携の考え方">YUMEHO 連携の考え方</h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YUMEHO サイトでも公開する</td>
+<td>ON にすると YUMEHO 側でも同じ本文を表示</td>
+</tr>
+<tr>
+<td>YUMEHO 向けの冒頭文</td>
+<td>YUMEHO 側だけで見せる補足文</td>
+</tr>
+<tr>
+<td>反映タイミング</td>
+<td>最大約15分</td>
+</tr>
+<tr>
+<td>使いどころ</td>
+<td>YUMEHO 利用者にも読ませたい製品寄りのコラム</td>
+</tr>
+</tbody>
+</table>
+<h3 id="54-会社概要の更新">5.4 会社概要の更新</h3>
+<p><img
+src="./wp-operation-manual-assets/18-rinascente-company-profile.png"
+alt="Rinascente 会社概要" /></p>
+<p>この画面は、<strong>Rinascente
+自社情報の更新画面</strong>であると同時に、<strong>YUMEHO
+会社概要の元データ</strong>でもあります。</p>
+<ol type="1">
+<li>左メニューの <code>会社概要</code> を開きます。</li>
+<li>会社情報欄を更新します。</li>
+<li>サポート窓口欄を更新します。</li>
+<li><code>更新</code> を押します。</li>
+</ol>
+<h4 id="更新できる主な項目">更新できる主な項目</h4>
+<table>
+<thead>
+<tr>
+<th>区分</th>
+<th>項目</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>会社情報</td>
+<td>会社名</td>
+</tr>
+<tr>
+<td>会社情報</td>
+<td>会社名（英語）</td>
+</tr>
+<tr>
+<td>会社情報</td>
+<td>代表者名</td>
+</tr>
+<tr>
+<td>会社情報</td>
+<td>設立年月</td>
+</tr>
+<tr>
+<td>会社情報</td>
+<td>資本金</td>
+</tr>
+<tr>
+<td>会社情報</td>
+<td>所在地</td>
+</tr>
+<tr>
+<td>会社情報</td>
+<td>電話番号</td>
+</tr>
+<tr>
+<td>会社情報</td>
+<td>FAX番号</td>
+</tr>
+<tr>
+<td>会社情報</td>
+<td>事業内容</td>
+</tr>
+<tr>
+<td>会社情報</td>
+<td>主要製品</td>
+</tr>
+<tr>
+<td>会社情報</td>
+<td>受付時間</td>
+</tr>
+<tr>
+<td>サポート</td>
+<td>会員サポート窓口名</td>
+</tr>
+<tr>
+<td>サポート</td>
+<td>会員サポート電話番号</td>
+</tr>
+<tr>
+<td>サポート</td>
+<td>会員サポート受付時間</td>
+</tr>
+</tbody>
+</table>
+<h4 id="更新前に確認すること">更新前に確認すること</h4>
+<ol type="1">
+<li>会社名や所在地を変える場合は、法務ページや登記情報との整合性を先に確認します。</li>
+<li>電話番号や受付時間の変更は、YUMEHO
+側の会社概要にも反映される前提で更新します。</li>
+<li>ページ本文ではなく専用入力欄が正しい更新元です。</li>
+</ol>
+<h3 id="55-会員サイト運用ダッシュボード">5.5
+会員サイト運用ダッシュボード</h3>
+<p><img
+src="./wp-operation-manual-assets/19-rinascente-member-dashboard.png"
+alt="Rinascente 会員サイト運用ダッシュボード" /></p>
+<p>会員関連の更新は、この画面を起点にすると迷いません。</p>
+<ol type="1">
+<li>左メニューの <code>会員サイト運用</code> を開きます。</li>
+<li>目的に応じて次を使い分けます。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>画面</th>
+<th>使うとき</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>製品マスター</td>
+<td>商品名・価格・選択肢・契約ひな形を更新したい</td>
+</tr>
+<tr>
+<td>契約・購入履歴</td>
+<td>会員別の購入履歴や契約状況を更新したい</td>
+</tr>
+<tr>
+<td>会員限定動画</td>
+<td>会員向けの動画を追加したい</td>
+</tr>
+<tr>
+<td>会員限定資料</td>
+<td>会員向けのPDFや資料を追加したい</td>
+</tr>
+<tr>
+<td>サポート情報</td>
+<td>会員向けのお知らせを出したい</td>
+</tr>
+</tbody>
+</table>
+<h3 id="56-製品マスターの更新">5.6 製品マスターの更新</h3>
+<p><img
+src="./wp-operation-manual-assets/20-rinascente-product-master-edit.png"
+alt="Rinascente 製品マスター編集" /></p>
+<p>この画面は、YUMEHO
+の価格・見積・契約情報の<strong>元マスター</strong>です。価格変更時はここを更新します。</p>
+<ol type="1">
+<li><code>会員サイト運用 &gt; 製品マスター</code> を開きます。</li>
+<li>既存製品を修正するか、新規追加します。</li>
+<li>最低限 <code>どのサイトの商品か</code> <code>区分</code>
+<code>お客様向け商品名</code> <code>短い呼び名</code>
+<code>価格（税別）</code> を入力します。</li>
+<li>必要に応じて設置方式やレール長、単位、最大数量を設定します。</li>
+<li>契約書や会員表示で使う文面がある場合は <code>契約情報のひな形</code>
+を入れます。</li>
+<li><code>公開</code> または <code>更新</code> を押します。</li>
+</ol>
+<h4 id="主な入力項目">主な入力項目</h4>
+<table>
+<thead>
+<tr>
+<th>セクション</th>
+<th>項目</th>
+<th>使い方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最低限の入力</td>
+<td>どのサイトの商品か</td>
+<td>通常は <code>yumeho</code></td>
+</tr>
+<tr>
+<td>最低限の入力</td>
+<td>区分</td>
+<td>本体システム / ハーネス / オプション等</td>
+</tr>
+<tr>
+<td>最低限の入力</td>
+<td>お客様向け商品名</td>
+<td>サイト表示の正式名</td>
+</tr>
+<tr>
+<td>最低限の入力</td>
+<td>短い呼び名</td>
+<td>見積やカードの短縮表示</td>
+</tr>
+<tr>
+<td>最低限の入力</td>
+<td>価格（税別）</td>
+<td>本体の基本価格または単価</td>
+</tr>
+<tr>
+<td>必要に応じて入力</td>
+<td>仕様補足</td>
+<td>サイズ・構成の補足</td>
+</tr>
+<tr>
+<td>必要に応じて入力</td>
+<td>設置方式</td>
+<td>本体システム向け</td>
+</tr>
+<tr>
+<td>必要に応じて入力</td>
+<td>自動選択するレール長の上限</td>
+<td>スタンド型判定等で使用</td>
+</tr>
+<tr>
+<td>必要に応じて入力</td>
+<td>選択式レール長</td>
+<td>天井型などの長さ候補</td>
+</tr>
+<tr>
+<td>必要に応じて入力</td>
+<td>レール単価 / m</td>
+<td>レール課金時に使用</td>
+</tr>
+<tr>
+<td>必要に応じて入力</td>
+<td>数量の単位</td>
+<td>台 / 着 / 個 など</td>
+</tr>
+<tr>
+<td>必要に応じて入力</td>
+<td>一度に選べる最大数</td>
+<td>1件の見積で選択できる数</td>
+</tr>
+<tr>
+<td>必要に応じて入力</td>
+<td>YUMEHOでの選び方</td>
+<td>オン/オフ or 数量選択</td>
+</tr>
+<tr>
+<td>必要に応じて入力</td>
+<td>並び順</td>
+<td>表示順</td>
+</tr>
+<tr>
+<td>必要に応じて入力</td>
+<td>契約情報のひな形</td>
+<td>契約画面へ流し込む文面</td>
+</tr>
+<tr>
+<td>上級者向け</td>
+<td>商品コード</td>
+<td>内部連携用の安定コード</td>
+</tr>
+<tr>
+<td>上級者向け</td>
+<td>価格連携キー</td>
+<td>YUMEHO価格計算の内部キー</td>
+</tr>
+<tr>
+<td>上級者向け</td>
+<td>参照元メモ</td>
+<td>元資料のメモ</td>
+</tr>
+</tbody>
+</table>
+<h4 id="反映先">反映先</h4>
+<table>
+<thead>
+<tr>
+<th>変更内容</th>
+<th>反映先</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>商品名 / 短縮名</td>
+<td>YUMEHO の価格・見積表示</td>
+</tr>
+<tr>
+<td>価格</td>
+<td>YUMEHO の価格表 / 見積 / シミュレーション</td>
+</tr>
+<tr>
+<td>契約情報のひな形</td>
+<td>契約・購入履歴のテンプレート反映</td>
+</tr>
+<tr>
+<td>レール長 / 数量設定</td>
+<td>YUMEHO の選択UI</td>
+</tr>
+</tbody>
+</table>
+<h3 id="57-契約購入履歴の更新">5.7 契約・購入履歴の更新</h3>
+<p><img
+src="./wp-operation-manual-assets/21-rinascente-contract-edit.png"
+alt="Rinascente 契約編集" /></p>
+<p>会員ページに表示する契約情報や購入履歴の管理画面です。</p>
+<ol type="1">
+<li><code>会員サイト運用 &gt; 契約・購入履歴</code> を開きます。</li>
+<li>対象の会員を検索して選びます。</li>
+<li><code>施設名</code> <code>注文番号</code> <code>対象製品</code>
+<code>製品名</code> <code>数量</code> を確認または入力します。</li>
+<li><code>注文日</code> <code>納品日</code> <code>契約日</code>
+を入れます。</li>
+<li><code>ステータス</code> と <code>支払いステータス</code>
+を設定します。</li>
+<li>必要に応じて <code>契約情報</code> と <code>備考</code>
+を入れます。</li>
+<li><code>更新</code> を押します。</li>
+</ol>
+<h4 id="入力の考え方">入力の考え方</h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>会員ユーザー</td>
+<td>まずここを選ぶ。施設名が自動補完される</td>
+</tr>
+<tr>
+<td>施設名</td>
+<td>通常は自動入力、必要時のみ手動修正</td>
+</tr>
+<tr>
+<td>対象製品</td>
+<td>製品グループ</td>
+</tr>
+<tr>
+<td>製品名</td>
+<td>製品マスターから選択</td>
+</tr>
+<tr>
+<td>契約情報</td>
+<td>製品マスターのひな形を反映可能</td>
+</tr>
+<tr>
+<td>備考</td>
+<td>個別事情や運用メモ</td>
+</tr>
+</tbody>
+</table>
+<h3 id="58-会員限定動画の更新">5.8 会員限定動画の更新</h3>
+<p><img
+src="./wp-operation-manual-assets/22-rinascente-member-video-edit.png"
+alt="Rinascente 会員動画編集" /></p>
+<p>この画面は縦長で、スクリーンショットより下にも入力欄が続きます。実際の更新では、上から順に
+<code>動画情報</code> <code>表示設定</code> <code>公開期間</code>
+を埋めていきます。</p>
+<ol type="1">
+<li><code>会員サイト運用 &gt; 会員限定動画</code> を開きます。</li>
+<li>タイトルを入力します。</li>
+<li><code>YouTube URL または 動画ID</code> を入力します。</li>
+<li><code>説明文</code> を入力します。</li>
+<li><code>カテゴリ</code> と <code>対象製品</code> を設定します。</li>
+<li>必要なら <code>公開開始日</code> と <code>公開終了日</code>
+を設定します。</li>
+<li>上部の <code>表示順</code> を調整します。</li>
+<li><code>公開</code> または <code>更新</code> を押します。</li>
+</ol>
+<h4 id="重要なルール">重要なルール</h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>ルール</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YouTube入力</td>
+<td>共有URLを貼っても可。保存時に動画IDへ整形</td>
+</tr>
+<tr>
+<td>説明文</td>
+<td>会員ページの一覧と詳細で使用</td>
+</tr>
+<tr>
+<td>本文欄</td>
+<td>現在の会員ページでは使わない</td>
+</tr>
+<tr>
+<td>表示順</td>
+<td>小さい数字ほど上に表示</td>
+</tr>
+<tr>
+<td>対象製品</td>
+<td>空欄なら共通表示</td>
+</tr>
+</tbody>
+</table>
+<h3 id="59-会員限定資料の更新">5.9 会員限定資料の更新</h3>
+<p><img
+src="./wp-operation-manual-assets/23-rinascente-member-document-edit.png"
+alt="Rinascente 会員資料編集" /></p>
+<p>現在は、右下の矢印で切り替える方式ではなく、<code>資料名と基本設定</code>
+から <code>公開期間</code>
+までを1画面で上から続けて入力します。タイトル欄も同じ流れの中に表示されます。</p>
+<ol type="1">
+<li><code>会員サイト運用 &gt; 会員限定資料</code> を開きます。</li>
+<li><code>1. 資料名と基本設定</code> で資料名を入力し、必要なら
+<code>表示順</code> を調整します。</li>
+<li><code>2. 資料ファイル</code> で <code>ファイルを選ぶ</code> から PDF
+や Word を登録します。</li>
+<li>資料名が未入力ならファイル選択時に自動補完されます。必要なら
+<code>資料名に反映</code> と <code>更新日を今日にする</code>
+を使います。</li>
+<li><code>3. 表示設定</code> で
+<code>カテゴリ</code>、<code>対象製品</code>、<code>更新日</code>
+を設定します。</li>
+<li><code>4. 公開イメージ</code>
+で会員ページでの見え方を確認します。</li>
+<li>補助金関連の資料だけ <code>5. 制度・補助金メモ</code> に
+<code>制度名</code> と <code>認定ステータス</code> を入れます。</li>
+<li>必要なら <code>6. 公開期間</code> で <code>公開開始日</code> と
+<code>公開終了日</code> を設定します。</li>
+<li><code>公開</code> または <code>更新</code> を押します。</li>
+</ol>
+<h4 id="重要なルール-1">重要なルール</h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>ルール</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ファイル</td>
+<td>会員に配布する最終版を登録</td>
+</tr>
+<tr>
+<td>更新日</td>
+<td>差し替え日や版の基準日を入れる</td>
+</tr>
+<tr>
+<td>対象製品</td>
+<td>空欄なら共通資料</td>
+</tr>
+<tr>
+<td>画面構成</td>
+<td>タイトル欄と資料設定は同じ画面で続けて入力する</td>
+</tr>
+<tr>
+<td>本文欄</td>
+<td>現在の会員ページでは使わない</td>
+</tr>
+<tr>
+<td>表示順</td>
+<td>小さい数字ほど上に表示</td>
+</tr>
+</tbody>
+</table>
+<h3 id="510-サポート情報の更新">5.10 サポート情報の更新</h3>
+<p><img
+src="./wp-operation-manual-assets/24-rinascente-member-notice-edit.png"
+alt="Rinascente サポート情報編集" /></p>
+<p>サポート情報は、タイトルと本文に加えて、見え方を決める
+<code>表示タイプ</code> が重要です。</p>
+<ol type="1">
+<li><code>会員サイト運用 &gt; サポート情報</code> を開きます。</li>
+<li>タイトルを入力します。</li>
+<li>本文を入力します。</li>
+<li>必要なら <code>一覧用要約</code> を入れます。</li>
+<li><code>表示タイプ</code> と <code>対象製品</code> を選びます。</li>
+<li>必要なら <code>公開開始日</code> と <code>公開終了日</code>
+を設定します。</li>
+<li><code>公開</code> または <code>更新</code> を押します。</li>
+</ol>
+<h4 id="重要なルール-2">重要なルール</h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>ルール</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>本文</td>
+<td>会員ページ詳細の本文</td>
+</tr>
+<tr>
+<td>一覧用要約</td>
+<td>一覧カードに優先表示する短文</td>
+</tr>
+<tr>
+<td>表示タイプ</td>
+<td><code>重要</code> <code>保守・運用</code> <code>お知らせ</code>
+<code>一般</code> など、見え方を決める</td>
+</tr>
+<tr>
+<td>並び順</td>
+<td>手動順ではなく公開日時の新しい順が基本</td>
+</tr>
+</tbody>
+</table>
+<h3 id="511-固定ページの更新">5.11 固定ページの更新</h3>
+<h4 id="一覧画面-6">一覧画面</h4>
+<p><img src="./wp-operation-manual-assets/25-rinascente-fixed-pages.png"
+alt="Rinascente 固定ページ一覧" /></p>
+<table>
+<thead>
+<tr>
+<th>固定ページ</th>
+<th>本文編集が反映されるか</th>
+<th>更新方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プライバシーポリシー</td>
+<td>反映される</td>
+<td>本文を編集</td>
+</tr>
+<tr>
+<td>利用規約</td>
+<td>反映される</td>
+<td>本文を編集</td>
+</tr>
+<tr>
+<td>Press</td>
+<td>反映しない</td>
+<td><code>ニュース</code> 投稿で更新</td>
+</tr>
+<tr>
+<td>Corporate Identity</td>
+<td>一部のみ</td>
+<td><code>会社概要</code> 更新 + テンプレート</td>
+</tr>
+<tr>
+<td>トップページ / お問い合わせ</td>
+<td>基本反映しない</td>
+<td>テンプレートまたは別機能</td>
+</tr>
+</tbody>
+</table>
+<h4 id="法務ページ編集-1">法務ページ編集</h4>
+<p><img
+src="./wp-operation-manual-assets/26-rinascente-legal-page-edit.png"
+alt="Rinascente 法務ページ編集" /></p>
+<ol type="1">
+<li><code>固定ページ</code> から対象ページを開きます。</li>
+<li>本文ブロックを修正します。</li>
+<li><code>更新</code> を押します。</li>
+</ol>
+<h3 id="512-テーマカスタマイザーの更新">5.12
+テーマカスタマイザーの更新</h3>
+<p><img src="./wp-operation-manual-assets/27-rinascente-customizer.png"
+alt="テーマカスタマイザー例" /></p>
+<p>この画面は<strong>サイト全体に影響する設定画面</strong>です。通常運用では頻繁に触らず、変更目的がはっきりしているときだけ更新します。</p>
+<ol type="1">
+<li>左メニューの <code>外観 &gt; カスタマイズ</code> を開きます。</li>
+<li>左側メニューから対象セクションを選びます。</li>
+<li>値を更新します。</li>
+<li><code>公開</code> を押します。</li>
+</ol>
+<h4 id="rinascente-で変更できる主な項目">Rinascente
+で変更できる主な項目</h4>
+<table>
+<thead>
+<tr>
+<th>セクション</th>
+<th>項目</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アナリティクス設定</td>
+<td>GA4 測定ID</td>
+</tr>
+<tr>
+<td>アナリティクス設定</td>
+<td>GTM コンテナID</td>
+</tr>
+<tr>
+<td>アナリティクス設定</td>
+<td>Slack Webhook URL</td>
+</tr>
+<tr>
+<td>関連サイト URL</td>
+<td>YUMEHO サイト URL</td>
+</tr>
+<tr>
+<td>関連サイト URL</td>
+<td>MICA30 サイト URL（有効時のみ）</td>
+</tr>
+<tr>
+<td>関連サイト URL</td>
+<td>Basic認証 ID / PW</td>
+</tr>
+</tbody>
+</table>
+<h4 id="yumeho-で変更できる主な項目">YUMEHO で変更できる主な項目</h4>
+<table>
+<thead>
+<tr>
+<th>セクション</th>
+<th>項目</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アナリティクス設定</td>
+<td>GA4 Measurement ID</td>
+</tr>
+<tr>
+<td>アナリティクス設定</td>
+<td>GTM Container ID</td>
+</tr>
+<tr>
+<td>アナリティクス設定</td>
+<td>Slack Webhook URL</td>
+</tr>
+<tr>
+<td>アナリティクス設定 または 導入拠点マップ設定</td>
+<td>Google Maps API Key</td>
+</tr>
+<tr>
+<td>関連サイト URL</td>
+<td>コーポレートサイト URL</td>
+</tr>
+<tr>
+<td>関連サイト URL</td>
+<td>Basic認証 ID / PW</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-固定ページを編集するときの判断ルール">6.
+固定ページを編集するときの判断ルール</h2>
+<p>固定ページを開いて本文が編集できても、<strong>その本文が公開画面に使われていない</strong>
+ページがあります。<br />
+迷ったら、次のルールで判断してください。</p>
+<ol type="1">
+<li>法務ページなら、ほぼ固定ページ本文を編集します。</li>
+<li>ニュース / コラム / FAQ / 導入事例 /
+導入拠点のような一覧ものは、固定ページ本文ではなく各投稿一覧側を更新します。</li>
+<li>会社情報・価格・会員情報は、固定ページ本文ではなく専用管理画面を更新します。</li>
+<li>ページの構造そのものを変えたい場合は、CMSではなく開発対応です。</li>
+</ol>
+<h2 id="7-公開前チェックリスト">7. 公開前チェックリスト</h2>
+<h3 id="71-投稿系更新の共通チェック">7.1 投稿系更新の共通チェック</h3>
+<ol type="1">
+<li>タイトルが入っているか。</li>
+<li>一覧説明文または抜粋が必要な画面で入っているか。</li>
+<li>代表画像が必要な更新で設定されているか。</li>
+<li>カテゴリが選ばれているか。</li>
+<li>公開日や公開状態が意図どおりか。</li>
+</ol>
+<h3 id="72-yumeho-価格会社情報更新のチェック">7.2 YUMEHO
+価格・会社情報更新のチェック</h3>
+<ol type="1">
+<li>価格変更は YUMEHO 側ではなく Rinascente の <code>製品マスター</code>
+で更新したか。</li>
+<li>会社情報変更は Rinascente の <code>会社概要</code>
+で更新したか。</li>
+<li>反映待ちの可能性がある場合、最大15分ほど待って再確認したか。</li>
+</ol>
+<h3 id="73-会員向け更新のチェック">7.3 会員向け更新のチェック</h3>
+<ol type="1">
+<li>対象製品が <code>共通</code> でよいか確認したか。</li>
+<li>期間限定公開なら開始日 / 終了日を設定したか。</li>
+<li>動画は YouTube ID が正しいか。</li>
+<li>資料は正しいファイルを選択したか。</li>
+<li>サポート情報は <code>表示タイプ</code> が適切か。</li>
+</ol>
+<h2 id="8-よくある迷いどころ">8. よくある迷いどころ</h2>
+<h3 id="81-yumeho-の会社概要を直したい">8.1 YUMEHO
+の会社概要を直したい</h3>
+<p><code>YUMEHO &gt; 固定ページ &gt; 会社概要</code>
+ではなく、<strong><code>Rinascente &gt; 会社概要</code></strong>
+を更新します。</p>
+<h3 id="82-yumeho-の価格を変えたい">8.2 YUMEHO の価格を変えたい</h3>
+<p><code>YUMEHO &gt; 価格参照</code> は確認画面です。<br />
+実際の更新先は
+<strong><code>Rinascente &gt; 会員サイト運用 &gt; 製品マスター</code></strong>
+です。</p>
+<h3 id="83-faqページに見出し文を追加したい">8.3
+FAQページに見出し文を追加したい</h3>
+<p>FAQそのものは <code>FAQ</code> 投稿で更新し、ページ上部の導入文は
+<strong><code>YUMEHO &gt; 固定ページ &gt; FAQ</code></strong>
+で更新します。</p>
+<h3 id="84-会員向けコンテンツを-yumeho-側で探してしまう">8.4
+会員向けコンテンツを YUMEHO 側で探してしまう</h3>
+<p>現在の運用では、会員限定動画・資料・サポート情報は <strong>Rinascente
+側</strong> の <code>会員サイト運用</code> で更新します。</p>
+<h3 id="85-固定ページを編集したのに公開画面が変わらない">8.5
+固定ページを編集したのに公開画面が変わらない</h3>
+<p>そのページはテンプレート固定の可能性が高いです。<br />
+このマニュアルの <code>2. 公開ページごとの更新元マップ</code>
+を確認し、正しい更新元へ戻ってください。</p>
+<h2 id="9-cmsで変更できない項目を開発者へ依頼するとき">9.
+CMSで変更できない項目を開発者へ依頼するとき</h2>
+<p>次のような依頼は、WordPress 管理画面ではなく開発対応です。</p>
+<ol type="1">
+<li>ページのレイアウト自体を変えたい。</li>
+<li>CTA ボタンやブロック構成を追加したい。</li>
+<li>フォーム仕様を変えたい。</li>
+<li>テキストではなく、ページの表示ロジックを変えたい。</li>
+<li>固定ページ本文が反映されないテンプレートページを変更したい。</li>
+</ol>
+<h2 id="10-開発依頼時に共有するとよい情報">10.
+開発依頼時に共有するとよい情報</h2>
+<ol type="1">
+<li>どの公開ページを変えたいか。</li>
+<li>CMSで触ったが反映しなかったかどうか。</li>
+<li>変更したい内容が <code>文言</code> なのか <code>構造</code>
+なのか。</li>
+<li>スマホ / PC のどちらで見た変化か。</li>
+<li>変更希望箇所のスクリーンショット。</li>
+</ol>
+<hr />
+<p>必要な更新先が分からなくなった場合は、<strong>「固定ページ本文を直す前に、このマニュアルの早見表を見る」</strong>
+を基本ルールにしてください。<br />
+特に <strong>YUMEHO の会社概要・価格・会員情報</strong>
+は、更新元が別画面になっています。</p>
+</body>
+</html>

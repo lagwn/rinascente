@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+  <title>Member Login | Rinascente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260409f">
+  <link rel="stylesheet" href="assets/css/site-switcher.css">
+</head>
+
+<body style="background:var(--black);">
+
+  <header class="site-header" style="background:var(--black);border-bottom:1px solid rgba(255,255,255,0.07);">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="assets/img/logo.svg" alt="" class="header-logo__img">
+        <span class="header-logo__text">
+          <span class="logo-wordmark">Rinascente</span>
+          <span class="logo-sub">復活する。再生する。</span>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-label="メニュー" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav class="header-nav header-nav--desktop" role="navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="identity.html" class="nav-item">Identity</a>
+        <a href="press.html" class="nav-item">Press</a>
+        <a href="cases.html" class="nav-item">Cases</a>
+        <a href="contact.html" class="header-cta">Contact</a>
+        <a href="login.html" class="btn btn-outline-light" style="min-height:auto;padding:8px 20px;font-size:0.8rem;">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile fullscreen nav -->
+  <nav class="mobile-nav" id="mobileNav" role="navigation" aria-hidden="true">
+    <a href="index.html" class="mobile-nav__item">Home</a>
+    <a href="identity.html" class="mobile-nav__item">Identity</a>
+    <a href="press.html" class="mobile-nav__item">Press</a>
+    <a href="cases.html" class="mobile-nav__item">Cases</a>
+    <a href="contact.html" class="mobile-nav__item">Contact</a>
+    <a href="login.html" class="mobile-nav__item">Login</a>
+    <div class="mobile-nav__divider"></div>
+    <a href="../yumeho/index.html" class="nav-external" target="_blank" rel="noopener">
+      <span class="nav-external__label">Product Site</span>
+      <span class="nav-external__name">YUMEHO</span>
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="flex-shrink:0;"><path d="M4 1.5H2.5A1 1 0 001.5 2.5v7a1 1 0 001 1h7a1 1 0 001-1V8M7.5 1.5h3v3M6 6l4.5-4.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </nav>
+
+  <div class="login-wrap">
+
+    <!-- Left: Brand -->
+    <div class="login-left">
+      <div style="max-width:480px;">
+        <a href="index.html" style="display:inline-block;margin-bottom:56px;">
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:2rem;font-weight:300;letter-spacing:0.06em;color:var(--white);">Rinascente</div>
+          <div style="font-size:0.58rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-top:2px;">復活する。再生する。</div>
+        </a>
+
+        <h2 style="
+          font-family:var(--font-body);
+          font-size:clamp(2.2rem,4vw,3.5rem);
+          font-style:normal;
+          font-weight:700;
+          color:var(--white);
+          line-height:1.1;
+          letter-spacing:-0.01em;
+          margin-bottom:24px;
+        ">
+          会員限定の<br>
+          <span style="color:var(--gold-light);">情報にアクセス。</span>
+        </h2>
+
+        <p style="color:rgba(255,255,255,0.55);font-size:0.95rem;line-height:1.75;margin-bottom:32px;">
+          会員の方は、製品の最新情報、詳細な技術仕様書、補助金申請サポート資料、セミナー・研修情報などにアクセスできます。
+        </p>
+
+        <div style="display:grid;gap:12px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:rgba(200,169,110,0.15);border:1px solid rgba(200,169,110,0.35);display:grid;place-items:center;flex-shrink:0;">
+              <span style="color:var(--gold);font-size:0.75rem;">✓</span>
+            </div>
+            <span style="font-size:0.88rem;color:rgba(255,255,255,0.65);">製品詳細仕様書・稟議用資料のダウンロード</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:rgba(200,169,110,0.15);border:1px solid rgba(200,169,110,0.35);display:grid;place-items:center;flex-shrink:0;">
+              <span style="color:var(--gold);font-size:0.75rem;">✓</span>
+            </div>
+            <span style="font-size:0.88rem;color:rgba(255,255,255,0.65);">補助金・助成金申請サポート資料</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:rgba(200,169,110,0.15);border:1px solid rgba(200,169,110,0.35);display:grid;place-items:center;flex-shrink:0;">
+              <span style="color:var(--gold);font-size:0.75rem;">✓</span>
+            </div>
+            <span style="font-size:0.88rem;color:rgba(255,255,255,0.65);">優先的なサポート・保守情報の受信</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:rgba(200,169,110,0.15);border:1px solid rgba(200,169,110,0.35);display:grid;place-items:center;flex-shrink:0;">
+              <span style="color:var(--gold);font-size:0.75rem;">✓</span>
+            </div>
+            <span style="font-size:0.88rem;color:rgba(255,255,255,0.65);">セミナー・事例研究会への優先参加</span>
+          </div>
+        </div>
+
+        <div style="margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.08);">
+          <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);">
+            会員登録がお済みでない方は、<a href="contact.html" style="color:var(--gold);border-bottom:1px solid rgba(200,169,110,0.4);">お問い合わせフォーム</a>よりお申し込みください。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Login Form -->
+    <div class="login-right">
+      <div class="login-box">
+        <div style="margin-bottom:40px;">
+          <h1 style="font-size:1.4rem;font-weight:700;color:var(--white);margin-bottom:6px;">ログイン</h1>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.45);">会員IDとパスワードを入力してください。</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+          <div style="margin-bottom:20px;">
+            <label style="display:block;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.6);margin-bottom:8px;">会員ID / メールアドレス</label>
+            <input type="text" id="loginId" class="login-form-control" placeholder="your-id@example.jp" autocomplete="username">
+          </div>
+          <div style="margin-bottom:8px;">
+            <label style="display:block;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.6);margin-bottom:8px;">パスワード</label>
+            <input type="password" id="loginPw" class="login-form-control" placeholder="••••••••" autocomplete="current-password">
+          </div>
+          <div style="text-align:right;margin-bottom:28px;">
+            <a href="contact.html" style="font-size:0.78rem;color:rgba(255,255,255,0.4);border-bottom:1px solid rgba(255,255,255,0.2);">パスワードをお忘れの方</a>
+          </div>
+
+          <div style="background:rgba(200,169,110,0.08);border:1px solid rgba(200,169,110,0.25);border-radius:var(--r-md);padding:14px 16px;margin-bottom:16px;font-size:0.78rem;color:rgba(255,255,255,0.55);line-height:1.8;">
+            <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">デモ用アカウント</div>
+            <div>ID：<span style="color:rgba(255,255,255,0.85);font-family:monospace;">demo@rinascente.jp</span></div>
+            <div>PW：<span style="color:rgba(255,255,255,0.85);font-family:monospace;">Rinascente2026</span></div>
+          </div>
+          <p id="loginError" style="color:#e74c3c;font-size:0.83rem;margin-bottom:12px;min-height:1.2em;"></p>
+
+          <button type="submit" class="btn btn-gold" style="width:100%;min-height:52px;font-size:0.95rem;">
+            ログイン →
+          </button>
+        </form>
+
+        <div style="margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.08);text-align:center;">
+          <p style="font-size:0.82rem;color:rgba(255,255,255,0.35);">
+            会員登録がお済みでない方は<br>
+            <a href="contact.html" style="color:var(--gold);border-bottom:1px solid rgba(200,169,110,0.35);">お問い合わせ</a>よりお申し込みください。
+          </p>
+        </div>
+
+        <div style="margin-top:24px;text-align:center;">
+          <a href="index.html" style="font-size:0.78rem;color:rgba(255,255,255,0.3);display:inline-flex;align-items:center;gap:6px;">← コーポレートサイトへ戻る</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="assets/img/logo.svg" alt="Rinascente" style="height:32px;vertical-align:middle;margin-right:4px;">Rinascente</div>
+          <div class="footer-tagline">復活する。再生する。</div>
+          <p><span style="white-space:nowrap;">医療・福祉機器の企画・販売を中心に、</span><span style="white-space:nowrap;">人の生活を支えるソリューションを届けます。</span><br>○○○○<br><span style="white-space:nowrap;">TEL: 0859-00-1234</span></p>
+        </div>
+        <div class="footer-col footer-col--desktop">
+          <h4>Corporate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="identity.html">Identity</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="cases.html">Cases</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Member Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col--desktop">
+          <h4>YUMEHO</h4>
+          <ul>
+            <li><a href="../yumeho/index.html">トップ</a></li>
+            <li><a href="../yumeho/product.html">製品紹介</a></li>
+            <li><a href="../yumeho/simulation.html">導入シミュレーション</a></li>
+            <li><a href="../yumeho/cases.html">導入事例</a></li>
+            <li><a href="../yumeho/flow.html">導入フロー</a></li>
+            <li><a href="../yumeho/price.html">価格・見積</a></li>
+            <li><a href="../yumeho/subsidy.html">補助金ガイド</a></li>
+            <li><a href="../yumeho/faq.html">FAQ</a></li>
+            <li><a href="../yumeho/contact.html">お問い合わせ</a></li>
+            <li><a href="../yumeho/company.html">会社概要</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col--desktop">
+          <h4>MICA30</h4>
+          <ul>
+            <li><a href="../mica30/index.html">トップ</a></li>
+            <li><a href="../mica30/product.html">製品詳細</a></li>
+            <li><a href="../mica30/cases.html">導入事例</a></li>
+            <li><a href="../mica30/voices.html">ご利用施設の声</a></li>
+            <li><a href="../mica30/price.html">価格・導入</a></li>
+            <li><a href="../mica30/flow.html">導入の流れ</a></li>
+            <li><a href="../mica30/faq.html">FAQ</a></li>
+            <li><a href="../mica30/company.html">会社概要</a></li>
+            <li><a href="../mica30/contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Rinascente. All Rights Reserved.</span>
+        <span>Rinascente Inc.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=20260413a"></script>
+  <script>
+    // Demo credentials
+    const DEMO_USERS = [
+      { id: 'demo@rinascente.jp',  pw: 'Rinascente2026' },
+      { id: 'yumeho-demo',          pw: 'YUMEHO2026' },
+    ];
+    document.getElementById('loginForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const id  = document.getElementById('loginId').value.trim();
+      const pw  = document.getElementById('loginPw').value.trim();
+      const err = document.getElementById('loginError');
+      if (!id || !pw) { err.textContent = 'IDとパスワードを入力してください。'; return; }
+      const match = DEMO_USERS.find(u => u.id === id && u.pw === pw);
+      if (match) {
+        sessionStorage.setItem('rina_member', id);
+        window.location.href = 'member.html';
+      } else {
+        err.textContent = 'IDまたはパスワードが正しくありません。';
+      }
+    });
+  </script>
+</body>
+</html>

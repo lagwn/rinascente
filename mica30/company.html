@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    <title>会社概要 | MICA30</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uor0jvw.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=20260409sp">
+    <link rel="stylesheet" href="assets/css/site-switcher.css">
+    <style>
+        .company-table { width:100%; border-collapse:collapse; }
+        .company-table tr { border-bottom:1px solid rgba(0,0,0,0.06); }
+        .company-table tr:last-child { border-bottom:none; }
+        .company-table th { text-align:left; font-weight:700; font-size:0.88rem; color:var(--primary-color); padding:20px 24px 20px 0; width:160px; vertical-align:top; white-space:nowrap; }
+        .company-table td { font-size:0.9rem; line-height:1.8; color:rgba(0,0,0,0.88); padding:20px 0; }
+        .company-mission { max-width:800px; margin:0 auto 56px; text-align:center; }
+        .company-mission__en { font-family:var(--font-logo); font-size:clamp(1.4rem,2.5vw,2rem); font-weight:700; color:var(--primary-color); letter-spacing:0.06em; margin-bottom:8px; }
+        .company-mission__ja { font-size:0.88rem; color:rgba(0,0,0,0.78); letter-spacing:0.1em; margin-bottom:24px; }
+        .company-mission p { font-size:0.92rem; line-height:1.9; color:rgba(0,0,0,0.85); max-width:600px; margin:0 auto; }
+        @media (max-width:640px) { .company-table th { width:100px; padding:14px 12px 14px 0; } .company-table td { padding:14px 0; } }
+    </style>
+</head>
+
+<body>
+    <!-- Marquee -->
+    <div class="top-marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>MICA30 INJECTOR</span>
+            <span>CONTRAST AGENT</span>
+            <span>ANGIOGRAPHY SUPPORT</span>
+            <span>MEDICAL GRADE</span>
+            <span>PRECISION INJECTION</span>
+            <span>BUBBLE DETECTION</span>
+            <span>MICA30 INJECTOR</span>
+            <span>CONTRAST AGENT</span>
+            <span>ANGIOGRAPHY SUPPORT</span>
+            <span>MEDICAL GRADE</span>
+            <span>PRECISION INJECTION</span>
+            <span>BUBBLE DETECTION</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="header-brand">
+                <a href="index.html" class="logo" aria-label="MICA30 ホームへ">MICA30</a>
+                <div class="site-switcher">
+                    <a href="../rinascente/index.html" class="ss-link ss-corp">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                        Corporate
+                    </a>
+                    <span class="ss-divider"></span>
+                    <a href="../yumeho/index.html" class="ss-link ss-product">YUMEHO</a>
+                    <a href="index.html" class="ss-link ss-product active">MICA30</a>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">トップ</a></li>
+                    <li><a href="product.html" class="nav-link">製品詳細</a></li>
+                    <li><a href="voices.html" class="nav-link">ご利用施設の声</a></li>
+                    <li><a href="cases.html" class="nav-link">導入事例</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="price.html" class="nav-link">価格・導入</a></li>
+                    <li><a href="flow.html" class="nav-link">導入の流れ</a></li>
+                    <li><a href="company.html" class="nav-link active">会社概要</a></li>
+                    <li style="margin-left:12px;"><a href="contact.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem; white-space: nowrap;">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- SP ドロワーメニュー -->
+    <div class="sp-drawer" id="spDrawer" aria-hidden="true">
+        <nav class="sp-drawer__nav">
+            <a href="index.html" class="sp-drawer__link">トップ</a>
+            <a href="product.html" class="sp-drawer__link">製品詳細</a>
+            <a href="voices.html" class="sp-drawer__link">ご利用施設の声</a>
+            <a href="cases.html" class="sp-drawer__link">導入事例</a>
+            <a href="faq.html" class="sp-drawer__link">FAQ</a>
+            <a href="price.html" class="sp-drawer__link">価格・導入</a>
+            <a href="flow.html" class="sp-drawer__link">導入の流れ</a>
+            <a href="company.html" class="sp-drawer__link">会社概要</a>
+        </nav>
+        <div class="sp-drawer__sites">
+            <a href="../rinascente/index.html" class="sp-drawer__site">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                Corporate
+            </a>
+            <a href="../yumeho/index.html" class="sp-drawer__site">YUMEHO</a>
+            <a href="index.html" class="sp-drawer__site sp-drawer__site--active">MICA30</a>
+        </div>
+        <div class="sp-drawer__footer">
+            <a href="contact.html" class="btn btn-primary sp-drawer__cta">お問い合わせ</a>
+        </div>
+    </div>
+
+    <section class="hero bg-light">
+        <div class="container text-center">
+            <p class="hero-en">COMPANY</p>
+            <h1 class="hero-title">会社概要</h1>
+            <p class="hero-subtitle">医療・福祉機器の開発・販売を通じて、人の生活を支えるソリューションを届けます</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="company-mission animate-on-scroll">
+                <div class="company-mission__en">Rinascente</div>
+                <div class="company-mission__ja">復活する。再生する。</div>
+                <p>医療・福祉の現場で、もう一度歩く喜びを。もう一度自分らしく生きる力を。<br>私たちは「再生」をテーマに、人と技術の新しい関係を創造します。</p>
+            </div>
+
+            <div class="section-heading" style="max-width:800px;margin:0 auto 40px;">
+                <p class="section-kicker">Overview</p>
+                <h2 class="section-title">基本情報</h2>
+            </div>
+            <div class="animate-on-scroll" style="background:#fff;border-radius:12px;padding:36px 40px;box-shadow:0 2px 16px rgba(0,0,0,0.04);max-width:800px;margin:0 auto 56px;">
+                <table class="company-table">
+                    <tr><th>会社名</th><td>株式会社 Rinascente（リナシェンテ）</td></tr>
+                    <tr><th>代表者</th><td>代表取締役 ○○○○</td></tr>
+                    <tr><th>設立</th><td>2026年0月0日</td></tr>
+                    <tr><th>所在地</th><td>○○○○</td></tr>
+                    <tr><th>電話番号</th><td><a href="tel:0859-00-1234" style="color:var(--primary-color);font-weight:700;">0859-00-1234</a></td></tr>
+                    <tr><th>事業内容</th><td>医療機器・福祉機器の企画、販売<br>歩行リハビリ支援システムの保守<br>医療機器の輸入販売</td></tr>
+                    <tr><th>主要製品</th><td>YUMEHO（歩行リハビリ支援システム）<br>MICA30（多相電動式造影剤注入装置）</td></tr>
+                    <tr><th>受付時間</th><td>平日 9:00〜17:00</td></tr>
+                </table>
+            </div>
+
+            <div class="text-center" style="margin-top:48px;">
+                <p style="margin-bottom:20px;font-size:0.9rem;color:rgba(0,0,0,0.82);">製品に関するお問い合わせはお気軽にどうぞ。</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">お問い合わせ・資料請求</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">ホーム</a>
+                <a href="product.html">製品詳細</a>
+                <a href="voices.html">ご利用施設の声</a>
+                <a href="cases.html">導入事例</a>
+                <a href="faq.html">よくある質問</a>
+                <a href="price.html">価格・導入</a>
+                <a href="flow.html">導入の流れ</a>
+                <a href="company.html">会社概要</a>
+                <a href="contact.html">お問い合わせ</a>
+                <a href="../yumeho/index.html">YUMEHO サイト</a>
+                <a href="../rinascente/index.html">コーポレートサイト</a>
+            </div>
+                <a href="contact.html" class="footer-cta-sp">
+                    <span class="floating-cta__pulse"></span>
+                    お問い合わせ
+                </a>
+            <p class="copyright">&copy; 2026 株式会社 Rinascente All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
